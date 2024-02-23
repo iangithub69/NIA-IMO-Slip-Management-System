@@ -199,4 +199,15 @@ Public Class Form2
         'TextBox10.Clear()
 
     End Sub
+
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+        Me.Close()
+
+    End Sub
+
+    'this is a test
+    'this is a test
+    'this is a test
+    'this is a test
+
 End Class
