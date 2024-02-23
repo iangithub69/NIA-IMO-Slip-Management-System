@@ -65,11 +65,27 @@ Public Class Form2
 
         ' Clear the ComboBox
         ComboBox1.Items.Clear()
+        ComboBox2.Items.Clear()
+        ComboBox3.Items.Clear()
+        ComboBox4.Items.Clear()
+        ComboBox5.Items.Clear()
+        ComboBox6.Items.Clear()
 
         ' SQL query to select data from the desired column
+        'account_types''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
         Dim sql As String = "SELECT account_name FROM account_types"
 
+        'tillers''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+        Dim sql2 As String = "SELECT tiller_name FROM tillers"
+        Dim sql3 As String = "SELECT description FROM tillers"
+
+        'officers'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+        Dim sql4 As String = "SELECT officer_name FROM officers"
+        Dim sql5 As String = "SELECT description FROM officers"
+        Dim sql6 As String = "SELECT branch FROM officers"
+
         ' Execute the query
+        'account_types''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
         Try
             cmd = New MySqlCommand(sql, cn)
             dr = cmd.ExecuteReader()
@@ -77,6 +93,83 @@ Public Class Form2
             ' Read each row and add the value to the ComboBox
             While dr.Read()
                 ComboBox1.Items.Add(dr("account_name").ToString())
+            End While
+
+            ' Close the reader
+            dr.Close()
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        End Try
+
+        'tillers''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+        Try
+            cmd = New MySqlCommand(sql2, cn)
+            dr = cmd.ExecuteReader()
+
+            ' Read each row and add the value to the ComboBox
+            While dr.Read()
+                ComboBox2.Items.Add(dr("tiller_name").ToString())
+            End While
+
+            ' Close the reader
+            dr.Close()
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        End Try
+
+        Try
+            cmd = New MySqlCommand(sql3, cn)
+            dr = cmd.ExecuteReader()
+
+            ' Read each row and add the value to the ComboBox
+            While dr.Read()
+                ComboBox3.Items.Add(dr("description").ToString())
+            End While
+
+            ' Close the reader
+            dr.Close()
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        End Try
+
+        'officers'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+        Try
+            cmd = New MySqlCommand(sql4, cn)
+            dr = cmd.ExecuteReader()
+
+            ' Read each row and add the value to the ComboBox
+            While dr.Read()
+                ComboBox4.Items.Add(dr("officer_name").ToString())
+            End While
+
+            ' Close the reader
+            dr.Close()
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        End Try
+
+        Try
+            cmd = New MySqlCommand(sql5, cn)
+            dr = cmd.ExecuteReader()
+
+            ' Read each row and add the value to the ComboBox
+            While dr.Read()
+                ComboBox5.Items.Add(dr("description").ToString())
+            End While
+
+            ' Close the reader
+            dr.Close()
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        End Try
+
+        Try
+            cmd = New MySqlCommand(sql6, cn)
+            dr = cmd.ExecuteReader()
+
+            ' Read each row and add the value to the ComboBox
+            While dr.Read()
+                ComboBox6.Items.Add(dr("branch").ToString())
             End While
 
             ' Close the reader
@@ -201,8 +294,8 @@ Public Class Form2
     End Sub
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
-        Me.Close()
 
     End Sub
+
 
 End Class
