@@ -205,9 +205,4 @@ Public Class Form2
 
     End Sub
 
-    'this is a test
-    'this is a test
-    'this is a test
-    'this is a test
-
 End Class
