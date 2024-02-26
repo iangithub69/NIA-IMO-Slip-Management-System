@@ -286,7 +286,7 @@ Partial Class Form2
         ' 
         ' TextBox9
         ' 
-        TextBox9.Font = New Font("Segoe UI", 12.0F, FontStyle.Bold, GraphicsUnit.Point)
+        TextBox9.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
         TextBox9.Location = New Point(212, 427)
         TextBox9.Name = "TextBox9"
         TextBox9.Size = New Size(1674, 50)
@@ -306,7 +306,7 @@ Partial Class Form2
         ' 
         ' TextBox10
         ' 
-        TextBox10.Font = New Font("Segoe UI", 12.0F, FontStyle.Bold, GraphicsUnit.Point)
+        TextBox10.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
         TextBox10.Location = New Point(212, 508)
         TextBox10.Name = "TextBox10"
         TextBox10.Size = New Size(1674, 50)
@@ -314,7 +314,7 @@ Partial Class Form2
         ' 
         ' Button1
         ' 
-        Button1.Font = New Font("Segoe UI", 12.0F, FontStyle.Regular, GraphicsUnit.Point)
+        Button1.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point)
         Button1.ForeColor = Color.Maroon
         Button1.Location = New Point(210, 618)
         Button1.Name = "Button1"
@@ -325,7 +325,7 @@ Partial Class Form2
         ' 
         ' Button2
         ' 
-        Button2.Font = New Font("Segoe UI", 12.0F, FontStyle.Regular, GraphicsUnit.Point)
+        Button2.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point)
         Button2.ForeColor = Color.Maroon
         Button2.Location = New Point(441, 618)
         Button2.Name = "Button2"
@@ -336,7 +336,7 @@ Partial Class Form2
         ' 
         ' Button3
         ' 
-        Button3.Font = New Font("Segoe UI", 12.0F, FontStyle.Regular, GraphicsUnit.Point)
+        Button3.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point)
         Button3.ForeColor = Color.Maroon
         Button3.Location = New Point(212, 702)
         Button3.Name = "Button3"
@@ -347,7 +347,7 @@ Partial Class Form2
         ' 
         ' Button4
         ' 
-        Button4.Font = New Font("Segoe UI", 12.0F, FontStyle.Regular, GraphicsUnit.Point)
+        Button4.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point)
         Button4.ForeColor = Color.Maroon
         Button4.Location = New Point(677, 700)
         Button4.Name = "Button4"
@@ -358,7 +358,7 @@ Partial Class Form2
         ' 
         ' Button5
         ' 
-        Button5.Font = New Font("Segoe UI", 12.0F, FontStyle.Regular, GraphicsUnit.Point)
+        Button5.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point)
         Button5.ForeColor = Color.Maroon
         Button5.Location = New Point(677, 618)
         Button5.Name = "Button5"
@@ -370,7 +370,7 @@ Partial Class Form2
         ' ComboBox2
         ' 
         ComboBox2.DropDownStyle = ComboBoxStyle.DropDownList
-        ComboBox2.Font = New Font("Segoe UI", 12.0F, FontStyle.Bold, GraphicsUnit.Point)
+        ComboBox2.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
         ComboBox2.FormattingEnabled = True
         ComboBox2.Location = New Point(992, 616)
         ComboBox2.Name = "ComboBox2"
@@ -380,7 +380,7 @@ Partial Class Form2
         ' ComboBox3
         ' 
         ComboBox3.DropDownStyle = ComboBoxStyle.DropDownList
-        ComboBox3.Font = New Font("Segoe UI", 12.0F, FontStyle.Bold, GraphicsUnit.Point)
+        ComboBox3.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
         ComboBox3.FormattingEnabled = True
         ComboBox3.Location = New Point(992, 702)
         ComboBox3.Name = "ComboBox3"
@@ -390,7 +390,7 @@ Partial Class Form2
         ' ComboBox4
         ' 
         ComboBox4.DropDownStyle = ComboBoxStyle.DropDownList
-        ComboBox4.Font = New Font("Segoe UI", 12.0F, FontStyle.Bold, GraphicsUnit.Point)
+        ComboBox4.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
         ComboBox4.FormattingEnabled = True
         ComboBox4.Location = New Point(1450, 594)
         ComboBox4.Name = "ComboBox4"
@@ -400,7 +400,7 @@ Partial Class Form2
         ' ComboBox5
         ' 
         ComboBox5.DropDownStyle = ComboBoxStyle.DropDownList
-        ComboBox5.Font = New Font("Segoe UI", 12.0F, FontStyle.Bold, GraphicsUnit.Point)
+        ComboBox5.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
         ComboBox5.FormattingEnabled = True
         ComboBox5.Location = New Point(1450, 669)
         ComboBox5.Name = "ComboBox5"
@@ -410,7 +410,7 @@ Partial Class Form2
         ' ComboBox6
         ' 
         ComboBox6.DropDownStyle = ComboBoxStyle.DropDownList
-        ComboBox6.Font = New Font("Segoe UI", 12.0F, FontStyle.Bold, GraphicsUnit.Point)
+        ComboBox6.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
         ComboBox6.FormattingEnabled = True
         ComboBox6.Location = New Point(1450, 742)
         ComboBox6.Name = "ComboBox6"
@@ -449,7 +449,7 @@ Partial Class Form2
         ' 
         ' Form2
         ' 
-        AutoScaleDimensions = New SizeF(13.0F, 32.0F)
+        AutoScaleDimensions = New SizeF(13F, 32F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.FromArgb(CByte(209), CByte(205), CByte(185))
         ClientSize = New Size(1934, 827)
