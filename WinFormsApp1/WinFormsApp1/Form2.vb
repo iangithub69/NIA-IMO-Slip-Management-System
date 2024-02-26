@@ -27,7 +27,6 @@ Public Class Form2
         Return words.Trim()
     End Function
 
-
     Private Function ConvertToWordsHelper(ByVal value As Decimal) As String
         ' Define arrays for Philippine Peso words
         Dim ones() As String = {"", "ONE", "TWO", "THREE", "FOUR", "FIVE", "SIX", "SEVEN", "EIGHT", "NINE"}
@@ -43,20 +42,49 @@ Public Class Form2
         ElseIf value < 20 Then
             words = teens(value - 10)
         ElseIf value < 100 Then
-            words = tens(value \ 10) & " " & ones(value Mod 10)
+            Dim tensPlace As Integer = value \ 10
+            Dim onesPlace As Integer = value Mod 10
+            If onesPlace = 0 Then
+                words = tens(tensPlace)
+            Else
+                words = tens(tensPlace) & " " & ones(onesPlace)
+            End If
         ElseIf value < 1000 Then
-            words = ones(value \ 100) & " HUNDRED " & ConvertToWordsHelper(value Mod 100)
+            Dim hundredsPlace As Integer = value \ 100
+            Dim remainder As Integer = value Mod 100
+            If remainder = 0 Then
+                words = ones(hundredsPlace) & " HUNDRED"
+            Else
+                words = ones(hundredsPlace) & " HUNDRED " & ConvertToWordsHelper(remainder)
+            End If
         ElseIf value < 1000000 Then
-            words = ConvertToWordsHelper(value \ 1000) & " THOUSAND " & ConvertToWordsHelper(value Mod 1000)
+            Dim thousandsPlace As Integer = value \ 1000
+            Dim remainder As Integer = value Mod 1000
+            If remainder = 0 Then
+                words = ConvertToWordsHelper(thousandsPlace) & " THOUSAND"
+            Else
+                words = ConvertToWordsHelper(thousandsPlace) & " THOUSAND " & ConvertToWordsHelper(remainder)
+            End If
         ElseIf value < 1000000000 Then
-            words = ConvertToWordsHelper(value \ 1000000) & " MILLION " & ConvertToWordsHelper(value Mod 1000000)
+            Dim millionsPlace As Integer = value \ 1000000
+            Dim remainder As Integer = value Mod 1000000
+            If remainder = 0 Then
+                words = ConvertToWordsHelper(millionsPlace) & " MILLION"
+            Else
+                words = ConvertToWordsHelper(millionsPlace) & " MILLION " & ConvertToWordsHelper(remainder)
+            End If
         Else
-            words = ConvertToWordsHelper(value \ 1000000000) & " BILLION " & ConvertToWordsHelper(value Mod 1000000000)
+            Dim billionsPlace As Integer = value \ 1000000000
+            Dim remainder As Integer = value Mod 1000000000
+            If remainder = 0 Then
+                words = ConvertToWordsHelper(billionsPlace) & " BILLION"
+            Else
+                words = ConvertToWordsHelper(billionsPlace) & " BILLION " & ConvertToWordsHelper(remainder)
+            End If
         End If
 
         Return words.Trim()
     End Function
-
 
 
     Private Sub Form2_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -196,8 +224,22 @@ Public Class Form2
     End Sub
 
     Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
-        Form2_B.Show()
+        ' Instantiate Form2_B
+        Dim form2 As New Form2_B()
 
+        ' Set the values of labels in Form2_B
+        form2.Label1Text = TextBox5.Text
+        form2.Label2Text = TextBox8.Text
+        form2.Label3Text = TextBox9.Text
+        form2.Label4Text = TextBox10.Text
+        form2.Label5Text = ComboBox2.Text
+        form2.Label6Text = ComboBox3.Text
+        form2.Label7Text = ComboBox4.Text
+        form2.Label8Text = ComboBox5.Text
+        form2.Label9Text = ComboBox6.Text
+
+        ' Show Form2_B
+        form2.Show()
     End Sub
 
     Private Sub TextBox4_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TextBox4.KeyPress
@@ -297,5 +339,7 @@ Public Class Form2
 
     End Sub
 
+    Private Sub TextBox8_TextChanged(sender As Object, e As EventArgs) Handles TextBox8.TextChanged
 
+    End Sub
 End Class
