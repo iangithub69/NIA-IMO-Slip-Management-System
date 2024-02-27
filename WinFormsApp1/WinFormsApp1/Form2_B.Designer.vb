@@ -51,7 +51,7 @@ Partial Class Form2_B
         ' 
         Label1.AutoSize = True
         Label1.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
-        Label1.Location = New Point(1411, 172)
+        Label1.Location = New Point(1443, 120)
         Label1.Name = "Label1"
         Label1.Size = New Size(90, 45)
         Label1.TabIndex = 38
@@ -61,7 +61,7 @@ Partial Class Form2_B
         ' 
         Label2.AutoSize = True
         Label2.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
-        Label2.Location = New Point(1377, 217)
+        Label2.Location = New Point(1409, 165)
         Label2.Name = "Label2"
         Label2.Size = New Size(142, 45)
         Label2.TabIndex = 39
@@ -71,7 +71,7 @@ Partial Class Form2_B
         ' 
         Label3.AutoSize = True
         Label3.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
-        Label3.Location = New Point(303, 336)
+        Label3.Location = New Point(304, 320)
         Label3.Name = "Label3"
         Label3.Size = New Size(122, 45)
         Label3.TabIndex = 40
@@ -81,7 +81,7 @@ Partial Class Form2_B
         ' 
         Label4.AutoSize = True
         Label4.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
-        Label4.Location = New Point(303, 392)
+        Label4.Location = New Point(304, 388)
         Label4.Name = "Label4"
         Label4.Size = New Size(104, 45)
         Label4.TabIndex = 41
@@ -91,7 +91,7 @@ Partial Class Form2_B
         ' 
         Label5.AutoSize = True
         Label5.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
-        Label5.Location = New Point(1047, 581)
+        Label5.Location = New Point(957, 542)
         Label5.Name = "Label5"
         Label5.Size = New Size(226, 45)
         Label5.TabIndex = 42
@@ -101,7 +101,7 @@ Partial Class Form2_B
         ' 
         Label6.AutoSize = True
         Label6.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
-        Label6.Location = New Point(1046, 626)
+        Label6.Location = New Point(956, 587)
         Label6.Name = "Label6"
         Label6.Size = New Size(227, 45)
         Label6.TabIndex = 43
@@ -111,7 +111,7 @@ Partial Class Form2_B
         ' 
         Label7.AutoSize = True
         Label7.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
-        Label7.Location = New Point(1401, 527)
+        Label7.Location = New Point(1373, 515)
         Label7.Name = "Label7"
         Label7.Size = New Size(219, 45)
         Label7.TabIndex = 44
@@ -121,7 +121,7 @@ Partial Class Form2_B
         ' 
         Label8.AutoSize = True
         Label8.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
-        Label8.Location = New Point(1401, 572)
+        Label8.Location = New Point(1373, 560)
         Label8.Name = "Label8"
         Label8.Size = New Size(227, 45)
         Label8.TabIndex = 45
@@ -131,7 +131,7 @@ Partial Class Form2_B
         ' 
         Label9.AutoSize = True
         Label9.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
-        Label9.Location = New Point(1457, 626)
+        Label9.Location = New Point(1429, 614)
         Label9.Name = "Label9"
         Label9.Size = New Size(124, 45)
         Label9.TabIndex = 46
@@ -153,17 +153,17 @@ Partial Class Form2_B
         AutoScaleDimensions = New SizeF(13F, 32F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(1934, 827)
-        Controls.Add(Button5)
+        Controls.Add(Label1)
+        Controls.Add(Label2)
         Controls.Add(Label9)
+        Controls.Add(Label3)
         Controls.Add(Label8)
+        Controls.Add(Button5)
+        Controls.Add(Label4)
         Controls.Add(Label7)
+        Controls.Add(PictureBox1)
         Controls.Add(Label6)
         Controls.Add(Label5)
-        Controls.Add(Label4)
-        Controls.Add(Label3)
-        Controls.Add(Label2)
-        Controls.Add(Label1)
-        Controls.Add(PictureBox1)
         FormBorderStyle = FormBorderStyle.None
         Name = "Form2_B"
         StartPosition = FormStartPosition.CenterScreen

@@ -93,28 +93,28 @@ Public Class Form2_B
     End Sub
 
     Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
-        ' Create PrintDocument instance
+        ' create printdocument instance
         Dim pd As New PrintDocument
 
-        ' Set printer settings
-        pd.DefaultPageSettings.PrinterSettings.PrinterName = "EPSON TM-H6000IV Slip"
-        pd.DefaultPageSettings.PaperSize = New PaperSize("Custom", Convert.ToInt32(6.25 * 100), Convert.ToInt32(2.75 * 100)) ' Size in hundredths of an inch (600 x 275)
+        ' set printer settings
+        pd.DefaultPageSettings.PrinterSettings.PrinterName = "epson tm-h6000iv slip"
+        pd.DefaultPageSettings.PaperSize = New PaperSize("custom", Convert.ToInt32(6.25 * 100), Convert.ToInt32(2.75 * 100)) ' size in hundredths of an inch (600 x 275)
 
-        ' Add PrintPage event handler
+        ' add printpage event handler
         AddHandler pd.PrintPage, AddressOf PrintContent
 
-        ' Start printing
+        ' start printing
         pd.Print()
     End Sub
 
     Private Sub PrintContent(sender As Object, e As PrintPageEventArgs)
         ' Define font and brush for drawing
-        Dim font As New Font("Arial", 12)
+        Dim font As New Font("Arial", 10)
         Dim brush As New SolidBrush(Color.Black)
 
         ' Define positions for labels
-        Dim x As Single = 100 ' Adjust the x position based on your layout
-        Dim y As Single = 250 ' Adjust the starting y position
+        Dim x As Single = 110 ' Adjust the x position based on your layout
+        Dim y As Single = 300 ' Adjust the starting y position
         Dim lineHeight As Single = font.GetHeight()
 
         ' Save the current graphics state to restore it later
@@ -126,7 +126,7 @@ Public Class Form2_B
         ' Translate to adjust for the rotation (swap width and height)
         e.Graphics.TranslateTransform(0, -e.PageBounds.Width)
 
-        ' Draw labels on the page
+        ' Draw labels on the page with adjusted layout
         e.Graphics.DrawString(Label1.Text, font, brush, x, y)
         y += lineHeight
         e.Graphics.DrawString(Label2.Text, font, brush, x, y)
@@ -148,6 +148,5 @@ Public Class Form2_B
         ' Restore the graphics state to its original settings
         e.Graphics.Restore(oldState)
     End Sub
-
 
 End Class
