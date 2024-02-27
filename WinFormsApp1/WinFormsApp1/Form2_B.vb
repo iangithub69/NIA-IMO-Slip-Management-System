@@ -94,7 +94,7 @@ Public Class Form2_B
 
     Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
         ' Create PrintDocument instance
-        Dim pd As New PrintDocument()
+        Dim pd As New PrintDocument
 
         ' Set printer settings
         pd.DefaultPageSettings.PrinterSettings.PrinterName = "EPSON TM-H6000IV Slip"
@@ -113,9 +113,18 @@ Public Class Form2_B
         Dim brush As New SolidBrush(Color.Black)
 
         ' Define positions for labels
-        Dim x As Single = 10
-        Dim y As Single = 10
+        Dim x As Single = 100 ' Adjust the x position based on your layout
+        Dim y As Single = 250 ' Adjust the starting y position
         Dim lineHeight As Single = font.GetHeight()
+
+        ' Save the current graphics state to restore it later
+        Dim oldState As Drawing2D.GraphicsState = e.Graphics.Save()
+
+        ' Rotate the graphics context 90 degrees clockwise
+        e.Graphics.RotateTransform(90)
+
+        ' Translate to adjust for the rotation (swap width and height)
+        e.Graphics.TranslateTransform(0, -e.PageBounds.Width)
 
         ' Draw labels on the page
         e.Graphics.DrawString(Label1.Text, font, brush, x, y)
@@ -135,6 +144,10 @@ Public Class Form2_B
         e.Graphics.DrawString(Label8.Text, font, brush, x, y)
         y += lineHeight
         e.Graphics.DrawString(Label9.Text, font, brush, x, y)
+
+        ' Restore the graphics state to its original settings
+        e.Graphics.Restore(oldState)
     End Sub
+
 
 End Class
