@@ -1,5 +1,7 @@
 ﻿
 Imports System.Drawing.Printing
+Imports System.Windows.Forms.PrintPreviewDialog
+
 Public Class Form2_B
 
     Public Property Label1Text As String
@@ -148,5 +150,7 @@ Public Class Form2_B
         ' Restore the graphics state to its original settings
         e.Graphics.Restore(oldState)
     End Sub
+
+
 
 End Class
