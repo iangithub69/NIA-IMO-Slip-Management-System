@@ -128,28 +128,56 @@ Public Class Form2_B
         ' Translate to adjust for the rotation (swap width and height)
         e.Graphics.TranslateTransform(0, -e.PageBounds.Width)
 
-        ' Draw labels on the page with adjusted layout
-        e.Graphics.DrawString(Label1.Text, font, brush, x, y)
+        Dim label1X As Single = 600 ' Adjust x coordinate for Label1
+        Dim label1Y As Single = 300 ' Adjust y coordinate for Label1 /date
+        e.Graphics.DrawString(Label1.Text, font, brush, label1X, label1Y)
         y += lineHeight
-        e.Graphics.DrawString(Label2.Text, font, brush, x, y)
+        ' Adjust x and y coordinates for Label2
+        Dim label2X As Single = 600 ' Adjust x coordinate for Label2
+        Dim label2Y As Single = 330 ' Adjust y coordinate for Label2 /amount
+        e.Graphics.DrawString(Label2.Text, font, brush, label2X, label2Y)
         y += lineHeight
-        e.Graphics.DrawString(Label3.Text, font, brush, x, y)
+        ' Adjust x and y coordinates for Label3
+        Dim label3X As Single = 100 ' Adjust x coordinate for Label3
+        Dim label3Y As Single = 380 ' Adjust y coordinate for Label3 /pay to
+        e.Graphics.DrawString(Label3.Text, font, brush, label3X, label3Y)
         y += lineHeight
-        e.Graphics.DrawString(Label4.Text, font, brush, x, y)
+
+        Dim label4X As Single = 70 ' Adjust x coordinate for Label3
+        Dim label4Y As Single = 400 ' Adjust y coordinate for Label3 /pesos
+        e.Graphics.DrawString(Label4.Text, font, brush, label4X, label4Y)
         y += lineHeight
-        e.Graphics.DrawString(Label5.Text, font, brush, x, y)
+
+        Dim label5X As Single = 410 ' Adjust x coordinate for Label3
+        Dim label5Y As Single = 505 ' Adjust y coordinate for Label3 /cashier name
+        e.Graphics.DrawString(Label5.Text, font, brush, label5X, label5Y)
         y += lineHeight
-        e.Graphics.DrawString(Label6.Text, font, brush, x, y)
+
+        Dim label6X As Single = 430 ' Adjust x coordinate for Label3
+        Dim label6Y As Single = 520 ' Adjust y coordinate for Label3 /cashier designation
+        e.Graphics.DrawString(Label6.Text, font, brush, label6X, label6Y)
         y += lineHeight
-        e.Graphics.DrawString(Label7.Text, font, brush, x, y)
+
+        Dim label7x As Single = 600 ' adjust x coordinate for label3
+        Dim label7y As Single = 505 ' adjust y coordinate for label3 / officer name
+        e.Graphics.DrawString(Label7.Text, font, brush, label7x, label7y)
         y += lineHeight
-        e.Graphics.DrawString(Label8.Text, font, brush, x, y)
+
+        Dim label8X As Single = 600 ' Adjust x coordinate for Label3
+        Dim label8Y As Single = 520 ' Adjust y coordinate for Label3 / designation
+        e.Graphics.DrawString(Label8.Text, font, brush, label8X, label8Y)
         y += lineHeight
-        e.Graphics.DrawString(Label9.Text, font, brush, x, y)
+
+        Dim label9X As Single = 600 ' Adjust x coordinate for Label3
+        Dim label9Y As Single = 540 ' Adjust y coordinate for Label3 branch
+        e.Graphics.DrawString(Label9.Text, font, brush, label9X, label9Y)
+        y += lineHeight
+        ' Repeat for the remaining labels, adjusting x and y coordinates as needed
 
         ' Restore the graphics state to its original settings
         e.Graphics.Restore(oldState)
     End Sub
+
 
 
 
