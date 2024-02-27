@@ -1,4 +1,6 @@
-﻿Public Class Form2_B
+﻿
+Imports System.Drawing.Printing
+Public Class Form2_B
 
     Public Property Label1Text As String
         Get
@@ -89,4 +91,50 @@
     Private Sub Form2_B_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
     End Sub
+
+    Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
+        ' Create PrintDocument instance
+        Dim pd As New PrintDocument()
+
+        ' Set printer settings
+        pd.DefaultPageSettings.PrinterSettings.PrinterName = "EPSON TM-H6000IV Slip"
+        pd.DefaultPageSettings.PaperSize = New PaperSize("Custom", Convert.ToInt32(6.25 * 100), Convert.ToInt32(2.75 * 100)) ' Size in hundredths of an inch (600 x 275)
+
+        ' Add PrintPage event handler
+        AddHandler pd.PrintPage, AddressOf PrintContent
+
+        ' Start printing
+        pd.Print()
+    End Sub
+
+    Private Sub PrintContent(sender As Object, e As PrintPageEventArgs)
+        ' Define font and brush for drawing
+        Dim font As New Font("Arial", 12)
+        Dim brush As New SolidBrush(Color.Black)
+
+        ' Define positions for labels
+        Dim x As Single = 10
+        Dim y As Single = 10
+        Dim lineHeight As Single = font.GetHeight()
+
+        ' Draw labels on the page
+        e.Graphics.DrawString(Label1.Text, font, brush, x, y)
+        y += lineHeight
+        e.Graphics.DrawString(Label2.Text, font, brush, x, y)
+        y += lineHeight
+        e.Graphics.DrawString(Label3.Text, font, brush, x, y)
+        y += lineHeight
+        e.Graphics.DrawString(Label4.Text, font, brush, x, y)
+        y += lineHeight
+        e.Graphics.DrawString(Label5.Text, font, brush, x, y)
+        y += lineHeight
+        e.Graphics.DrawString(Label6.Text, font, brush, x, y)
+        y += lineHeight
+        e.Graphics.DrawString(Label7.Text, font, brush, x, y)
+        y += lineHeight
+        e.Graphics.DrawString(Label8.Text, font, brush, x, y)
+        y += lineHeight
+        e.Graphics.DrawString(Label9.Text, font, brush, x, y)
+    End Sub
+
 End Class

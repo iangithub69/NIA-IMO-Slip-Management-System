@@ -33,6 +33,7 @@ Partial Class Form2_B
         Label7 = New Label()
         Label8 = New Label()
         Label9 = New Label()
+        Button5 = New Button()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
@@ -136,11 +137,23 @@ Partial Class Form2_B
         Label9.TabIndex = 46
         Label9.Text = "Branch"
         ' 
+        ' Button5
+        ' 
+        Button5.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point)
+        Button5.ForeColor = Color.Maroon
+        Button5.Location = New Point(12, 761)
+        Button5.Name = "Button5"
+        Button5.Size = New Size(268, 54)
+        Button5.TabIndex = 47
+        Button5.Text = "Print Check"
+        Button5.UseVisualStyleBackColor = True
+        ' 
         ' Form2_B
         ' 
         AutoScaleDimensions = New SizeF(13F, 32F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(1934, 827)
+        Controls.Add(Button5)
         Controls.Add(Label9)
         Controls.Add(Label8)
         Controls.Add(Label7)
@@ -170,4 +183,5 @@ Partial Class Form2_B
     Friend WithEvents Label7 As Label
     Friend WithEvents Label8 As Label
     Friend WithEvents Label9 As Label
+    Friend WithEvents Button5 As Button
 End Class
