@@ -2,6 +2,9 @@
 Imports System.Data.SqlClient
 Imports MySql.Data.MySqlClient
 Imports System.Windows.Forms.VisualStyles.VisualStyleElement
+Imports Org.BouncyCastle.Asn1.Tsp
+Imports System.Windows.Forms.VisualStyles
+Imports System.Windows.Forms.ComboBox
 
 Public Class Form2
 
@@ -99,115 +102,53 @@ Public Class Form2
         ComboBox5.Items.Clear()
         ComboBox6.Items.Clear()
 
-        ' SQL query to select data from the desired column
-        'account_types''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
-        Dim sql As String = "SELECT account_name FROM account_types"
-
-        'tillers''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
-        Dim sql2 As String = "SELECT tiller_name FROM tillers"
-        Dim sql3 As String = "SELECT description FROM tillers"
-
-        'officers'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
-        Dim sql4 As String = "SELECT officer_name FROM officers"
-        Dim sql5 As String = "SELECT description FROM officers"
-        Dim sql6 As String = "SELECT branch FROM officers"
-
-        ' Execute the query
-        'account_types''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
-        Try
-            cmd = New MySqlCommand(sql, cn)
-            dr = cmd.ExecuteReader()
-
-            ' Read each row and add the value to the ComboBox
-            While dr.Read()
-                ComboBox1.Items.Add(dr("account_name").ToString())
-            End While
-
-            ' Close the reader
-            dr.Close()
-        Catch ex As Exception
-            MsgBox(ex.Message)
-        End Try
-
-        'tillers''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
-        Try
-            cmd = New MySqlCommand(sql2, cn)
-            dr = cmd.ExecuteReader()
-
-            ' Read each row and add the value to the ComboBox
-            While dr.Read()
-                ComboBox2.Items.Add(dr("tiller_name").ToString())
-            End While
-
-            ' Close the reader
-            dr.Close()
-        Catch ex As Exception
-            MsgBox(ex.Message)
-        End Try
-
-        Try
-            cmd = New MySqlCommand(sql3, cn)
-            dr = cmd.ExecuteReader()
-
-            ' Read each row and add the value to the ComboBox
-            While dr.Read()
-                ComboBox3.Items.Add(dr("description").ToString())
-            End While
-
-            ' Close the reader
-            dr.Close()
-        Catch ex As Exception
-            MsgBox(ex.Message)
-        End Try
-
-        'officers'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
-        Try
-            cmd = New MySqlCommand(sql4, cn)
-            dr = cmd.ExecuteReader()
-
-            ' Read each row and add the value to the ComboBox
-            While dr.Read()
-                ComboBox4.Items.Add(dr("officer_name").ToString())
-            End While
-
-            ' Close the reader
-            dr.Close()
-        Catch ex As Exception
-            MsgBox(ex.Message)
-        End Try
-
-        Try
-            cmd = New MySqlCommand(sql5, cn)
-            dr = cmd.ExecuteReader()
-
-            ' Read each row and add the value to the ComboBox
-            While dr.Read()
-                ComboBox5.Items.Add(dr("description").ToString())
-            End While
-
-            ' Close the reader
-            dr.Close()
-        Catch ex As Exception
-            MsgBox(ex.Message)
-        End Try
-
-        Try
-            cmd = New MySqlCommand(sql6, cn)
-            dr = cmd.ExecuteReader()
-
-            ' Read each row and add the value to the ComboBox
-            While dr.Read()
-                ComboBox6.Items.Add(dr("branch").ToString())
-            End While
-
-            ' Close the reader
-            dr.Close()
-        Catch ex As Exception
-            MsgBox(ex.Message)
-        End Try
+        ' Populate ComboBoxes
+        PopulateComboBoxes()
 
         TextBox8.Text = "****"
         TextBox9.Text = "****"
+    End Sub
+
+    Private Sub PopulateComboBoxes()
+        ' SQL queries to select data from the desired columns
+        Dim sqlAccountTypes As String = "SELECT account_name FROM account_types"
+
+        Dim sqlTillers As String = "SELECT tiller_name FROM tillers"
+        Dim sqlTillerDesignation As String = "SELECT description FROM tillers"
+
+        Dim sqlOfficers As String = "SELECT officer_name FROM officers"
+        Dim sqlOfficerDesignation As String = "SELECT description FROM officers"
+        Dim sqlBranch As String = "SELECT branch FROM officers"
+
+        ' Add other SQL queries for ComboBox3, ComboBox5, ComboBox6 if needed
+
+        ' Execute queries and populate ComboBoxes
+        PopulateComboBox(sqlAccountTypes, ComboBox1)
+
+        PopulateComboBox(sqlTillers, ComboBox2)
+        PopulateComboBox(sqlTillerDesignation, ComboBox3)
+
+        PopulateComboBox(sqlOfficers, ComboBox4)
+        PopulateComboBox(sqlOfficerDesignation, ComboBox5)
+        PopulateComboBox(sqlBranch, ComboBox6)
+        ' Populate other ComboBoxes similarly
+    End Sub
+
+    Private Sub PopulateComboBox(query As String, comboBox As System.Windows.Forms.ComboBox)
+        Try
+            cmd = New MySqlCommand(query, cn)
+            dr = cmd.ExecuteReader()
+
+            ' Read each row and add the value to the ComboBox
+            While dr.Read()
+                comboBox.Items.Add(dr(0).ToString())
+            End While
+
+            ' Close the reader
+            dr.Close()
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        End Try
     End Sub
 
     Private Sub Form2_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
@@ -271,7 +212,7 @@ Public Class Form2
     Private Sub PictureBox8_Click(sender As Object, e As EventArgs) Handles PictureBox8.Click
         ' Get the current date and format it
         Dim currentDate As Date = Date.Now
-        Dim formattedDate As String = currentDate.ToString("MMMM dd yyyy")
+        Dim formattedDate As String = currentDate.ToString("mm    dd    yyyy")
 
         ' Set the formatted date to TextBox4
         TextBox5.Text = formattedDate
@@ -342,4 +283,59 @@ Public Class Form2
     Private Sub TextBox8_TextChanged(sender As Object, e As EventArgs) Handles TextBox8.TextChanged
 
     End Sub
+
+    Private Sub TextBox4_TextChanged(sender As Object, e As EventArgs) Handles TextBox4.TextChanged
+
+    End Sub
+
+    Private Sub TextBox5_TextChanged(sender As Object, e As EventArgs) Handles TextBox5.TextChanged
+
+    End Sub
+
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        ' Connect to the database
+        connecttodb()
+
+        ' Insert data into the database
+        Dim sqlInsert As String = "INSERT INTO details (check_no, account_no, account_name, date, amount, pay_to, pesos, cashier_name, cashier_designation, officer_name, officer_designation, branch) VALUES (@check_no, @account_no, @account_name, @date, @amount, @pay_to, @pesos, @cashier_name, @cashier_designation, @officer_name, @officer_designation, @branch)"
+
+        Try
+            Using cmd As New MySqlCommand(sqlInsert, cn)
+                ' Set parameters for the database insertion
+                With cmd.Parameters
+                    .AddWithValue("@check_no", TextBox4.Text)
+                    .AddWithValue("@account_no", TextBox2.Text)
+                    .AddWithValue("@account_name", TextBox3.Text)
+                    .AddWithValue("@date", TextBox5.Text)
+                    .AddWithValue("@amount", TextBox8.Text)
+                    .AddWithValue("@pay_to", TextBox9.Text)
+                    .AddWithValue("@pesos", TextBox10.Text)
+                    .AddWithValue("@cashier_name", ComboBox2.Text)
+                    .AddWithValue("@cashier_designation", ComboBox3.Text)
+                    .AddWithValue("@officer_name", ComboBox4.Text)
+                    .AddWithValue("@officer_designation", ComboBox5.Text)
+                    .AddWithValue("@branch", ComboBox6.Text)
+                End With
+
+                ' Execute the database insertion
+                cmd.ExecuteNonQuery()
+            End Using
+        Catch ex As Exception
+            MsgBox("Error inserting data: " & ex.Message)
+        Finally
+            ' Close database connections
+            cn.Close()
+        End Try
+    End Sub
+
+    Private Sub connecttodb()
+        Try
+            If cn.State = ConnectionState.Closed Then
+                cn.Open()
+            End If
+        Catch ex As Exception
+            MsgBox("Error connecting to database: " & ex.Message)
+        End Try
+    End Sub
+
 End Class
