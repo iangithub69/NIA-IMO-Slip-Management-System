@@ -16,7 +16,11 @@ Imports System.Reflection
 <Assembly: System.Reflection.AssemblyCompanyAttribute("WinFormsApp1"),  _
  Assembly: System.Reflection.AssemblyConfigurationAttribute("Debug"),  _
  Assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0"),  _
+<<<<<<< HEAD
  Assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+07760aa19fd7c3d738850dc1dc15bafeddcf0362"),  _
+=======
+ Assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+11de263d9310afa4d7e61ba0bbb697312dbab458"),  _
+>>>>>>> parent of 07760aa (update)
  Assembly: System.Reflection.AssemblyProductAttribute("WinFormsApp1"),  _
  Assembly: System.Reflection.AssemblyTitleAttribute("WinFormsApp1"),  _
  Assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0"),  _
