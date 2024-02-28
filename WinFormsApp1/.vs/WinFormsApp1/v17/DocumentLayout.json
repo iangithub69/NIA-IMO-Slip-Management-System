@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "C:\\Users\\user\\Documents\\GitHub\\NIA-IMO-Slip-Management-System\\WinFormsApp1\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{E1BCE070-5645-4218-8AD4-A903AF3883CC}|WinFormsApp1\\WinFormsApp1.vbproj|C:\\Users\\user\\Documents\\GitHub\\NIA-IMO-Slip-Management-System\\WinFormsApp1\\winformsapp1\\form2.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{E1BCE070-5645-4218-8AD4-A903AF3883CC}|WinFormsApp1\\WinFormsApp1.vbproj|solutionrelative:winformsapp1\\form2.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1BCE070-5645-4218-8AD4-A903AF3883CC}|WinFormsApp1\\WinFormsApp1.vbproj|C:\\Users\\user\\Documents\\GitHub\\NIA-IMO-Slip-Management-System\\WinFormsApp1\\winformsapp1\\form2.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{E1BCE070-5645-4218-8AD4-A903AF3883CC}|WinFormsApp1\\WinFormsApp1.vbproj|solutionrelative:winformsapp1\\form2.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{E1BCE070-5645-4218-8AD4-A903AF3883CC}|WinFormsApp1\\WinFormsApp1.vbproj|c:\\users\\user\\documents\\github\\nia-imo-slip-management-system\\winformsapp1\\winformsapp1\\form2_b.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
       "RelativeMoniker": "D:0:0:{E1BCE070-5645-4218-8AD4-A903AF3883CC}|WinFormsApp1\\WinFormsApp1.vbproj|solutionrelative:winformsapp1\\form2_b.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
@@ -13,14 +21,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{E1BCE070-5645-4218-8AD4-A903AF3883CC}|WinFormsApp1\\WinFormsApp1.vbproj|C:\\Users\\user\\Documents\\GitHub\\NIA-IMO-Slip-Management-System\\WinFormsApp1\\winformsapp1\\form2.designer.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
       "RelativeMoniker": "D:0:0:{E1BCE070-5645-4218-8AD4-A903AF3883CC}|WinFormsApp1\\WinFormsApp1.vbproj|solutionrelative:winformsapp1\\form2.designer.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E1BCE070-5645-4218-8AD4-A903AF3883CC}|WinFormsApp1\\WinFormsApp1.vbproj|C:\\Users\\user\\Documents\\GitHub\\NIA-IMO-Slip-Management-System\\WinFormsApp1\\winformsapp1\\form2.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
-      "RelativeMoniker": "D:0:0:{E1BCE070-5645-4218-8AD4-A903AF3883CC}|WinFormsApp1\\WinFormsApp1.vbproj|solutionrelative:winformsapp1\\form2.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E1BCE070-5645-4218-8AD4-A903AF3883CC}|WinFormsApp1\\WinFormsApp1.vbproj|C:\\Users\\user\\Documents\\GitHub\\NIA-IMO-Slip-Management-System\\WinFormsApp1\\winformsapp1\\form2.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{E1BCE070-5645-4218-8AD4-A903AF3883CC}|WinFormsApp1\\WinFormsApp1.vbproj|solutionrelative:winformsapp1\\form2.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,24 +30,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Form2_B.vb",
               "DocumentMoniker": "C:\\Users\\user\\Documents\\GitHub\\NIA-IMO-Slip-Management-System\\WinFormsApp1\\WinFormsApp1\\Form2_B.vb",
               "RelativeDocumentMoniker": "WinFormsApp1\\Form2_B.vb",
               "ToolTip": "C:\\Users\\user\\Documents\\GitHub\\NIA-IMO-Slip-Management-System\\WinFormsApp1\\WinFormsApp1\\Form2_B.vb",
               "RelativeToolTip": "WinFormsApp1\\Form2_B.vb",
-              "ViewState": "AQIAAJQAAAAAAAAAAAAawKQAAAAAAAAA",
+              "ViewState": "AQIAAKMAAAAAAAAAAAAawKQAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
               "WhenOpened": "2024-02-26T07:14:33.525Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Form2_B.vb [Design]",
               "DocumentMoniker": "C:\\Users\\user\\Documents\\GitHub\\NIA-IMO-Slip-Management-System\\WinFormsApp1\\WinFormsApp1\\Form2_B.vb",
               "RelativeDocumentMoniker": "WinFormsApp1\\Form2_B.vb",
@@ -58,7 +58,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "Form2.Designer.vb",
               "DocumentMoniker": "C:\\Users\\user\\Documents\\GitHub\\NIA-IMO-Slip-Management-System\\WinFormsApp1\\WinFormsApp1\\Form2.Designer.vb",
               "RelativeDocumentMoniker": "WinFormsApp1\\Form2.Designer.vb",
@@ -66,30 +66,33 @@
               "RelativeToolTip": "WinFormsApp1\\Form2.Designer.vb",
               "ViewState": "AQIAAAIAAAAAAAAAAAAAwAEAAAACAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-02-23T07:14:00.299Z"
+              "WhenOpened": "2024-02-23T07:14:00.299Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "Form2.vb",
               "DocumentMoniker": "C:\\Users\\user\\Documents\\GitHub\\NIA-IMO-Slip-Management-System\\WinFormsApp1\\WinFormsApp1\\Form2.vb",
               "RelativeDocumentMoniker": "WinFormsApp1\\Form2.vb",
               "ToolTip": "C:\\Users\\user\\Documents\\GitHub\\NIA-IMO-Slip-Management-System\\WinFormsApp1\\WinFormsApp1\\Form2.vb",
               "RelativeToolTip": "WinFormsApp1\\Form2.vb",
-              "ViewState": "AQIAADkAAAAAAAAAAAAQwEkAAAA/AAAA",
+              "ViewState": "AQIAAEoBAAAAAAAAAAAEwFYBAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-02-23T06:47:10.483Z"
+              "WhenOpened": "2024-02-23T06:47:10.483Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "Form2.vb [Design]",
               "DocumentMoniker": "C:\\Users\\user\\Documents\\GitHub\\NIA-IMO-Slip-Management-System\\WinFormsApp1\\WinFormsApp1\\Form2.vb",
               "RelativeDocumentMoniker": "WinFormsApp1\\Form2.vb",
               "ToolTip": "C:\\Users\\user\\Documents\\GitHub\\NIA-IMO-Slip-Management-System\\WinFormsApp1\\WinFormsApp1\\Form2.vb [Design]",
               "RelativeToolTip": "WinFormsApp1\\Form2.vb [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-02-23T06:46:58.76Z"
+              "WhenOpened": "2024-02-23T06:46:58.76Z",
+              "EditorCaption": " [Design]"
             }
           ]
         }
