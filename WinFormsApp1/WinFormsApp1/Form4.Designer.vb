@@ -26,9 +26,11 @@ Partial Class Form4
         PictureBox1 = New PictureBox()
         PictureBox2 = New PictureBox()
         PictureBox3 = New PictureBox()
+        PictureBox4 = New PictureBox()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox2, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox3, ComponentModel.ISupportInitialize).BeginInit()
+        CType(PictureBox4, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
         ' PictureBox1
@@ -60,11 +62,24 @@ Partial Class Form4
         PictureBox3.TabIndex = 37
         PictureBox3.TabStop = False
         ' 
+        ' PictureBox4
+        ' 
+        PictureBox4.BackColor = Color.White
+        PictureBox4.Image = My.Resources.Resources.Screenshot_2024_02_29_161852
+        PictureBox4.Location = New Point(158, 94)
+        PictureBox4.Name = "PictureBox4"
+        PictureBox4.Size = New Size(422, 63)
+        PictureBox4.SizeMode = PictureBoxSizeMode.StretchImage
+        PictureBox4.TabIndex = 41
+        PictureBox4.TabStop = False
+        ' 
         ' Form4
         ' 
         AutoScaleDimensions = New SizeF(13F, 32F)
         AutoScaleMode = AutoScaleMode.Font
+        BackColor = Color.White
         ClientSize = New Size(1934, 827)
+        Controls.Add(PictureBox4)
         Controls.Add(PictureBox3)
         Controls.Add(PictureBox2)
         Controls.Add(PictureBox1)
@@ -75,10 +90,12 @@ Partial Class Form4
         CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
         CType(PictureBox2, ComponentModel.ISupportInitialize).EndInit()
         CType(PictureBox3, ComponentModel.ISupportInitialize).EndInit()
+        CType(PictureBox4, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
     End Sub
 
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents PictureBox2 As PictureBox
     Friend WithEvents PictureBox3 As PictureBox
+    Friend WithEvents PictureBox4 As PictureBox
 End Class
