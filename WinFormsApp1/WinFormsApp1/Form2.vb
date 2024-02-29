@@ -2,6 +2,10 @@
 Imports System.Data.SqlClient
 Imports MySql.Data.MySqlClient
 Imports System.Windows.Forms.VisualStyles.VisualStyleElement
+Imports Org.BouncyCastle.Asn1.Tsp
+Imports System.Windows.Forms.VisualStyles
+Imports Mysqlx
+Imports System.Windows.Forms
 
 Public Class Form2
 
@@ -87,135 +91,6 @@ Public Class Form2
     End Function
 
 
-    Private Sub Form2_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        ' Connect to the database
-        connecttodb()
-
-        ' Clear the ComboBox
-        ComboBox1.Items.Clear()
-        ComboBox2.Items.Clear()
-        ComboBox3.Items.Clear()
-        ComboBox4.Items.Clear()
-        ComboBox5.Items.Clear()
-        ComboBox6.Items.Clear()
-
-        ' SQL query to select data from the desired column
-        'account_types''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
-        Dim sql As String = "SELECT account_name FROM account_types"
-
-        'tillers''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
-        Dim sql2 As String = "SELECT tiller_name FROM tillers"
-        Dim sql3 As String = "SELECT description FROM tillers"
-
-        'officers'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
-        Dim sql4 As String = "SELECT officer_name FROM officers"
-        Dim sql5 As String = "SELECT description FROM officers"
-        Dim sql6 As String = "SELECT branch FROM officers"
-
-        ' Execute the query
-        'account_types''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
-        Try
-            cmd = New MySqlCommand(sql, cn)
-            dr = cmd.ExecuteReader()
-
-            ' Read each row and add the value to the ComboBox
-            While dr.Read()
-                ComboBox1.Items.Add(dr("account_name").ToString())
-            End While
-
-            ' Close the reader
-            dr.Close()
-        Catch ex As Exception
-            MsgBox(ex.Message)
-        End Try
-
-        'tillers''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
-        Try
-            cmd = New MySqlCommand(sql2, cn)
-            dr = cmd.ExecuteReader()
-
-            ' Read each row and add the value to the ComboBox
-            While dr.Read()
-                ComboBox2.Items.Add(dr("tiller_name").ToString())
-            End While
-
-            ' Close the reader
-            dr.Close()
-        Catch ex As Exception
-            MsgBox(ex.Message)
-        End Try
-
-        Try
-            cmd = New MySqlCommand(sql3, cn)
-            dr = cmd.ExecuteReader()
-
-            ' Read each row and add the value to the ComboBox
-            While dr.Read()
-                ComboBox3.Items.Add(dr("description").ToString())
-            End While
-
-            ' Close the reader
-            dr.Close()
-        Catch ex As Exception
-            MsgBox(ex.Message)
-        End Try
-
-        'officers'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
-        Try
-            cmd = New MySqlCommand(sql4, cn)
-            dr = cmd.ExecuteReader()
-
-            ' Read each row and add the value to the ComboBox
-            While dr.Read()
-                ComboBox4.Items.Add(dr("officer_name").ToString())
-            End While
-
-            ' Close the reader
-            dr.Close()
-        Catch ex As Exception
-            MsgBox(ex.Message)
-        End Try
-
-        Try
-            cmd = New MySqlCommand(sql5, cn)
-            dr = cmd.ExecuteReader()
-
-            ' Read each row and add the value to the ComboBox
-            While dr.Read()
-                ComboBox5.Items.Add(dr("description").ToString())
-            End While
-
-            ' Close the reader
-            dr.Close()
-        Catch ex As Exception
-            MsgBox(ex.Message)
-        End Try
-
-        Try
-            cmd = New MySqlCommand(sql6, cn)
-            dr = cmd.ExecuteReader()
-
-            ' Read each row and add the value to the ComboBox
-            While dr.Read()
-                ComboBox6.Items.Add(dr("branch").ToString())
-            End While
-
-            ' Close the reader
-            dr.Close()
-        Catch ex As Exception
-            MsgBox(ex.Message)
-        End Try
-
-        TextBox8.Text = "****"
-        TextBox9.Text = "****"
-    End Sub
-
-    Private Sub Form2_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
-        ' Check if the connection is open before closing it
-        If cn.State = ConnectionState.Open Then
-            cn.Close()
-        End If
-    End Sub
 
 
     Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
@@ -293,32 +168,6 @@ Public Class Form2
         End If
     End Sub
 
-    Private Sub ComboBox1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ComboBox1.SelectedIndexChanged
-        ' Retrieve the selected item from ComboBox
-        Dim selectedAccount As String = ComboBox1.SelectedItem.ToString()
-
-        ' SQL query to select all data for the selected account_name
-        Dim query As String = $"SELECT * FROM account_types WHERE account_name = '{selectedAccount}'"
-
-        ' Execute the query
-        Try
-            cmd = New MySqlCommand(query, cn)
-            dr = cmd.ExecuteReader()
-
-            ' Check if there are rows
-            If dr.Read() Then
-                ' Display data in TextBoxes
-                TextBox2.Text = dr("account_no").ToString() ' Replace "column1" with the actual column name
-                TextBox3.Text = dr("account_name").ToString() ' Replace "column2" with the actual column name
-                ' Add more TextBoxes as needed
-            End If
-
-            ' Close the reader
-            dr.Close()
-        Catch ex As Exception
-            MsgBox(ex.Message)
-        End Try
-    End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
 
@@ -344,6 +193,124 @@ Public Class Form2
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        Try
+            connecttodb()
+            Dim sql As String = "INSERT INTO details (check_no, account_no, account_name, date, amount, pay_to, pesos, cashier_name, cashier_designation, officer_name, officer_designation, branch) VALUES (@check_no, @account_no, @account_name, @date, @amount, @pay_to, @pesos, @cashier_name, @cashier_designation, @officer_name, @officer_designation, @branch)"
+            Dim cmd As New MySqlCommand(sql, cn)
 
+            With cmd
+                .Parameters.AddWithValue("@check_no", TextBox4.Text)
+                .Parameters.AddWithValue("@account_no", TextBox2.Text)
+                .Parameters.AddWithValue("@account_name", TextBox3.Text)
+                .Parameters.AddWithValue("@date", TextBox5.Text)
+                .Parameters.AddWithValue("@amount", TextBox8.Text)
+                .Parameters.AddWithValue("@pay_to", TextBox9.Text)
+                .Parameters.AddWithValue("@pesos", TextBox10.Text)
+                .Parameters.AddWithValue("@cashier_name", ComboBox2.Text)
+                .Parameters.AddWithValue("@cashier_designation", ComboBox3.Text)
+                .Parameters.AddWithValue("@officer_name", ComboBox4.Text)
+                .Parameters.AddWithValue("@officer_designation", ComboBox5.Text)
+                .Parameters.AddWithValue("@branch", ComboBox6.Text)
+
+                .ExecuteNonQuery()
+            End With
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        Finally
+            cmd.Dispose()
+            cn.Close()
+        End Try
+    End Sub
+
+
+    Private Sub Form2_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        TextBox8.Text = "****"
+        TextBox9.Text = "****"
+    End Sub
+
+    Private Sub Form2_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
+        ' Check if the connection is open before closing it
+        If cn.State = ConnectionState.Open Then
+            cn.Close()
+        End If
+    End Sub
+
+    Private Sub ComboBox1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ComboBox1.SelectedIndexChanged
+        Dim selectedAccount As String = ComboBox1.SelectedItem.ToString()
+        Dim query As String = "SELECT * FROM account_types WHERE account_name = @account_name"
+
+        Try
+            connecttodb()
+            cmd = New MySqlCommand(query, cn)
+            cmd.Parameters.AddWithValue("@account_name", selectedAccount)
+            dr = cmd.ExecuteReader()
+
+            If dr.Read() Then
+                TextBox2.Text = dr("account_no").ToString()
+                TextBox3.Text = dr("account_name").ToString()
+                ' Add more TextBoxes as needed
+            End If
+
+            dr.Close()
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        Finally
+            cn.Close()
+        End Try
+    End Sub
+
+
+    Private Sub ComboBox1_DropDown(sender As Object, e As EventArgs) Handles ComboBox1.DropDown
+        Try
+            ' Connect to the database
+            connecttodb()
+
+            ' Clear all ComboBoxes
+            For Each cb As System.Windows.Forms.ComboBox In {ComboBox1, ComboBox2, ComboBox3, ComboBox4, ComboBox5, ComboBox6}
+                cb.Items.Clear()
+            Next
+
+            ' SQL queries for each ComboBox
+            Dim sqlQueries() As String = {
+            "SELECT account_name FROM account_types",
+            "SELECT tiller_name FROM tillers",
+            "SELECT description FROM tillers",
+            "SELECT officer_name FROM officers",
+            "SELECT description FROM officers",
+            "SELECT branch FROM officers"
+        }
+
+            ' Execute queries and populate ComboBoxes
+            For i As Integer = 0 To 5
+                Dim sql As String = sqlQueries(i)
+                cmd = New MySqlCommand(sql, cn)
+                dr = cmd.ExecuteReader()
+
+                While dr.Read()
+                    ' Add items to respective ComboBoxes
+                    Select Case i
+                        Case 0
+                            ComboBox1.Items.Add(dr("account_name").ToString())
+                        Case 1
+                            ComboBox2.Items.Add(dr("tiller_name").ToString())
+                        Case 2
+                            ComboBox3.Items.Add(dr("description").ToString())
+                        Case 3
+                            ComboBox4.Items.Add(dr("officer_name").ToString())
+                        Case 4
+                            ComboBox5.Items.Add(dr("description").ToString())
+                        Case 5
+                            ComboBox6.Items.Add(dr("branch").ToString())
+                    End Select
+                End While
+
+                dr.Close()
+            Next
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        Finally
+            ' Close the database connection
+            cn.Close()
+        End Try
     End Sub
 End Class
