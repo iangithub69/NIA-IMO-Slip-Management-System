@@ -149,29 +149,29 @@ Public Class Form2_B
         e.Graphics.DrawString(Label4.Text, font2, brush, label4X, label4Y)
         y += lineHeight
 
-        Dim label5X As Single = 370 ' Adjust x coordinate for Label3
-        Dim label5Y As Single = 450 ' Adjust y coordinate for Label3 /cashier name
-        e.Graphics.DrawString(Label5.Text, font, brush, label5X, label5Y)
+        Dim label5X As Single = 330 ' Adjust x coordinate for Label3
+        Dim label5Y As Single = 460 ' Adjust y coordinate for Label3 /cashier name
+        e.Graphics.DrawString(Label5.Text, font2, brush, label5X, label5Y)
         y += lineHeight
 
-        Dim label6X As Single = 370 ' Adjust x coordinate for Label3
-        Dim label6Y As Single = 473 ' Adjust y coordinate for Label3 /cashier designation
-        e.Graphics.DrawString(Label6.Text, font, brush, label6X, label6Y)
+        Dim label6X As Single = 330 ' Adjust x coordinate for Label3
+        Dim label6Y As Single = 477 ' Adjust y coordinate for Label3 /cashier designation
+        e.Graphics.DrawString(Label6.Text, font2, brush, label6X, label6Y)
         y += lineHeight
 
-        Dim label7x As Single = 570 ' adjust x coordinate for label3
-        Dim label7y As Single = 450 ' adjust y coordinate for label3 / officer name
-        e.Graphics.DrawString(Label7.Text, font, brush, label7x, label7y)
+        Dim label7x As Single = 530 ' adjust x coordinate for label3
+        Dim label7y As Single = 460 ' adjust y coordinate for label3 / officer name
+        e.Graphics.DrawString(Label7.Text, font2, brush, label7x, label7y)
         y += lineHeight
 
-        Dim label8X As Single = 570 ' Adjust x coordinate for Label3
-        Dim label8Y As Single = 473 ' Adjust y coordinate for Label3 / designation
-        e.Graphics.DrawString(Label8.Text, font, brush, label8X, label8Y)
+        Dim label8X As Single = 530 ' Adjust x coordinate for Label3
+        Dim label8Y As Single = 477 ' Adjust y coordinate for Label3 / designation
+        e.Graphics.DrawString(Label8.Text, font2, brush, label8X, label8Y)
         y += lineHeight
 
-        Dim label9X As Single = 570 ' Adjust x coordinate for Label3
-        Dim label9Y As Single = 500 ' Adjust y coordinate for Label3 branch
-        e.Graphics.DrawString(Label9.Text, font, brush, label9X, label9Y)
+        Dim label9X As Single = 530 ' Adjust x coordinate for Label3
+        Dim label9Y As Single = 498 ' Adjust y coordinate for Label3 branch
+        e.Graphics.DrawString(Label9.Text, font2, brush, label9X, label9Y)
         y += lineHeight
         ' Repeat for the remaining labels, adjusting x and y coordinates as needed
 
