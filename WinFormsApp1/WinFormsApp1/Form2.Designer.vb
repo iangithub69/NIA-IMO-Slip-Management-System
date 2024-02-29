@@ -102,6 +102,7 @@ Partial Class Form2
         TextBox1.Font = New Font("Segoe UI", 10.125F, FontStyle.Bold, GraphicsUnit.Point)
         TextBox1.Location = New Point(211, 145)
         TextBox1.Name = "TextBox1"
+        TextBox1.ReadOnly = True
         TextBox1.Size = New Size(200, 43)
         TextBox1.TabIndex = 3
         ' 
@@ -289,7 +290,7 @@ Partial Class Form2
         TextBox9.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
         TextBox9.Location = New Point(212, 427)
         TextBox9.Name = "TextBox9"
-        TextBox9.Size = New Size(1674, 50)
+        TextBox9.Size = New Size(1216, 50)
         TextBox9.TabIndex = 23
         ' 
         ' Label15
