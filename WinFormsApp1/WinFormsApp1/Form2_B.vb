@@ -111,8 +111,8 @@ Public Class Form2_B
 
     Private Sub PrintContent(sender As Object, e As PrintPageEventArgs)
         ' Define font and brush for drawing
-        Dim font As New Font("Arial", 10)
-        Dim font2 As New Font("Arial", 9)
+        Dim font As New Font("Epilogue", 10)
+        Dim font2 As New Font("Epilogue", 9)
         Dim brush As New SolidBrush(Color.Black)
 
         ' Define positions for labels
@@ -179,7 +179,8 @@ Public Class Form2_B
         e.Graphics.Restore(oldState)
     End Sub
 
+    Private Sub Button1_Click(sender As Object, e As EventArgs)
+        Close()
 
-
-
+    End Sub
 End Class
