@@ -103,6 +103,7 @@ Partial Class Form1
         Controls.Add(Button1)
         Controls.Add(PictureBox1)
         DoubleBuffered = True
+        MaximizeBox = False
         Name = "Form1"
         StartPosition = FormStartPosition.CenterScreen
         Text = "Form1"
