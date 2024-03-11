@@ -42,6 +42,8 @@ Public Class Form2_C
             Dim index As Integer = e.RowIndex
             Dim selectedRow As DataGridViewRow = DataGridView1.Rows(index)
 
+            Label1.Text = selectedRow.Cells(0).Value.ToString()
+
             TextBox1.Text = selectedRow.Cells(1).Value.ToString()
             TextBox2.Text = selectedRow.Cells(2).Value.ToString()
             TextBox3.Text = selectedRow.Cells(3).Value.ToString()
@@ -49,6 +51,51 @@ Public Class Form2_C
             TextBox4.Text = selectedRow.Cells(4).Value.ToString()
             TextBox5.Text = selectedRow.Cells(5).Value.ToString()
             TextBox6.Text = selectedRow.Cells(6).Value.ToString()
+
+            TextBox7.Text = selectedRow.Cells(7).Value.ToString()
         End If
+    End Sub
+
+    Private Sub TextBox1_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TextBox1.KeyPress
+        ' Check if the pressed key is a digit or control key (e.g., backspace)
+        If Not Char.IsDigit(e.KeyChar) AndAlso Not Char.IsControl(e.KeyChar) Then
+            ' If the pressed key is not a digit or control key, suppress it
+            e.Handled = True
+        End If
+    End Sub
+
+    Private Sub TextBox2_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TextBox2.KeyPress
+        ' Check if the pressed key is a digit or control key (e.g., backspace)
+        If Not Char.IsDigit(e.KeyChar) AndAlso Not Char.IsControl(e.KeyChar) Then
+            ' If the pressed key is not a digit or control key, suppress it
+            e.Handled = True
+        End If
+    End Sub
+
+
+    Private Sub TextBox5_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TextBox5.KeyPress
+        ' Check if the pressed key is a digit or control key (e.g., backspace)
+        If Not Char.IsDigit(e.KeyChar) AndAlso Not Char.IsControl(e.KeyChar) Then
+            ' If the pressed key is not a digit or control key, suppress it
+            e.Handled = True
+        End If
+    End Sub
+
+    Private Sub TextBox4_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TextBox4.KeyPress
+        ' Check if the pressed key is a digit or control key (e.g., backspace)
+        If Not Char.IsDigit(e.KeyChar) AndAlso Not Char.IsControl(e.KeyChar) Then
+            ' If the pressed key is not a digit or control key, suppress it
+            e.Handled = True
+        End If
+    End Sub
+
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        TextBox1.Clear()
+        TextBox2.Clear()
+        TextBox3.Clear()
+        TextBox4.Clear()
+        TextBox5.Clear()
+        TextBox6.Clear()
+        TextBox7.Clear()
     End Sub
 End Class

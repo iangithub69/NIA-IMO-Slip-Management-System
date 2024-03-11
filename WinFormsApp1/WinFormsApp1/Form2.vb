@@ -579,4 +579,5 @@ Public Class Form2
             cn.Close()
         End Try
     End Sub
+
 End Class
