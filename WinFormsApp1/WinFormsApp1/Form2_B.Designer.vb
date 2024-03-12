@@ -111,7 +111,7 @@ Partial Class Form2_B
         ' 
         Label7.AutoSize = True
         Label7.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
-        Label7.Location = New Point(1373, 515)
+        Label7.Location = New Point(1381, 515)
         Label7.Name = "Label7"
         Label7.Size = New Size(219, 45)
         Label7.TabIndex = 44
