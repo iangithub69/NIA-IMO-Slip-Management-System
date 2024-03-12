@@ -64,6 +64,7 @@ Partial Class Form2_C
         ' 
         DataGridView1.AllowUserToResizeColumns = False
         DataGridView1.AllowUserToResizeRows = False
+        DataGridView1.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
         DataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.DisplayedCells
         DataGridView1.BorderStyle = BorderStyle.None
         DataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleCenter
@@ -97,7 +98,7 @@ Partial Class Form2_C
         DataGridView1.RowHeadersWidth = 82
         DataGridView1.RowTemplate.Height = 41
         DataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect
-        DataGridView1.Size = New Size(1441, 737)
+        DataGridView1.Size = New Size(0, 0)
         DataGridView1.TabIndex = 40
         ' 
         ' TextBox1
@@ -279,7 +280,7 @@ Partial Class Form2_C
         ' 
         AutoScaleDimensions = New SizeF(13F, 32F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(1934, 827)
+        ClientSize = New Size(0, 0)
         Controls.Add(Button2)
         Controls.Add(Button1)
         Controls.Add(Label9)
@@ -305,6 +306,7 @@ Partial Class Form2_C
         Name = "Form2_C"
         StartPosition = FormStartPosition.CenterScreen
         Text = "Form2_C"
+        WindowState = FormWindowState.Maximized
         CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
         CType(DataGridView1, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)

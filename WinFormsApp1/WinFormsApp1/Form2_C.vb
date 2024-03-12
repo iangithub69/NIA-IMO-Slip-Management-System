@@ -4,6 +4,8 @@ Imports System.Windows.Forms.VisualStyles.VisualStyleElement
 
 Public Class Form2_C
 
+    Private connectionString As String = "server=localhost; user id =root; password=2020301243; database=slipsdb; port=3306"
+
     Private Sub details()
         connecttodb() ' Assuming this is your database connection function
 
@@ -98,4 +100,50 @@ Public Class Form2_C
         TextBox6.Clear()
         TextBox7.Clear()
     End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        UpdateData()
+        details()
+    End Sub
+
+    ' Method to update the database with changes made in the textboxes
+    Private Sub UpdateData()
+        Try
+            ' Confirmation dialog
+            Dim result As DialogResult = MessageBox.Show("Are you sure you want to update the data?", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
+
+            If result = DialogResult.Yes Then
+
+                Using connection As New MySqlConnection(connectionString)
+                    connection.Open()
+                    Dim sql As String = "UPDATE details SET check_no=@check_no, account_no=@account_no, account_name=@account_name, date=@date, amount=@amount, pay_to=@pay_to, pesos=@pesos WHERE detail_id = @detail_id"
+                    Dim command As New MySqlCommand(sql, connection)
+                    command.Parameters.AddWithValue("@check_no", TextBox1.Text)
+                    command.Parameters.AddWithValue("@account_no", TextBox2.Text)
+                    command.Parameters.AddWithValue("@account_name", TextBox3.Text)
+                    command.Parameters.AddWithValue("@date", TextBox4.Text) ' Assuming TextBox4 is a DateTimePicker
+                    command.Parameters.AddWithValue("@amount", TextBox5.Text) ' Assuming TextBox5 contains the amount
+                    command.Parameters.AddWithValue("@pay_to", TextBox6.Text)
+                    command.Parameters.AddWithValue("@pesos", TextBox7.Text) ' Assuming TextBox6 contains the pesos
+                    ' Replace "@detail_id" with the parameterized column name for the detail_id
+                    command.Parameters.AddWithValue("@detail_id", DataGridView1.SelectedRows(0).Cells(0).Value.ToString()) ' Assuming detail_id is in the first column
+                    command.ExecuteNonQuery()
+                End Using
+
+                TextBox1.Clear()
+                TextBox2.Clear()
+                TextBox3.Clear()
+                TextBox4.Clear()
+                TextBox5.Clear()
+                TextBox6.Clear()
+                TextBox7.Clear()
+
+                ' Show success message
+                MessageBox.Show("Data updated successfully.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information)
+            End If
+        Catch ex As Exception
+            MessageBox.Show("An error occurred: " & ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        End Try
+    End Sub
+
 End Class
