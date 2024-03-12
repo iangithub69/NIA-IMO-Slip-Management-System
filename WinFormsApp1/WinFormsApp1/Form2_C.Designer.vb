@@ -53,7 +53,7 @@ Partial Class Form2_C
         ' PictureBox1
         ' 
         PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), Image)
-        PictureBox1.Location = New Point(1887, 0)
+        PictureBox1.Location = New Point(2835, 0)
         PictureBox1.Name = "PictureBox1"
         PictureBox1.Size = New Size(48, 48)
         PictureBox1.SizeMode = PictureBoxSizeMode.StretchImage
@@ -98,7 +98,7 @@ Partial Class Form2_C
         DataGridView1.RowHeadersWidth = 82
         DataGridView1.RowTemplate.Height = 41
         DataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect
-        DataGridView1.Size = New Size(1441, 737)
+        DataGridView1.Size = New Size(2389, 1613)
         DataGridView1.TabIndex = 40
         ' 
         ' TextBox1
@@ -280,7 +280,7 @@ Partial Class Form2_C
         ' 
         AutoScaleDimensions = New SizeF(13F, 32F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(1934, 827)
+        ClientSize = New Size(2882, 1703)
         Controls.Add(Button2)
         Controls.Add(Button1)
         Controls.Add(Label9)
