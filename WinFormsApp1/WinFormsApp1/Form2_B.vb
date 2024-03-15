@@ -85,6 +85,7 @@ Public Class Form2_B
         End Set
     End Property
 
+
     Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
         Me.Close()
 

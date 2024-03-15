@@ -580,4 +580,25 @@ Public Class Form2
         End Try
     End Sub
 
+    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
+        ' Instantiate Form2_B
+        Dim form2 As New Form2_A()
+
+        ' Set the values of labels in Form2_B
+        form2.Label12Text = TextBox4.Text
+        form2.Label11Text = TextBox3.Text
+        form2.Label10Text = TextBox2.Text
+        form2.Label1Text = TextBox5.Text
+        form2.Label2Text = TextBox8.Text
+        form2.Label3Text = TextBox9.Text
+        form2.Label4Text = TextBox10.Text
+        form2.Label5Text = ComboBox2.Text
+        form2.Label6Text = ComboBox3.Text
+        form2.Label7Text = ComboBox4.Text
+        form2.Label8Text = ComboBox5.Text
+        form2.Label9Text = ComboBox6.Text
+
+        ' Show Form2_B
+        form2.Show()
+    End Sub
 End Class
