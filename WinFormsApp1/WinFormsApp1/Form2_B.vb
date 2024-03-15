@@ -111,8 +111,15 @@ Public Class Form2_B
     End Sub
 
     Private Sub PrintContent(sender As Object, e As PrintPageEventArgs)
-        ' Define font and brush for drawing
-        Dim font As New Font("Epilogue", 10)
+
+        Try
+            ' Confirmation dialog
+            Dim result As DialogResult = MessageBox.Show("Are you sure you want to update the data?", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
+
+            If result = DialogResult.Yes Then
+
+                ' Define font and brush for drawing
+                Dim font As New Font("Epilogue", 10)
         Dim font2 As New Font("Epilogue", 9)
         Dim brush As New SolidBrush(Color.Black)
 
@@ -174,10 +181,18 @@ Public Class Form2_B
         Dim label9Y As Single = 498 ' Adjust y coordinate for Label3 branch
         e.Graphics.DrawString(Label9.Text, font2, brush, label9X, label9Y)
         y += lineHeight
-        ' Repeat for the remaining labels, adjusting x and y coordinates as needed
+                ' Repeat for the remaining labels, adjusting x and y coordinates as needed
 
-        ' Restore the graphics state to its original settings
-        e.Graphics.Restore(oldState)
+                ' Restore the graphics state to its original settings
+                e.Graphics.Restore(oldState)
+
+                ' Show success message
+                MessageBox.Show("Data updated successfully.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information)
+            End If
+        Catch ex As Exception
+            MessageBox.Show("An error occurred: " & ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        End Try
+
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs)
