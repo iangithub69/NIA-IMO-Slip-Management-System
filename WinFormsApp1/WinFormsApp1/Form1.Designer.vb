@@ -27,6 +27,7 @@ Partial Class Form1
         Button2 = New Button()
         Button3 = New Button()
         Button4 = New Button()
+        Button5 = New Button()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
@@ -71,7 +72,7 @@ Partial Class Form1
         Button3.Cursor = Cursors.Hand
         Button3.FlatStyle = FlatStyle.System
         Button3.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point)
-        Button3.Location = New Point(209, 687)
+        Button3.Location = New Point(209, 681)
         Button3.Name = "Button3"
         Button3.Size = New Size(383, 65)
         Button3.TabIndex = 3
@@ -84,7 +85,7 @@ Partial Class Form1
         Button4.Cursor = Cursors.Hand
         Button4.FlatStyle = FlatStyle.System
         Button4.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point)
-        Button4.Location = New Point(209, 792)
+        Button4.Location = New Point(209, 882)
         Button4.Name = "Button4"
         Button4.Size = New Size(383, 65)
         Button4.TabIndex = 4
@@ -92,11 +93,25 @@ Partial Class Form1
         Button4.Text = "Reciept Program Slip"
         Button4.UseVisualStyleBackColor = True
         ' 
+        ' Button5
+        ' 
+        Button5.Cursor = Cursors.Hand
+        Button5.FlatStyle = FlatStyle.System
+        Button5.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point)
+        Button5.Location = New Point(209, 782)
+        Button5.Name = "Button5"
+        Button5.Size = New Size(383, 65)
+        Button5.TabIndex = 5
+        Button5.TabStop = False
+        Button5.Text = "Check Deposit Slip"
+        Button5.UseVisualStyleBackColor = True
+        ' 
         ' Form1
         ' 
         AutoScaleDimensions = New SizeF(13F, 32F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(807, 1015)
+        Controls.Add(Button5)
         Controls.Add(Button4)
         Controls.Add(Button3)
         Controls.Add(Button2)
@@ -116,5 +131,6 @@ Partial Class Form1
     Friend WithEvents Button2 As Button
     Friend WithEvents Button3 As Button
     Friend WithEvents Button4 As Button
+    Friend WithEvents Button5 As Button
 
 End Class

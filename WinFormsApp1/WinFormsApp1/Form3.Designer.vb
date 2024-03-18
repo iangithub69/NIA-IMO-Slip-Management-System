@@ -499,7 +499,7 @@ Partial Class Form3
         ' 
         ' PictureBox6
         ' 
-        PictureBox6.Image = My.Resources.Resources.landbank_withbackground
+        PictureBox6.Image = My.Resources.Resources.landbank_withbackground_fotor_2024031311164
         PictureBox6.Location = New Point(1448, 12)
         PictureBox6.Name = "PictureBox6"
         PictureBox6.Size = New Size(60, 61)

@@ -208,7 +208,7 @@
   <data name="PictureBox3.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        DgAACw4BQL7hQQAAAqRJREFUaEPtmctu00AUhiNgw47Liss7sEjOxEKVgsYW7BFFPAmFsmADdAuCineg
+        DAAACwwBP0AiyAAAAqRJREFUaEPtmctu00AUhiNgw47Liss7sEjOxEKVgsYW7BFFPAmFsmADdAuCineg
         gFB5EhAvUGABhEupbdGyMee3DgvCGbDjiceR/Em/GqWec36PPbeTQU9PT3OK24NDeWKizJp11rMsNm+y
         mL6msfkJ4XP5naWn/PdmfmE8RhtpHo58Ys6m1mykMb1nY0UdcZt3qaV7uY3OSLj2+B7TSe7Zx2z+QDNX
         Rxxjn5/a5u7F6ISEXyypHV/jhJ81Mw01TRO6Kmn8U0wmR9DrSmLPokfIJWn9UETRUX7UL/WE/sUdtY2c
@@ -222,4 +222,26 @@
         Wzh44GTHJg8gfObvX8n/1vJ4RJ34mbWnZ+kZDH4BndX+eeg+UF0AAAAASUVORK5CYII=
 </value>
   </data>
+  <data name="PictureBox7.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAABHAAAABKCAYAAADT2KMCAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAd
+        hQAAHYUB8Bsy7AAAAjhJREFUeF7t2zENAzEQRcFANRNTMCObma+5MnXyihnpE9jySfu5AAAAAKQJOAAA
+        AABxAg4AAABAnIADAAAAECfgAAAAAMQJOAAAAABxAg4AAABAnIADAAAAECfgAAAAAMQJOAAAAABxAg4A
+        AABAnIADAAAAECfgAAAAAMQJOAAAAABxAg4AAABAnIADAAAAECfgAAAAAMQJOAAAAABxAg4AAABAnIAD
+        AAAAECfgAAAAAMQJOAAAAABxAg4AAABAnIADAAAAECfgAAAAAMQJOAAAAABxAg4AAABAnIADAAAAECfg
+        AAAAAMQJOAAAAABxAg4AAABAnIADAAAAECfgAAAAAMQJOAAAAABxuYBzzrljDDMzMzMzMzOzv2yt9VaK
+        jlzA2Xt/PZ6ZmZmZmZmZ2S8253wrRYcXKgAAAIA4AQcAAAAgTsABAAAAiBNwAAAAAOIEHAAAAIA4AQcA
+        AAAgTsABAAAAiBNwAAAAAOIEHAAAAIA4AQcAAAAgTsABAAAAiBNwAAAAAOIEHAAAAIA4AQcAAAAgTsAB
+        AAAAiBNwAAAAAOIEHAAAAIA4AQcAAAAgTsABAAAAiBNwAAAAAOIEHAAAAIA4AQcAAAAgTsABAAAAiBNw
+        AAAAAOIEHAAAAIA4AQcAAAAgTsABAAAAiBNwAAAAAOIEHAAAAIA4AQcAAAAgTsABAAAAiBNwAAAAAOIE
+        HAAAAIA4AQcAAAAgTsABAAAAiBNwAAAAAOIEHAAAAIA4AQcAAAAg7d4HdrMwXvFmNfIAAAAASUVORK5C
+        YII=
+</value>
+  </data>
+  <metadata name="MySqlCommand1.DesignTimeVisible" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="MySqlCommand1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
 </root>
