@@ -47,6 +47,7 @@ Partial Class Form2_C
         Button1 = New Button()
         Button2 = New Button()
         Label10 = New Label()
+        Button3 = New Button()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         CType(DataGridView1, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
@@ -259,7 +260,7 @@ Partial Class Form2_C
         ' 
         Button1.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point)
         Button1.Image = My.Resources.Resources.icons8_check_48
-        Button1.Location = New Point(2168, 1551)
+        Button1.Location = New Point(2168, 1530)
         Button1.Name = "Button1"
         Button1.Size = New Size(193, 58)
         Button1.TabIndex = 62
@@ -271,7 +272,7 @@ Partial Class Form2_C
         ' 
         Button2.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point)
         Button2.Image = My.Resources.Resources.icons8_cancel_48
-        Button2.Location = New Point(2392, 1551)
+        Button2.Location = New Point(2393, 1530)
         Button2.Name = "Button2"
         Button2.Size = New Size(193, 58)
         Button2.TabIndex = 63
@@ -289,11 +290,25 @@ Partial Class Form2_C
         Label10.TabIndex = 64
         Label10.Text = "Order Of"
         ' 
+        ' Button3
+        ' 
+        Button3.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point)
+        Button3.Image = My.Resources.Resources.icons8_copy_to_clipboard_45
+        Button3.Location = New Point(2168, 1612)
+        Button3.Name = "Button3"
+        Button3.Size = New Size(418, 58)
+        Button3.TabIndex = 65
+        Button3.Text = "Copy to Clipboard"
+        Button3.TextAlign = ContentAlignment.MiddleRight
+        Button3.TextImageRelation = TextImageRelation.ImageBeforeText
+        Button3.UseVisualStyleBackColor = True
+        ' 
         ' Form2_C
         ' 
         AutoScaleDimensions = New SizeF(13F, 32F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(2882, 1703)
+        Controls.Add(Button3)
         Controls.Add(Label10)
         Controls.Add(Button2)
         Controls.Add(Button1)
@@ -347,4 +362,5 @@ Partial Class Form2_C
     Friend WithEvents Button1 As Button
     Friend WithEvents Button2 As Button
     Friend WithEvents Label10 As Label
+    Friend WithEvents Button3 As Button
 End Class

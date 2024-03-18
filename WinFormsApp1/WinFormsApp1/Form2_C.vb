@@ -1,7 +1,6 @@
 ﻿Imports MySql.Data.MySqlClient
 Imports System.Data.SqlClient
 Imports System.Windows.Forms.VisualStyles.VisualStyleElement
-
 Public Class Form2_C
 
     Private connectionString As String = "server=localhost; user id =root; password=2020301243; database=slipsdb; port=3306"
@@ -102,8 +101,8 @@ Public Class Form2_C
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        UpdateData()
-        details()
+        UpdateData
+        details
     End Sub
 
     ' Method to update the database with changes made in the textboxes
@@ -145,5 +144,34 @@ Public Class Form2_C
             MessageBox.Show("An error occurred: " & ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End Try
     End Sub
+
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+        ' Check if any cell is selected
+        If DataGridView1.SelectedCells.Count > 0 Then
+            Dim clipboardContent As New System.Text.StringBuilder()
+
+            ' Iterate through selected cells
+            For Each cell As DataGridViewCell In DataGridView1.SelectedCells
+                ' Append cell value to the clipboard content
+                clipboardContent.Append(cell.Value.ToString())
+
+                ' Separate cells with tab
+                clipboardContent.Append(vbTab)
+
+                ' If it's the last cell in the row, add newline character
+                If cell.ColumnIndex = DataGridView1.Columns.Count - 1 Then
+                    clipboardContent.AppendLine()
+                End If
+            Next
+
+            ' Copy the content to the clipboard
+            Clipboard.SetText(clipboardContent.ToString())
+
+            MessageBox.Show("Selected data copied to clipboard.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information)
+        Else
+            MessageBox.Show("No data selected.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        End If
+    End Sub
+
 
 End Class
