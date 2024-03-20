@@ -220,10 +220,10 @@ Public Class Form2
             missingFields.Add("Pesos")
         End If
         If String.IsNullOrEmpty(ComboBox2.Text) Then
-            missingFields.Add("Tiller Name")
+            missingFields.Add("Teller Name")
         End If
         If String.IsNullOrEmpty(ComboBox3.Text) Then
-            missingFields.Add("Tiller Designation")
+            missingFields.Add("Teller Designation")
         End If
         If String.IsNullOrEmpty(ComboBox4.Text) Then
             missingFields.Add("Officer Name")
@@ -247,7 +247,7 @@ Public Class Form2
 
         Try
             connecttodb()
-            Dim sql As String = "INSERT INTO details (check_no, account_no, account_name, date, amount, pay_to, pesos, cashier_name, cashier_designation, officer_name, officer_designation, branch) VALUES (@check_no, @account_no, @account_name, @date, @amount, @pay_to, @pesos, @cashier_name, @cashier_designation, @officer_name, @officer_designation, @branch)"
+            Dim sql As String = "INSERT INTO details (check_no, account_no, account_name, date, amount, pay_to, pesos, teller_name, teller_designation, officer_name, officer_designation, branch) VALUES (@check_no, @account_no, @account_name, @date, @amount, @pay_to, @pesos, @cashier_name, @cashier_designation, @officer_name, @officer_designation, @branch)"
             Dim cmd As New MySqlCommand(sql, cn)
 
             With cmd
@@ -258,8 +258,8 @@ Public Class Form2
                 .Parameters.AddWithValue("@amount", TextBox8.Text)
                 .Parameters.AddWithValue("@pay_to", TextBox9.Text)
                 .Parameters.AddWithValue("@pesos", TextBox10.Text)
-                .Parameters.AddWithValue("@cashier_name", ComboBox2.Text)
-                .Parameters.AddWithValue("@cashier_designation", ComboBox3.Text)
+                .Parameters.AddWithValue("@teller_name", ComboBox2.Text)
+                .Parameters.AddWithValue("@teller_designation", ComboBox3.Text)
                 .Parameters.AddWithValue("@officer_name", ComboBox4.Text)
                 .Parameters.AddWithValue("@officer_designation", ComboBox5.Text)
                 .Parameters.AddWithValue("@branch", ComboBox6.Text)
@@ -299,8 +299,8 @@ Public Class Form2
                     TextBox9.Text = reader("pay_to").ToString()
                     TextBox10.Text = reader("pesos").ToString()
                     ' Populate comboboxes
-                    ComboBox2.SelectedItem = reader("cashier_name").ToString()
-                    ComboBox3.SelectedItem = reader("cashier_designation").ToString()
+                    ComboBox2.SelectedItem = reader("teller_name").ToString()
+                    ComboBox3.SelectedItem = reader("teller_designation").ToString()
                     ComboBox4.SelectedItem = reader("officer_name").ToString()
                     ComboBox5.SelectedItem = reader("officer_designation").ToString()
                     ComboBox6.SelectedItem = reader("branch").ToString()
@@ -312,6 +312,7 @@ Public Class Form2
 
         'TextBox8.Text = "****"
         'TextBox9.Text = "****"
+        'ComboBox2.Items.Add("Add more")
     End Sub
 
     Private Sub Form2_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
@@ -397,7 +398,7 @@ Public Class Form2
 
             ' SQL queries for each ComboBox
             Dim sqlQueries() As String = {
-            "SELECT tiller_name FROM tillers"
+            "SELECT teller_name FROM tellers"
         }
 
             ' Execute queries and populate ComboBoxes
@@ -410,7 +411,7 @@ Public Class Form2
                     ' Add items to respective ComboBoxes
                     Select Case i
                         Case 0
-                            ComboBox2.Items.Add(dr("tiller_name").ToString())
+                            ComboBox2.Items.Add(dr("teller_name").ToString())
                     End Select
                 End While
 
@@ -436,7 +437,7 @@ Public Class Form2
 
             ' SQL queries for each ComboBox
             Dim sqlQueries() As String = {
-            "SELECT description FROM tillers"
+            "SELECT description FROM tellers"
         }
 
             ' Execute queries and populate ComboBoxes
@@ -600,5 +601,50 @@ Public Class Form2
 
         ' Show Form2_B
         form2.Show()
+    End Sub
+
+    Private Sub ComboBox2_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ComboBox2.SelectedIndexChanged
+        ' Check if the "more option..." option is selected
+        If ComboBox2.SelectedItem.ToString() = "more option..." Then
+            ' Show a new form
+            Dim newForm As New Form2_D()
+            newForm.ShowDialog()
+        End If
+    End Sub
+
+    Private Sub ComboBox3_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ComboBox3.SelectedIndexChanged
+        ' Check if the "more option..." option is selected
+        If ComboBox3.SelectedItem.ToString() = "more option..." Then
+            ' Show a new form
+            Dim newForm As New Form2_D()
+            newForm.ShowDialog()
+        End If
+    End Sub
+
+    Private Sub ComboBox4_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ComboBox4.SelectedIndexChanged
+        ' Check if the "more option..." option is selected
+        If ComboBox4.SelectedItem.ToString() = "more option..." Then
+            ' Show a new form
+            Dim newForm As New Form2_D()
+            newForm.ShowDialog()
+        End If
+    End Sub
+
+    Private Sub ComboBox5_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ComboBox5.SelectedIndexChanged
+        ' Check if the "more option..." option is selected
+        If ComboBox5.SelectedItem.ToString() = "more option..." Then
+            ' Show a new form
+            Dim newForm As New Form2_D()
+            newForm.ShowDialog()
+        End If
+    End Sub
+
+    Private Sub ComboBox6_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ComboBox6.SelectedIndexChanged
+        ' Check if the "more option..." option is selected
+        If ComboBox6.SelectedItem.ToString() = "more option..." Then
+            ' Show a new form
+            Dim newForm As New Form2_D()
+            newForm.ShowDialog()
+        End If
     End Sub
 End Class

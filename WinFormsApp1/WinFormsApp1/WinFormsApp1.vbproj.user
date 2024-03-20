@@ -22,5 +22,8 @@
     <Compile Update="Form4.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Form2_D.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
 </Project>

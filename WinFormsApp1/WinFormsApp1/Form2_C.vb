@@ -8,7 +8,7 @@ Public Class Form2_C
     Private Sub details()
         connecttodb() ' Assuming this is your database connection function
 
-        Dim sql As String = "SELECT detail_id AS 'Detail ID', check_no AS 'Check Number', account_no AS 'Account Number', account_name AS 'Account Name', date AS 'Date Issued', amount AS 'Amount', pay_to AS 'Pay To The Order Of', pesos AS 'Pesos', cashier_name AS 'Tiller Name', cashier_designation AS 'Tiller Designation', officer_name AS 'Officer Name', officer_designation AS 'Officer Designation', branch AS 'Branch' FROM details"
+        Dim sql As String = "SELECT detail_id AS 'Detail ID', check_no AS 'Check Number', account_no AS 'Account Number', account_name AS 'Account Name', date AS 'Date Issued', amount AS 'Amount', pay_to AS 'Pay To The Order Of', pesos AS 'Pesos', teller_name AS 'Teller Name', teller_designation AS 'Teller Designation', officer_name AS 'Officer Name', officer_designation AS 'Officer Designation', branch AS 'Branch' FROM details"
         Dim cmd As New MySqlCommand(sql, cn)
 
         Dim adapter As New MySqlDataAdapter(cmd)
@@ -173,5 +173,7 @@ Public Class Form2_C
         End If
     End Sub
 
+    Private Sub TextBox4_TextChanged(sender As Object, e As EventArgs) Handles TextBox4.TextChanged
 
+    End Sub
 End Class
