@@ -247,7 +247,7 @@ Public Class Form2
 
         Try
             connecttodb()
-            Dim sql As String = "INSERT INTO details (check_no, account_no, account_name, date, amount, pay_to, pesos, teller_name, teller_designation, officer_name, officer_designation, branch) VALUES (@check_no, @account_no, @account_name, @date, @amount, @pay_to, @pesos, @cashier_name, @cashier_designation, @officer_name, @officer_designation, @branch)"
+            Dim sql As String = "INSERT INTO details (check_no, account_no, account_name, date, amount, pay_to, pesos, teller_name, teller_designation, officer_name, officer_designation, branch) VALUES (@check_no, @account_no, @account_name, @date, @amount, @pay_to, @pesos, @teller_name, @teller_designation, @officer_name, @officer_designation, @branch)"
             Dim cmd As New MySqlCommand(sql, cn)
 
             With cmd

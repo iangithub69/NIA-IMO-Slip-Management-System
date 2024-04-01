@@ -160,7 +160,7 @@ Public Class Form2_D
             ' SQL query to insert data into the database
             Dim sql As String = "INSERT INTO tellers (teller_name, description) VALUES (@teller_name, @description)"
             Dim cmd As New MySqlCommand(sql, cn)
-            cmd.Parameters.AddWithValue("@description", TextBox3.Text)
+            cmd.Parameters.AddWithValue("@teller_name", TextBox3.Text)
             cmd.Parameters.AddWithValue("@description", TextBox4.Text)
 
             ' Execute the insert command
