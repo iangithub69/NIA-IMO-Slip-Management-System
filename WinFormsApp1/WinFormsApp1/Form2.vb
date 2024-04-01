@@ -625,7 +625,7 @@ Public Class Form2
         ' Check if the "more option..." option is selected
         If ComboBox4.SelectedItem.ToString() = "more option..." Then
             ' Show a new form
-            Dim newForm As New Form2_D()
+            Dim newForm As New Form2_E()
             newForm.ShowDialog()
         End If
     End Sub
@@ -634,7 +634,7 @@ Public Class Form2
         ' Check if the "more option..." option is selected
         If ComboBox5.SelectedItem.ToString() = "more option..." Then
             ' Show a new form
-            Dim newForm As New Form2_D()
+            Dim newForm As New Form2_E()
             newForm.ShowDialog()
         End If
     End Sub
@@ -643,7 +643,7 @@ Public Class Form2
         ' Check if the "more option..." option is selected
         If ComboBox6.SelectedItem.ToString() = "more option..." Then
             ' Show a new form
-            Dim newForm As New Form2_D()
+            Dim newForm As New Form2_E()
             newForm.ShowDialog()
         End If
     End Sub

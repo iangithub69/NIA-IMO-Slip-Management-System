@@ -12,7 +12,7 @@ Public Class Form2_D
         connecttodb() ' Assuming this is your database connection function
 
         ' Specify the ID you want to exclude
-        Dim excludedID As Integer = 999999 ' Replace 123 with the ID you want to exclude
+        Dim excludedID As Integer = 1 ' Replace 123 with the ID you want to exclude
 
         Dim sql As String = "SELECT teller_id AS 'Teller ID', teller_name AS 'Teller Name', description AS 'Description' FROM tellers WHERE teller_id <> @excludedID"
         Dim cmd As New MySqlCommand(sql, cn)
@@ -65,33 +65,39 @@ Public Class Form2_D
 
     Private Sub DeleteSelectedItems()
         If DataGridView1.SelectedRows.Count > 0 Then
-            connecttodb() ' Connect to database
+            ' Ask for confirmation before deleting
+            Dim result As DialogResult = MessageBox.Show("Are you sure you want to delete the selected row(s)?", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
 
-            Try
-                For Each selectedRow As DataGridViewRow In DataGridView1.SelectedRows
-                    Dim tellerID As String = selectedRow.Cells(0).Value.ToString() ' Assuming teller_id is in the first column
+            If result = DialogResult.Yes Then
+                connecttodb() ' Connect to database
 
-                    ' SQL query to delete the selected row based on the teller_id
-                    Dim sql As String = "DELETE FROM tellers WHERE teller_id = @tellerID"
-                    Dim cmd As New MySqlCommand(sql, cn)
-                    cmd.Parameters.AddWithValue("@tellerID", tellerID)
+                Try
+                    For Each selectedRow As DataGridViewRow In DataGridView1.SelectedRows
+                        Dim tellerID As String = selectedRow.Cells(0).Value.ToString() ' Assuming teller_id is in the first column
 
-                    ' Execute the delete command
-                    cmd.ExecuteNonQuery()
+                        ' SQL query to delete the selected row based on the teller_id
+                        Dim sql As String = "DELETE FROM tellers WHERE teller_id = @tellerID"
+                        Dim cmd As New MySqlCommand(sql, cn)
+                        cmd.Parameters.AddWithValue("@tellerID", tellerID)
 
-                    ' Remove the selected row from the DataGridView
-                    DataGridView1.Rows.Remove(selectedRow)
-                Next
-            Catch ex As Exception
-                MessageBox.Show("An error occurred while deleting rows: " & ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
-            Finally
-                ' Close database connections
-                cn.Close()
-            End Try
+                        ' Execute the delete command
+                        cmd.ExecuteNonQuery()
+
+                        ' Remove the selected row from the DataGridView
+                        DataGridView1.Rows.Remove(selectedRow)
+                    Next
+                Catch ex As Exception
+                    MessageBox.Show("An error occurred while deleting rows: " & ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                Finally
+                    ' Close database connections
+                    cn.Close()
+                End Try
+            End If
         Else
             MessageBox.Show("Please select rows to delete.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End If
     End Sub
+
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
         UpdateData()
@@ -99,6 +105,12 @@ Public Class Form2_D
     End Sub
 
     Private Sub UpdateData()
+        ' Check if TextBox1 and TextBox2 have values
+        If String.IsNullOrWhiteSpace(TextBox1.Text) Or String.IsNullOrWhiteSpace(TextBox2.Text) Then
+            MessageBox.Show("Please fill in all required fields.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            Return
+        End If
+
         Try
             ' Confirmation dialog
             Dim result As DialogResult = MessageBox.Show("Are you sure you want to update the data?", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
@@ -126,39 +138,42 @@ Public Class Form2_D
         End Try
     End Sub
 
+
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
         InsertData()
         tellers()
+        TextBox3.Clear()
+        TextBox4.Clear()
+
     End Sub
 
     Private Sub InsertData()
+        ' Check if TextBox3 and TextBox4 have values
+        If String.IsNullOrWhiteSpace(TextBox3.Text) Or String.IsNullOrWhiteSpace(TextBox4.Text) Then
+            MessageBox.Show("Please fill in all required fields.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            Return
+        End If
+
+        connecttodb() ' Connect to database
+
         Try
+            ' SQL query to insert data into the database
+            Dim sql As String = "INSERT INTO tellers (teller_name, description) VALUES (@teller_name, @description)"
+            Dim cmd As New MySqlCommand(sql, cn)
+            cmd.Parameters.AddWithValue("@description", TextBox3.Text)
+            cmd.Parameters.AddWithValue("@description", TextBox4.Text)
 
-            connecttodb()
-            'Insert data into the database
-            sql = "Insert into tellers (teller_name, description) values (@teller_name, @description)"
-            cmd = New MySqlCommand(sql, cn)
+            ' Execute the insert command
+            cmd.ExecuteNonQuery()
 
-            With cmd
-                ' Set parameters for the database insertion
-                '.Parameters.AddWithValue("@session_id", CStr(Int(Rnd() * 100)))
-                .Parameters.AddWithValue("@teller_name", TextBox3.Text)
-                .Parameters.AddWithValue("@description", TextBox4.Text)
-
-                ' Execute the database insertion
-                .ExecuteReader()
-            End With
-
-            ' Close database connections
-            dr = Nothing
-            cmd.Dispose()
-            cn.Close()
-
-            ' Show success message
-            MessageBox.Show("Added successfully.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information)
+            MessageBox.Show("Data inserted successfully.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information)
         Catch ex As Exception
-            MessageBox.Show("An error occurred: " & ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            MessageBox.Show("An error occurred while inserting data: " & ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        Finally
+            ' Close database connections
+            cn.Close()
         End Try
     End Sub
+
 
 End Class
