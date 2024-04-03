@@ -47,6 +47,8 @@ Partial Class Form2_D
         TextBox4 = New TextBox()
         Label9 = New Label()
         Label10 = New Label()
+        Panel3 = New Panel()
+        Panel4 = New Panel()
         CType(PictureBox3, ComponentModel.ISupportInitialize).BeginInit()
         CType(DataGridView1, ComponentModel.ISupportInitialize).BeginInit()
         Panel1.SuspendLayout()
@@ -240,6 +242,7 @@ Partial Class Form2_D
         ' Panel2
         ' 
         Panel2.BorderStyle = BorderStyle.FixedSingle
+        Panel2.Controls.Add(Panel3)
         Panel2.Controls.Add(Label5)
         Panel2.Controls.Add(TextBox3)
         Panel2.Controls.Add(Button2)
@@ -311,11 +314,26 @@ Partial Class Form2_D
         Label10.TabIndex = 55
         Label10.Text = "Description:"
         ' 
+        ' Panel3
+        ' 
+        Panel3.Location = New Point(-1, -1)
+        Panel3.Name = "Panel3"
+        Panel3.Size = New Size(875, 306)
+        Panel3.TabIndex = 69
+        ' 
+        ' Panel4
+        ' 
+        Panel4.Location = New Point(1003, 49)
+        Panel4.Name = "Panel4"
+        Panel4.Size = New Size(875, 306)
+        Panel4.TabIndex = 70
+        ' 
         ' Form2_D
         ' 
         AutoScaleDimensions = New SizeF(13F, 32F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(1934, 827)
+        Controls.Add(Panel4)
         Controls.Add(Panel2)
         Controls.Add(PictureBox2)
         Controls.Add(PictureBox1)
@@ -358,4 +376,6 @@ Partial Class Form2_D
     Friend WithEvents TextBox4 As TextBox
     Friend WithEvents Label9 As Label
     Friend WithEvents Label10 As Label
+    Friend WithEvents Panel3 As Panel
+    Friend WithEvents Panel4 As Panel
 End Class

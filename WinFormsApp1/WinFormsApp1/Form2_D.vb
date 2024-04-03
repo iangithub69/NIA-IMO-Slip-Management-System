@@ -37,6 +37,13 @@ Public Class Form2_D
 
     Private Sub Form2_D_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         tellers()
+
+        Panel3.Visible = False
+        Panel3.BackColor = Color.FromArgb(0, Panel3.BackColor)
+
+        Panel4.Visible = False
+        Panel4.BackColor = Color.FromArgb(0, Panel3.BackColor)
+
     End Sub
 
     Private Sub DataGridView1_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellClick
@@ -61,6 +68,8 @@ Public Class Form2_D
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         DeleteSelectedItems()
+        TextBox1.Clear()
+        TextBox2.Clear()
     End Sub
 
     Private Sub DeleteSelectedItems()
@@ -175,5 +184,40 @@ Public Class Form2_D
         End Try
     End Sub
 
+    Private Sub TextBox1_TextChanged(sender As Object, e As EventArgs) Handles TextBox1.TextChanged
+        If TextBox1.Text <> "" Then
+            Panel3.Visible = True
+            Panel3.BackColor = Color.FromArgb(100, Panel3.BackColor)
+        Else
+            Panel3.Visible = False
+        End If
+    End Sub
+
+    Private Sub TextBox2_TextChanged(sender As Object, e As EventArgs) Handles TextBox2.TextChanged
+        If TextBox2.Text <> "" Then
+            Panel3.Visible = True
+            Panel3.BackColor = Color.FromArgb(100, Panel3.BackColor)
+        Else
+            Panel3.Visible = False
+        End If
+    End Sub
+
+    Private Sub TextBox3_TextChanged(sender As Object, e As EventArgs) Handles TextBox3.TextChanged
+        If TextBox3.Text <> "" Then
+            Panel4.Visible = True
+            Panel4.BackColor = Color.FromArgb(100, Panel4.BackColor)
+        Else
+            Panel4.Visible = False
+        End If
+    End Sub
+
+    Private Sub TextBox4_TextChanged(sender As Object, e As EventArgs) Handles TextBox4.TextChanged
+        If TextBox4.Text <> "" Then
+            Panel4.Visible = True
+            Panel4.BackColor = Color.FromArgb(100, Panel4.BackColor)
+        Else
+            Panel4.Visible = False
+        End If
+    End Sub
 
 End Class

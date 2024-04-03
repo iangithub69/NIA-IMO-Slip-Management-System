@@ -28,6 +28,9 @@ Partial Class Form2_E
         Dim DataGridViewCellStyle3 As DataGridViewCellStyle = New DataGridViewCellStyle()
         PictureBox3 = New PictureBox()
         Panel2 = New Panel()
+        Panel4 = New Panel()
+        TextBox5 = New TextBox()
+        Label7 = New Label()
         Label5 = New Label()
         TextBox3 = New TextBox()
         Button2 = New Button()
@@ -35,6 +38,7 @@ Partial Class Form2_E
         Label9 = New Label()
         Label10 = New Label()
         Panel1 = New Panel()
+        Panel3 = New Panel()
         Label6 = New Label()
         TextBox2 = New TextBox()
         Button3 = New Button()
@@ -68,16 +72,45 @@ Partial Class Form2_E
         ' Panel2
         ' 
         Panel2.BorderStyle = BorderStyle.FixedSingle
+        Panel2.Controls.Add(Panel4)
+        Panel2.Controls.Add(TextBox5)
+        Panel2.Controls.Add(Label7)
         Panel2.Controls.Add(Label5)
         Panel2.Controls.Add(TextBox3)
         Panel2.Controls.Add(Button2)
         Panel2.Controls.Add(TextBox4)
         Panel2.Controls.Add(Label9)
         Panel2.Controls.Add(Label10)
-        Panel2.Location = New Point(56, 472)
+        Panel2.Location = New Point(56, 393)
         Panel2.Name = "Panel2"
-        Panel2.Size = New Size(875, 306)
+        Panel2.Size = New Size(875, 385)
         Panel2.TabIndex = 70
+        ' 
+        ' Panel4
+        ' 
+        Panel4.Location = New Point(-1, -1)
+        Panel4.Name = "Panel4"
+        Panel4.Size = New Size(875, 385)
+        Panel4.TabIndex = 69
+        ' 
+        ' TextBox5
+        ' 
+        TextBox5.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
+        TextBox5.Location = New Point(160, 234)
+        TextBox5.Name = "TextBox5"
+        TextBox5.Size = New Size(660, 50)
+        TextBox5.TabIndex = 69
+        TextBox5.TextAlign = HorizontalAlignment.Center
+        ' 
+        ' Label7
+        ' 
+        Label7.AutoSize = True
+        Label7.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point)
+        Label7.Location = New Point(31, 237)
+        Label7.Name = "Label7"
+        Label7.Size = New Size(123, 45)
+        Label7.TabIndex = 68
+        Label7.Text = "Branch:"
         ' 
         ' Label5
         ' 
@@ -102,7 +135,7 @@ Partial Class Form2_E
         ' 
         Button2.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point)
         Button2.Image = My.Resources.Resources.icons8_check_48
-        Button2.Location = New Point(627, 228)
+        Button2.Location = New Point(627, 306)
         Button2.Name = "Button2"
         Button2.Size = New Size(193, 58)
         Button2.TabIndex = 65
@@ -142,6 +175,7 @@ Partial Class Form2_E
         ' Panel1
         ' 
         Panel1.BorderStyle = BorderStyle.FixedSingle
+        Panel1.Controls.Add(Panel3)
         Panel1.Controls.Add(Label6)
         Panel1.Controls.Add(TextBox2)
         Panel1.Controls.Add(Button3)
@@ -155,6 +189,13 @@ Partial Class Form2_E
         Panel1.Name = "Panel1"
         Panel1.Size = New Size(875, 306)
         Panel1.TabIndex = 69
+        ' 
+        ' Panel3
+        ' 
+        Panel3.Location = New Point(-1, -1)
+        Panel3.Name = "Panel3"
+        Panel3.Size = New Size(875, 306)
+        Panel3.TabIndex = 68
         ' 
         ' Label6
         ' 
@@ -358,4 +399,8 @@ Partial Class Form2_E
     Friend WithEvents DataGridView1 As DataGridView
     Friend WithEvents PictureBox2 As PictureBox
     Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents TextBox5 As TextBox
+    Friend WithEvents Label7 As Label
+    Friend WithEvents Panel3 As Panel
+    Friend WithEvents Panel4 As Panel
 End Class

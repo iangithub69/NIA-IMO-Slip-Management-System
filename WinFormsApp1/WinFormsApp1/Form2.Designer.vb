@@ -91,20 +91,22 @@ Partial Class Form2
         Label3.BackColor = Color.Transparent
         Label3.Font = New Font("Segoe UI", 10.125F, FontStyle.Bold, GraphicsUnit.Point)
         Label3.ForeColor = Color.Maroon
-        Label3.Location = New Point(152, 145)
+        Label3.Location = New Point(142, 151)
         Label3.Name = "Label3"
         Label3.Size = New Size(53, 37)
         Label3.TabIndex = 2
         Label3.Text = "ID:"
+        Label3.Visible = False
         ' 
         ' TextBox1
         ' 
         TextBox1.Font = New Font("Segoe UI", 10.125F, FontStyle.Bold, GraphicsUnit.Point)
-        TextBox1.Location = New Point(211, 145)
+        TextBox1.Location = New Point(210, 150)
         TextBox1.Name = "TextBox1"
         TextBox1.ReadOnly = True
         TextBox1.Size = New Size(200, 43)
         TextBox1.TabIndex = 3
+        TextBox1.Visible = False
         ' 
         ' Label4
         ' 
@@ -134,7 +136,7 @@ Partial Class Form2
         Label5.BackColor = Color.Transparent
         Label5.Font = New Font("Segoe UI", 10.125F, FontStyle.Bold, GraphicsUnit.Point)
         Label5.ForeColor = Color.Maroon
-        Label5.Location = New Point(441, 148)
+        Label5.Location = New Point(658, 148)
         Label5.Name = "Label5"
         Label5.Size = New Size(230, 37)
         Label5.TabIndex = 6
@@ -145,7 +147,7 @@ Partial Class Form2
         ComboBox1.DropDownStyle = ComboBoxStyle.DropDownList
         ComboBox1.Font = New Font("Segoe UI", 10.125F, FontStyle.Bold, GraphicsUnit.Point)
         ComboBox1.FormattingEnabled = True
-        ComboBox1.Location = New Point(677, 148)
+        ComboBox1.Location = New Point(894, 148)
         ComboBox1.Name = "ComboBox1"
         ComboBox1.Size = New Size(242, 45)
         ComboBox1.TabIndex = 7

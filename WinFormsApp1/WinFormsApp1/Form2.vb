@@ -179,6 +179,7 @@ Public Class Form2
 
         TextBox3.Clear()
         TextBox2.Clear()
+        TextBox5.Clear()
         'TextBox9.Clear()
         'TextBox10.Clear()
 
