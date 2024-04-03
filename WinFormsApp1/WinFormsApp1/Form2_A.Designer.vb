@@ -201,6 +201,7 @@ Partial Class Form2_A
         Controls.Add(Label6)
         Controls.Add(Label5)
         Controls.Add(PictureBox1)
+        DoubleBuffered = True
         FormBorderStyle = FormBorderStyle.None
         Name = "Form2_A"
         StartPosition = FormStartPosition.CenterScreen

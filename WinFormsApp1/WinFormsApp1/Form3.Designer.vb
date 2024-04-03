@@ -30,6 +30,7 @@ Partial Class Form3
         PictureBox4 = New PictureBox()
         PictureBox5 = New PictureBox()
         Panel1 = New Panel()
+        PictureBox9 = New PictureBox()
         Label11 = New Label()
         Label8 = New Label()
         Label7 = New Label()
@@ -68,13 +69,13 @@ Partial Class Form3
         PictureBox6 = New PictureBox()
         PictureBox7 = New PictureBox()
         ContextMenuStrip1 = New ContextMenuStrip(components)
-        PictureBox9 = New PictureBox()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox3, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox2, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox4, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox5, ComponentModel.ISupportInitialize).BeginInit()
         Panel1.SuspendLayout()
+        CType(PictureBox9, ComponentModel.ISupportInitialize).BeginInit()
         Panel2.SuspendLayout()
         Panel3.SuspendLayout()
         CType(PictureBox8, ComponentModel.ISupportInitialize).BeginInit()
@@ -86,7 +87,6 @@ Partial Class Form3
         Panel10.SuspendLayout()
         CType(PictureBox6, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox7, ComponentModel.ISupportInitialize).BeginInit()
-        CType(PictureBox9, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
         ' PictureBox1
@@ -167,6 +167,17 @@ Partial Class Form3
         Panel1.Name = "Panel1"
         Panel1.Size = New Size(1675, 728)
         Panel1.TabIndex = 42
+        ' 
+        ' PictureBox9
+        ' 
+        PictureBox9.Cursor = Cursors.Hand
+        PictureBox9.Image = CType(resources.GetObject("PictureBox9.Image"), Image)
+        PictureBox9.Location = New Point(1623, 680)
+        PictureBox9.Name = "PictureBox9"
+        PictureBox9.Size = New Size(47, 43)
+        PictureBox9.SizeMode = PictureBoxSizeMode.StretchImage
+        PictureBox9.TabIndex = 44
+        PictureBox9.TabStop = False
         ' 
         ' Label11
         ' 
@@ -526,16 +537,6 @@ Partial Class Form3
         ContextMenuStrip1.Name = "ContextMenuStrip1"
         ContextMenuStrip1.Size = New Size(61, 4)
         ' 
-        ' PictureBox9
-        ' 
-        PictureBox9.Image = CType(resources.GetObject("PictureBox9.Image"), Image)
-        PictureBox9.Location = New Point(1623, 680)
-        PictureBox9.Name = "PictureBox9"
-        PictureBox9.Size = New Size(47, 43)
-        PictureBox9.SizeMode = PictureBoxSizeMode.StretchImage
-        PictureBox9.TabIndex = 44
-        PictureBox9.TabStop = False
-        ' 
         ' Form3
         ' 
         AutoScaleDimensions = New SizeF(13F, 32F)
@@ -550,6 +551,7 @@ Partial Class Form3
         Controls.Add(PictureBox3)
         Controls.Add(PictureBox1)
         Controls.Add(Panel1)
+        DoubleBuffered = True
         FormBorderStyle = FormBorderStyle.None
         Name = "Form3"
         StartPosition = FormStartPosition.CenterScreen
@@ -561,6 +563,7 @@ Partial Class Form3
         CType(PictureBox5, ComponentModel.ISupportInitialize).EndInit()
         Panel1.ResumeLayout(False)
         Panel1.PerformLayout()
+        CType(PictureBox9, ComponentModel.ISupportInitialize).EndInit()
         Panel2.ResumeLayout(False)
         Panel2.PerformLayout()
         Panel3.ResumeLayout(False)
@@ -580,7 +583,6 @@ Partial Class Form3
         Panel10.PerformLayout()
         CType(PictureBox6, ComponentModel.ISupportInitialize).EndInit()
         CType(PictureBox7, ComponentModel.ISupportInitialize).EndInit()
-        CType(PictureBox9, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
     End Sub
 

@@ -340,6 +340,7 @@ Partial Class Form2_D
         Controls.Add(Panel1)
         Controls.Add(DataGridView1)
         Controls.Add(PictureBox3)
+        DoubleBuffered = True
         FormBorderStyle = FormBorderStyle.None
         Name = "Form2_D"
         StartPosition = FormStartPosition.CenterScreen

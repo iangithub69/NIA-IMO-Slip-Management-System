@@ -30,4 +30,9 @@ Public Class Form3
     Private Sub TextBox4_TextChanged(sender As Object, e As EventArgs) Handles TextBox4.TextChanged
 
     End Sub
+
+    Private Sub PictureBox9_Click(sender As Object, e As EventArgs) Handles PictureBox9.Click
+        Form3_A.Show()
+
+    End Sub
 End Class

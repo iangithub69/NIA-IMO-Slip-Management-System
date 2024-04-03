@@ -30,6 +30,13 @@ Partial Class Form4
         PictureBox6 = New PictureBox()
         PictureBox5 = New PictureBox()
         Panel1 = New Panel()
+        Label16 = New Label()
+        TextBox8 = New TextBox()
+        Label15 = New Label()
+        TextBox6 = New TextBox()
+        Label14 = New Label()
+        Label13 = New Label()
+        Label12 = New Label()
         TextBox3 = New TextBox()
         CheckBox5 = New CheckBox()
         CheckBox4 = New CheckBox()
@@ -58,18 +65,11 @@ Partial Class Form4
         Label9 = New Label()
         Label8 = New Label()
         Panel8 = New Panel()
-        MySqlCommand1 = New MySql.Data.MySqlClient.MySqlCommand()
-        Label11 = New Label()
         Panel9 = New Panel()
         TextBox5 = New TextBox()
-        Label12 = New Label()
-        Label13 = New Label()
-        Label14 = New Label()
-        TextBox6 = New TextBox()
-        Label15 = New Label()
-        TextBox8 = New TextBox()
-        Label16 = New Label()
+        Label11 = New Label()
         Panel10 = New Panel()
+        MySqlCommand1 = New MySql.Data.MySqlClient.MySqlCommand()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox2, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox3, ComponentModel.ISupportInitialize).BeginInit()
@@ -180,6 +180,69 @@ Partial Class Form4
         Panel1.Name = "Panel1"
         Panel1.Size = New Size(1732, 732)
         Panel1.TabIndex = 46
+        ' 
+        ' Label16
+        ' 
+        Label16.AutoSize = True
+        Label16.Location = New Point(606, 546)
+        Label16.Name = "Label16"
+        Label16.Size = New Size(528, 32)
+        Label16.TabIndex = 43
+        Label16.Text = "Please accomplish details of deposit at the back."
+        ' 
+        ' TextBox8
+        ' 
+        TextBox8.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
+        TextBox8.Location = New Point(740, 493)
+        TextBox8.Name = "TextBox8"
+        TextBox8.Size = New Size(964, 50)
+        TextBox8.TabIndex = 42
+        TextBox8.TextAlign = HorizontalAlignment.Center
+        ' 
+        ' Label15
+        ' 
+        Label15.AutoSize = True
+        Label15.Location = New Point(606, 506)
+        Label15.Name = "Label15"
+        Label15.Size = New Size(128, 32)
+        Label15.TabIndex = 41
+        Label15.Text = "(in figures)"
+        ' 
+        ' TextBox6
+        ' 
+        TextBox6.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
+        TextBox6.Location = New Point(606, 421)
+        TextBox6.Name = "TextBox6"
+        TextBox6.Size = New Size(1098, 50)
+        TextBox6.TabIndex = 27
+        TextBox6.TextAlign = HorizontalAlignment.Center
+        ' 
+        ' Label14
+        ' 
+        Label14.AutoSize = True
+        Label14.Location = New Point(779, 386)
+        Label14.Name = "Label14"
+        Label14.Size = New Size(118, 32)
+        Label14.TabIndex = 40
+        Label14.Text = "(in words)"
+        ' 
+        ' Label13
+        ' 
+        Label13.AutoSize = True
+        Label13.Location = New Point(606, 386)
+        Label13.Name = "Label13"
+        Label13.Size = New Size(179, 32)
+        Label13.TabIndex = 39
+        Label13.Text = "TOTAL DEPOSIT"
+        ' 
+        ' Label12
+        ' 
+        Label12.AutoSize = True
+        Label12.Location = New Point(24, 600)
+        Label12.Name = "Label12"
+        Label12.Size = New Size(199, 32)
+        Label12.TabIndex = 32
+        Label12.Text = "Teller's Validation"
         ' 
         ' TextBox3
         ' 
@@ -458,23 +521,6 @@ Partial Class Form4
         Panel8.Size = New Size(1240, 152)
         Panel8.TabIndex = 37
         ' 
-        ' MySqlCommand1
-        ' 
-        MySqlCommand1.CacheAge = 0
-        MySqlCommand1.Connection = Nothing
-        MySqlCommand1.EnableCaching = False
-        MySqlCommand1.Transaction = Nothing
-        ' 
-        ' Label11
-        ' 
-        Label11.AutoSize = True
-        Label11.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point)
-        Label11.Location = New Point(34, 58)
-        Label11.Name = "Label11"
-        Label11.Size = New Size(241, 32)
-        Label11.TabIndex = 32
-        Label11.Text = "CONTACT NUMBER:"
-        ' 
         ' Panel9
         ' 
         Panel9.BorderStyle = BorderStyle.FixedSingle
@@ -494,68 +540,15 @@ Partial Class Form4
         TextBox5.TabIndex = 26
         TextBox5.TextAlign = HorizontalAlignment.Center
         ' 
-        ' Label12
+        ' Label11
         ' 
-        Label12.AutoSize = True
-        Label12.Location = New Point(24, 600)
-        Label12.Name = "Label12"
-        Label12.Size = New Size(199, 32)
-        Label12.TabIndex = 32
-        Label12.Text = "Teller's Validation"
-        ' 
-        ' Label13
-        ' 
-        Label13.AutoSize = True
-        Label13.Location = New Point(606, 386)
-        Label13.Name = "Label13"
-        Label13.Size = New Size(179, 32)
-        Label13.TabIndex = 39
-        Label13.Text = "TOTAL DEPOSIT"
-        ' 
-        ' Label14
-        ' 
-        Label14.AutoSize = True
-        Label14.Location = New Point(779, 386)
-        Label14.Name = "Label14"
-        Label14.Size = New Size(118, 32)
-        Label14.TabIndex = 40
-        Label14.Text = "(in words)"
-        ' 
-        ' TextBox6
-        ' 
-        TextBox6.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
-        TextBox6.Location = New Point(606, 421)
-        TextBox6.Name = "TextBox6"
-        TextBox6.Size = New Size(1098, 50)
-        TextBox6.TabIndex = 27
-        TextBox6.TextAlign = HorizontalAlignment.Center
-        ' 
-        ' Label15
-        ' 
-        Label15.AutoSize = True
-        Label15.Location = New Point(606, 506)
-        Label15.Name = "Label15"
-        Label15.Size = New Size(128, 32)
-        Label15.TabIndex = 41
-        Label15.Text = "(in figures)"
-        ' 
-        ' TextBox8
-        ' 
-        TextBox8.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
-        TextBox8.Location = New Point(740, 493)
-        TextBox8.Name = "TextBox8"
-        TextBox8.Size = New Size(964, 50)
-        TextBox8.TabIndex = 42
-        TextBox8.TextAlign = HorizontalAlignment.Center
-        ' 
-        ' Label16
-        ' 
-        Label16.AutoSize = True
-        Label16.Location = New Point(606, 546)
-        Label16.Name = "Label16"
-        Label16.Size = New Size(528, 32)
-        Label16.TabIndex = 43
-        Label16.Text = "Please accomplish details of deposit at the back."
+        Label11.AutoSize = True
+        Label11.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point)
+        Label11.Location = New Point(34, 58)
+        Label11.Name = "Label11"
+        Label11.Size = New Size(241, 32)
+        Label11.TabIndex = 32
+        Label11.Text = "CONTACT NUMBER:"
         ' 
         ' Panel10
         ' 
@@ -564,6 +557,13 @@ Partial Class Form4
         Panel10.Name = "Panel10"
         Panel10.Size = New Size(1186, 230)
         Panel10.TabIndex = 44
+        ' 
+        ' MySqlCommand1
+        ' 
+        MySqlCommand1.CacheAge = 0
+        MySqlCommand1.Connection = Nothing
+        MySqlCommand1.EnableCaching = False
+        MySqlCommand1.Transaction = Nothing
         ' 
         ' Form4
         ' 
@@ -578,6 +578,7 @@ Partial Class Form4
         Controls.Add(PictureBox2)
         Controls.Add(PictureBox1)
         Controls.Add(Panel1)
+        DoubleBuffered = True
         FormBorderStyle = FormBorderStyle.None
         Name = "Form4"
         StartPosition = FormStartPosition.CenterScreen
