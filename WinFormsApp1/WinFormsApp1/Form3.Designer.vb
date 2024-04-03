@@ -68,6 +68,7 @@ Partial Class Form3
         PictureBox6 = New PictureBox()
         PictureBox7 = New PictureBox()
         ContextMenuStrip1 = New ContextMenuStrip(components)
+        PictureBox9 = New PictureBox()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox3, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox2, ComponentModel.ISupportInitialize).BeginInit()
@@ -85,6 +86,7 @@ Partial Class Form3
         Panel10.SuspendLayout()
         CType(PictureBox6, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox7, ComponentModel.ISupportInitialize).BeginInit()
+        CType(PictureBox9, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
         ' PictureBox1
@@ -139,6 +141,7 @@ Partial Class Form3
         ' Panel1
         ' 
         Panel1.BorderStyle = BorderStyle.FixedSingle
+        Panel1.Controls.Add(PictureBox9)
         Panel1.Controls.Add(Label11)
         Panel1.Controls.Add(Label8)
         Panel1.Controls.Add(Label7)
@@ -523,6 +526,16 @@ Partial Class Form3
         ContextMenuStrip1.Name = "ContextMenuStrip1"
         ContextMenuStrip1.Size = New Size(61, 4)
         ' 
+        ' PictureBox9
+        ' 
+        PictureBox9.Image = CType(resources.GetObject("PictureBox9.Image"), Image)
+        PictureBox9.Location = New Point(1623, 680)
+        PictureBox9.Name = "PictureBox9"
+        PictureBox9.Size = New Size(47, 43)
+        PictureBox9.SizeMode = PictureBoxSizeMode.StretchImage
+        PictureBox9.TabIndex = 44
+        PictureBox9.TabStop = False
+        ' 
         ' Form3
         ' 
         AutoScaleDimensions = New SizeF(13F, 32F)
@@ -567,6 +580,7 @@ Partial Class Form3
         Panel10.PerformLayout()
         CType(PictureBox6, ComponentModel.ISupportInitialize).EndInit()
         CType(PictureBox7, ComponentModel.ISupportInitialize).EndInit()
+        CType(PictureBox9, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
     End Sub
 
@@ -614,4 +628,5 @@ Partial Class Form3
     Friend WithEvents TextBox8 As TextBox
     Friend WithEvents TextBox9 As TextBox
     Friend WithEvents TextBox10 As TextBox
+    Friend WithEvents PictureBox9 As PictureBox
 End Class

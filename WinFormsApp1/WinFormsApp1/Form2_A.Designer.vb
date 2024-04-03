@@ -185,6 +185,7 @@ Partial Class Form2_A
         ' 
         AutoScaleDimensions = New SizeF(13F, 32F)
         AutoScaleMode = AutoScaleMode.Font
+        BackColor = SystemColors.Control
         ClientSize = New Size(1934, 827)
         Controls.Add(Label12)
         Controls.Add(Label11)
