@@ -324,6 +324,20 @@ Public Class Form2
     End Sub
 
     Private Sub ComboBox1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ComboBox1.SelectedIndexChanged
+        selectAccount()
+        moreOption()
+    End Sub
+
+    Private Sub moreOption()
+        ' Check if the "more option..." option is selected
+        If ComboBox1.SelectedItem.ToString() = "more option..." Then
+            ' Show a new form
+            Dim newForm As New Form2_F()
+            newForm.ShowDialog()
+        End If
+    End Sub
+
+    Private Sub selectAccount()
         Dim selectedAccount As String = ComboBox1.SelectedItem.ToString()
         Dim query As String = "SELECT * FROM account_types WHERE account_name = @account_name"
 
@@ -346,7 +360,6 @@ Public Class Form2
             cn.Close()
         End Try
     End Sub
-
 
     Private Sub ComboBox1_DropDown(sender As Object, e As EventArgs) Handles ComboBox1.DropDown
         Try

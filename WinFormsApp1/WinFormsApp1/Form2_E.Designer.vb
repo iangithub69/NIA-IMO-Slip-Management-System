@@ -96,9 +96,9 @@ Partial Class Form2_E
         ' TextBox5
         ' 
         TextBox5.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
-        TextBox5.Location = New Point(160, 234)
+        TextBox5.Location = New Point(226, 234)
         TextBox5.Name = "TextBox5"
-        TextBox5.Size = New Size(660, 50)
+        TextBox5.Size = New Size(594, 50)
         TextBox5.TabIndex = 69
         TextBox5.TextAlign = HorizontalAlignment.Center
         ' 
@@ -125,9 +125,9 @@ Partial Class Form2_E
         ' TextBox3
         ' 
         TextBox3.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
-        TextBox3.Location = New Point(149, 76)
+        TextBox3.Location = New Point(226, 76)
         TextBox3.Name = "TextBox3"
-        TextBox3.Size = New Size(671, 50)
+        TextBox3.Size = New Size(594, 50)
         TextBox3.TabIndex = 51
         TextBox3.TextAlign = HorizontalAlignment.Center
         ' 
@@ -263,9 +263,9 @@ Partial Class Form2_E
         ' TextBox1
         ' 
         TextBox1.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
-        TextBox1.Location = New Point(149, 76)
+        TextBox1.Location = New Point(226, 76)
         TextBox1.Name = "TextBox1"
-        TextBox1.Size = New Size(671, 50)
+        TextBox1.Size = New Size(594, 50)
         TextBox1.TabIndex = 56
         TextBox1.TextAlign = HorizontalAlignment.Center
         ' 
@@ -298,7 +298,7 @@ Partial Class Form2_E
         DataGridView1.BorderStyle = BorderStyle.None
         DataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleCenter
         DataGridViewCellStyle1.BackColor = SystemColors.Control
-        DataGridViewCellStyle1.Font = New Font("Segoe UI", 10.875F, FontStyle.Bold, GraphicsUnit.Point)
+        DataGridViewCellStyle1.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
         DataGridViewCellStyle1.ForeColor = SystemColors.WindowText
         DataGridViewCellStyle1.SelectionBackColor = Color.FromArgb(CByte(0), CByte(192), CByte(0))
         DataGridViewCellStyle1.SelectionForeColor = SystemColors.HighlightText
@@ -307,7 +307,7 @@ Partial Class Form2_E
         DataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
         DataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft
         DataGridViewCellStyle2.BackColor = SystemColors.Window
-        DataGridViewCellStyle2.Font = New Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point)
+        DataGridViewCellStyle2.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point)
         DataGridViewCellStyle2.ForeColor = SystemColors.ControlText
         DataGridViewCellStyle2.SelectionBackColor = Color.FromArgb(CByte(0), CByte(192), CByte(0))
         DataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText

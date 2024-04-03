@@ -41,13 +41,13 @@ Partial Class Form2_D
         PictureBox1 = New PictureBox()
         PictureBox2 = New PictureBox()
         Panel2 = New Panel()
+        Panel3 = New Panel()
         Label5 = New Label()
         TextBox3 = New TextBox()
         Button2 = New Button()
         TextBox4 = New TextBox()
         Label9 = New Label()
         Label10 = New Label()
-        Panel3 = New Panel()
         Panel4 = New Panel()
         CType(PictureBox3, ComponentModel.ISupportInitialize).BeginInit()
         CType(DataGridView1, ComponentModel.ISupportInitialize).BeginInit()
@@ -76,7 +76,7 @@ Partial Class Form2_D
         DataGridView1.BorderStyle = BorderStyle.None
         DataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleCenter
         DataGridViewCellStyle1.BackColor = SystemColors.Control
-        DataGridViewCellStyle1.Font = New Font("Segoe UI", 10.875F, FontStyle.Bold, GraphicsUnit.Point)
+        DataGridViewCellStyle1.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
         DataGridViewCellStyle1.ForeColor = SystemColors.WindowText
         DataGridViewCellStyle1.SelectionBackColor = Color.FromArgb(CByte(0), CByte(192), CByte(0))
         DataGridViewCellStyle1.SelectionForeColor = SystemColors.HighlightText
@@ -85,7 +85,7 @@ Partial Class Form2_D
         DataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
         DataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft
         DataGridViewCellStyle2.BackColor = SystemColors.Window
-        DataGridViewCellStyle2.Font = New Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point)
+        DataGridViewCellStyle2.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point)
         DataGridViewCellStyle2.ForeColor = SystemColors.ControlText
         DataGridViewCellStyle2.SelectionBackColor = Color.FromArgb(CByte(0), CByte(192), CByte(0))
         DataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText
@@ -160,9 +160,9 @@ Partial Class Form2_D
         ' TextBox1
         ' 
         TextBox1.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
-        TextBox1.Location = New Point(149, 76)
+        TextBox1.Location = New Point(226, 76)
         TextBox1.Name = "TextBox1"
-        TextBox1.Size = New Size(671, 50)
+        TextBox1.Size = New Size(594, 50)
         TextBox1.TabIndex = 56
         TextBox1.TextAlign = HorizontalAlignment.Center
         ' 
@@ -254,6 +254,13 @@ Partial Class Form2_D
         Panel2.Size = New Size(875, 306)
         Panel2.TabIndex = 68
         ' 
+        ' Panel3
+        ' 
+        Panel3.Location = New Point(-1, -1)
+        Panel3.Name = "Panel3"
+        Panel3.Size = New Size(875, 306)
+        Panel3.TabIndex = 69
+        ' 
         ' Label5
         ' 
         Label5.AutoSize = True
@@ -267,9 +274,9 @@ Partial Class Form2_D
         ' TextBox3
         ' 
         TextBox3.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
-        TextBox3.Location = New Point(149, 76)
+        TextBox3.Location = New Point(226, 76)
         TextBox3.Name = "TextBox3"
-        TextBox3.Size = New Size(671, 50)
+        TextBox3.Size = New Size(594, 50)
         TextBox3.TabIndex = 51
         TextBox3.TextAlign = HorizontalAlignment.Center
         ' 
@@ -313,13 +320,6 @@ Partial Class Form2_D
         Label10.Size = New Size(189, 45)
         Label10.TabIndex = 55
         Label10.Text = "Description:"
-        ' 
-        ' Panel3
-        ' 
-        Panel3.Location = New Point(-1, -1)
-        Panel3.Name = "Panel3"
-        Panel3.Size = New Size(875, 306)
-        Panel3.TabIndex = 69
         ' 
         ' Panel4
         ' 
