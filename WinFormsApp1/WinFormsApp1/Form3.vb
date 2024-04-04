@@ -1,4 +1,5 @@
 ﻿Imports System.Drawing
+Imports System.Windows.Forms.VisualStyles.VisualStyleElement
 
 Public Class Form3
 
@@ -32,7 +33,24 @@ Public Class Form3
     End Sub
 
     Private Sub PictureBox9_Click(sender As Object, e As EventArgs) Handles PictureBox9.Click
-        Form3_A.Show()
+        ' Instantiate Form3_A
+        Dim form3 As New Form3_A()
 
+        ' Set the values of labels in Form3_A
+        form3.Label1Text = TextBox1.Text
+        form3.Label2Text = TextBox2.Text
+        form3.Label3Text = TextBox3.Text
+        form3.Label5Text = TextBox7.Text
+        form3.Label6Text = TextBox8.Text
+        form3.Label7Text = TextBox9.Text
+        form3.Label8Text = TextBox10.Text
+        form3.Label9Text = TextBox4.Text
+        form3.Label10Text = TextBox5.Text
+        form3.Label11Text = TextBox6.Text
+
+
+
+        ' Show Form2_B
+        form3.Show()
     End Sub
 End Class
