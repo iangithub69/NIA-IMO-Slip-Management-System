@@ -92,6 +92,33 @@ Public Class Form3_A
         End Set
     End Property
 
+    Public Property Label12Text As String
+        Get
+            Return Label12.Text
+        End Get
+        Set(value As String)
+            Label12.Text = value
+        End Set
+    End Property
+
+    Public Property Label13Text As String
+        Get
+            Return Label13.Text
+        End Get
+        Set(value As String)
+            Label13.Text = value
+        End Set
+    End Property
+
+    Public Property Label4Text As String
+        Get
+            Return Label4.Text
+        End Get
+        Set(value As String)
+            Label4.Text = value
+        End Set
+    End Property
+
     Private Sub PictureBox3_Click(sender As Object, e As EventArgs) Handles PictureBox3.Click
         Me.Close()
 
@@ -120,6 +147,7 @@ Public Class Form3_A
         ' Define font and brush for drawing
         Dim font As New Font("Epilogue", 10)
         Dim font2 As New Font("Epilogue", 9)
+        Dim font3 As New Font("Epilogue", 20, FontStyle.Bold)
         Dim brush As New SolidBrush(Color.Black)
 
         ' Define positions for labels
@@ -146,9 +174,24 @@ Public Class Form3_A
         e.Graphics.DrawString(Label2.Text, font, brush, label2X, label2Y)
         y += lineHeight
         ' Adjust x and y coordinates for Label3
-        Dim label3X As Single = 80 ' Adjust x coordinate for Label3
-        Dim label3Y As Single = 380 ' Adjust y coordinate for Label3 /pay to
+        Dim label3X As Single = 300 ' account number
+        Dim label3Y As Single = 380 ' 2 digits
         e.Graphics.DrawString(Label3.Text, font2, brush, label3X, label3Y)
+        y += lineHeight
+
+        Dim label4X As Single = 100
+        Dim label4Y As Single = 336 ' Radio button 3 - label4
+        e.Graphics.DrawString(Label4.Text, font3, brush, label4X, label4Y)
+        y += lineHeight
+
+        Dim label12X As Single = 215
+        Dim label12Y As Single = 336 ' Radio button 2 - label12
+        e.Graphics.DrawString(Label12.Text, font3, brush, label12X, label12Y)
+        y += lineHeight
+
+        Dim label13X As Single = 350
+        Dim label13Y As Single = 336 ' Radio button 1 - label13
+        e.Graphics.DrawString(Label13.Text, font3, brush, label13X, label13Y)
         y += lineHeight
 
         Dim label5X As Single = 150 ' Adjust x coordinate for Label3

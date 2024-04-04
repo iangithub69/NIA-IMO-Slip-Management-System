@@ -39,14 +39,13 @@ Partial Class Form3
         Label4 = New Label()
         TextBox3 = New TextBox()
         TextBox2 = New TextBox()
-        TextBox1 = New TextBox()
         Label3 = New Label()
         Label2 = New Label()
         Label1 = New Label()
         Panel2 = New Panel()
-        CheckBox3 = New CheckBox()
-        CheckBox2 = New CheckBox()
-        CheckBox1 = New CheckBox()
+        RadioButton3 = New RadioButton()
+        RadioButton2 = New RadioButton()
+        RadioButton1 = New RadioButton()
         Panel3 = New Panel()
         PictureBox8 = New PictureBox()
         TextBox4 = New TextBox()
@@ -69,6 +68,7 @@ Partial Class Form3
         PictureBox6 = New PictureBox()
         PictureBox7 = New PictureBox()
         ContextMenuStrip1 = New ContextMenuStrip(components)
+        TextBox1 = New TextBox()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox3, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox2, ComponentModel.ISupportInitialize).BeginInit()
@@ -251,15 +251,6 @@ Partial Class Form3
         TextBox2.TabIndex = 9
         TextBox2.TextAlign = HorizontalAlignment.Center
         ' 
-        ' TextBox1
-        ' 
-        TextBox1.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
-        TextBox1.Location = New Point(139, 167)
-        TextBox1.Name = "TextBox1"
-        TextBox1.Size = New Size(152, 50)
-        TextBox1.TabIndex = 8
-        TextBox1.TextAlign = HorizontalAlignment.Center
-        ' 
         ' Label3
         ' 
         Label3.AutoSize = True
@@ -290,49 +281,49 @@ Partial Class Form3
         ' Panel2
         ' 
         Panel2.BorderStyle = BorderStyle.FixedSingle
-        Panel2.Controls.Add(CheckBox3)
-        Panel2.Controls.Add(CheckBox2)
-        Panel2.Controls.Add(CheckBox1)
+        Panel2.Controls.Add(RadioButton3)
+        Panel2.Controls.Add(RadioButton2)
+        Panel2.Controls.Add(RadioButton1)
         Panel2.Location = New Point(-19, -16)
         Panel2.Name = "Panel2"
         Panel2.Size = New Size(1166, 135)
         Panel2.TabIndex = 4
         ' 
-        ' CheckBox3
+        ' RadioButton3
         ' 
-        CheckBox3.AutoSize = True
-        CheckBox3.BackColor = Color.White
-        CheckBox3.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
-        CheckBox3.Location = New Point(531, 71)
-        CheckBox3.Name = "CheckBox3"
-        CheckBox3.Size = New Size(407, 49)
-        CheckBox3.TabIndex = 3
-        CheckBox3.Text = "DEBIT FROM ACCOUNT"
-        CheckBox3.UseVisualStyleBackColor = False
+        RadioButton3.AutoSize = True
+        RadioButton3.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
+        RadioButton3.Location = New Point(119, 64)
+        RadioButton3.Name = "RadioButton3"
+        RadioButton3.Size = New Size(137, 49)
+        RadioButton3.TabIndex = 6
+        RadioButton3.TabStop = True
+        RadioButton3.Text = "CASH"
+        RadioButton3.UseVisualStyleBackColor = True
         ' 
-        ' CheckBox2
+        ' RadioButton2
         ' 
-        CheckBox2.AutoSize = True
-        CheckBox2.BackColor = Color.White
-        CheckBox2.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
-        CheckBox2.Location = New Point(304, 71)
-        CheckBox2.Name = "CheckBox2"
-        CheckBox2.Size = New Size(155, 49)
-        CheckBox2.TabIndex = 2
-        CheckBox2.Text = "CHECK"
-        CheckBox2.UseVisualStyleBackColor = False
+        RadioButton2.AutoSize = True
+        RadioButton2.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
+        RadioButton2.Location = New Point(334, 64)
+        RadioButton2.Name = "RadioButton2"
+        RadioButton2.Size = New Size(154, 49)
+        RadioButton2.TabIndex = 5
+        RadioButton2.TabStop = True
+        RadioButton2.Text = "CHECK"
+        RadioButton2.UseVisualStyleBackColor = True
         ' 
-        ' CheckBox1
+        ' RadioButton1
         ' 
-        CheckBox1.AutoSize = True
-        CheckBox1.BackColor = Color.White
-        CheckBox1.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
-        CheckBox1.Location = New Point(89, 71)
-        CheckBox1.Name = "CheckBox1"
-        CheckBox1.Size = New Size(138, 49)
-        CheckBox1.TabIndex = 1
-        CheckBox1.Text = "CASH"
-        CheckBox1.UseVisualStyleBackColor = False
+        RadioButton1.AutoSize = True
+        RadioButton1.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
+        RadioButton1.Location = New Point(582, 64)
+        RadioButton1.Name = "RadioButton1"
+        RadioButton1.Size = New Size(406, 49)
+        RadioButton1.TabIndex = 4
+        RadioButton1.TabStop = True
+        RadioButton1.Text = "DEBIT FROM ACCOUNT"
+        RadioButton1.UseVisualStyleBackColor = True
         ' 
         ' Panel3
         ' 
@@ -537,6 +528,15 @@ Partial Class Form3
         ContextMenuStrip1.Name = "ContextMenuStrip1"
         ContextMenuStrip1.Size = New Size(61, 4)
         ' 
+        ' TextBox1
+        ' 
+        TextBox1.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
+        TextBox1.Location = New Point(139, 167)
+        TextBox1.Name = "TextBox1"
+        TextBox1.Size = New Size(152, 50)
+        TextBox1.TabIndex = 8
+        TextBox1.TextAlign = HorizontalAlignment.Center
+        ' 
         ' Form3
         ' 
         AutoScaleDimensions = New SizeF(13F, 32F)
@@ -593,16 +593,12 @@ Partial Class Form3
     Friend WithEvents PictureBox5 As PictureBox
     Friend WithEvents Panel1 As Panel
     Friend WithEvents Label1 As Label
-    Friend WithEvents CheckBox2 As CheckBox
-    Friend WithEvents CheckBox1 As CheckBox
     Friend WithEvents Label2 As Label
     Friend WithEvents Panel2 As Panel
-    Friend WithEvents CheckBox3 As CheckBox
     Friend WithEvents Panel3 As Panel
     Friend WithEvents Label4 As Label
     Friend WithEvents TextBox3 As TextBox
     Friend WithEvents TextBox2 As TextBox
-    Friend WithEvents TextBox1 As TextBox
     Friend WithEvents Label3 As Label
     Friend WithEvents Label6 As Label
     Friend WithEvents Label5 As Label
@@ -631,4 +627,8 @@ Partial Class Form3
     Friend WithEvents TextBox9 As TextBox
     Friend WithEvents TextBox10 As TextBox
     Friend WithEvents PictureBox9 As PictureBox
+    Friend WithEvents RadioButton3 As RadioButton
+    Friend WithEvents RadioButton2 As RadioButton
+    Friend WithEvents RadioButton1 As RadioButton
+    Friend WithEvents TextBox1 As TextBox
 End Class
