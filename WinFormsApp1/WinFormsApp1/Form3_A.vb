@@ -119,6 +119,87 @@ Public Class Form3_A
         End Set
     End Property
 
+    Public Property Label14Text As String
+        Get
+            Return Label14.Text
+        End Get
+        Set(value As String)
+            Label14.Text = value
+        End Set
+    End Property
+
+    Public Property Label15Text As String
+        Get
+            Return Label15.Text
+        End Get
+        Set(value As String)
+            Label15.Text = value
+        End Set
+    End Property
+
+    Public Property Label16Text As String
+        Get
+            Return Label16.Text
+        End Get
+        Set(value As String)
+            Label16.Text = value
+        End Set
+    End Property
+
+    Public Property Label17Text As String
+        Get
+            Return Label17.Text
+        End Get
+        Set(value As String)
+            Label17.Text = value
+        End Set
+    End Property
+
+    Public Property Label18Text As String
+        Get
+            Return Label18.Text
+        End Get
+        Set(value As String)
+            Label18.Text = value
+        End Set
+    End Property
+
+    Public Property Label19Text As String
+        Get
+            Return Label19.Text
+        End Get
+        Set(value As String)
+            Label19.Text = value
+        End Set
+    End Property
+
+    Public Property Label20Text As String
+        Get
+            Return Label20.Text
+        End Get
+        Set(value As String)
+            Label20.Text = value
+        End Set
+    End Property
+
+    Public Property Label21Text As String
+        Get
+            Return Label21.Text
+        End Get
+        Set(value As String)
+            Label21.Text = value
+        End Set
+    End Property
+
+    Public Property Label22Text As String
+        Get
+            Return Label22.Text
+        End Get
+        Set(value As String)
+            Label22.Text = value
+        End Set
+    End Property
+
     Private Sub PictureBox3_Click(sender As Object, e As EventArgs) Handles PictureBox3.Click
         Me.Close()
 
@@ -164,18 +245,18 @@ Public Class Form3_A
         ' Translate to adjust for the rotation (swap width and height)
         e.Graphics.TranslateTransform(0, -e.PageBounds.Width)
 
-        Dim label1X As Single = 580 ' Adjust x coordinate for Label1
-        Dim label1Y As Single = 340 ' Adjust y coordinate for Label1 /date
+        Dim label1X As Single = 109 ' account number
+        Dim label1Y As Single = 395 ' 
         e.Graphics.DrawString(Label1.Text, font, brush, label1X, label1Y)
         y += lineHeight
         ' Adjust x and y coordinates for Label2
-        Dim label2X As Single = 585 ' Adjust x coordinate for Label2
-        Dim label2Y As Single = 360 ' Adjust y coordinate for Label2 /amount
+        Dim label2X As Single = 130 ' account number
+        Dim label2Y As Single = 395 ' 
         e.Graphics.DrawString(Label2.Text, font, brush, label2X, label2Y)
         y += lineHeight
         ' Adjust x and y coordinates for Label3
-        Dim label3X As Single = 300 ' account number
-        Dim label3Y As Single = 380 ' 2 digits
+        Dim label3X As Single = 155 ' account number
+        Dim label3Y As Single = 395 '
         e.Graphics.DrawString(Label3.Text, font2, brush, label3X, label3Y)
         y += lineHeight
 

@@ -35,10 +35,7 @@ Partial Class Form3
         Label8 = New Label()
         Label7 = New Label()
         Label6 = New Label()
-        Label5 = New Label()
-        Label4 = New Label()
-        TextBox3 = New TextBox()
-        TextBox2 = New TextBox()
+        TextBox1 = New TextBox()
         Label3 = New Label()
         Label2 = New Label()
         Label1 = New Label()
@@ -50,6 +47,17 @@ Partial Class Form3
         PictureBox8 = New PictureBox()
         TextBox4 = New TextBox()
         Panel4 = New Panel()
+        TextBox17 = New TextBox()
+        TextBox16 = New TextBox()
+        Label5 = New Label()
+        TextBox15 = New TextBox()
+        TextBox14 = New TextBox()
+        TextBox13 = New TextBox()
+        TextBox12 = New TextBox()
+        TextBox11 = New TextBox()
+        TextBox3 = New TextBox()
+        TextBox2 = New TextBox()
+        Label4 = New Label()
         Panel5 = New Panel()
         TextBox5 = New TextBox()
         Panel6 = New Panel()
@@ -68,7 +76,6 @@ Partial Class Form3
         PictureBox6 = New PictureBox()
         PictureBox7 = New PictureBox()
         ContextMenuStrip1 = New ContextMenuStrip(components)
-        TextBox1 = New TextBox()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox3, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox2, ComponentModel.ISupportInitialize).BeginInit()
@@ -79,6 +86,7 @@ Partial Class Form3
         Panel2.SuspendLayout()
         Panel3.SuspendLayout()
         CType(PictureBox8, ComponentModel.ISupportInitialize).BeginInit()
+        Panel4.SuspendLayout()
         Panel5.SuspendLayout()
         Panel6.SuspendLayout()
         Panel7.SuspendLayout()
@@ -146,10 +154,6 @@ Partial Class Form3
         Panel1.Controls.Add(Label8)
         Panel1.Controls.Add(Label7)
         Panel1.Controls.Add(Label6)
-        Panel1.Controls.Add(Label5)
-        Panel1.Controls.Add(Label4)
-        Panel1.Controls.Add(TextBox3)
-        Panel1.Controls.Add(TextBox2)
         Panel1.Controls.Add(TextBox1)
         Panel1.Controls.Add(Label3)
         Panel1.Controls.Add(Label2)
@@ -215,41 +219,14 @@ Partial Class Form3
         Label6.TabIndex = 13
         Label6.Text = "MERCHANT / AGENCY NAME"
         ' 
-        ' Label5
+        ' TextBox1
         ' 
-        Label5.AutoSize = True
-        Label5.Location = New Point(495, 167)
-        Label5.Name = "Label5"
-        Label5.Size = New Size(34, 32)
-        Label5.TabIndex = 12
-        Label5.Text = "__"
-        ' 
-        ' Label4
-        ' 
-        Label4.AutoSize = True
-        Label4.Location = New Point(297, 167)
-        Label4.Name = "Label4"
-        Label4.Size = New Size(34, 32)
-        Label4.TabIndex = 11
-        Label4.Text = "__"
-        ' 
-        ' TextBox3
-        ' 
-        TextBox3.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
-        TextBox3.Location = New Point(535, 167)
-        TextBox3.Name = "TextBox3"
-        TextBox3.Size = New Size(152, 50)
-        TextBox3.TabIndex = 10
-        TextBox3.TextAlign = HorizontalAlignment.Center
-        ' 
-        ' TextBox2
-        ' 
-        TextBox2.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
-        TextBox2.Location = New Point(337, 167)
-        TextBox2.Name = "TextBox2"
-        TextBox2.Size = New Size(152, 50)
-        TextBox2.TabIndex = 9
-        TextBox2.TextAlign = HorizontalAlignment.Center
+        TextBox1.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
+        TextBox1.Location = New Point(130, 167)
+        TextBox1.Name = "TextBox1"
+        TextBox1.Size = New Size(48, 50)
+        TextBox1.TabIndex = 8
+        TextBox1.TextAlign = HorizontalAlignment.Center
         ' 
         ' Label3
         ' 
@@ -359,10 +336,120 @@ Partial Class Form3
         ' Panel4
         ' 
         Panel4.BorderStyle = BorderStyle.FixedSingle
+        Panel4.Controls.Add(TextBox17)
+        Panel4.Controls.Add(TextBox16)
+        Panel4.Controls.Add(Label5)
+        Panel4.Controls.Add(TextBox15)
+        Panel4.Controls.Add(TextBox14)
+        Panel4.Controls.Add(TextBox13)
+        Panel4.Controls.Add(TextBox12)
+        Panel4.Controls.Add(TextBox11)
+        Panel4.Controls.Add(TextBox3)
+        Panel4.Controls.Add(TextBox2)
+        Panel4.Controls.Add(Label4)
         Panel4.Location = New Point(-19, 91)
         Panel4.Name = "Panel4"
         Panel4.Size = New Size(864, 148)
         Panel4.TabIndex = 7
+        ' 
+        ' TextBox17
+        ' 
+        TextBox17.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
+        TextBox17.Location = New Point(672, 75)
+        TextBox17.Name = "TextBox17"
+        TextBox17.Size = New Size(48, 50)
+        TextBox17.TabIndex = 54
+        TextBox17.TextAlign = HorizontalAlignment.Center
+        ' 
+        ' TextBox16
+        ' 
+        TextBox16.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
+        TextBox16.Location = New Point(624, 75)
+        TextBox16.Name = "TextBox16"
+        TextBox16.Size = New Size(48, 50)
+        TextBox16.TabIndex = 53
+        TextBox16.TextAlign = HorizontalAlignment.Center
+        ' 
+        ' Label5
+        ' 
+        Label5.AutoSize = True
+        Label5.Location = New Point(584, 75)
+        Label5.Name = "Label5"
+        Label5.Size = New Size(34, 32)
+        Label5.TabIndex = 52
+        Label5.Text = "__"
+        ' 
+        ' TextBox15
+        ' 
+        TextBox15.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
+        TextBox15.Location = New Point(530, 75)
+        TextBox15.Name = "TextBox15"
+        TextBox15.Size = New Size(48, 50)
+        TextBox15.TabIndex = 51
+        TextBox15.TextAlign = HorizontalAlignment.Center
+        ' 
+        ' TextBox14
+        ' 
+        TextBox14.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
+        TextBox14.Location = New Point(482, 75)
+        TextBox14.Name = "TextBox14"
+        TextBox14.Size = New Size(48, 50)
+        TextBox14.TabIndex = 50
+        TextBox14.TextAlign = HorizontalAlignment.Center
+        ' 
+        ' TextBox13
+        ' 
+        TextBox13.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
+        TextBox13.Location = New Point(434, 75)
+        TextBox13.Name = "TextBox13"
+        TextBox13.Size = New Size(48, 50)
+        TextBox13.TabIndex = 49
+        TextBox13.TextAlign = HorizontalAlignment.Center
+        ' 
+        ' TextBox12
+        ' 
+        TextBox12.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
+        TextBox12.Location = New Point(386, 75)
+        TextBox12.Name = "TextBox12"
+        TextBox12.Size = New Size(48, 50)
+        TextBox12.TabIndex = 48
+        TextBox12.TextAlign = HorizontalAlignment.Center
+        ' 
+        ' TextBox11
+        ' 
+        TextBox11.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
+        TextBox11.Location = New Point(292, 75)
+        TextBox11.Name = "TextBox11"
+        TextBox11.Size = New Size(48, 50)
+        TextBox11.TabIndex = 47
+        TextBox11.TextAlign = HorizontalAlignment.Center
+        ' 
+        ' TextBox3
+        ' 
+        TextBox3.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
+        TextBox3.Location = New Point(244, 75)
+        TextBox3.Name = "TextBox3"
+        TextBox3.Size = New Size(48, 50)
+        TextBox3.TabIndex = 46
+        TextBox3.TextAlign = HorizontalAlignment.Center
+        ' 
+        ' TextBox2
+        ' 
+        TextBox2.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
+        TextBox2.Location = New Point(196, 75)
+        TextBox2.Name = "TextBox2"
+        TextBox2.Size = New Size(48, 50)
+        TextBox2.TabIndex = 45
+        TextBox2.TextAlign = HorizontalAlignment.Center
+        ' 
+        ' Label4
+        ' 
+        Label4.AutoSize = True
+        Label4.Location = New Point(346, 75)
+        Label4.Name = "Label4"
+        Label4.Size = New Size(34, 32)
+        Label4.TabIndex = 11
+        Label4.Text = "__"
         ' 
         ' Panel5
         ' 
@@ -528,15 +615,6 @@ Partial Class Form3
         ContextMenuStrip1.Name = "ContextMenuStrip1"
         ContextMenuStrip1.Size = New Size(61, 4)
         ' 
-        ' TextBox1
-        ' 
-        TextBox1.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
-        TextBox1.Location = New Point(139, 167)
-        TextBox1.Name = "TextBox1"
-        TextBox1.Size = New Size(152, 50)
-        TextBox1.TabIndex = 8
-        TextBox1.TextAlign = HorizontalAlignment.Center
-        ' 
         ' Form3
         ' 
         AutoScaleDimensions = New SizeF(13F, 32F)
@@ -569,6 +647,8 @@ Partial Class Form3
         Panel3.ResumeLayout(False)
         Panel3.PerformLayout()
         CType(PictureBox8, ComponentModel.ISupportInitialize).EndInit()
+        Panel4.ResumeLayout(False)
+        Panel4.PerformLayout()
         Panel5.ResumeLayout(False)
         Panel5.PerformLayout()
         Panel6.ResumeLayout(False)
@@ -597,11 +677,8 @@ Partial Class Form3
     Friend WithEvents Panel2 As Panel
     Friend WithEvents Panel3 As Panel
     Friend WithEvents Label4 As Label
-    Friend WithEvents TextBox3 As TextBox
-    Friend WithEvents TextBox2 As TextBox
     Friend WithEvents Label3 As Label
     Friend WithEvents Label6 As Label
-    Friend WithEvents Label5 As Label
     Friend WithEvents Panel4 As Panel
     Friend WithEvents Panel5 As Panel
     Friend WithEvents Label9 As Label
@@ -631,4 +708,14 @@ Partial Class Form3
     Friend WithEvents RadioButton2 As RadioButton
     Friend WithEvents RadioButton1 As RadioButton
     Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents TextBox17 As TextBox
+    Friend WithEvents TextBox16 As TextBox
+    Friend WithEvents Label5 As Label
+    Friend WithEvents TextBox15 As TextBox
+    Friend WithEvents TextBox14 As TextBox
+    Friend WithEvents TextBox13 As TextBox
+    Friend WithEvents TextBox12 As TextBox
+    Friend WithEvents TextBox11 As TextBox
+    Friend WithEvents TextBox3 As TextBox
+    Friend WithEvents TextBox2 As TextBox
 End Class

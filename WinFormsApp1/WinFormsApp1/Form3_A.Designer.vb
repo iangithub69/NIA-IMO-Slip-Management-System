@@ -24,9 +24,6 @@ Partial Class Form3_A
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form3_A))
         PictureBox3 = New PictureBox()
-        Label1 = New Label()
-        Label2 = New Label()
-        Label3 = New Label()
         Label5 = New Label()
         Label6 = New Label()
         Label7 = New Label()
@@ -38,6 +35,18 @@ Partial Class Form3_A
         Label4 = New Label()
         Label12 = New Label()
         Label13 = New Label()
+        Label1 = New Label()
+        Label2 = New Label()
+        Label3 = New Label()
+        Label14 = New Label()
+        Label15 = New Label()
+        Label16 = New Label()
+        Label17 = New Label()
+        Label18 = New Label()
+        Label19 = New Label()
+        Label20 = New Label()
+        Label21 = New Label()
+        Label22 = New Label()
         CType(PictureBox3, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
@@ -50,36 +59,6 @@ Partial Class Form3_A
         PictureBox3.SizeMode = PictureBoxSizeMode.StretchImage
         PictureBox3.TabIndex = 39
         PictureBox3.TabStop = False
-        ' 
-        ' Label1
-        ' 
-        Label1.AutoSize = True
-        Label1.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
-        Label1.Location = New Point(255, 225)
-        Label1.Name = "Label1"
-        Label1.Size = New Size(39, 45)
-        Label1.TabIndex = 59
-        Label1.Text = "#"
-        ' 
-        ' Label2
-        ' 
-        Label2.AutoSize = True
-        Label2.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
-        Label2.Location = New Point(445, 225)
-        Label2.Name = "Label2"
-        Label2.Size = New Size(39, 45)
-        Label2.TabIndex = 60
-        Label2.Text = "#"
-        ' 
-        ' Label3
-        ' 
-        Label3.AutoSize = True
-        Label3.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
-        Label3.Location = New Point(658, 225)
-        Label3.Name = "Label3"
-        Label3.Size = New Size(39, 45)
-        Label3.TabIndex = 61
-        Label3.Text = "#"
         ' 
         ' Label5
         ' 
@@ -189,11 +168,143 @@ Partial Class Form3_A
         Label13.Size = New Size(0, 45)
         Label13.TabIndex = 74
         ' 
+        ' Label1
+        ' 
+        Label1.AutoSize = True
+        Label1.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
+        Label1.Location = New Point(247, 249)
+        Label1.Name = "Label1"
+        Label1.Size = New Size(33, 45)
+        Label1.TabIndex = 75
+        Label1.Text = "_"
+        ' 
+        ' Label2
+        ' 
+        Label2.AutoSize = True
+        Label2.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
+        Label2.Location = New Point(286, 249)
+        Label2.Name = "Label2"
+        Label2.Size = New Size(33, 45)
+        Label2.TabIndex = 76
+        Label2.Text = "_"
+        ' 
+        ' Label3
+        ' 
+        Label3.AutoSize = True
+        Label3.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
+        Label3.Location = New Point(325, 249)
+        Label3.Name = "Label3"
+        Label3.Size = New Size(33, 45)
+        Label3.TabIndex = 77
+        Label3.Text = "_"
+        ' 
+        ' Label14
+        ' 
+        Label14.AutoSize = True
+        Label14.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
+        Label14.Location = New Point(364, 249)
+        Label14.Name = "Label14"
+        Label14.Size = New Size(33, 45)
+        Label14.TabIndex = 78
+        Label14.Text = "_"
+        ' 
+        ' Label15
+        ' 
+        Label15.AutoSize = True
+        Label15.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
+        Label15.Location = New Point(403, 230)
+        Label15.Name = "Label15"
+        Label15.Size = New Size(33, 45)
+        Label15.TabIndex = 79
+        Label15.Text = "_"
+        ' 
+        ' Label16
+        ' 
+        Label16.AutoSize = True
+        Label16.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
+        Label16.Location = New Point(451, 249)
+        Label16.Name = "Label16"
+        Label16.Size = New Size(33, 45)
+        Label16.TabIndex = 80
+        Label16.Text = "_"
+        ' 
+        ' Label17
+        ' 
+        Label17.AutoSize = True
+        Label17.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
+        Label17.Location = New Point(490, 249)
+        Label17.Name = "Label17"
+        Label17.Size = New Size(33, 45)
+        Label17.TabIndex = 81
+        Label17.Text = "_"
+        ' 
+        ' Label18
+        ' 
+        Label18.AutoSize = True
+        Label18.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
+        Label18.Location = New Point(529, 249)
+        Label18.Name = "Label18"
+        Label18.Size = New Size(33, 45)
+        Label18.TabIndex = 82
+        Label18.Text = "_"
+        ' 
+        ' Label19
+        ' 
+        Label19.AutoSize = True
+        Label19.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
+        Label19.Location = New Point(568, 249)
+        Label19.Name = "Label19"
+        Label19.Size = New Size(33, 45)
+        Label19.TabIndex = 83
+        Label19.Text = "_"
+        ' 
+        ' Label20
+        ' 
+        Label20.AutoSize = True
+        Label20.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
+        Label20.Location = New Point(607, 230)
+        Label20.Name = "Label20"
+        Label20.Size = New Size(33, 45)
+        Label20.TabIndex = 84
+        Label20.Text = "_"
+        ' 
+        ' Label21
+        ' 
+        Label21.AutoSize = True
+        Label21.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
+        Label21.Location = New Point(658, 249)
+        Label21.Name = "Label21"
+        Label21.Size = New Size(33, 45)
+        Label21.TabIndex = 85
+        Label21.Text = "_"
+        ' 
+        ' Label22
+        ' 
+        Label22.AutoSize = True
+        Label22.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
+        Label22.Location = New Point(697, 249)
+        Label22.Name = "Label22"
+        Label22.Size = New Size(33, 45)
+        Label22.TabIndex = 86
+        Label22.Text = "_"
+        ' 
         ' Form3_A
         ' 
         AutoScaleDimensions = New SizeF(13F, 32F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(1934, 827)
+        Controls.Add(Label22)
+        Controls.Add(Label21)
+        Controls.Add(Label20)
+        Controls.Add(Label19)
+        Controls.Add(Label18)
+        Controls.Add(Label17)
+        Controls.Add(Label16)
+        Controls.Add(Label15)
+        Controls.Add(Label14)
+        Controls.Add(Label3)
+        Controls.Add(Label2)
+        Controls.Add(Label1)
         Controls.Add(Label13)
         Controls.Add(Label12)
         Controls.Add(Label4)
@@ -205,9 +316,6 @@ Partial Class Form3_A
         Controls.Add(Label7)
         Controls.Add(Label6)
         Controls.Add(Label5)
-        Controls.Add(Label3)
-        Controls.Add(Label2)
-        Controls.Add(Label1)
         Controls.Add(PictureBox3)
         DoubleBuffered = True
         FormBorderStyle = FormBorderStyle.None
@@ -220,9 +328,6 @@ Partial Class Form3_A
     End Sub
 
     Friend WithEvents PictureBox3 As PictureBox
-    Friend WithEvents Label1 As Label
-    Friend WithEvents Label2 As Label
-    Friend WithEvents Label3 As Label
     Friend WithEvents Label5 As Label
     Friend WithEvents Label6 As Label
     Friend WithEvents Label7 As Label
@@ -234,4 +339,16 @@ Partial Class Form3_A
     Friend WithEvents Label4 As Label
     Friend WithEvents Label12 As Label
     Friend WithEvents Label13 As Label
+    Friend WithEvents Label1 As Label
+    Friend WithEvents Label2 As Label
+    Friend WithEvents Label3 As Label
+    Friend WithEvents Label14 As Label
+    Friend WithEvents Label15 As Label
+    Friend WithEvents Label16 As Label
+    Friend WithEvents Label17 As Label
+    Friend WithEvents Label18 As Label
+    Friend WithEvents Label19 As Label
+    Friend WithEvents Label20 As Label
+    Friend WithEvents Label21 As Label
+    Friend WithEvents Label22 As Label
 End Class
