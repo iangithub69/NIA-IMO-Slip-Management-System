@@ -260,6 +260,41 @@ Public Class Form3_A
         e.Graphics.DrawString(Label3.Text, font2, brush, label3X, label3Y)
         y += lineHeight
 
+        Dim label14X As Single = 175 ' account number
+        Dim label14Y As Single = 395 '
+        e.Graphics.DrawString(Label14.Text, font2, brush, label14X, label14Y)
+        y += lineHeight
+
+        Dim label16X As Single = 210 ' account number
+        Dim label16Y As Single = 395 '
+        e.Graphics.DrawString(Label16.Text, font2, brush, label16X, label16Y)
+        y += lineHeight
+
+        Dim label17X As Single = 235 ' account number
+        Dim label17Y As Single = 395 '
+        e.Graphics.DrawString(Label17.Text, font2, brush, label17X, label17Y)
+        y += lineHeight
+
+        Dim label18X As Single = 255 ' account number
+        Dim label18Y As Single = 395 '
+        e.Graphics.DrawString(Label18.Text, font2, brush, label18X, label18Y)
+        y += lineHeight
+
+        Dim label19X As Single = 280 ' account number
+        Dim label19Y As Single = 395 '
+        e.Graphics.DrawString(Label19.Text, font2, brush, label19X, label19Y)
+        y += lineHeight
+
+        Dim label21X As Single = 310 ' account number
+        Dim label21Y As Single = 395 '
+        e.Graphics.DrawString(Label21.Text, font2, brush, label21X, label21Y)
+        y += lineHeight
+
+        Dim label22X As Single = 330 ' account number
+        Dim label22Y As Single = 395 '
+        e.Graphics.DrawString(Label22.Text, font2, brush, label22X, label22Y)
+        y += lineHeight
+
         Dim label4X As Single = 100
         Dim label4Y As Single = 336 ' Radio button 3 - label4
         e.Graphics.DrawString(Label4.Text, font3, brush, label4X, label4Y)
