@@ -73,6 +73,7 @@ Partial Class Form3
         Panel10 = New Panel()
         TextBox10 = New TextBox()
         Label12 = New Label()
+        PictureBox10 = New PictureBox()
         PictureBox6 = New PictureBox()
         PictureBox7 = New PictureBox()
         ContextMenuStrip1 = New ContextMenuStrip(components)
@@ -93,6 +94,7 @@ Partial Class Form3
         Panel8.SuspendLayout()
         Panel9.SuspendLayout()
         Panel10.SuspendLayout()
+        CType(PictureBox10, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox6, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox7, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
@@ -150,6 +152,7 @@ Partial Class Form3
         ' 
         Panel1.BorderStyle = BorderStyle.FixedSingle
         Panel1.Controls.Add(PictureBox9)
+        Panel1.Controls.Add(PictureBox10)
         Panel1.Controls.Add(Label11)
         Panel1.Controls.Add(Label8)
         Panel1.Controls.Add(Label7)
@@ -589,6 +592,17 @@ Partial Class Form3
         Label12.TabIndex = 19
         Label12.Text = "Amount"
         ' 
+        ' PictureBox10
+        ' 
+        PictureBox10.Cursor = Cursors.Hand
+        PictureBox10.Image = My.Resources.Resources.literature_no_bg
+        PictureBox10.Location = New Point(1623, 629)
+        PictureBox10.Name = "PictureBox10"
+        PictureBox10.Size = New Size(47, 43)
+        PictureBox10.SizeMode = PictureBoxSizeMode.StretchImage
+        PictureBox10.TabIndex = 45
+        PictureBox10.TabStop = False
+        ' 
         ' PictureBox6
         ' 
         PictureBox6.Image = My.Resources.Resources.landbank_withbackground_fotor_2024031311164
@@ -661,6 +675,7 @@ Partial Class Form3
         Panel9.PerformLayout()
         Panel10.ResumeLayout(False)
         Panel10.PerformLayout()
+        CType(PictureBox10, ComponentModel.ISupportInitialize).EndInit()
         CType(PictureBox6, ComponentModel.ISupportInitialize).EndInit()
         CType(PictureBox7, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
@@ -718,4 +733,5 @@ Partial Class Form3
     Friend WithEvents TextBox11 As TextBox
     Friend WithEvents TextBox3 As TextBox
     Friend WithEvents TextBox2 As TextBox
+    Friend WithEvents PictureBox10 As PictureBox
 End Class

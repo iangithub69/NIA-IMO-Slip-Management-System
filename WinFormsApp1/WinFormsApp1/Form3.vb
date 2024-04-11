@@ -37,7 +37,7 @@ Public Class Form3
 
     Private Sub PictureBox9_Click(sender As Object, e As EventArgs) Handles PictureBox9.Click
         ' Instantiate Form3_A
-        Dim form3 As New Form3_A()
+        Dim form3 As New Form3_A
 
         ' Set the values of labels in Form3_A
         'for account numbers
@@ -73,7 +73,7 @@ Public Class Form3
 
 
         ' Show Form2_B
-        form3.Show()
+        form3.Show
     End Sub
 
     Private Sub TextBox1_TextChanged(sender As Object, e As EventArgs) Handles TextBox1.TextChanged
@@ -368,5 +368,10 @@ Public Class Form3
             ' If so, suppress the key press
             e.Handled = True
         End If
+    End Sub
+
+    Private Sub PictureBox10_Click(sender As Object, e As EventArgs) Handles PictureBox10.Click
+        Form3_B.Show()
+
     End Sub
 End Class

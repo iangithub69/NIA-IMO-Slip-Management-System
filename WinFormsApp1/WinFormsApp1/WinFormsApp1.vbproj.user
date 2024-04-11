@@ -28,6 +28,9 @@
     <Compile Update="Form3_A.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Form3_B.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Form4.vb">
       <SubType>Form</SubType>
     </Compile>
