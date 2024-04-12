@@ -30,20 +30,10 @@ Partial Class Form4
         PictureBox6 = New PictureBox()
         PictureBox5 = New PictureBox()
         Panel1 = New Panel()
+        PictureBox9 = New PictureBox()
         Label16 = New Label()
-        TextBox8 = New TextBox()
         Label15 = New Label()
-        TextBox6 = New TextBox()
-        Label14 = New Label()
-        Label13 = New Label()
         Label12 = New Label()
-        TextBox3 = New TextBox()
-        CheckBox5 = New CheckBox()
-        CheckBox4 = New CheckBox()
-        CheckBox3 = New CheckBox()
-        CheckBox2 = New CheckBox()
-        CheckBox1 = New CheckBox()
-        Label10 = New Label()
         Label3 = New Label()
         Label2 = New Label()
         Label1 = New Label()
@@ -51,8 +41,21 @@ Partial Class Form4
         Panel3 = New Panel()
         TextBox7 = New TextBox()
         Panel4 = New Panel()
+        TextBox9 = New TextBox()
+        PictureBox8 = New PictureBox()
         Label4 = New Label()
         Panel5 = New Panel()
+        TextBox18 = New TextBox()
+        TextBox17 = New TextBox()
+        TextBox16 = New TextBox()
+        Label18 = New Label()
+        TextBox15 = New TextBox()
+        TextBox14 = New TextBox()
+        Label17 = New Label()
+        TextBox13 = New TextBox()
+        TextBox12 = New TextBox()
+        TextBox11 = New TextBox()
+        TextBox10 = New TextBox()
         TextBox2 = New TextBox()
         Label5 = New Label()
         Panel6 = New Panel()
@@ -65,10 +68,21 @@ Partial Class Form4
         Label9 = New Label()
         Label8 = New Label()
         Panel8 = New Panel()
+        TextBox3 = New TextBox()
+        RadioButton5 = New RadioButton()
+        Label10 = New Label()
+        RadioButton4 = New RadioButton()
+        RadioButton1 = New RadioButton()
+        RadioButton3 = New RadioButton()
+        RadioButton2 = New RadioButton()
         Panel9 = New Panel()
         TextBox5 = New TextBox()
         Label11 = New Label()
         Panel10 = New Panel()
+        RichTextBox1 = New RichTextBox()
+        Label13 = New Label()
+        TextBox8 = New TextBox()
+        Label14 = New Label()
         MySqlCommand1 = New MySql.Data.MySqlClient.MySqlCommand()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox2, ComponentModel.ISupportInitialize).BeginInit()
@@ -77,13 +91,17 @@ Partial Class Form4
         CType(PictureBox6, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox5, ComponentModel.ISupportInitialize).BeginInit()
         Panel1.SuspendLayout()
+        CType(PictureBox9, ComponentModel.ISupportInitialize).BeginInit()
         Panel3.SuspendLayout()
         Panel4.SuspendLayout()
+        CType(PictureBox8, ComponentModel.ISupportInitialize).BeginInit()
         Panel5.SuspendLayout()
         Panel6.SuspendLayout()
         Panel7.SuspendLayout()
         CType(PictureBox7, ComponentModel.ISupportInitialize).BeginInit()
+        Panel8.SuspendLayout()
         Panel9.SuspendLayout()
+        Panel10.SuspendLayout()
         SuspendLayout()
         ' 
         ' PictureBox1
@@ -150,20 +168,10 @@ Partial Class Form4
         ' Panel1
         ' 
         Panel1.BorderStyle = BorderStyle.FixedSingle
+        Panel1.Controls.Add(PictureBox9)
         Panel1.Controls.Add(Label16)
-        Panel1.Controls.Add(TextBox8)
         Panel1.Controls.Add(Label15)
-        Panel1.Controls.Add(TextBox6)
-        Panel1.Controls.Add(Label14)
-        Panel1.Controls.Add(Label13)
         Panel1.Controls.Add(Label12)
-        Panel1.Controls.Add(TextBox3)
-        Panel1.Controls.Add(CheckBox5)
-        Panel1.Controls.Add(CheckBox4)
-        Panel1.Controls.Add(CheckBox3)
-        Panel1.Controls.Add(CheckBox2)
-        Panel1.Controls.Add(CheckBox1)
-        Panel1.Controls.Add(Label10)
         Panel1.Controls.Add(Label3)
         Panel1.Controls.Add(Label2)
         Panel1.Controls.Add(Label1)
@@ -178,62 +186,37 @@ Partial Class Form4
         Panel1.Controls.Add(Panel10)
         Panel1.Location = New Point(117, 83)
         Panel1.Name = "Panel1"
-        Panel1.Size = New Size(1732, 732)
+        Panel1.Size = New Size(1769, 732)
         Panel1.TabIndex = 46
+        ' 
+        ' PictureBox9
+        ' 
+        PictureBox9.Cursor = Cursors.Hand
+        PictureBox9.Image = CType(resources.GetObject("PictureBox9.Image"), Image)
+        PictureBox9.Location = New Point(1717, 684)
+        PictureBox9.Name = "PictureBox9"
+        PictureBox9.Size = New Size(47, 43)
+        PictureBox9.SizeMode = PictureBoxSizeMode.StretchImage
+        PictureBox9.TabIndex = 47
+        PictureBox9.TabStop = False
         ' 
         ' Label16
         ' 
         Label16.AutoSize = True
-        Label16.Location = New Point(606, 546)
+        Label16.Location = New Point(606, 554)
         Label16.Name = "Label16"
         Label16.Size = New Size(528, 32)
         Label16.TabIndex = 43
         Label16.Text = "Please accomplish details of deposit at the back."
         ' 
-        ' TextBox8
-        ' 
-        TextBox8.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
-        TextBox8.Location = New Point(740, 493)
-        TextBox8.Name = "TextBox8"
-        TextBox8.Size = New Size(964, 50)
-        TextBox8.TabIndex = 42
-        TextBox8.TextAlign = HorizontalAlignment.Center
-        ' 
         ' Label15
         ' 
         Label15.AutoSize = True
-        Label15.Location = New Point(606, 506)
+        Label15.Location = New Point(606, 508)
         Label15.Name = "Label15"
         Label15.Size = New Size(128, 32)
         Label15.TabIndex = 41
         Label15.Text = "(in figures)"
-        ' 
-        ' TextBox6
-        ' 
-        TextBox6.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
-        TextBox6.Location = New Point(606, 421)
-        TextBox6.Name = "TextBox6"
-        TextBox6.Size = New Size(1098, 50)
-        TextBox6.TabIndex = 27
-        TextBox6.TextAlign = HorizontalAlignment.Center
-        ' 
-        ' Label14
-        ' 
-        Label14.AutoSize = True
-        Label14.Location = New Point(779, 386)
-        Label14.Name = "Label14"
-        Label14.Size = New Size(118, 32)
-        Label14.TabIndex = 40
-        Label14.Text = "(in words)"
-        ' 
-        ' Label13
-        ' 
-        Label13.AutoSize = True
-        Label13.Location = New Point(606, 386)
-        Label13.Name = "Label13"
-        Label13.Size = New Size(179, 32)
-        Label13.TabIndex = 39
-        Label13.Text = "TOTAL DEPOSIT"
         ' 
         ' Label12
         ' 
@@ -243,84 +226,6 @@ Partial Class Form4
         Label12.Size = New Size(199, 32)
         Label12.TabIndex = 32
         Label12.Text = "Teller's Validation"
-        ' 
-        ' TextBox3
-        ' 
-        TextBox3.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
-        TextBox3.Location = New Point(1189, 284)
-        TextBox3.Name = "TextBox3"
-        TextBox3.Size = New Size(515, 50)
-        TextBox3.TabIndex = 29
-        TextBox3.TextAlign = HorizontalAlignment.Center
-        ' 
-        ' CheckBox5
-        ' 
-        CheckBox5.AutoSize = True
-        CheckBox5.BackColor = Color.White
-        CheckBox5.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
-        CheckBox5.Location = New Point(1035, 279)
-        CheckBox5.Name = "CheckBox5"
-        CheckBox5.Size = New Size(160, 49)
-        CheckBox5.TabIndex = 36
-        CheckBox5.Text = "Others:"
-        CheckBox5.UseVisualStyleBackColor = False
-        ' 
-        ' CheckBox4
-        ' 
-        CheckBox4.AutoSize = True
-        CheckBox4.BackColor = Color.White
-        CheckBox4.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
-        CheckBox4.Location = New Point(854, 327)
-        CheckBox4.Name = "CheckBox4"
-        CheckBox4.Size = New Size(117, 49)
-        CheckBox4.TabIndex = 35
-        CheckBox4.Text = "USD"
-        CheckBox4.UseVisualStyleBackColor = False
-        ' 
-        ' CheckBox3
-        ' 
-        CheckBox3.AutoSize = True
-        CheckBox3.BackColor = Color.White
-        CheckBox3.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
-        CheckBox3.Location = New Point(854, 279)
-        CheckBox3.Name = "CheckBox3"
-        CheckBox3.Size = New Size(105, 49)
-        CheckBox3.TabIndex = 34
-        CheckBox3.Text = "JPY"
-        CheckBox3.UseVisualStyleBackColor = False
-        ' 
-        ' CheckBox2
-        ' 
-        CheckBox2.AutoSize = True
-        CheckBox2.BackColor = Color.White
-        CheckBox2.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
-        CheckBox2.Location = New Point(663, 327)
-        CheckBox2.Name = "CheckBox2"
-        CheckBox2.Size = New Size(137, 49)
-        CheckBox2.TabIndex = 33
-        CheckBox2.Text = "EURO"
-        CheckBox2.UseVisualStyleBackColor = False
-        ' 
-        ' CheckBox1
-        ' 
-        CheckBox1.AutoSize = True
-        CheckBox1.BackColor = Color.White
-        CheckBox1.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
-        CheckBox1.Location = New Point(663, 279)
-        CheckBox1.Name = "CheckBox1"
-        CheckBox1.Size = New Size(131, 49)
-        CheckBox1.TabIndex = 32
-        CheckBox1.Text = "PESO"
-        CheckBox1.UseVisualStyleBackColor = False
-        ' 
-        ' Label10
-        ' 
-        Label10.AutoSize = True
-        Label10.Location = New Point(606, 241)
-        Label10.Name = "Label10"
-        Label10.Size = New Size(1022, 32)
-        Label10.TabIndex = 31
-        Label10.Text = "Check one (1) applicable box below. Please use separate deposit slip for each type of currency."
         ' 
         ' Label3
         ' 
@@ -379,11 +284,34 @@ Partial Class Form4
         ' Panel4
         ' 
         Panel4.BorderStyle = BorderStyle.FixedSingle
+        Panel4.Controls.Add(TextBox9)
+        Panel4.Controls.Add(PictureBox8)
         Panel4.Controls.Add(Label4)
         Panel4.Location = New Point(1278, -1)
         Panel4.Name = "Panel4"
-        Panel4.Size = New Size(453, 102)
+        Panel4.Size = New Size(490, 102)
         Panel4.TabIndex = 7
+        ' 
+        ' TextBox9
+        ' 
+        TextBox9.BorderStyle = BorderStyle.None
+        TextBox9.Font = New Font("Segoe UI", 12F, FontStyle.Bold Or FontStyle.Underline, GraphicsUnit.Point)
+        TextBox9.Location = New Point(253, 45)
+        TextBox9.Name = "TextBox9"
+        TextBox9.Size = New Size(213, 43)
+        TextBox9.TabIndex = 30
+        TextBox9.TextAlign = HorizontalAlignment.Center
+        ' 
+        ' PictureBox8
+        ' 
+        PictureBox8.Cursor = Cursors.Hand
+        PictureBox8.Image = CType(resources.GetObject("PictureBox8.Image"), Image)
+        PictureBox8.Location = New Point(454, 3)
+        PictureBox8.Name = "PictureBox8"
+        PictureBox8.Size = New Size(31, 36)
+        PictureBox8.SizeMode = PictureBoxSizeMode.StretchImage
+        PictureBox8.TabIndex = 22
+        PictureBox8.TabStop = False
         ' 
         ' Label4
         ' 
@@ -398,20 +326,130 @@ Partial Class Form4
         ' Panel5
         ' 
         Panel5.BorderStyle = BorderStyle.FixedSingle
+        Panel5.Controls.Add(TextBox18)
+        Panel5.Controls.Add(TextBox17)
+        Panel5.Controls.Add(TextBox16)
+        Panel5.Controls.Add(Label18)
+        Panel5.Controls.Add(TextBox15)
+        Panel5.Controls.Add(TextBox14)
+        Panel5.Controls.Add(Label17)
+        Panel5.Controls.Add(TextBox13)
+        Panel5.Controls.Add(TextBox12)
+        Panel5.Controls.Add(TextBox11)
+        Panel5.Controls.Add(TextBox10)
         Panel5.Controls.Add(TextBox2)
         Panel5.Controls.Add(Label5)
         Panel5.Location = New Point(537, 98)
         Panel5.Name = "Panel5"
-        Panel5.Size = New Size(622, 138)
+        Panel5.Size = New Size(622, 113)
         Panel5.TabIndex = 8
+        ' 
+        ' TextBox18
+        ' 
+        TextBox18.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
+        TextBox18.Location = New Point(565, 54)
+        TextBox18.Name = "TextBox18"
+        TextBox18.Size = New Size(48, 50)
+        TextBox18.TabIndex = 21
+        TextBox18.TextAlign = HorizontalAlignment.Center
+        ' 
+        ' TextBox17
+        ' 
+        TextBox17.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
+        TextBox17.Location = New Point(516, 54)
+        TextBox17.Name = "TextBox17"
+        TextBox17.Size = New Size(48, 50)
+        TextBox17.TabIndex = 20
+        TextBox17.TextAlign = HorizontalAlignment.Center
+        ' 
+        ' TextBox16
+        ' 
+        TextBox16.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
+        TextBox16.Location = New Point(467, 54)
+        TextBox16.Name = "TextBox16"
+        TextBox16.Size = New Size(48, 50)
+        TextBox16.TabIndex = 19
+        TextBox16.TextAlign = HorizontalAlignment.Center
+        ' 
+        ' Label18
+        ' 
+        Label18.AutoSize = True
+        Label18.Location = New Point(433, 54)
+        Label18.Name = "Label18"
+        Label18.Size = New Size(34, 32)
+        Label18.TabIndex = 18
+        Label18.Text = "__"
+        ' 
+        ' TextBox15
+        ' 
+        TextBox15.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
+        TextBox15.Location = New Point(384, 54)
+        TextBox15.Name = "TextBox15"
+        TextBox15.Size = New Size(48, 50)
+        TextBox15.TabIndex = 17
+        TextBox15.TextAlign = HorizontalAlignment.Center
+        ' 
+        ' TextBox14
+        ' 
+        TextBox14.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
+        TextBox14.Location = New Point(335, 54)
+        TextBox14.Name = "TextBox14"
+        TextBox14.Size = New Size(48, 50)
+        TextBox14.TabIndex = 16
+        TextBox14.TextAlign = HorizontalAlignment.Center
+        ' 
+        ' Label17
+        ' 
+        Label17.AutoSize = True
+        Label17.Location = New Point(203, 54)
+        Label17.Name = "Label17"
+        Label17.Size = New Size(34, 32)
+        Label17.TabIndex = 15
+        Label17.Text = "__"
+        ' 
+        ' TextBox13
+        ' 
+        TextBox13.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
+        TextBox13.Location = New Point(286, 54)
+        TextBox13.Name = "TextBox13"
+        TextBox13.Size = New Size(48, 50)
+        TextBox13.TabIndex = 14
+        TextBox13.TextAlign = HorizontalAlignment.Center
+        ' 
+        ' TextBox12
+        ' 
+        TextBox12.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
+        TextBox12.Location = New Point(237, 54)
+        TextBox12.Name = "TextBox12"
+        TextBox12.Size = New Size(48, 50)
+        TextBox12.TabIndex = 13
+        TextBox12.TextAlign = HorizontalAlignment.Center
+        ' 
+        ' TextBox11
+        ' 
+        TextBox11.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
+        TextBox11.Location = New Point(154, 54)
+        TextBox11.Name = "TextBox11"
+        TextBox11.Size = New Size(48, 50)
+        TextBox11.TabIndex = 12
+        TextBox11.TextAlign = HorizontalAlignment.Center
+        ' 
+        ' TextBox10
+        ' 
+        TextBox10.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
+        TextBox10.Location = New Point(105, 54)
+        TextBox10.Name = "TextBox10"
+        TextBox10.Size = New Size(48, 50)
+        TextBox10.TabIndex = 11
+        TextBox10.TextAlign = HorizontalAlignment.Center
         ' 
         ' TextBox2
         ' 
         TextBox2.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
-        TextBox2.Location = New Point(68, 76)
+        TextBox2.Location = New Point(56, 54)
         TextBox2.Name = "TextBox2"
-        TextBox2.Size = New Size(524, 50)
-        TextBox2.TabIndex = 25
+        TextBox2.Size = New Size(48, 50)
+        TextBox2.TabIndex = 10
         TextBox2.TextAlign = HorizontalAlignment.Center
         ' 
         ' Label5
@@ -432,13 +470,13 @@ Partial Class Form4
         Panel6.Controls.Add(Label6)
         Panel6.Location = New Point(1136, 98)
         Panel6.Name = "Panel6"
-        Panel6.Size = New Size(595, 138)
+        Panel6.Size = New Size(632, 113)
         Panel6.TabIndex = 29
         ' 
         ' Label7
         ' 
         Label7.AutoSize = True
-        Label7.Location = New Point(158, 39)
+        Label7.Location = New Point(335, 8)
         Label7.Name = "Label7"
         Label7.Size = New Size(273, 32)
         Label7.TabIndex = 28
@@ -446,10 +484,10 @@ Partial Class Form4
         ' 
         ' TextBox4
         ' 
-        TextBox4.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
-        TextBox4.Location = New Point(52, 76)
+        TextBox4.Font = New Font("Segoe UI", 10.125F, FontStyle.Bold, GraphicsUnit.Point)
+        TextBox4.Location = New Point(38, 54)
         TextBox4.Name = "TextBox4"
-        TextBox4.Size = New Size(515, 50)
+        TextBox4.Size = New Size(577, 43)
         TextBox4.TabIndex = 27
         TextBox4.TextAlign = HorizontalAlignment.Center
         ' 
@@ -457,7 +495,7 @@ Partial Class Form4
         ' 
         Label6.AutoSize = True
         Label6.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point)
-        Label6.Location = New Point(159, 7)
+        Label6.Location = New Point(48, 8)
         Label6.Name = "Label6"
         Label6.Size = New Size(272, 32)
         Label6.TabIndex = 27
@@ -516,10 +554,95 @@ Partial Class Form4
         ' Panel8
         ' 
         Panel8.BorderStyle = BorderStyle.FixedSingle
-        Panel8.Location = New Point(537, 229)
+        Panel8.Controls.Add(TextBox3)
+        Panel8.Controls.Add(RadioButton5)
+        Panel8.Controls.Add(Label10)
+        Panel8.Controls.Add(RadioButton4)
+        Panel8.Controls.Add(RadioButton1)
+        Panel8.Controls.Add(RadioButton3)
+        Panel8.Controls.Add(RadioButton2)
+        Panel8.Location = New Point(537, 188)
         Panel8.Name = "Panel8"
         Panel8.Size = New Size(1240, 152)
         Panel8.TabIndex = 37
+        ' 
+        ' TextBox3
+        ' 
+        TextBox3.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
+        TextBox3.Location = New Point(647, 63)
+        TextBox3.Name = "TextBox3"
+        TextBox3.Size = New Size(567, 50)
+        TextBox3.TabIndex = 29
+        TextBox3.TextAlign = HorizontalAlignment.Center
+        ' 
+        ' RadioButton5
+        ' 
+        RadioButton5.AutoSize = True
+        RadioButton5.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
+        RadioButton5.Location = New Point(497, 63)
+        RadioButton5.Name = "RadioButton5"
+        RadioButton5.Size = New Size(159, 49)
+        RadioButton5.TabIndex = 37
+        RadioButton5.TabStop = True
+        RadioButton5.Text = "Others:"
+        RadioButton5.UseVisualStyleBackColor = True
+        ' 
+        ' Label10
+        ' 
+        Label10.AutoSize = True
+        Label10.Location = New Point(68, 28)
+        Label10.Name = "Label10"
+        Label10.Size = New Size(1022, 32)
+        Label10.TabIndex = 31
+        Label10.Text = "Check one (1) applicable box below. Please use separate deposit slip for each type of currency."
+        ' 
+        ' RadioButton4
+        ' 
+        RadioButton4.AutoSize = True
+        RadioButton4.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
+        RadioButton4.Location = New Point(328, 102)
+        RadioButton4.Name = "RadioButton4"
+        RadioButton4.Size = New Size(116, 49)
+        RadioButton4.TabIndex = 36
+        RadioButton4.TabStop = True
+        RadioButton4.Text = "USD"
+        RadioButton4.UseVisualStyleBackColor = True
+        ' 
+        ' RadioButton1
+        ' 
+        RadioButton1.AutoSize = True
+        RadioButton1.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
+        RadioButton1.Location = New Point(117, 63)
+        RadioButton1.Name = "RadioButton1"
+        RadioButton1.Size = New Size(130, 49)
+        RadioButton1.TabIndex = 0
+        RadioButton1.TabStop = True
+        RadioButton1.Text = "PESO"
+        RadioButton1.UseVisualStyleBackColor = True
+        ' 
+        ' RadioButton3
+        ' 
+        RadioButton3.AutoSize = True
+        RadioButton3.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
+        RadioButton3.Location = New Point(328, 63)
+        RadioButton3.Name = "RadioButton3"
+        RadioButton3.Size = New Size(104, 49)
+        RadioButton3.TabIndex = 1
+        RadioButton3.TabStop = True
+        RadioButton3.Text = "JPY"
+        RadioButton3.UseVisualStyleBackColor = True
+        ' 
+        ' RadioButton2
+        ' 
+        RadioButton2.AutoSize = True
+        RadioButton2.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
+        RadioButton2.Location = New Point(117, 102)
+        RadioButton2.Name = "RadioButton2"
+        RadioButton2.Size = New Size(136, 49)
+        RadioButton2.TabIndex = 1
+        RadioButton2.TabStop = True
+        RadioButton2.Text = "EURO"
+        RadioButton2.UseVisualStyleBackColor = True
         ' 
         ' Panel9
         ' 
@@ -553,10 +676,50 @@ Partial Class Form4
         ' Panel10
         ' 
         Panel10.BorderStyle = BorderStyle.FixedSingle
-        Panel10.Location = New Point(587, 364)
+        Panel10.Controls.Add(RichTextBox1)
+        Panel10.Controls.Add(Label13)
+        Panel10.Controls.Add(TextBox8)
+        Panel10.Controls.Add(Label14)
+        Panel10.Location = New Point(587, 320)
         Panel10.Name = "Panel10"
-        Panel10.Size = New Size(1186, 230)
+        Panel10.Size = New Size(1186, 274)
         Panel10.TabIndex = 44
+        ' 
+        ' RichTextBox1
+        ' 
+        RichTextBox1.Font = New Font("Segoe UI", 10.875F, FontStyle.Bold, GraphicsUnit.Point)
+        RichTextBox1.Location = New Point(41, 60)
+        RichTextBox1.Name = "RichTextBox1"
+        RichTextBox1.Size = New Size(1123, 106)
+        RichTextBox1.TabIndex = 0
+        RichTextBox1.Text = ""
+        ' 
+        ' Label13
+        ' 
+        Label13.AutoSize = True
+        Label13.Location = New Point(18, 25)
+        Label13.Name = "Label13"
+        Label13.Size = New Size(179, 32)
+        Label13.TabIndex = 39
+        Label13.Text = "TOTAL DEPOSIT"
+        ' 
+        ' TextBox8
+        ' 
+        TextBox8.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
+        TextBox8.Location = New Point(152, 180)
+        TextBox8.Name = "TextBox8"
+        TextBox8.Size = New Size(394, 50)
+        TextBox8.TabIndex = 42
+        TextBox8.TextAlign = HorizontalAlignment.Center
+        ' 
+        ' Label14
+        ' 
+        Label14.AutoSize = True
+        Label14.Location = New Point(203, 25)
+        Label14.Name = "Label14"
+        Label14.Size = New Size(118, 32)
+        Label14.TabIndex = 40
+        Label14.Text = "(in words)"
         ' 
         ' MySqlCommand1
         ' 
@@ -591,10 +754,12 @@ Partial Class Form4
         CType(PictureBox5, ComponentModel.ISupportInitialize).EndInit()
         Panel1.ResumeLayout(False)
         Panel1.PerformLayout()
+        CType(PictureBox9, ComponentModel.ISupportInitialize).EndInit()
         Panel3.ResumeLayout(False)
         Panel3.PerformLayout()
         Panel4.ResumeLayout(False)
         Panel4.PerformLayout()
+        CType(PictureBox8, ComponentModel.ISupportInitialize).EndInit()
         Panel5.ResumeLayout(False)
         Panel5.PerformLayout()
         Panel6.ResumeLayout(False)
@@ -602,8 +767,12 @@ Partial Class Form4
         Panel7.ResumeLayout(False)
         Panel7.PerformLayout()
         CType(PictureBox7, ComponentModel.ISupportInitialize).EndInit()
+        Panel8.ResumeLayout(False)
+        Panel8.PerformLayout()
         Panel9.ResumeLayout(False)
         Panel9.PerformLayout()
+        Panel10.ResumeLayout(False)
+        Panel10.PerformLayout()
         ResumeLayout(False)
     End Sub
 
@@ -624,7 +793,6 @@ Partial Class Form4
     Friend WithEvents Label4 As Label
     Friend WithEvents Label5 As Label
     Friend WithEvents Panel5 As Panel
-    Friend WithEvents TextBox2 As TextBox
     Friend WithEvents Label7 As Label
     Friend WithEvents Label6 As Label
     Friend WithEvents Panel6 As Panel
@@ -637,14 +805,8 @@ Partial Class Form4
     Friend WithEvents TextBox1 As TextBox
     Friend WithEvents Label10 As Label
     Friend WithEvents TextBox3 As TextBox
-    Friend WithEvents CheckBox5 As CheckBox
-    Friend WithEvents CheckBox4 As CheckBox
-    Friend WithEvents CheckBox3 As CheckBox
-    Friend WithEvents CheckBox2 As CheckBox
-    Friend WithEvents CheckBox1 As CheckBox
     Friend WithEvents Panel8 As Panel
     Friend WithEvents Label11 As Label
-    Friend WithEvents TextBox6 As TextBox
     Friend WithEvents Label14 As Label
     Friend WithEvents Label13 As Label
     Friend WithEvents Label12 As Label
@@ -654,4 +816,25 @@ Partial Class Form4
     Friend WithEvents TextBox8 As TextBox
     Friend WithEvents Label15 As Label
     Friend WithEvents Panel10 As Panel
+    Friend WithEvents PictureBox9 As PictureBox
+    Friend WithEvents PictureBox8 As PictureBox
+    Friend WithEvents TextBox9 As TextBox
+    Friend WithEvents RadioButton3 As RadioButton
+    Friend WithEvents RadioButton2 As RadioButton
+    Friend WithEvents RadioButton1 As RadioButton
+    Friend WithEvents RadioButton5 As RadioButton
+    Friend WithEvents RadioButton4 As RadioButton
+    Friend WithEvents TextBox10 As TextBox
+    Friend WithEvents TextBox2 As TextBox
+    Friend WithEvents TextBox13 As TextBox
+    Friend WithEvents TextBox12 As TextBox
+    Friend WithEvents TextBox11 As TextBox
+    Friend WithEvents TextBox16 As TextBox
+    Friend WithEvents Label18 As Label
+    Friend WithEvents TextBox15 As TextBox
+    Friend WithEvents TextBox14 As TextBox
+    Friend WithEvents Label17 As Label
+    Friend WithEvents TextBox18 As TextBox
+    Friend WithEvents TextBox17 As TextBox
+    Friend WithEvents RichTextBox1 As RichTextBox
 End Class

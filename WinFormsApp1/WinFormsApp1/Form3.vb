@@ -71,7 +71,6 @@ Public Class Form3
             ' Add more ElseIf statements for additional RadioButtons if needed
         End If
 
-
         ' Show Form2_B
         form3.Show
     End Sub

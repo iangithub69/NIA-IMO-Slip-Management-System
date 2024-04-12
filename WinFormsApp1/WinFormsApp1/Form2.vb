@@ -662,5 +662,7 @@ Public Class Form2
         End If
     End Sub
 
+    Private Sub TextBox10_TextChanged(sender As Object, e As EventArgs) Handles TextBox10.TextChanged
 
+    End Sub
 End Class

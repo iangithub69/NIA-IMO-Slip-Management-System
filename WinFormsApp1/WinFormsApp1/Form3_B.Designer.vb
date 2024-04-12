@@ -26,6 +26,10 @@ Partial Class Form3_B
         PictureBox3 = New PictureBox()
         PictureBox1 = New PictureBox()
         Panel1 = New Panel()
+        TextBox17 = New TextBox()
+        PictureBox8 = New PictureBox()
+        TextBox16 = New TextBox()
+        TextBox15 = New TextBox()
         Label35 = New Label()
         Label34 = New Label()
         Label33 = New Label()
@@ -95,8 +99,11 @@ Partial Class Form3_B
         Panel36 = New Panel()
         Panel37 = New Panel()
         Panel50 = New Panel()
+        TextBox8 = New TextBox()
         Panel51 = New Panel()
+        TextBox9 = New TextBox()
         Panel52 = New Panel()
+        TextBox10 = New TextBox()
         Panel40 = New Panel()
         Label19 = New Label()
         Panel39 = New Panel()
@@ -104,6 +111,7 @@ Partial Class Form3_B
         Label17 = New Label()
         Label18 = New Label()
         Panel38 = New Panel()
+        TextBox14 = New TextBox()
         Label26 = New Label()
         Label25 = New Label()
         Label24 = New Label()
@@ -116,23 +124,20 @@ Partial Class Form3_B
         Label21 = New Label()
         Panel43 = New Panel()
         Panel44 = New Panel()
+        Label36 = New Label()
         Panel45 = New Panel()
+        Label37 = New Label()
         Panel46 = New Panel()
+        TextBox11 = New TextBox()
         Panel47 = New Panel()
         Panel48 = New Panel()
-        Panel49 = New Panel()
-        TextBox8 = New TextBox()
-        TextBox9 = New TextBox()
-        TextBox10 = New TextBox()
-        Label36 = New Label()
-        Label37 = New Label()
-        TextBox11 = New TextBox()
         TextBox12 = New TextBox()
+        Panel49 = New Panel()
         TextBox13 = New TextBox()
-        TextBox14 = New TextBox()
         CType(PictureBox3, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         Panel1.SuspendLayout()
+        CType(PictureBox8, ComponentModel.ISupportInitialize).BeginInit()
         Panel5.SuspendLayout()
         Panel7.SuspendLayout()
         Panel8.SuspendLayout()
@@ -182,6 +187,10 @@ Partial Class Form3_B
         ' Panel1
         ' 
         Panel1.BorderStyle = BorderStyle.FixedSingle
+        Panel1.Controls.Add(TextBox17)
+        Panel1.Controls.Add(PictureBox8)
+        Panel1.Controls.Add(TextBox16)
+        Panel1.Controls.Add(TextBox15)
         Panel1.Controls.Add(Label35)
         Panel1.Controls.Add(Label34)
         Panel1.Controls.Add(Label33)
@@ -248,11 +257,50 @@ Partial Class Form3_B
         Panel1.Size = New Size(1843, 479)
         Panel1.TabIndex = 42
         ' 
+        ' TextBox17
+        ' 
+        TextBox17.BorderStyle = BorderStyle.None
+        TextBox17.Font = New Font("Segoe UI", 7.875F, FontStyle.Bold Or FontStyle.Underline, GraphicsUnit.Point)
+        TextBox17.Location = New Point(1334, 427)
+        TextBox17.Name = "TextBox17"
+        TextBox17.Size = New Size(220, 28)
+        TextBox17.TabIndex = 93
+        TextBox17.TextAlign = HorizontalAlignment.Center
+        ' 
+        ' PictureBox8
+        ' 
+        PictureBox8.Cursor = Cursors.Hand
+        PictureBox8.Image = CType(resources.GetObject("PictureBox8.Image"), Image)
+        PictureBox8.Location = New Point(1571, 424)
+        PictureBox8.Name = "PictureBox8"
+        PictureBox8.Size = New Size(31, 36)
+        PictureBox8.SizeMode = PictureBoxSizeMode.StretchImage
+        PictureBox8.TabIndex = 92
+        PictureBox8.TabStop = False
+        ' 
+        ' TextBox16
+        ' 
+        TextBox16.Font = New Font("Segoe UI", 7.875F, FontStyle.Bold, GraphicsUnit.Point)
+        TextBox16.Location = New Point(862, 425)
+        TextBox16.Name = "TextBox16"
+        TextBox16.Size = New Size(383, 35)
+        TextBox16.TabIndex = 91
+        TextBox16.TextAlign = HorizontalAlignment.Center
+        ' 
+        ' TextBox15
+        ' 
+        TextBox15.Font = New Font("Segoe UI", 7.875F, FontStyle.Bold, GraphicsUnit.Point)
+        TextBox15.Location = New Point(915, 376)
+        TextBox15.Name = "TextBox15"
+        TextBox15.Size = New Size(900, 35)
+        TextBox15.TabIndex = 90
+        TextBox15.TextAlign = HorizontalAlignment.Center
+        ' 
         ' Label35
         ' 
         Label35.AutoSize = True
         Label35.Font = New Font("Segoe UI", 7.875F, FontStyle.Regular, GraphicsUnit.Point)
-        Label35.Location = New Point(1266, 437)
+        Label35.Location = New Point(1266, 425)
         Label35.Name = "Label35"
         Label35.Size = New Size(62, 30)
         Label35.TabIndex = 85
@@ -262,7 +310,7 @@ Partial Class Form3_B
         ' 
         Label34.AutoSize = True
         Label34.Font = New Font("Segoe UI", 7.875F, FontStyle.Regular, GraphicsUnit.Point)
-        Label34.Location = New Point(817, 437)
+        Label34.Location = New Point(817, 425)
         Label34.Name = "Label34"
         Label34.Size = New Size(43, 30)
         Label34.TabIndex = 84
@@ -272,7 +320,7 @@ Partial Class Form3_B
         ' 
         Label33.AutoSize = True
         Label33.Font = New Font("Segoe UI", 7.875F, FontStyle.Regular, GraphicsUnit.Point)
-        Label33.Location = New Point(817, 394)
+        Label33.Location = New Point(817, 376)
         Label33.Name = "Label33"
         Label33.Size = New Size(92, 30)
         Label33.TabIndex = 83
@@ -282,7 +330,7 @@ Partial Class Form3_B
         ' 
         Label32.AutoSize = True
         Label32.Font = New Font("Segoe UI", 7.875F, FontStyle.Regular, GraphicsUnit.Point)
-        Label32.Location = New Point(817, 351)
+        Label32.Location = New Point(817, 331)
         Label32.Name = "Label32"
         Label32.Size = New Size(216, 30)
         Label32.TabIndex = 82
@@ -510,6 +558,7 @@ Partial Class Form3_B
         ' 
         ' TextBox1
         ' 
+        TextBox1.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point)
         TextBox1.Location = New Point(-1, 111)
         TextBox1.Name = "TextBox1"
         TextBox1.Size = New Size(181, 39)
@@ -561,6 +610,7 @@ Partial Class Form3_B
         ' 
         ' TextBox2
         ' 
+        TextBox2.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point)
         TextBox2.Location = New Point(15, 53)
         TextBox2.Name = "TextBox2"
         TextBox2.Size = New Size(181, 39)
@@ -596,6 +646,7 @@ Partial Class Form3_B
         ' 
         ' TextBox3
         ' 
+        TextBox3.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point)
         TextBox3.Location = New Point(15, 38)
         TextBox3.Name = "TextBox3"
         TextBox3.Size = New Size(181, 39)
@@ -621,6 +672,7 @@ Partial Class Form3_B
         ' 
         ' TextBox4
         ' 
+        TextBox4.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point)
         TextBox4.Location = New Point(15, 26)
         TextBox4.Name = "TextBox4"
         TextBox4.Size = New Size(181, 39)
@@ -646,6 +698,7 @@ Partial Class Form3_B
         ' 
         ' TextBox5
         ' 
+        TextBox5.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point)
         TextBox5.Location = New Point(25, 38)
         TextBox5.Name = "TextBox5"
         TextBox5.Size = New Size(181, 39)
@@ -671,6 +724,7 @@ Partial Class Form3_B
         ' 
         ' TextBox6
         ' 
+        TextBox6.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point)
         TextBox6.Location = New Point(15, 36)
         TextBox6.Name = "TextBox6"
         TextBox6.Size = New Size(181, 39)
@@ -696,6 +750,7 @@ Partial Class Form3_B
         ' 
         ' TextBox7
         ' 
+        TextBox7.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point)
         TextBox7.Location = New Point(15, 36)
         TextBox7.Name = "TextBox7"
         TextBox7.Size = New Size(181, 39)
@@ -849,6 +904,15 @@ Partial Class Form3_B
         Panel50.Size = New Size(1078, 96)
         Panel50.TabIndex = 56
         ' 
+        ' TextBox8
+        ' 
+        TextBox8.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point)
+        TextBox8.Location = New Point(48, 49)
+        TextBox8.Name = "TextBox8"
+        TextBox8.Size = New Size(994, 39)
+        TextBox8.TabIndex = 88
+        TextBox8.TextAlign = HorizontalAlignment.Center
+        ' 
         ' Panel51
         ' 
         Panel51.BorderStyle = BorderStyle.FixedSingle
@@ -858,6 +922,15 @@ Partial Class Form3_B
         Panel51.Size = New Size(538, 95)
         Panel51.TabIndex = 62
         ' 
+        ' TextBox9
+        ' 
+        TextBox9.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point)
+        TextBox9.Location = New Point(33, 49)
+        TextBox9.Name = "TextBox9"
+        TextBox9.Size = New Size(483, 39)
+        TextBox9.TabIndex = 89
+        TextBox9.TextAlign = HorizontalAlignment.Center
+        ' 
         ' Panel52
         ' 
         Panel52.BorderStyle = BorderStyle.FixedSingle
@@ -866,6 +939,15 @@ Partial Class Form3_B
         Panel52.Name = "Panel52"
         Panel52.Size = New Size(577, 91)
         Panel52.TabIndex = 63
+        ' 
+        ' TextBox10
+        ' 
+        TextBox10.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point)
+        TextBox10.Location = New Point(58, 45)
+        TextBox10.Name = "TextBox10"
+        TextBox10.Size = New Size(483, 39)
+        TextBox10.TabIndex = 90
+        TextBox10.TextAlign = HorizontalAlignment.Center
         ' 
         ' Panel40
         ' 
@@ -951,6 +1033,15 @@ Partial Class Form3_B
         Panel38.Name = "Panel38"
         Panel38.Size = New Size(1843, 297)
         Panel38.TabIndex = 43
+        ' 
+        ' TextBox14
+        ' 
+        TextBox14.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point)
+        TextBox14.Location = New Point(1369, 240)
+        TextBox14.Name = "TextBox14"
+        TextBox14.Size = New Size(446, 39)
+        TextBox14.TabIndex = 94
+        TextBox14.TextAlign = HorizontalAlignment.Center
         ' 
         ' Label26
         ' 
@@ -1066,6 +1157,16 @@ Partial Class Form3_B
         Panel44.Size = New Size(689, 78)
         Panel44.TabIndex = 70
         ' 
+        ' Label36
+        ' 
+        Label36.AutoSize = True
+        Label36.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
+        Label36.Location = New Point(148, 18)
+        Label36.Name = "Label36"
+        Label36.Size = New Size(429, 45)
+        Label36.TabIndex = 87
+        Label36.Text = "if debit from acc is selected"
+        ' 
         ' Panel45
         ' 
         Panel45.BorderStyle = BorderStyle.FixedSingle
@@ -1075,6 +1176,16 @@ Partial Class Form3_B
         Panel45.Size = New Size(513, 78)
         Panel45.TabIndex = 71
         ' 
+        ' Label37
+        ' 
+        Label37.AutoSize = True
+        Label37.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
+        Label37.Location = New Point(67, 18)
+        Label37.Name = "Label37"
+        Label37.Size = New Size(429, 45)
+        Label37.TabIndex = 88
+        Label37.Text = "if debit from acc is selected"
+        ' 
         ' Panel46
         ' 
         Panel46.BorderStyle = BorderStyle.FixedSingle
@@ -1083,6 +1194,15 @@ Partial Class Form3_B
         Panel46.Name = "Panel46"
         Panel46.Size = New Size(336, 78)
         Panel46.TabIndex = 72
+        ' 
+        ' TextBox11
+        ' 
+        TextBox11.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point)
+        TextBox11.Location = New Point(47, 25)
+        TextBox11.Name = "TextBox11"
+        TextBox11.Size = New Size(264, 39)
+        TextBox11.TabIndex = 91
+        TextBox11.TextAlign = HorizontalAlignment.Center
         ' 
         ' Panel47
         ' 
@@ -1101,6 +1221,15 @@ Partial Class Form3_B
         Panel48.Size = New Size(478, 112)
         Panel48.TabIndex = 67
         ' 
+        ' TextBox12
+        ' 
+        TextBox12.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point)
+        TextBox12.Location = New Point(13, 55)
+        TextBox12.Name = "TextBox12"
+        TextBox12.Size = New Size(442, 39)
+        TextBox12.TabIndex = 92
+        TextBox12.TextAlign = HorizontalAlignment.Center
+        ' 
         ' Panel49
         ' 
         Panel49.BorderStyle = BorderStyle.FixedSingle
@@ -1110,86 +1239,20 @@ Partial Class Form3_B
         Panel49.Size = New Size(478, 112)
         Panel49.TabIndex = 68
         ' 
-        ' TextBox8
-        ' 
-        TextBox8.Location = New Point(48, 49)
-        TextBox8.Name = "TextBox8"
-        TextBox8.Size = New Size(994, 39)
-        TextBox8.TabIndex = 88
-        TextBox8.TextAlign = HorizontalAlignment.Center
-        ' 
-        ' TextBox9
-        ' 
-        TextBox9.Location = New Point(33, 49)
-        TextBox9.Name = "TextBox9"
-        TextBox9.Size = New Size(483, 39)
-        TextBox9.TabIndex = 89
-        TextBox9.TextAlign = HorizontalAlignment.Center
-        ' 
-        ' TextBox10
-        ' 
-        TextBox10.Location = New Point(58, 45)
-        TextBox10.Name = "TextBox10"
-        TextBox10.Size = New Size(483, 39)
-        TextBox10.TabIndex = 90
-        TextBox10.TextAlign = HorizontalAlignment.Center
-        ' 
-        ' Label36
-        ' 
-        Label36.AutoSize = True
-        Label36.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
-        Label36.Location = New Point(148, 18)
-        Label36.Name = "Label36"
-        Label36.Size = New Size(429, 45)
-        Label36.TabIndex = 87
-        Label36.Text = "if debit from acc is selected"
-        ' 
-        ' Label37
-        ' 
-        Label37.AutoSize = True
-        Label37.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
-        Label37.Location = New Point(67, 18)
-        Label37.Name = "Label37"
-        Label37.Size = New Size(429, 45)
-        Label37.TabIndex = 88
-        Label37.Text = "if debit from acc is selected"
-        ' 
-        ' TextBox11
-        ' 
-        TextBox11.Location = New Point(47, 25)
-        TextBox11.Name = "TextBox11"
-        TextBox11.Size = New Size(264, 39)
-        TextBox11.TabIndex = 91
-        TextBox11.TextAlign = HorizontalAlignment.Center
-        ' 
-        ' TextBox12
-        ' 
-        TextBox12.Location = New Point(13, 55)
-        TextBox12.Name = "TextBox12"
-        TextBox12.Size = New Size(442, 39)
-        TextBox12.TabIndex = 92
-        TextBox12.TextAlign = HorizontalAlignment.Center
-        ' 
         ' TextBox13
         ' 
+        TextBox13.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point)
         TextBox13.Location = New Point(12, 55)
         TextBox13.Name = "TextBox13"
         TextBox13.Size = New Size(446, 39)
         TextBox13.TabIndex = 93
         TextBox13.TextAlign = HorizontalAlignment.Center
         ' 
-        ' TextBox14
-        ' 
-        TextBox14.Location = New Point(1369, 240)
-        TextBox14.Name = "TextBox14"
-        TextBox14.Size = New Size(446, 39)
-        TextBox14.TabIndex = 94
-        TextBox14.TextAlign = HorizontalAlignment.Center
-        ' 
         ' Form3_B
         ' 
         AutoScaleDimensions = New SizeF(13F, 32F)
         AutoScaleMode = AutoScaleMode.Font
+        BackColor = Color.White
         ClientSize = New Size(1934, 827)
         Controls.Add(Panel38)
         Controls.Add(PictureBox3)
@@ -1203,6 +1266,7 @@ Partial Class Form3_B
         CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
         Panel1.ResumeLayout(False)
         Panel1.PerformLayout()
+        CType(PictureBox8, ComponentModel.ISupportInitialize).EndInit()
         Panel5.ResumeLayout(False)
         Panel5.PerformLayout()
         Panel7.ResumeLayout(False)
@@ -1361,4 +1425,8 @@ Partial Class Form3_B
     Friend WithEvents TextBox14 As TextBox
     Friend WithEvents TextBox12 As TextBox
     Friend WithEvents TextBox13 As TextBox
+    Friend WithEvents TextBox16 As TextBox
+    Friend WithEvents TextBox15 As TextBox
+    Friend WithEvents PictureBox8 As PictureBox
+    Friend WithEvents TextBox17 As TextBox
 End Class
