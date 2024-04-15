@@ -30,6 +30,9 @@ Public Class Form4
         form4.Label22Text = TextBox7.Text
         form4.Label23Text = TextBox1.Text
 
+        form4.RichTextBoxText = RichTextBox1.Text
+
+
         ' Check which RadioButton is selected and set Label12Text accordingly
         If RadioButton1.Checked Then
             form4.Label13Text = "/"

@@ -198,12 +198,26 @@
         End Set
     End Property
 
+    Public Property RichTextBoxText As String
+        Get
+            Return RichTextBox1.Text
+        End Get
+        Set(value As String)
+            RichTextBox1.Text = value
+        End Set
+    End Property
+
+
     Private Sub PictureBox3_Click(sender As Object, e As EventArgs) Handles PictureBox3.Click
         Me.Close()
 
     End Sub
 
     Private Sub Form4_A_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
+
+    Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
 
     End Sub
 End Class
