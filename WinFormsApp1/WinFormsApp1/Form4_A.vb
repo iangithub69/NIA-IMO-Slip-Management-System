@@ -1,4 +1,6 @@
-﻿Public Class Form4_A
+﻿Imports System.Drawing.Printing
+
+Public Class Form4_A
 
     Public Property Label1Text As String
         Get
@@ -218,6 +220,165 @@
     End Sub
 
     Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
+        ' create printdocument instance
+        Dim pd As New PrintDocument
 
+        ' set printer settings
+        pd.DefaultPageSettings.PrinterSettings.PrinterName = "epson tm-h6000iv slip"
+        pd.DefaultPageSettings.PaperSize = New PaperSize("custom", Convert.ToInt32(6.25 * 100), Convert.ToInt32(2.75 * 100)) ' size in hundredths of an inch (600 x 275)
+
+        ' add printpage event handler
+        AddHandler pd.PrintPage, AddressOf PrintContent
+
+        ' start printing
+        pd.Print()
     End Sub
+
+    Private Sub PrintContent(sender As Object, e As PrintPageEventArgs)
+        ' Define font and brush for drawing
+        Dim font As New Font("Epilogue", 10)
+        Dim font1 As New Font("Epilogue", 9)
+        Dim font2 As New Font("Epilogue", 15, FontStyle.Bold)
+        Dim brush As New SolidBrush(Color.Black)
+
+        ' Define positions for labels
+        Dim x As Single = 110 ' Adjust the x position based on your layout
+        Dim y As Single = 300 ' Adjust the starting y position
+        Dim lineHeight As Single = font.GetHeight()
+
+        ' Save the current graphics state to restore it later
+        Dim oldState As Drawing2D.GraphicsState = e.Graphics.Save()
+
+        ' Rotate the graphics context 90 degrees clockwise
+        e.Graphics.RotateTransform(90)
+
+        ' Translate to adjust for the rotation (swap width and height)
+        e.Graphics.TranslateTransform(0, -e.PageBounds.Width)
+
+        Dim label1X As Single = 480 ' date
+        Dim label1Y As Single = 360 ' 
+        e.Graphics.DrawString(Label1.Text, font1, brush, label1X, label1Y)
+        y += lineHeight
+
+        Dim label2X As Single = 269 ' account number 1
+        Dim label2Y As Single = 400 ' 
+        e.Graphics.DrawString(Label2.Text, font, brush, label2X, label2Y)
+        y += lineHeight
+
+        Dim label3X As Single = 285 ' account number 2
+        Dim label3Y As Single = 400 '
+        e.Graphics.DrawString(Label3.Text, font, brush, label3X, label3Y)
+        y += lineHeight
+
+        Dim label4X As Single = 303 ' account number 3
+        Dim label4Y As Single = 400 '
+        e.Graphics.DrawString(Label4.Text, font, brush, label4X, label4Y)
+        y += lineHeight
+
+        Dim label5X As Single = 321 ' account number 4
+        Dim label5Y As Single = 400 '
+        e.Graphics.DrawString(Label5.Text, font, brush, label5X, label5Y)
+        y += lineHeight
+
+        Dim label6X As Single = 340 ' account number 5
+        Dim label6Y As Single = 400 '
+        e.Graphics.DrawString(Label6.Text, font, brush, label6X, label6Y)
+        y += lineHeight
+
+        Dim label7X As Single = 360 ' account number 6
+        Dim label7Y As Single = 400 '
+        e.Graphics.DrawString(Label7.Text, font, brush, label7X, label7Y)
+        y += lineHeight
+
+        Dim label8X As Single = 380 ' account number 7
+        Dim label8Y As Single = 400 '
+        e.Graphics.DrawString(Label8.Text, font, brush, label8X, label8Y)
+        y += lineHeight
+
+        Dim label9X As Single = 400 ' account number 8
+        Dim label9Y As Single = 400 '
+        e.Graphics.DrawString(Label9.Text, font, brush, label9X, label9Y)
+        y += lineHeight
+
+        Dim label10X As Single = 420 ' account number 9
+        Dim label10Y As Single = 400 '
+        e.Graphics.DrawString(Label10.Text, font, brush, label10X, label10Y)
+        y += lineHeight
+
+        Dim label11X As Single = 440 ' account number 10
+        Dim label11Y As Single = 400 '
+        e.Graphics.DrawString(Label11.Text, font, brush, label11X, label11Y)
+        y += lineHeight
+
+        Dim label12X As Single = 460 ' branch of account
+        Dim label12Y As Single = 400 '
+        e.Graphics.DrawString(Label12.Text, font, brush, label12X, label12Y)
+        y += lineHeight
+
+        Dim label13X As Single = 270 ' peso radiobutton
+        Dim label13Y As Single = 450 '
+        e.Graphics.DrawString(Label13.Text, font2, brush, label13X, label13Y)
+        y += lineHeight
+
+        Dim label14X As Single = 275 ' euro radiobutton
+        Dim label14Y As Single = 470 '
+        e.Graphics.DrawString(Label14.Text, font2, brush, label14X, label14Y)
+        y += lineHeight
+
+        Dim label15X As Single = 350 ' jpy radiobutton
+        Dim label15Y As Single = 450 '
+        e.Graphics.DrawString(Label15.Text, font2, brush, label15X, label15Y)
+        y += lineHeight
+
+        Dim label16X As Single = 350 ' usd radiobutton
+        Dim label16Y As Single = 470 '
+        e.Graphics.DrawString(Label16.Text, font2, brush, label16X, label16Y)
+        y += lineHeight
+
+        Dim label17X As Single = 420 ' others radiobutton
+        Dim label17Y As Single = 450 '
+        e.Graphics.DrawString(Label17.Text, font2, brush, label17X, label17Y)
+        y += lineHeight
+
+        Dim label18X As Single = 480 ' other define
+        Dim label18Y As Single = 455 '
+        e.Graphics.DrawString(Label18.Text, font, brush, label18X, label18Y)
+        y += lineHeight
+
+        'Dim label19X As Single = 175 ' deleted
+        'Dim label19Y As Single = 395 '
+        'e.Graphics.DrawString(Label14.Text, font2, brush, label19X, label19Y)
+        'y += lineHeight
+
+        Dim label20X As Single = 175 ' in figures
+        Dim label20Y As Single = 395 '
+        e.Graphics.DrawString(Label14.Text, font2, brush, label20X, label20Y)
+        y += lineHeight
+
+        Dim label21X As Single = 175 ' contact number
+        Dim label21Y As Single = 395 '
+        e.Graphics.DrawString(Label14.Text, font2, brush, label21X, label21Y)
+        y += lineHeight
+
+        Dim label22X As Single = 175 ' account name
+        Dim label22Y As Single = 395 '
+        e.Graphics.DrawString(Label14.Text, font2, brush, label22X, label22Y)
+        y += lineHeight
+
+        Dim label23X As Single = 175 ' account number 5
+        Dim label23Y As Single = 395 '
+        e.Graphics.DrawString(Label14.Text, font2, brush, label23X, label23Y)
+        y += lineHeight
+
+        Dim RichTextBox1X As Single = 175 ' account number 5
+        Dim RichTextBox1Y As Single = 395 '
+        e.Graphics.DrawString(Label14.Text, font2, brush, RichTextBox1X, RichTextBox1Y)
+        y += lineHeight
+
+        ' Repeat for the remaining labels, adjusting x and y coordinates as needed
+
+        ' Restore the graphics state to its original settings
+        e.Graphics.Restore(oldState)
+    End Sub
+
 End Class
