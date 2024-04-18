@@ -23,14 +23,12 @@ Public Class Form4
         form4.Label10Text = TextBox17.Text
         form4.Label11Text = TextBox18.Text
         form4.Label12Text = TextBox4.Text
-
+        form4.Label19Text = RichTextBox1.Text
         form4.Label18Text = TextBox3.Text
         form4.Label20Text = TextBox8.Text
         form4.Label21Text = TextBox5.Text
         form4.Label22Text = TextBox7.Text
         form4.Label23Text = TextBox1.Text
-
-        form4.RichTextBoxText = RichTextBox1.Text
 
 
         ' Check which RadioButton is selected and set Label12Text accordingly

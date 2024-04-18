@@ -164,6 +164,15 @@ Public Class Form4_A
         End Set
     End Property
 
+    Public Property Label19Text As String
+        Get
+            Return Label19.Text
+        End Get
+        Set(value As String)
+            Label19.Text = value
+        End Set
+    End Property
+
     Public Property Label20Text As String
         Get
             Return Label20.Text
@@ -200,15 +209,6 @@ Public Class Form4_A
         End Set
     End Property
 
-    Public Property RichTextBoxText As String
-        Get
-            Return RichTextBox1.Text
-        End Get
-        Set(value As String)
-            RichTextBox1.Text = value
-        End Set
-    End Property
-
 
     Private Sub PictureBox3_Click(sender As Object, e As EventArgs) Handles PictureBox3.Click
         Me.Close()
@@ -239,6 +239,7 @@ Public Class Form4_A
         Dim font As New Font("Epilogue", 10)
         Dim font1 As New Font("Epilogue", 9)
         Dim font2 As New Font("Epilogue", 15, FontStyle.Bold)
+        Dim font3 As New Font("Epilogue", 7)
         Dim brush As New SolidBrush(Color.Black)
 
         ' Define positions for labels
@@ -252,7 +253,7 @@ Public Class Form4_A
         ' Rotate the graphics context 90 degrees clockwise
         e.Graphics.RotateTransform(90)
 
-        ' Translate to adjust for the rotation (swap width and height)
+        ' Translate to adjust for the rotation (swap width and height)  
         e.Graphics.TranslateTransform(0, -e.PageBounds.Width)
 
         Dim label1X As Single = 480 ' date
@@ -345,34 +346,57 @@ Public Class Form4_A
         e.Graphics.DrawString(Label18.Text, font, brush, label18X, label18Y)
         y += lineHeight
 
-        'Dim label19X As Single = 175 ' deleted
-        'Dim label19Y As Single = 395 '
-        'e.Graphics.DrawString(Label14.Text, font2, brush, label19X, label19Y)
-        'y += lineHeight
 
-        Dim label20X As Single = 175 ' in figures
-        Dim label20Y As Single = 395 '
-        e.Graphics.DrawString(Label14.Text, font2, brush, label20X, label20Y)
+
+        Dim label19X As Single = 310 ' total deposit
+        Dim label19Y As Single = 505 '
+        Dim maxLineWidth As Single = 200 ' Example maximum width for wrapping
+        Dim lineSpacing As Single = -18 ' Example line spacing
+        Dim labelText As String = Label19.Text
+        Dim lines As New List(Of String)()
+        Dim currentLine As String = ""
+
+        ' Splitting the text into lines based on the maximum width
+        For Each word As String In labelText.Split(" "c)
+            If currentLine.Length + word.Length < 40 Then ' Checking if adding the word exceeds the maximum width
+                currentLine &= word & " "
+            Else
+                lines.Add(currentLine.Trim()) ' Add the current line to the list of lines
+                currentLine = word & " " ' Start a new line with the current word
+            End If
+        Next
+
+        If currentLine.Trim() <> "" Then
+            lines.Add(currentLine.Trim()) ' Add the last line if it's not empty
+        End If
+
+        ' Drawing each line separately
+        Dim yPos As Single = label19Y
+        For Each line As String In lines
+            e.Graphics.DrawString(line, font3, brush, label19X, yPos)
+            yPos += font.Height + lineSpacing ' Incrementing the Y position for the next line
+        Next
+
+
+
+        Dim label20X As Single = 320 ' in figures
+        Dim label20Y As Single = 535 '
+        e.Graphics.DrawString(Label20.Text, font, brush, label20X, label20Y)
         y += lineHeight
 
-        Dim label21X As Single = 175 ' contact number
-        Dim label21Y As Single = 395 '
-        e.Graphics.DrawString(Label14.Text, font2, brush, label21X, label21Y)
+        Dim label21X As Single = 110 ' contact number
+        Dim label21Y As Single = 550 '
+        e.Graphics.DrawString(Label21.Text, font, brush, label21X, label21Y)
         y += lineHeight
 
-        Dim label22X As Single = 175 ' account name
-        Dim label22Y As Single = 395 '
-        e.Graphics.DrawString(Label14.Text, font2, brush, label22X, label22Y)
+        Dim label22X As Single = 285 ' account name
+        Dim label22Y As Single = 360 '
+        e.Graphics.DrawString(Label22.Text, font, brush, label22X, label22Y)
         y += lineHeight
 
-        Dim label23X As Single = 175 ' account number 5
-        Dim label23Y As Single = 395 '
-        e.Graphics.DrawString(Label14.Text, font2, brush, label23X, label23Y)
-        y += lineHeight
-
-        Dim RichTextBox1X As Single = 175 ' account number 5
-        Dim RichTextBox1Y As Single = 395 '
-        e.Graphics.DrawString(Label14.Text, font2, brush, RichTextBox1X, RichTextBox1Y)
+        Dim label23X As Single = 60 ' depositor name
+        Dim label23Y As Single = 475 '
+        e.Graphics.DrawString(Label23.Text, font1, brush, label23X, label23Y)
         y += lineHeight
 
         ' Repeat for the remaining labels, adjusting x and y coordinates as needed

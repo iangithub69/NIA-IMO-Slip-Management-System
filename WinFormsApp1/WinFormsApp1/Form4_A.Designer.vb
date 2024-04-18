@@ -47,7 +47,7 @@ Partial Class Form4_A
         Label21 = New Label()
         Label23 = New Label()
         Button5 = New Button()
-        RichTextBox1 = New RichTextBox()
+        Label19 = New Label()
         CType(PictureBox3, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
@@ -255,7 +255,7 @@ Partial Class Form4_A
         ' 
         Label20.AutoSize = True
         Label20.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
-        Label20.Location = New Point(771, 634)
+        Label20.Location = New Point(771, 606)
         Label20.Name = "Label20"
         Label20.Size = New Size(195, 45)
         Label20.TabIndex = 108
@@ -292,21 +292,22 @@ Partial Class Form4_A
         Button5.Text = "Print Slip"
         Button5.UseVisualStyleBackColor = True
         ' 
-        ' RichTextBox1
+        ' Label19
         ' 
-        RichTextBox1.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
-        RichTextBox1.Location = New Point(773, 514)
-        RichTextBox1.Name = "RichTextBox1"
-        RichTextBox1.Size = New Size(854, 92)
-        RichTextBox1.TabIndex = 112
-        RichTextBox1.Text = ""
+        Label19.AutoSize = True
+        Label19.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
+        Label19.Location = New Point(771, 532)
+        Label19.Name = "Label19"
+        Label19.Size = New Size(180, 45)
+        Label19.TabIndex = 113
+        Label19.Text = "total_depo"
         ' 
         ' Form4_A
         ' 
         AutoScaleDimensions = New SizeF(13F, 32F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(1934, 827)
-        Controls.Add(RichTextBox1)
+        Controls.Add(Label19)
         Controls.Add(Button5)
         Controls.Add(Label23)
         Controls.Add(Label21)
@@ -364,5 +365,5 @@ Partial Class Form4_A
     Friend WithEvents Label21 As Label
     Friend WithEvents Label23 As Label
     Friend WithEvents Button5 As Button
-    Friend WithEvents RichTextBox1 As RichTextBox
+    Friend WithEvents Label19 As Label
 End Class
