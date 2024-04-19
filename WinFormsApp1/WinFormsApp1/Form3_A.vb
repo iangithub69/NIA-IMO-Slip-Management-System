@@ -227,7 +227,7 @@ Public Class Form3_A
     Private Sub PrintContent(sender As Object, e As PrintPageEventArgs)
         ' Define font and brush for drawing
         Dim font As New Font("Epilogue", 10)
-        Dim font2 As New Font("Epilogue", 9)
+        Dim font2 As New Font("Epilogue", 12)
         Dim font3 As New Font("Epilogue", 20, FontStyle.Bold)
         Dim brush As New SolidBrush(Color.Black)
 
@@ -245,12 +245,12 @@ Public Class Form3_A
         ' Translate to adjust for the rotation (swap width and height)
         e.Graphics.TranslateTransform(0, -e.PageBounds.Width)
 
-        Dim label1X As Single = 109 ' account number
+        Dim label1X As Single = 120 ' account number
         Dim label1Y As Single = 395 ' 
         e.Graphics.DrawString(Label1.Text, font, brush, label1X, label1Y)
         y += lineHeight
         ' Adjust x and y coordinates for Label2
-        Dim label2X As Single = 130 ' account number
+        Dim label2X As Single = 135 ' account number
         Dim label2Y As Single = 395 ' 
         e.Graphics.DrawString(Label2.Text, font, brush, label2X, label2Y)
         y += lineHeight
@@ -300,48 +300,48 @@ Public Class Form3_A
         e.Graphics.DrawString(Label4.Text, font3, brush, label4X, label4Y)
         y += lineHeight
 
-        Dim label12X As Single = 215
+        Dim label12X As Single = 225
         Dim label12Y As Single = 336 ' Radio button 2 - label12
         e.Graphics.DrawString(Label12.Text, font3, brush, label12X, label12Y)
         y += lineHeight
 
-        Dim label13X As Single = 350
+        Dim label13X As Single = 360
         Dim label13Y As Single = 336 ' Radio button 1 - label13
         e.Graphics.DrawString(Label13.Text, font3, brush, label13X, label13Y)
         y += lineHeight
 
-        Dim label5X As Single = 150 ' Adjust x coordinate for Label3
-        Dim label5Y As Single = 445 ' Adjust y coordinate for Label3 /cashier name
+        Dim label5X As Single = 150 ' ref number 1
+        Dim label5Y As Single = 440 ' 
         e.Graphics.DrawString(Label5.Text, font2, brush, label5X, label5Y)
         y += lineHeight
 
-        Dim label6X As Single = 150 ' Adjust x coordinate for Label3
-        Dim label6Y As Single = 485 ' Adjust y coordinate for Label3 /cashier designation
+        Dim label6X As Single = 150 ' ref number 2
+        Dim label6Y As Single = 480 ' 
         e.Graphics.DrawString(Label6.Text, font2, brush, label6X, label6Y)
         y += lineHeight
 
-        Dim label7x As Single = 150 ' adjust x coordinate for label3
-        Dim label7y As Single = 525 ' adjust y coordinate for label3 / officer name
+        Dim label7x As Single = 150 ' ref number 3
+        Dim label7y As Single = 525 ' 
         e.Graphics.DrawString(Label7.Text, font2, brush, label7x, label7y)
         y += lineHeight
 
-        Dim label8X As Single = 150 ' Adjust x coordinate for Label3
-        Dim label8Y As Single = 560 ' Adjust y coordinate for Label3 / designation
+        Dim label8X As Single = 150 ' amount
+        Dim label8Y As Single = 560 ' 
         e.Graphics.DrawString(Label8.Text, font2, brush, label8X, label8Y)
         y += lineHeight
 
-        Dim label9X As Single = 560 ' Adjust x coordinate for Label3
-        Dim label9Y As Single = 350 ' Adjust y coordinate for Label3 / designation
+        Dim label9X As Single = 540 ' date
+        Dim label9Y As Single = 350 ' 
         e.Graphics.DrawString(Label9.Text, font2, brush, label9X, label9Y)
         y += lineHeight
 
-        Dim label10X As Single = 490 ' Adjust x coordinate for Label1
-        Dim label10Y As Single = 390 ' Adjust y coordinate for Label1 /date
+        Dim label10X As Single = 430 ' agency name
+        Dim label10Y As Single = 390 ' 
         e.Graphics.DrawString(Label10.Text, font, brush, label10X, label10Y)
         y += lineHeight
 
-        Dim label11X As Single = 490 ' Adjust x coordinate for Label1
-        Dim label11Y As Single = 440 ' Adjust y coordinate for Label1 /date
+        Dim label11X As Single = 405 ' payor name
+        Dim label11Y As Single = 445 ' 
         e.Graphics.DrawString(Label11.Text, font, brush, label11X, label11Y)
         y += lineHeight
 

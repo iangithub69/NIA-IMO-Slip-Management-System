@@ -312,11 +312,11 @@ Public Class Form4_A
         y += lineHeight
 
         Dim label12X As Single = 460 ' branch of account
-        Dim label12Y As Single = 400 '
-        e.Graphics.DrawString(Label12.Text, font, brush, label12X, label12Y)
+        Dim label12Y As Single = 410 '
+        e.Graphics.DrawString(Label12.Text, font3, brush, label12X, label12Y)
         y += lineHeight
 
-        Dim label13X As Single = 270 ' peso radiobutton
+        Dim label13X As Single = 275 ' peso radiobutton
         Dim label13Y As Single = 450 '
         e.Graphics.DrawString(Label13.Text, font2, brush, label13X, label13Y)
         y += lineHeight
@@ -326,17 +326,17 @@ Public Class Form4_A
         e.Graphics.DrawString(Label14.Text, font2, brush, label14X, label14Y)
         y += lineHeight
 
-        Dim label15X As Single = 350 ' jpy radiobutton
+        Dim label15X As Single = 355 ' jpy radiobutton
         Dim label15Y As Single = 450 '
         e.Graphics.DrawString(Label15.Text, font2, brush, label15X, label15Y)
         y += lineHeight
 
-        Dim label16X As Single = 350 ' usd radiobutton
+        Dim label16X As Single = 355 ' usd radiobutton
         Dim label16Y As Single = 470 '
         e.Graphics.DrawString(Label16.Text, font2, brush, label16X, label16Y)
         y += lineHeight
 
-        Dim label17X As Single = 420 ' others radiobutton
+        Dim label17X As Single = 430 ' others radiobutton
         Dim label17Y As Single = 450 '
         e.Graphics.DrawString(Label17.Text, font2, brush, label17X, label17Y)
         y += lineHeight
