@@ -31,6 +31,7 @@ Partial Class Form3
         PictureBox5 = New PictureBox()
         Panel1 = New Panel()
         PictureBox9 = New PictureBox()
+        PictureBox10 = New PictureBox()
         Label11 = New Label()
         Label8 = New Label()
         Label7 = New Label()
@@ -73,7 +74,6 @@ Partial Class Form3
         Panel10 = New Panel()
         TextBox10 = New TextBox()
         Label12 = New Label()
-        PictureBox10 = New PictureBox()
         PictureBox6 = New PictureBox()
         PictureBox7 = New PictureBox()
         ContextMenuStrip1 = New ContextMenuStrip(components)
@@ -84,6 +84,7 @@ Partial Class Form3
         CType(PictureBox5, ComponentModel.ISupportInitialize).BeginInit()
         Panel1.SuspendLayout()
         CType(PictureBox9, ComponentModel.ISupportInitialize).BeginInit()
+        CType(PictureBox10, ComponentModel.ISupportInitialize).BeginInit()
         Panel2.SuspendLayout()
         Panel3.SuspendLayout()
         CType(PictureBox8, ComponentModel.ISupportInitialize).BeginInit()
@@ -94,7 +95,6 @@ Partial Class Form3
         Panel8.SuspendLayout()
         Panel9.SuspendLayout()
         Panel10.SuspendLayout()
-        CType(PictureBox10, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox6, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox7, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
@@ -186,9 +186,21 @@ Partial Class Form3
         PictureBox9.TabIndex = 44
         PictureBox9.TabStop = False
         ' 
+        ' PictureBox10
+        ' 
+        PictureBox10.Cursor = Cursors.Hand
+        PictureBox10.Image = My.Resources.Resources.literature_no_bg
+        PictureBox10.Location = New Point(1623, 629)
+        PictureBox10.Name = "PictureBox10"
+        PictureBox10.Size = New Size(47, 43)
+        PictureBox10.SizeMode = PictureBoxSizeMode.StretchImage
+        PictureBox10.TabIndex = 45
+        PictureBox10.TabStop = False
+        ' 
         ' Label11
         ' 
         Label11.AutoSize = True
+        Label11.ForeColor = Color.FromArgb(CByte(57), CByte(66), CByte(112))
         Label11.Location = New Point(851, 382)
         Label11.Name = "Label11"
         Label11.Size = New Size(119, 32)
@@ -198,6 +210,7 @@ Partial Class Form3
         ' Label8
         ' 
         Label8.AutoSize = True
+        Label8.ForeColor = Color.FromArgb(CByte(57), CByte(66), CByte(112))
         Label8.Location = New Point(851, 242)
         Label8.Name = "Label8"
         Label8.Size = New Size(718, 32)
@@ -207,6 +220,7 @@ Partial Class Form3
         ' Label7
         ' 
         Label7.AutoSize = True
+        Label7.ForeColor = Color.FromArgb(CByte(57), CByte(66), CByte(112))
         Label7.Location = New Point(3, 242)
         Label7.Name = "Label7"
         Label7.Size = New Size(235, 32)
@@ -216,6 +230,7 @@ Partial Class Form3
         ' Label6
         ' 
         Label6.AutoSize = True
+        Label6.ForeColor = Color.FromArgb(CByte(57), CByte(66), CByte(112))
         Label6.Location = New Point(851, 122)
         Label6.Name = "Label6"
         Label6.Size = New Size(326, 32)
@@ -234,6 +249,7 @@ Partial Class Form3
         ' Label3
         ' 
         Label3.AutoSize = True
+        Label3.ForeColor = Color.FromArgb(CByte(57), CByte(66), CByte(112))
         Label3.Location = New Point(132, 122)
         Label3.Name = "Label3"
         Label3.Size = New Size(569, 32)
@@ -243,6 +259,7 @@ Partial Class Form3
         ' Label2
         ' 
         Label2.AutoSize = True
+        Label2.ForeColor = Color.FromArgb(CByte(57), CByte(66), CByte(112))
         Label2.Location = New Point(1153, 9)
         Label2.Name = "Label2"
         Label2.Size = New Size(73, 32)
@@ -252,6 +269,7 @@ Partial Class Form3
         ' Label1
         ' 
         Label1.AutoSize = True
+        Label1.ForeColor = Color.FromArgb(CByte(57), CByte(66), CByte(112))
         Label1.Location = New Point(3, 9)
         Label1.Name = "Label1"
         Label1.Size = New Size(525, 32)
@@ -530,6 +548,7 @@ Partial Class Form3
         ' Label9
         ' 
         Label9.AutoSize = True
+        Label9.ForeColor = Color.FromArgb(CByte(57), CByte(66), CByte(112))
         Label9.Location = New Point(26, 72)
         Label9.Name = "Label9"
         Label9.Size = New Size(235, 32)
@@ -558,6 +577,7 @@ Partial Class Form3
         ' Label10
         ' 
         Label10.AutoSize = True
+        Label10.ForeColor = Color.FromArgb(CByte(57), CByte(66), CByte(112))
         Label10.Location = New Point(26, 81)
         Label10.Name = "Label10"
         Label10.Size = New Size(347, 32)
@@ -586,22 +606,12 @@ Partial Class Form3
         ' Label12
         ' 
         Label12.AutoSize = True
+        Label12.ForeColor = Color.FromArgb(CByte(57), CByte(66), CByte(112))
         Label12.Location = New Point(21, 101)
         Label12.Name = "Label12"
         Label12.Size = New Size(100, 32)
         Label12.TabIndex = 19
         Label12.Text = "Amount"
-        ' 
-        ' PictureBox10
-        ' 
-        PictureBox10.Cursor = Cursors.Hand
-        PictureBox10.Image = My.Resources.Resources.literature_no_bg
-        PictureBox10.Location = New Point(1623, 629)
-        PictureBox10.Name = "PictureBox10"
-        PictureBox10.Size = New Size(47, 43)
-        PictureBox10.SizeMode = PictureBoxSizeMode.StretchImage
-        PictureBox10.TabIndex = 45
-        PictureBox10.TabStop = False
         ' 
         ' PictureBox6
         ' 
@@ -656,6 +666,7 @@ Partial Class Form3
         Panel1.ResumeLayout(False)
         Panel1.PerformLayout()
         CType(PictureBox9, ComponentModel.ISupportInitialize).EndInit()
+        CType(PictureBox10, ComponentModel.ISupportInitialize).EndInit()
         Panel2.ResumeLayout(False)
         Panel2.PerformLayout()
         Panel3.ResumeLayout(False)
@@ -675,7 +686,6 @@ Partial Class Form3
         Panel9.PerformLayout()
         Panel10.ResumeLayout(False)
         Panel10.PerformLayout()
-        CType(PictureBox10, ComponentModel.ISupportInitialize).EndInit()
         CType(PictureBox6, ComponentModel.ISupportInitialize).EndInit()
         CType(PictureBox7, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)

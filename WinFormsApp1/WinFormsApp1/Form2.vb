@@ -94,6 +94,8 @@ Public Class Form2
 
 
     Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
+        Form1.Show()
+
         Me.Close()
 
     End Sub
@@ -663,6 +665,10 @@ Public Class Form2
     End Sub
 
     Private Sub TextBox10_TextChanged(sender As Object, e As EventArgs) Handles TextBox10.TextChanged
+
+    End Sub
+
+    Private Sub TextBox9_TextChanged(sender As Object, e As EventArgs) Handles TextBox9.TextChanged
 
     End Sub
 End Class

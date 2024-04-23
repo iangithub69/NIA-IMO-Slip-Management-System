@@ -68,7 +68,7 @@ Partial Class Form2
         Label1.AutoSize = True
         Label1.BackColor = Color.Transparent
         Label1.Font = New Font("Segoe UI", 19.875F, FontStyle.Bold, GraphicsUnit.Point)
-        Label1.ForeColor = Color.Maroon
+        Label1.ForeColor = Color.FromArgb(CByte(84), CByte(154), CByte(21))
         Label1.Location = New Point(664, 9)
         Label1.Name = "Label1"
         Label1.Size = New Size(604, 71)
@@ -90,7 +90,7 @@ Partial Class Form2
         Label3.AutoSize = True
         Label3.BackColor = Color.Transparent
         Label3.Font = New Font("Segoe UI", 10.125F, FontStyle.Bold, GraphicsUnit.Point)
-        Label3.ForeColor = Color.Maroon
+        Label3.ForeColor = Color.FromArgb(CByte(84), CByte(154), CByte(21))
         Label3.Location = New Point(142, 151)
         Label3.Name = "Label3"
         Label3.Size = New Size(53, 37)
@@ -100,6 +100,8 @@ Partial Class Form2
         ' 
         ' TextBox1
         ' 
+        TextBox1.BackColor = Color.FromArgb(CByte(220), CByte(239), CByte(197))
+        TextBox1.BorderStyle = BorderStyle.FixedSingle
         TextBox1.Font = New Font("Segoe UI", 10.125F, FontStyle.Bold, GraphicsUnit.Point)
         TextBox1.Location = New Point(210, 150)
         TextBox1.Name = "TextBox1"
@@ -113,7 +115,7 @@ Partial Class Form2
         Label4.AutoSize = True
         Label4.BackColor = Color.Transparent
         Label4.Font = New Font("Segoe UI", 10.125F, FontStyle.Bold, GraphicsUnit.Point)
-        Label4.ForeColor = Color.Maroon
+        Label4.ForeColor = Color.FromArgb(CByte(84), CByte(154), CByte(21))
         Label4.Location = New Point(30, 214)
         Label4.Name = "Label4"
         Label4.Size = New Size(174, 37)
@@ -122,7 +124,8 @@ Partial Class Form2
         ' 
         ' TextBox2
         ' 
-        TextBox2.BackColor = Color.White
+        TextBox2.BackColor = Color.FromArgb(CByte(220), CByte(239), CByte(197))
+        TextBox2.BorderStyle = BorderStyle.FixedSingle
         TextBox2.Font = New Font("Segoe UI", 10.125F, FontStyle.Bold, GraphicsUnit.Point)
         TextBox2.Location = New Point(210, 214)
         TextBox2.Name = "TextBox2"
@@ -135,7 +138,7 @@ Partial Class Form2
         Label5.AutoSize = True
         Label5.BackColor = Color.Transparent
         Label5.Font = New Font("Segoe UI", 10.125F, FontStyle.Bold, GraphicsUnit.Point)
-        Label5.ForeColor = Color.Maroon
+        Label5.ForeColor = Color.FromArgb(CByte(84), CByte(154), CByte(21))
         Label5.Location = New Point(658, 148)
         Label5.Name = "Label5"
         Label5.Size = New Size(230, 37)
@@ -144,6 +147,7 @@ Partial Class Form2
         ' 
         ' ComboBox1
         ' 
+        ComboBox1.BackColor = Color.FromArgb(CByte(220), CByte(239), CByte(197))
         ComboBox1.DropDownStyle = ComboBoxStyle.DropDownList
         ComboBox1.Font = New Font("Segoe UI", 10.125F, FontStyle.Bold, GraphicsUnit.Point)
         ComboBox1.FormattingEnabled = True
@@ -157,7 +161,7 @@ Partial Class Form2
         Label6.AutoSize = True
         Label6.BackColor = Color.Transparent
         Label6.Font = New Font("Segoe UI", 10.125F, FontStyle.Bold, GraphicsUnit.Point)
-        Label6.ForeColor = Color.Maroon
+        Label6.ForeColor = Color.FromArgb(CByte(84), CByte(154), CByte(21))
         Label6.Location = New Point(676, 214)
         Label6.Name = "Label6"
         Label6.Size = New Size(212, 37)
@@ -166,7 +170,8 @@ Partial Class Form2
         ' 
         ' TextBox3
         ' 
-        TextBox3.BackColor = Color.White
+        TextBox3.BackColor = Color.FromArgb(CByte(220), CByte(239), CByte(197))
+        TextBox3.BorderStyle = BorderStyle.FixedSingle
         TextBox3.Font = New Font("Segoe UI", 10.125F, FontStyle.Bold, GraphicsUnit.Point)
         TextBox3.Location = New Point(894, 214)
         TextBox3.Name = "TextBox3"
@@ -179,7 +184,7 @@ Partial Class Form2
         Label7.AutoSize = True
         Label7.BackColor = Color.Transparent
         Label7.Font = New Font("Segoe UI", 10.125F, FontStyle.Bold, GraphicsUnit.Point)
-        Label7.ForeColor = Color.Maroon
+        Label7.ForeColor = Color.FromArgb(CByte(84), CByte(154), CByte(21))
         Label7.Location = New Point(1351, 145)
         Label7.Name = "Label7"
         Label7.Size = New Size(145, 37)
@@ -188,6 +193,8 @@ Partial Class Form2
         ' 
         ' TextBox4
         ' 
+        TextBox4.BackColor = Color.FromArgb(CByte(220), CByte(239), CByte(197))
+        TextBox4.BorderStyle = BorderStyle.FixedSingle
         TextBox4.Font = New Font("Segoe UI", 10.125F, FontStyle.Bold, GraphicsUnit.Point)
         TextBox4.Location = New Point(1502, 145)
         TextBox4.Name = "TextBox4"
@@ -199,7 +206,7 @@ Partial Class Form2
         Label8.AutoSize = True
         Label8.BackColor = Color.Transparent
         Label8.Font = New Font("Segoe UI", 10.125F, FontStyle.Bold, GraphicsUnit.Point)
-        Label8.ForeColor = Color.Maroon
+        Label8.ForeColor = Color.FromArgb(CByte(84), CByte(154), CByte(21))
         Label8.Location = New Point(1410, 214)
         Label8.Name = "Label8"
         Label8.Size = New Size(85, 37)
@@ -211,7 +218,7 @@ Partial Class Form2
         Label9.AutoSize = True
         Label9.BackColor = Color.Transparent
         Label9.Font = New Font("Segoe UI", 10.125F, FontStyle.Regular, GraphicsUnit.Point)
-        Label9.ForeColor = Color.Maroon
+        Label9.ForeColor = Color.FromArgb(CByte(84), CByte(154), CByte(21))
         Label9.Location = New Point(1539, 260)
         Label9.Name = "Label9"
         Label9.Size = New Size(96, 37)
@@ -223,7 +230,7 @@ Partial Class Form2
         Label10.AutoSize = True
         Label10.BackColor = Color.Transparent
         Label10.Font = New Font("Segoe UI", 10.125F, FontStyle.Regular, GraphicsUnit.Point)
-        Label10.ForeColor = Color.Maroon
+        Label10.ForeColor = Color.FromArgb(CByte(84), CByte(154), CByte(21))
         Label10.Location = New Point(1663, 260)
         Label10.Name = "Label10"
         Label10.Size = New Size(63, 37)
@@ -235,7 +242,7 @@ Partial Class Form2
         Label11.AutoSize = True
         Label11.BackColor = Color.Transparent
         Label11.Font = New Font("Segoe UI", 10.125F, FontStyle.Regular, GraphicsUnit.Point)
-        Label11.ForeColor = Color.Maroon
+        Label11.ForeColor = Color.FromArgb(CByte(84), CByte(154), CByte(21))
         Label11.Location = New Point(1762, 260)
         Label11.Name = "Label11"
         Label11.Size = New Size(67, 37)
@@ -247,7 +254,7 @@ Partial Class Form2
         Label12.AutoSize = True
         Label12.BackColor = Color.Transparent
         Label12.Font = New Font("Segoe UI", 10.125F, FontStyle.Bold, GraphicsUnit.Point)
-        Label12.ForeColor = Color.Maroon
+        Label12.ForeColor = Color.FromArgb(CByte(84), CByte(154), CByte(21))
         Label12.Location = New Point(1368, 341)
         Label12.Name = "Label12"
         Label12.Size = New Size(128, 37)
@@ -256,6 +263,8 @@ Partial Class Form2
         ' 
         ' TextBox8
         ' 
+        TextBox8.BackColor = Color.FromArgb(CByte(220), CByte(239), CByte(197))
+        TextBox8.BorderStyle = BorderStyle.FixedSingle
         TextBox8.Font = New Font("Segoe UI", 10.125F, FontStyle.Bold, GraphicsUnit.Point)
         TextBox8.Location = New Point(1502, 338)
         TextBox8.Name = "TextBox8"
@@ -268,7 +277,7 @@ Partial Class Form2
         Label13.AutoSize = True
         Label13.BackColor = Color.Transparent
         Label13.Font = New Font("Segoe UI", 10.125F, FontStyle.Bold, GraphicsUnit.Point)
-        Label13.ForeColor = Color.Maroon
+        Label13.ForeColor = Color.FromArgb(CByte(84), CByte(154), CByte(21))
         Label13.Location = New Point(30, 406)
         Label13.Name = "Label13"
         Label13.Size = New Size(165, 37)
@@ -280,7 +289,7 @@ Partial Class Form2
         Label14.AutoSize = True
         Label14.BackColor = Color.Transparent
         Label14.Font = New Font("Segoe UI", 10.125F, FontStyle.Bold, GraphicsUnit.Point)
-        Label14.ForeColor = Color.Maroon
+        Label14.ForeColor = Color.FromArgb(CByte(84), CByte(154), CByte(21))
         Label14.Location = New Point(49, 443)
         Label14.Name = "Label14"
         Label14.Size = New Size(155, 37)
@@ -289,6 +298,8 @@ Partial Class Form2
         ' 
         ' TextBox9
         ' 
+        TextBox9.BackColor = Color.FromArgb(CByte(220), CByte(239), CByte(197))
+        TextBox9.BorderStyle = BorderStyle.FixedSingle
         TextBox9.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
         TextBox9.Location = New Point(212, 427)
         TextBox9.Name = "TextBox9"
@@ -300,7 +311,7 @@ Partial Class Form2
         Label15.AutoSize = True
         Label15.BackColor = Color.Transparent
         Label15.Font = New Font("Segoe UI", 10.125F, FontStyle.Bold, GraphicsUnit.Point)
-        Label15.ForeColor = Color.Maroon
+        Label15.ForeColor = Color.FromArgb(CByte(84), CByte(154), CByte(21))
         Label15.Location = New Point(99, 517)
         Label15.Name = "Label15"
         Label15.Size = New Size(105, 37)
@@ -309,6 +320,8 @@ Partial Class Form2
         ' 
         ' TextBox10
         ' 
+        TextBox10.BackColor = Color.FromArgb(CByte(220), CByte(239), CByte(197))
+        TextBox10.BorderStyle = BorderStyle.FixedSingle
         TextBox10.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
         TextBox10.Location = New Point(212, 508)
         TextBox10.Name = "TextBox10"
@@ -317,61 +330,72 @@ Partial Class Form2
         ' 
         ' Button1
         ' 
+        Button1.BackColor = Color.FromArgb(CByte(84), CByte(154), CByte(21))
+        Button1.FlatStyle = FlatStyle.Flat
         Button1.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point)
-        Button1.ForeColor = Color.Maroon
+        Button1.ForeColor = Color.White
         Button1.Location = New Point(210, 618)
         Button1.Name = "Button1"
         Button1.Size = New Size(219, 54)
         Button1.TabIndex = 26
         Button1.Text = "Refresh"
-        Button1.UseVisualStyleBackColor = True
+        Button1.UseVisualStyleBackColor = False
         ' 
         ' Button2
         ' 
+        Button2.BackColor = Color.FromArgb(CByte(84), CByte(154), CByte(21))
+        Button2.FlatStyle = FlatStyle.Flat
         Button2.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point)
-        Button2.ForeColor = Color.Maroon
+        Button2.ForeColor = Color.White
         Button2.Location = New Point(441, 618)
         Button2.Name = "Button2"
         Button2.Size = New Size(219, 54)
         Button2.TabIndex = 27
         Button2.Text = "Add Record"
-        Button2.UseVisualStyleBackColor = True
+        Button2.UseVisualStyleBackColor = False
         ' 
         ' Button3
         ' 
+        Button3.BackColor = Color.FromArgb(CByte(84), CByte(154), CByte(21))
+        Button3.FlatStyle = FlatStyle.Flat
         Button3.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point)
-        Button3.ForeColor = Color.Maroon
+        Button3.ForeColor = Color.White
         Button3.Location = New Point(212, 702)
         Button3.Name = "Button3"
         Button3.Size = New Size(447, 54)
         Button3.TabIndex = 28
         Button3.Text = "View Check Issued"
-        Button3.UseVisualStyleBackColor = True
+        Button3.UseVisualStyleBackColor = False
         ' 
         ' Button4
         ' 
+        Button4.BackColor = Color.FromArgb(CByte(84), CByte(154), CByte(21))
+        Button4.FlatStyle = FlatStyle.Flat
         Button4.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point)
-        Button4.ForeColor = Color.Maroon
+        Button4.ForeColor = Color.White
         Button4.Location = New Point(677, 700)
         Button4.Name = "Button4"
         Button4.Size = New Size(268, 54)
         Button4.TabIndex = 29
         Button4.Text = "Print Duplicate"
-        Button4.UseVisualStyleBackColor = True
+        Button4.UseVisualStyleBackColor = False
         ' 
         ' Button5
         ' 
+        Button5.BackColor = Color.FromArgb(CByte(84), CByte(154), CByte(21))
+        Button5.FlatStyle = FlatStyle.Flat
         Button5.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point)
-        Button5.ForeColor = Color.Maroon
+        Button5.ForeColor = Color.White
         Button5.Location = New Point(677, 618)
         Button5.Name = "Button5"
         Button5.Size = New Size(268, 54)
         Button5.TabIndex = 30
         Button5.Text = "Print Check"
-        Button5.UseVisualStyleBackColor = True
+        Button5.UseVisualStyleBackColor = False
         ' 
         ' ComboBox2
         ' 
+        ComboBox2.BackColor = Color.FromArgb(CByte(220), CByte(239), CByte(197))
         ComboBox2.DropDownStyle = ComboBoxStyle.DropDownList
         ComboBox2.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
         ComboBox2.FormattingEnabled = True
@@ -382,6 +406,7 @@ Partial Class Form2
         ' 
         ' ComboBox3
         ' 
+        ComboBox3.BackColor = Color.FromArgb(CByte(220), CByte(239), CByte(197))
         ComboBox3.DropDownStyle = ComboBoxStyle.DropDownList
         ComboBox3.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
         ComboBox3.FormattingEnabled = True
@@ -392,6 +417,7 @@ Partial Class Form2
         ' 
         ' ComboBox4
         ' 
+        ComboBox4.BackColor = Color.FromArgb(CByte(220), CByte(239), CByte(197))
         ComboBox4.DropDownStyle = ComboBoxStyle.DropDownList
         ComboBox4.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
         ComboBox4.FormattingEnabled = True
@@ -402,6 +428,7 @@ Partial Class Form2
         ' 
         ' ComboBox5
         ' 
+        ComboBox5.BackColor = Color.FromArgb(CByte(220), CByte(239), CByte(197))
         ComboBox5.DropDownStyle = ComboBoxStyle.DropDownList
         ComboBox5.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
         ComboBox5.FormattingEnabled = True
@@ -412,6 +439,7 @@ Partial Class Form2
         ' 
         ' ComboBox6
         ' 
+        ComboBox6.BackColor = Color.FromArgb(CByte(220), CByte(239), CByte(197))
         ComboBox6.DropDownStyle = ComboBoxStyle.DropDownList
         ComboBox6.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
         ComboBox6.FormattingEnabled = True
@@ -432,6 +460,8 @@ Partial Class Form2
         ' 
         ' TextBox5
         ' 
+        TextBox5.BackColor = Color.FromArgb(CByte(220), CByte(239), CByte(197))
+        TextBox5.BorderStyle = BorderStyle.FixedSingle
         TextBox5.Font = New Font("Segoe UI", 10.125F, FontStyle.Bold, GraphicsUnit.Point)
         TextBox5.Location = New Point(1502, 214)
         TextBox5.Name = "TextBox5"
@@ -454,7 +484,7 @@ Partial Class Form2
         ' 
         AutoScaleDimensions = New SizeF(13F, 32F)
         AutoScaleMode = AutoScaleMode.Font
-        BackColor = Color.FromArgb(CByte(209), CByte(205), CByte(185))
+        BackColor = Color.FromArgb(CByte(238), CByte(250), CByte(236))
         ClientSize = New Size(1934, 827)
         Controls.Add(PictureBox8)
         Controls.Add(TextBox5)

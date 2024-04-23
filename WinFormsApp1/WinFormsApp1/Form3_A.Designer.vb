@@ -292,6 +292,7 @@ Partial Class Form3_A
         ' 
         AutoScaleDimensions = New SizeF(13F, 32F)
         AutoScaleMode = AutoScaleMode.Font
+        BackColor = Color.FromArgb(CByte(204), CByte(208), CByte(231))
         ClientSize = New Size(1934, 827)
         Controls.Add(Label22)
         Controls.Add(Label21)

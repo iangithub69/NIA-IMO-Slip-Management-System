@@ -37,18 +37,18 @@ Partial Class Form2_D
         Button1 = New Button()
         Button3 = New Button()
         Panel1 = New Panel()
+        Panel4 = New Panel()
         Label6 = New Label()
         PictureBox1 = New PictureBox()
         PictureBox2 = New PictureBox()
         Panel2 = New Panel()
-        Panel3 = New Panel()
         Label5 = New Label()
         TextBox3 = New TextBox()
         Button2 = New Button()
         TextBox4 = New TextBox()
         Label9 = New Label()
         Label10 = New Label()
-        Panel4 = New Panel()
+        Panel3 = New Panel()
         CType(PictureBox3, ComponentModel.ISupportInitialize).BeginInit()
         CType(DataGridView1, ComponentModel.ISupportInitialize).BeginInit()
         Panel1.SuspendLayout()
@@ -73,7 +73,7 @@ Partial Class Form2_D
         DataGridView1.AllowUserToResizeRows = False
         DataGridView1.Anchor = AnchorStyles.Top Or AnchorStyles.Left Or AnchorStyles.Right
         DataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.DisplayedCells
-        DataGridView1.BorderStyle = BorderStyle.None
+        DataGridView1.BackgroundColor = Color.FromArgb(CByte(220), CByte(239), CByte(197))
         DataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleCenter
         DataGridViewCellStyle1.BackColor = SystemColors.Control
         DataGridViewCellStyle1.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
@@ -121,6 +121,7 @@ Partial Class Form2_D
         ' 
         Label2.AutoSize = True
         Label2.Font = New Font("Segoe UI", 10.125F, FontStyle.Regular, GraphicsUnit.Point)
+        Label2.ForeColor = Color.FromArgb(CByte(84), CByte(154), CByte(21))
         Label2.Location = New Point(3, 7)
         Label2.Name = "Label2"
         Label2.Size = New Size(49, 37)
@@ -131,6 +132,7 @@ Partial Class Form2_D
         ' 
         Label1.AutoSize = True
         Label1.Font = New Font("Segoe UI", 10.125F, FontStyle.Bold, GraphicsUnit.Point)
+        Label1.ForeColor = Color.FromArgb(CByte(84), CByte(154), CByte(21))
         Label1.Location = New Point(52, 7)
         Label1.Name = "Label1"
         Label1.Size = New Size(24, 37)
@@ -141,6 +143,7 @@ Partial Class Form2_D
         ' 
         Label3.AutoSize = True
         Label3.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point)
+        Label3.ForeColor = Color.FromArgb(CByte(84), CByte(154), CByte(21))
         Label3.Location = New Point(31, 76)
         Label3.Name = "Label3"
         Label3.Size = New Size(112, 45)
@@ -151,6 +154,7 @@ Partial Class Form2_D
         ' 
         Label4.AutoSize = True
         Label4.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point)
+        Label4.ForeColor = Color.FromArgb(CByte(84), CByte(154), CByte(21))
         Label4.Location = New Point(31, 158)
         Label4.Name = "Label4"
         Label4.Size = New Size(189, 45)
@@ -168,7 +172,10 @@ Partial Class Form2_D
         ' 
         ' Button1
         ' 
+        Button1.BackColor = Color.FromArgb(CByte(84), CByte(154), CByte(21))
+        Button1.FlatStyle = FlatStyle.Flat
         Button1.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point)
+        Button1.ForeColor = Color.White
         Button1.Image = My.Resources.Resources.icons8_delete_45
         Button1.Location = New Point(627, 230)
         Button1.Name = "Button1"
@@ -176,11 +183,14 @@ Partial Class Form2_D
         Button1.TabIndex = 63
         Button1.Text = "Delete"
         Button1.TextImageRelation = TextImageRelation.ImageBeforeText
-        Button1.UseVisualStyleBackColor = True
+        Button1.UseVisualStyleBackColor = False
         ' 
         ' Button3
         ' 
+        Button3.BackColor = Color.FromArgb(CByte(84), CByte(154), CByte(21))
+        Button3.FlatStyle = FlatStyle.Flat
         Button3.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point)
+        Button3.ForeColor = Color.White
         Button3.Image = My.Resources.Resources.icons8_check_48
         Button3.Location = New Point(412, 230)
         Button3.Name = "Button3"
@@ -188,11 +198,12 @@ Partial Class Form2_D
         Button3.TabIndex = 65
         Button3.Text = "Update"
         Button3.TextImageRelation = TextImageRelation.ImageBeforeText
-        Button3.UseVisualStyleBackColor = True
+        Button3.UseVisualStyleBackColor = False
         ' 
         ' Panel1
         ' 
         Panel1.BorderStyle = BorderStyle.FixedSingle
+        Panel1.Controls.Add(Panel4)
         Panel1.Controls.Add(Label6)
         Panel1.Controls.Add(TextBox2)
         Panel1.Controls.Add(Button3)
@@ -207,10 +218,18 @@ Partial Class Form2_D
         Panel1.Size = New Size(875, 306)
         Panel1.TabIndex = 66
         ' 
+        ' Panel4
+        ' 
+        Panel4.Location = New Point(-1, -1)
+        Panel4.Name = "Panel4"
+        Panel4.Size = New Size(875, 306)
+        Panel4.TabIndex = 70
+        ' 
         ' Label6
         ' 
         Label6.AutoSize = True
         Label6.Font = New Font("Segoe UI", 12F, FontStyle.Bold Or FontStyle.Italic, GraphicsUnit.Point)
+        Label6.ForeColor = Color.FromArgb(CByte(84), CByte(154), CByte(21))
         Label6.Location = New Point(355, -1)
         Label6.Name = "Label6"
         Label6.Size = New Size(173, 45)
@@ -254,17 +273,11 @@ Partial Class Form2_D
         Panel2.Size = New Size(875, 306)
         Panel2.TabIndex = 68
         ' 
-        ' Panel3
-        ' 
-        Panel3.Location = New Point(-1, -1)
-        Panel3.Name = "Panel3"
-        Panel3.Size = New Size(875, 306)
-        Panel3.TabIndex = 69
-        ' 
         ' Label5
         ' 
         Label5.AutoSize = True
         Label5.Font = New Font("Segoe UI", 12F, FontStyle.Bold Or FontStyle.Italic, GraphicsUnit.Point)
+        Label5.ForeColor = Color.FromArgb(CByte(84), CByte(154), CByte(21))
         Label5.Location = New Point(355, -1)
         Label5.Name = "Label5"
         Label5.Size = New Size(176, 45)
@@ -282,7 +295,10 @@ Partial Class Form2_D
         ' 
         ' Button2
         ' 
+        Button2.BackColor = Color.FromArgb(CByte(84), CByte(154), CByte(21))
+        Button2.FlatStyle = FlatStyle.Flat
         Button2.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point)
+        Button2.ForeColor = Color.White
         Button2.Image = My.Resources.Resources.icons8_check_48
         Button2.Location = New Point(627, 228)
         Button2.Name = "Button2"
@@ -290,7 +306,7 @@ Partial Class Form2_D
         Button2.TabIndex = 65
         Button2.Text = "Add"
         Button2.TextImageRelation = TextImageRelation.ImageBeforeText
-        Button2.UseVisualStyleBackColor = True
+        Button2.UseVisualStyleBackColor = False
         ' 
         ' TextBox4
         ' 
@@ -305,6 +321,7 @@ Partial Class Form2_D
         ' 
         Label9.AutoSize = True
         Label9.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point)
+        Label9.ForeColor = Color.FromArgb(CByte(84), CByte(154), CByte(21))
         Label9.Location = New Point(31, 76)
         Label9.Name = "Label9"
         Label9.Size = New Size(112, 45)
@@ -315,25 +332,26 @@ Partial Class Form2_D
         ' 
         Label10.AutoSize = True
         Label10.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point)
+        Label10.ForeColor = Color.FromArgb(CByte(84), CByte(154), CByte(21))
         Label10.Location = New Point(31, 158)
         Label10.Name = "Label10"
         Label10.Size = New Size(189, 45)
         Label10.TabIndex = 55
         Label10.Text = "Description:"
         ' 
-        ' Panel4
+        ' Panel3
         ' 
-        Panel4.Location = New Point(1003, 49)
-        Panel4.Name = "Panel4"
-        Panel4.Size = New Size(875, 306)
-        Panel4.TabIndex = 70
+        Panel3.Location = New Point(-1, -1)
+        Panel3.Name = "Panel3"
+        Panel3.Size = New Size(875, 306)
+        Panel3.TabIndex = 69
         ' 
         ' Form2_D
         ' 
         AutoScaleDimensions = New SizeF(13F, 32F)
         AutoScaleMode = AutoScaleMode.Font
+        BackColor = Color.FromArgb(CByte(238), CByte(250), CByte(236))
         ClientSize = New Size(1934, 827)
-        Controls.Add(Panel4)
         Controls.Add(Panel2)
         Controls.Add(PictureBox2)
         Controls.Add(PictureBox1)

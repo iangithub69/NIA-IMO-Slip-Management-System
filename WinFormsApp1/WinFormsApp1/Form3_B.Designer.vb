@@ -300,6 +300,7 @@ Partial Class Form3_B
         ' 
         Label35.AutoSize = True
         Label35.Font = New Font("Segoe UI", 7.875F, FontStyle.Regular, GraphicsUnit.Point)
+        Label35.ForeColor = Color.FromArgb(CByte(57), CByte(66), CByte(112))
         Label35.Location = New Point(1266, 425)
         Label35.Name = "Label35"
         Label35.Size = New Size(62, 30)
@@ -310,6 +311,7 @@ Partial Class Form3_B
         ' 
         Label34.AutoSize = True
         Label34.Font = New Font("Segoe UI", 7.875F, FontStyle.Regular, GraphicsUnit.Point)
+        Label34.ForeColor = Color.FromArgb(CByte(57), CByte(66), CByte(112))
         Label34.Location = New Point(817, 425)
         Label34.Name = "Label34"
         Label34.Size = New Size(43, 30)
@@ -320,6 +322,7 @@ Partial Class Form3_B
         ' 
         Label33.AutoSize = True
         Label33.Font = New Font("Segoe UI", 7.875F, FontStyle.Regular, GraphicsUnit.Point)
+        Label33.ForeColor = Color.FromArgb(CByte(57), CByte(66), CByte(112))
         Label33.Location = New Point(817, 376)
         Label33.Name = "Label33"
         Label33.Size = New Size(92, 30)
@@ -330,6 +333,7 @@ Partial Class Form3_B
         ' 
         Label32.AutoSize = True
         Label32.Font = New Font("Segoe UI", 7.875F, FontStyle.Regular, GraphicsUnit.Point)
+        Label32.ForeColor = Color.FromArgb(CByte(57), CByte(66), CByte(112))
         Label32.Location = New Point(817, 331)
         Label32.Name = "Label32"
         Label32.Size = New Size(216, 30)
@@ -340,6 +344,7 @@ Partial Class Form3_B
         ' 
         Label31.AutoSize = True
         Label31.Font = New Font("Segoe UI", 7.875F, FontStyle.Regular, GraphicsUnit.Point)
+        Label31.ForeColor = Color.FromArgb(CByte(57), CByte(66), CByte(112))
         Label31.Location = New Point(817, 257)
         Label31.Name = "Label31"
         Label31.Size = New Size(640, 30)
@@ -350,6 +355,7 @@ Partial Class Form3_B
         ' 
         Label30.AutoSize = True
         Label30.Font = New Font("Segoe UI", 7.875F, FontStyle.Regular, GraphicsUnit.Point)
+        Label30.ForeColor = Color.FromArgb(CByte(57), CByte(66), CByte(112))
         Label30.Location = New Point(817, 227)
         Label30.Name = "Label30"
         Label30.Size = New Size(785, 30)
@@ -359,6 +365,7 @@ Partial Class Form3_B
         ' Label29
         ' 
         Label29.AutoSize = True
+        Label29.ForeColor = Color.FromArgb(CByte(57), CByte(66), CByte(112))
         Label29.Location = New Point(1334, 139)
         Label29.Name = "Label29"
         Label29.Size = New Size(116, 32)
@@ -368,6 +375,7 @@ Partial Class Form3_B
         ' Label28
         ' 
         Label28.AutoSize = True
+        Label28.ForeColor = Color.FromArgb(CByte(57), CByte(66), CByte(112))
         Label28.Location = New Point(817, 142)
         Label28.Name = "Label28"
         Label28.Size = New Size(190, 32)
@@ -377,6 +385,7 @@ Partial Class Form3_B
         ' Label27
         ' 
         Label27.AutoSize = True
+        Label27.ForeColor = Color.FromArgb(CByte(57), CByte(66), CByte(112))
         Label27.Location = New Point(817, 52)
         Label27.Name = "Label27"
         Label27.Size = New Size(302, 32)
@@ -386,6 +395,7 @@ Partial Class Form3_B
         ' Label15
         ' 
         Label15.AutoSize = True
+        Label15.ForeColor = Color.FromArgb(CByte(57), CByte(66), CByte(112))
         Label15.Location = New Point(314, 397)
         Label15.Name = "Label15"
         Label15.Size = New Size(83, 32)
@@ -395,6 +405,7 @@ Partial Class Form3_B
         ' Label14
         ' 
         Label14.AutoSize = True
+        Label14.ForeColor = Color.FromArgb(CByte(57), CByte(66), CByte(112))
         Label14.Location = New Point(326, 355)
         Label14.Name = "Label14"
         Label14.Size = New Size(71, 32)
@@ -404,6 +415,7 @@ Partial Class Form3_B
         ' Label13
         ' 
         Label13.AutoSize = True
+        Label13.ForeColor = Color.FromArgb(CByte(57), CByte(66), CByte(112))
         Label13.Location = New Point(327, 313)
         Label13.Name = "Label13"
         Label13.Size = New Size(71, 32)
@@ -413,6 +425,7 @@ Partial Class Form3_B
         ' Label12
         ' 
         Label12.AutoSize = True
+        Label12.ForeColor = Color.FromArgb(CByte(57), CByte(66), CByte(112))
         Label12.Location = New Point(313, 269)
         Label12.Name = "Label12"
         Label12.Size = New Size(84, 32)
@@ -422,6 +435,7 @@ Partial Class Form3_B
         ' Label11
         ' 
         Label11.AutoSize = True
+        Label11.ForeColor = Color.FromArgb(CByte(57), CByte(66), CByte(112))
         Label11.Location = New Point(313, 225)
         Label11.Name = "Label11"
         Label11.Size = New Size(84, 32)
@@ -431,6 +445,7 @@ Partial Class Form3_B
         ' Label8
         ' 
         Label8.AutoSize = True
+        Label8.ForeColor = Color.FromArgb(CByte(57), CByte(66), CByte(112))
         Label8.Location = New Point(665, 90)
         Label8.Name = "Label8"
         Label8.Size = New Size(71, 32)
@@ -440,6 +455,7 @@ Partial Class Form3_B
         ' Label6
         ' 
         Label6.AutoSize = True
+        Label6.ForeColor = Color.FromArgb(CByte(57), CByte(66), CByte(112))
         Label6.Location = New Point(536, 52)
         Label6.Name = "Label6"
         Label6.Size = New Size(116, 32)
@@ -449,6 +465,7 @@ Partial Class Form3_B
         ' Label5
         ' 
         Label5.AutoSize = True
+        Label5.ForeColor = Color.FromArgb(CByte(57), CByte(66), CByte(112))
         Label5.Location = New Point(193, 52)
         Label5.Name = "Label5"
         Label5.Size = New Size(193, 32)
@@ -458,6 +475,7 @@ Partial Class Form3_B
         ' Label4
         ' 
         Label4.AutoSize = True
+        Label4.ForeColor = Color.FromArgb(CByte(57), CByte(66), CByte(112))
         Label4.Location = New Point(52, 90)
         Label4.Name = "Label4"
         Label4.Size = New Size(85, 32)
@@ -467,6 +485,7 @@ Partial Class Form3_B
         ' Label3
         ' 
         Label3.AutoSize = True
+        Label3.ForeColor = Color.FromArgb(CByte(57), CByte(66), CByte(112))
         Label3.Location = New Point(49, 52)
         Label3.Name = "Label3"
         Label3.Size = New Size(92, 32)
@@ -533,6 +552,7 @@ Partial Class Form3_B
         ' Label7
         ' 
         Label7.AutoSize = True
+        Label7.ForeColor = Color.FromArgb(CByte(57), CByte(66), CByte(112))
         Label7.Location = New Point(75, 65)
         Label7.Name = "Label7"
         Label7.Size = New Size(83, 32)
@@ -577,6 +597,7 @@ Partial Class Form3_B
         ' Label9
         ' 
         Label9.AutoSize = True
+        Label9.ForeColor = Color.FromArgb(CByte(57), CByte(66), CByte(112))
         Label9.Location = New Point(131, 114)
         Label9.Name = "Label9"
         Label9.Size = New Size(115, 32)
@@ -629,6 +650,7 @@ Partial Class Form3_B
         ' Label10
         ' 
         Label10.AutoSize = True
+        Label10.ForeColor = Color.FromArgb(CByte(57), CByte(66), CByte(112))
         Label10.Location = New Point(165, 66)
         Label10.Name = "Label10"
         Label10.Size = New Size(84, 32)
@@ -777,6 +799,7 @@ Partial Class Form3_B
         ' Label16
         ' 
         Label16.AutoSize = True
+        Label16.ForeColor = Color.FromArgb(CByte(57), CByte(66), CByte(112))
         Label16.Location = New Point(17, 54)
         Label16.Name = "Label16"
         Label16.Size = New Size(256, 32)
@@ -961,6 +984,7 @@ Partial Class Form3_B
         ' Label19
         ' 
         Label19.AutoSize = True
+        Label19.ForeColor = Color.FromArgb(CByte(57), CByte(66), CByte(112))
         Label19.Location = New Point(261, 20)
         Label19.Name = "Label19"
         Label19.Size = New Size(196, 32)
@@ -999,6 +1023,7 @@ Partial Class Form3_B
         ' Label18
         ' 
         Label18.AutoSize = True
+        Label18.ForeColor = Color.FromArgb(CByte(57), CByte(66), CByte(112))
         Label18.Location = New Point(55, 52)
         Label18.Name = "Label18"
         Label18.Size = New Size(284, 32)
@@ -1047,6 +1072,7 @@ Partial Class Form3_B
         ' 
         Label26.AutoSize = True
         Label26.Font = New Font("Segoe UI", 7.875F, FontStyle.Regular, GraphicsUnit.Point)
+        Label26.ForeColor = Color.FromArgb(CByte(57), CByte(66), CByte(112))
         Label26.Location = New Point(1361, 204)
         Label26.Name = "Label26"
         Label26.Size = New Size(108, 30)
@@ -1057,6 +1083,7 @@ Partial Class Form3_B
         ' 
         Label25.AutoSize = True
         Label25.Font = New Font("Segoe UI", 7.875F, FontStyle.Regular, GraphicsUnit.Point)
+        Label25.ForeColor = Color.FromArgb(CByte(57), CByte(66), CByte(112))
         Label25.Location = New Point(886, 204)
         Label25.Name = "Label25"
         Label25.Size = New Size(136, 30)
@@ -1067,6 +1094,7 @@ Partial Class Form3_B
         ' 
         Label24.AutoSize = True
         Label24.Font = New Font("Segoe UI", 7.875F, FontStyle.Regular, GraphicsUnit.Point)
+        Label24.ForeColor = Color.FromArgb(CByte(57), CByte(66), CByte(112))
         Label24.Location = New Point(409, 204)
         Label24.Name = "Label24"
         Label24.Size = New Size(125, 30)
@@ -1077,6 +1105,7 @@ Partial Class Form3_B
         ' 
         Label23.AutoSize = True
         Label23.Font = New Font("Segoe UI", 7.875F, FontStyle.Regular, GraphicsUnit.Point)
+        Label23.ForeColor = Color.FromArgb(CByte(57), CByte(66), CByte(112))
         Label23.Location = New Point(5, 204)
         Label23.Name = "Label23"
         Label23.Size = New Size(210, 30)
@@ -1116,6 +1145,7 @@ Partial Class Form3_B
         ' Label20
         ' 
         Label20.AutoSize = True
+        Label20.ForeColor = Color.FromArgb(CByte(57), CByte(66), CByte(112))
         Label20.Location = New Point(203, 16)
         Label20.Name = "Label20"
         Label20.Size = New Size(225, 32)
@@ -1134,6 +1164,7 @@ Partial Class Form3_B
         ' Label21
         ' 
         Label21.AutoSize = True
+        Label21.ForeColor = Color.FromArgb(CByte(57), CByte(66), CByte(112))
         Label21.Location = New Point(156, 20)
         Label21.Name = "Label21"
         Label21.Size = New Size(116, 32)

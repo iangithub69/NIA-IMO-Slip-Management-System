@@ -356,6 +356,7 @@ Partial Class Form2_E
         ' 
         AutoScaleDimensions = New SizeF(13F, 32F)
         AutoScaleMode = AutoScaleMode.Font
+        BackColor = Color.FromArgb(CByte(238), CByte(250), CByte(236))
         ClientSize = New Size(1934, 827)
         Controls.Add(PictureBox1)
         Controls.Add(PictureBox2)

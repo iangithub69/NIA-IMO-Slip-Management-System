@@ -51,6 +51,7 @@ Partial Class Form2_B
         ' 
         Label1.AutoSize = True
         Label1.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
+        Label1.ForeColor = Color.Black
         Label1.Location = New Point(1409, 120)
         Label1.Name = "Label1"
         Label1.Size = New Size(90, 45)
@@ -61,6 +62,7 @@ Partial Class Form2_B
         ' 
         Label2.AutoSize = True
         Label2.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
+        Label2.ForeColor = Color.Black
         Label2.Location = New Point(1409, 165)
         Label2.Name = "Label2"
         Label2.Size = New Size(142, 45)
@@ -71,6 +73,7 @@ Partial Class Form2_B
         ' 
         Label3.AutoSize = True
         Label3.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
+        Label3.ForeColor = Color.Black
         Label3.Location = New Point(304, 320)
         Label3.Name = "Label3"
         Label3.Size = New Size(122, 45)
@@ -81,6 +84,7 @@ Partial Class Form2_B
         ' 
         Label4.AutoSize = True
         Label4.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
+        Label4.ForeColor = Color.Black
         Label4.Location = New Point(237, 385)
         Label4.Name = "Label4"
         Label4.Size = New Size(104, 45)
@@ -91,6 +95,7 @@ Partial Class Form2_B
         ' 
         Label5.AutoSize = True
         Label5.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
+        Label5.ForeColor = Color.Black
         Label5.Location = New Point(957, 542)
         Label5.Name = "Label5"
         Label5.Size = New Size(226, 45)
@@ -101,6 +106,7 @@ Partial Class Form2_B
         ' 
         Label6.AutoSize = True
         Label6.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
+        Label6.ForeColor = Color.Black
         Label6.Location = New Point(956, 587)
         Label6.Name = "Label6"
         Label6.Size = New Size(227, 45)
@@ -111,6 +117,7 @@ Partial Class Form2_B
         ' 
         Label7.AutoSize = True
         Label7.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
+        Label7.ForeColor = Color.Black
         Label7.Location = New Point(1381, 515)
         Label7.Name = "Label7"
         Label7.Size = New Size(219, 45)
@@ -121,6 +128,7 @@ Partial Class Form2_B
         ' 
         Label8.AutoSize = True
         Label8.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
+        Label8.ForeColor = Color.Black
         Label8.Location = New Point(1373, 560)
         Label8.Name = "Label8"
         Label8.Size = New Size(227, 45)
@@ -131,6 +139,7 @@ Partial Class Form2_B
         ' 
         Label9.AutoSize = True
         Label9.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
+        Label9.ForeColor = Color.Black
         Label9.Location = New Point(1373, 605)
         Label9.Name = "Label9"
         Label9.Size = New Size(124, 45)
@@ -139,19 +148,21 @@ Partial Class Form2_B
         ' 
         ' Button5
         ' 
+        Button5.BackColor = Color.FromArgb(CByte(84), CByte(154), CByte(21))
         Button5.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point)
-        Button5.ForeColor = Color.Maroon
+        Button5.ForeColor = Color.White
         Button5.Location = New Point(12, 761)
         Button5.Name = "Button5"
         Button5.Size = New Size(268, 54)
         Button5.TabIndex = 47
         Button5.Text = "Print Check"
-        Button5.UseVisualStyleBackColor = True
+        Button5.UseVisualStyleBackColor = False
         ' 
         ' Form2_B
         ' 
         AutoScaleDimensions = New SizeF(13F, 32F)
         AutoScaleMode = AutoScaleMode.Font
+        BackColor = Color.FromArgb(CByte(238), CByte(250), CByte(236))
         ClientSize = New Size(1934, 827)
         Controls.Add(Label1)
         Controls.Add(Label2)

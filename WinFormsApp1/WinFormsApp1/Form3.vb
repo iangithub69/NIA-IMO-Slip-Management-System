@@ -4,7 +4,9 @@ Imports System.Windows.Forms.VisualStyles.VisualStyleElement
 Public Class Form3
 
     Private Sub PictureBox3_Click(sender As Object, e As EventArgs) Handles PictureBox3.Click
-        Close
+        Form1.Show()
+
+        Me.Close()
 
     End Sub
 
