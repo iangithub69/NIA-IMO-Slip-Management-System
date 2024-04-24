@@ -42,13 +42,13 @@ Partial Class Form2_D
         PictureBox1 = New PictureBox()
         PictureBox2 = New PictureBox()
         Panel2 = New Panel()
+        Panel3 = New Panel()
         Label5 = New Label()
         TextBox3 = New TextBox()
         Button2 = New Button()
         TextBox4 = New TextBox()
         Label9 = New Label()
         Label10 = New Label()
-        Panel3 = New Panel()
         CType(PictureBox3, ComponentModel.ISupportInitialize).BeginInit()
         CType(DataGridView1, ComponentModel.ISupportInitialize).BeginInit()
         Panel1.SuspendLayout()
@@ -238,7 +238,7 @@ Partial Class Form2_D
         ' 
         ' PictureBox1
         ' 
-        PictureBox1.BackColor = SystemColors.Control
+        PictureBox1.BackColor = Color.Transparent
         PictureBox1.ErrorImage = My.Resources.Resources.output_onlinegiftools
         PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), Image)
         PictureBox1.Location = New Point(934, 166)
@@ -249,7 +249,7 @@ Partial Class Form2_D
         ' 
         ' PictureBox2
         ' 
-        PictureBox2.BackColor = SystemColors.Control
+        PictureBox2.BackColor = Color.Transparent
         PictureBox2.ErrorImage = My.Resources.Resources.output_onlinegiftools
         PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), Image)
         PictureBox2.Location = New Point(934, 596)
@@ -272,6 +272,13 @@ Partial Class Form2_D
         Panel2.Name = "Panel2"
         Panel2.Size = New Size(875, 306)
         Panel2.TabIndex = 68
+        ' 
+        ' Panel3
+        ' 
+        Panel3.Location = New Point(-1, -1)
+        Panel3.Name = "Panel3"
+        Panel3.Size = New Size(875, 306)
+        Panel3.TabIndex = 69
         ' 
         ' Label5
         ' 
@@ -338,13 +345,6 @@ Partial Class Form2_D
         Label10.Size = New Size(189, 45)
         Label10.TabIndex = 55
         Label10.Text = "Description:"
-        ' 
-        ' Panel3
-        ' 
-        Panel3.Location = New Point(-1, -1)
-        Panel3.Name = "Panel3"
-        Panel3.Size = New Size(875, 306)
-        Panel3.TabIndex = 69
         ' 
         ' Form2_D
         ' 

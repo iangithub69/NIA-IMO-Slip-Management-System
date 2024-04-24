@@ -73,6 +73,7 @@ Partial Class Form2_F
         DataGridView1.AllowUserToResizeRows = False
         DataGridView1.Anchor = AnchorStyles.Top Or AnchorStyles.Left Or AnchorStyles.Right
         DataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.DisplayedCells
+        DataGridView1.BackgroundColor = Color.FromArgb(CByte(220), CByte(239), CByte(197))
         DataGridView1.BorderStyle = BorderStyle.None
         DataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleCenter
         DataGridViewCellStyle1.BackColor = SystemColors.Control
@@ -110,7 +111,7 @@ Partial Class Form2_F
         ' 
         ' PictureBox1
         ' 
-        PictureBox1.BackColor = SystemColors.Control
+        PictureBox1.BackColor = Color.Transparent
         PictureBox1.ErrorImage = My.Resources.Resources.output_onlinegiftools
         PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), Image)
         PictureBox1.Location = New Point(934, 166)
@@ -121,7 +122,7 @@ Partial Class Form2_F
         ' 
         ' PictureBox2
         ' 
-        PictureBox2.BackColor = SystemColors.Control
+        PictureBox2.BackColor = Color.Transparent
         PictureBox2.ErrorImage = My.Resources.Resources.output_onlinegiftools
         PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), Image)
         PictureBox2.Location = New Point(934, 596)
