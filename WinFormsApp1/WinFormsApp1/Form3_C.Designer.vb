@@ -71,7 +71,7 @@ Partial Class Form3_C
         ' 
         Label2.AutoSize = True
         Label2.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
-        Label2.Location = New Point(97, 138)
+        Label2.Location = New Point(97, 160)
         Label2.Name = "Label2"
         Label2.Size = New Size(33, 45)
         Label2.TabIndex = 77
@@ -81,7 +81,7 @@ Partial Class Form3_C
         ' 
         Label3.AutoSize = True
         Label3.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
-        Label3.Location = New Point(97, 183)
+        Label3.Location = New Point(97, 228)
         Label3.Name = "Label3"
         Label3.Size = New Size(33, 45)
         Label3.TabIndex = 78
@@ -91,7 +91,7 @@ Partial Class Form3_C
         ' 
         Label4.AutoSize = True
         Label4.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
-        Label4.Location = New Point(97, 228)
+        Label4.Location = New Point(97, 289)
         Label4.Name = "Label4"
         Label4.Size = New Size(33, 45)
         Label4.TabIndex = 79
@@ -101,7 +101,7 @@ Partial Class Form3_C
         ' 
         Label5.AutoSize = True
         Label5.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
-        Label5.Location = New Point(97, 273)
+        Label5.Location = New Point(97, 347)
         Label5.Name = "Label5"
         Label5.Size = New Size(33, 45)
         Label5.TabIndex = 80
@@ -111,7 +111,7 @@ Partial Class Form3_C
         ' 
         Label6.AutoSize = True
         Label6.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
-        Label6.Location = New Point(97, 318)
+        Label6.Location = New Point(97, 408)
         Label6.Name = "Label6"
         Label6.Size = New Size(33, 45)
         Label6.TabIndex = 81
@@ -121,7 +121,7 @@ Partial Class Form3_C
         ' 
         Label7.AutoSize = True
         Label7.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
-        Label7.Location = New Point(97, 363)
+        Label7.Location = New Point(97, 474)
         Label7.Name = "Label7"
         Label7.Size = New Size(33, 45)
         Label7.TabIndex = 82
@@ -151,7 +151,7 @@ Partial Class Form3_C
         ' 
         Label10.AutoSize = True
         Label10.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
-        Label10.Location = New Point(1439, 138)
+        Label10.Location = New Point(1420, 138)
         Label10.Name = "Label10"
         Label10.Size = New Size(33, 45)
         Label10.TabIndex = 85
@@ -181,7 +181,7 @@ Partial Class Form3_C
         ' 
         Label13.AutoSize = True
         Label13.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
-        Label13.Location = New Point(1439, 408)
+        Label13.Location = New Point(1420, 408)
         Label13.Name = "Label13"
         Label13.Size = New Size(33, 45)
         Label13.TabIndex = 88
@@ -201,7 +201,7 @@ Partial Class Form3_C
         ' 
         Label15.AutoSize = True
         Label15.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
-        Label15.Location = New Point(1071, 527)
+        Label15.Location = New Point(1046, 527)
         Label15.Name = "Label15"
         Label15.Size = New Size(33, 45)
         Label15.TabIndex = 90
@@ -211,7 +211,7 @@ Partial Class Form3_C
         ' 
         Label16.AutoSize = True
         Label16.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
-        Label16.Location = New Point(1439, 527)
+        Label16.Location = New Point(1420, 527)
         Label16.Name = "Label16"
         Label16.Size = New Size(33, 45)
         Label16.TabIndex = 91
@@ -241,7 +241,7 @@ Partial Class Form3_C
         ' 
         Label19.AutoSize = True
         Label19.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
-        Label19.Location = New Point(1439, 681)
+        Label19.Location = New Point(1420, 681)
         Label19.Name = "Label19"
         Label19.Size = New Size(33, 45)
         Label19.TabIndex = 94
