@@ -409,5 +409,7 @@ Public Class Form4
         Return words.Trim()
     End Function
 
-
+    Private Sub PictureBox10_Click(sender As Object, e As EventArgs) Handles PictureBox10.Click
+        Form4_B.Show()
+    End Sub
 End Class

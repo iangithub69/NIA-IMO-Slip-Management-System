@@ -84,6 +84,7 @@ Partial Class Form4
         TextBox8 = New TextBox()
         Label14 = New Label()
         MySqlCommand1 = New MySql.Data.MySqlClient.MySqlCommand()
+        PictureBox10 = New PictureBox()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox2, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox3, ComponentModel.ISupportInitialize).BeginInit()
@@ -102,6 +103,7 @@ Partial Class Form4
         Panel8.SuspendLayout()
         Panel9.SuspendLayout()
         Panel10.SuspendLayout()
+        CType(PictureBox10, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
         ' PictureBox1
@@ -168,6 +170,7 @@ Partial Class Form4
         ' Panel1
         ' 
         Panel1.BorderStyle = BorderStyle.FixedSingle
+        Panel1.Controls.Add(PictureBox10)
         Panel1.Controls.Add(PictureBox9)
         Panel1.Controls.Add(Label16)
         Panel1.Controls.Add(Label15)
@@ -728,6 +731,17 @@ Partial Class Form4
         MySqlCommand1.EnableCaching = False
         MySqlCommand1.Transaction = Nothing
         ' 
+        ' PictureBox10
+        ' 
+        PictureBox10.Cursor = Cursors.Hand
+        PictureBox10.Image = My.Resources.Resources.literature_no_bg
+        PictureBox10.Location = New Point(1717, 635)
+        PictureBox10.Name = "PictureBox10"
+        PictureBox10.Size = New Size(47, 43)
+        PictureBox10.SizeMode = PictureBoxSizeMode.StretchImage
+        PictureBox10.TabIndex = 48
+        PictureBox10.TabStop = False
+        ' 
         ' Form4
         ' 
         AutoScaleDimensions = New SizeF(13F, 32F)
@@ -773,6 +787,7 @@ Partial Class Form4
         Panel9.PerformLayout()
         Panel10.ResumeLayout(False)
         Panel10.PerformLayout()
+        CType(PictureBox10, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
     End Sub
 
@@ -837,4 +852,5 @@ Partial Class Form4
     Friend WithEvents TextBox18 As TextBox
     Friend WithEvents TextBox17 As TextBox
     Friend WithEvents RichTextBox1 As RichTextBox
+    Friend WithEvents PictureBox10 As PictureBox
 End Class
