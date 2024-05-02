@@ -159,10 +159,11 @@ Partial Class Form2_F
         ' Label6
         ' 
         Label6.AutoSize = True
-        Label6.Font = New Font("Segoe UI", 12F, FontStyle.Bold Or FontStyle.Italic, GraphicsUnit.Point)
+        Label6.Font = New Font("Segoe UI", 12F, FontStyle.Bold Or FontStyle.Underline, GraphicsUnit.Point)
+        Label6.ForeColor = Color.FromArgb(CByte(84), CByte(154), CByte(21))
         Label6.Location = New Point(355, -1)
         Label6.Name = "Label6"
-        Label6.Size = New Size(208, 45)
+        Label6.Size = New Size(210, 45)
         Label6.TabIndex = 67
         Label6.Text = "Edit Account"
         ' 
@@ -273,10 +274,11 @@ Partial Class Form2_F
         ' Label5
         ' 
         Label5.AutoSize = True
-        Label5.Font = New Font("Segoe UI", 12F, FontStyle.Bold Or FontStyle.Italic, GraphicsUnit.Point)
+        Label5.Font = New Font("Segoe UI", 12F, FontStyle.Bold Or FontStyle.Underline, GraphicsUnit.Point)
+        Label5.ForeColor = Color.FromArgb(CByte(84), CByte(154), CByte(21))
         Label5.Location = New Point(355, -1)
         Label5.Name = "Label5"
-        Label5.Size = New Size(211, 45)
+        Label5.Size = New Size(215, 45)
         Label5.TabIndex = 67
         Label5.Text = "Add Account"
         ' 
