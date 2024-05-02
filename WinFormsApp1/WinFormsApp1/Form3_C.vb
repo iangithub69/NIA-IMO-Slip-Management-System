@@ -1,0 +1,181 @@
+﻿Public Class Form3_C
+
+    Public Property Label1Text As String
+        Get
+            Return Label1.Text
+        End Get
+        Set(value As String)
+            Label1.Text = value
+        End Set
+    End Property
+
+    Public Property Label2Text As String
+        Get
+            Return Label2.Text
+        End Get
+        Set(value As String)
+            Label2.Text = value
+        End Set
+    End Property
+
+    Public Property Label3Text As String
+        Get
+            Return Label3.Text
+        End Get
+        Set(value As String)
+            Label3.Text = value
+        End Set
+    End Property
+
+    Public Property Label4Text As String
+        Get
+            Return Label4.Text
+        End Get
+        Set(value As String)
+            Label4.Text = value
+        End Set
+    End Property
+
+    Public Property Label5Text As String
+        Get
+            Return Label5.Text
+        End Get
+        Set(value As String)
+            Label5.Text = value
+        End Set
+    End Property
+
+    Public Property Label6Text As String
+        Get
+            Return Label6.Text
+        End Get
+        Set(value As String)
+            Label6.Text = value
+        End Set
+    End Property
+
+    Public Property Label7Text As String
+        Get
+            Return Label7.Text
+        End Get
+        Set(value As String)
+            Label7.Text = value
+        End Set
+    End Property
+
+    Public Property Label8Text As String
+        Get
+            Return Label8.Text
+        End Get
+        Set(value As String)
+            Label8.Text = value
+        End Set
+    End Property
+
+    Public Property Label9Text As String
+        Get
+            Return Label9.Text
+        End Get
+        Set(value As String)
+            Label9.Text = value
+        End Set
+    End Property
+
+    Public Property Label10Text As String
+        Get
+            Return Label10.Text
+        End Get
+        Set(value As String)
+            Label10.Text = value
+        End Set
+    End Property
+
+    Public Property Label11Text As String
+        Get
+            Return Label11.Text
+        End Get
+        Set(value As String)
+            Label11.Text = value
+        End Set
+    End Property
+
+    Public Property Label12Text As String
+        Get
+            Return Label12.Text
+        End Get
+        Set(value As String)
+            Label12.Text = value
+        End Set
+    End Property
+
+    Public Property Label13Text As String
+        Get
+            Return Label13.Text
+        End Get
+        Set(value As String)
+            Label13.Text = value
+        End Set
+    End Property
+
+    Public Property Label14Text As String
+        Get
+            Return Label14.Text
+        End Get
+        Set(value As String)
+            Label14.Text = value
+        End Set
+    End Property
+
+    Public Property Label15Text As String
+        Get
+            Return Label15.Text
+        End Get
+        Set(value As String)
+            Label15.Text = value
+        End Set
+    End Property
+
+    Public Property Label16Text As String
+        Get
+            Return Label16.Text
+        End Get
+        Set(value As String)
+            Label16.Text = value
+        End Set
+    End Property
+
+    Public Property Label17Text As String
+        Get
+            Return Label17.Text
+        End Get
+        Set(value As String)
+            Label17.Text = value
+        End Set
+    End Property
+
+    Public Property Label18Text As String
+        Get
+            Return Label18.Text
+        End Get
+        Set(value As String)
+            Label18.Text = value
+        End Set
+    End Property
+
+    Public Property Label19Text As String
+        Get
+            Return Label19.Text
+        End Get
+        Set(value As String)
+            Label19.Text = value
+        End Set
+    End Property
+
+    Private Sub PictureBox3_Click(sender As Object, e As EventArgs) Handles PictureBox3.Click
+        Me.Close()
+    End Sub
+
+    Private Sub Form3_C_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
+End Class

@@ -26,6 +26,9 @@ Partial Class Form3_B
         PictureBox3 = New PictureBox()
         PictureBox1 = New PictureBox()
         Panel1 = New Panel()
+        PictureBox9 = New PictureBox()
+        TextBox15 = New TextBox()
+        TextBox18 = New TextBox()
         TextBox17 = New TextBox()
         PictureBox8 = New PictureBox()
         Label35 = New Label()
@@ -122,7 +125,9 @@ Partial Class Form3_B
         Label21 = New Label()
         Panel43 = New Panel()
         Panel44 = New Panel()
+        TextBox16 = New TextBox()
         Panel45 = New Panel()
+        TextBox19 = New TextBox()
         Panel46 = New Panel()
         TextBox11 = New TextBox()
         Panel47 = New Panel()
@@ -130,14 +135,10 @@ Partial Class Form3_B
         TextBox12 = New TextBox()
         Panel49 = New Panel()
         TextBox13 = New TextBox()
-        TextBox18 = New TextBox()
-        TextBox15 = New TextBox()
-        TextBox16 = New TextBox()
-        TextBox19 = New TextBox()
-        PictureBox9 = New PictureBox()
         CType(PictureBox3, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         Panel1.SuspendLayout()
+        CType(PictureBox9, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox8, ComponentModel.ISupportInitialize).BeginInit()
         Panel5.SuspendLayout()
         Panel7.SuspendLayout()
@@ -164,7 +165,6 @@ Partial Class Form3_B
         Panel46.SuspendLayout()
         Panel48.SuspendLayout()
         Panel49.SuspendLayout()
-        CType(PictureBox9, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
         ' PictureBox3
@@ -259,6 +259,35 @@ Partial Class Form3_B
         Panel1.Name = "Panel1"
         Panel1.Size = New Size(1843, 479)
         Panel1.TabIndex = 42
+        ' 
+        ' PictureBox9
+        ' 
+        PictureBox9.Cursor = Cursors.Hand
+        PictureBox9.Image = CType(resources.GetObject("PictureBox9.Image"), Image)
+        PictureBox9.Location = New Point(1771, 424)
+        PictureBox9.Name = "PictureBox9"
+        PictureBox9.Size = New Size(47, 43)
+        PictureBox9.SizeMode = PictureBoxSizeMode.StretchImage
+        PictureBox9.TabIndex = 95
+        PictureBox9.TabStop = False
+        ' 
+        ' TextBox15
+        ' 
+        TextBox15.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point)
+        TextBox15.Location = New Point(866, 421)
+        TextBox15.Name = "TextBox15"
+        TextBox15.Size = New Size(379, 39)
+        TextBox15.TabIndex = 94
+        TextBox15.TextAlign = HorizontalAlignment.Center
+        ' 
+        ' TextBox18
+        ' 
+        TextBox18.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point)
+        TextBox18.Location = New Point(915, 371)
+        TextBox18.Name = "TextBox18"
+        TextBox18.Size = New Size(903, 39)
+        TextBox18.TabIndex = 89
+        TextBox18.TextAlign = HorizontalAlignment.Center
         ' 
         ' TextBox17
         ' 
@@ -1173,6 +1202,15 @@ Partial Class Form3_B
         Panel44.Size = New Size(689, 78)
         Panel44.TabIndex = 70
         ' 
+        ' TextBox16
+        ' 
+        TextBox16.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point)
+        TextBox16.Location = New Point(38, 25)
+        TextBox16.Name = "TextBox16"
+        TextBox16.Size = New Size(631, 39)
+        TextBox16.TabIndex = 90
+        TextBox16.TextAlign = HorizontalAlignment.Center
+        ' 
         ' Panel45
         ' 
         Panel45.BorderStyle = BorderStyle.FixedSingle
@@ -1181,6 +1219,15 @@ Partial Class Form3_B
         Panel45.Name = "Panel45"
         Panel45.Size = New Size(513, 78)
         Panel45.TabIndex = 71
+        ' 
+        ' TextBox19
+        ' 
+        TextBox19.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point)
+        TextBox19.Location = New Point(59, 25)
+        TextBox19.Name = "TextBox19"
+        TextBox19.Size = New Size(435, 39)
+        TextBox19.TabIndex = 91
+        TextBox19.TextAlign = HorizontalAlignment.Center
         ' 
         ' Panel46
         ' 
@@ -1244,53 +1291,6 @@ Partial Class Form3_B
         TextBox13.TabIndex = 93
         TextBox13.TextAlign = HorizontalAlignment.Center
         ' 
-        ' TextBox18
-        ' 
-        TextBox18.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point)
-        TextBox18.Location = New Point(915, 371)
-        TextBox18.Name = "TextBox18"
-        TextBox18.Size = New Size(903, 39)
-        TextBox18.TabIndex = 89
-        TextBox18.TextAlign = HorizontalAlignment.Center
-        ' 
-        ' TextBox15
-        ' 
-        TextBox15.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point)
-        TextBox15.Location = New Point(866, 421)
-        TextBox15.Name = "TextBox15"
-        TextBox15.Size = New Size(379, 39)
-        TextBox15.TabIndex = 94
-        TextBox15.TextAlign = HorizontalAlignment.Center
-        ' 
-        ' TextBox16
-        ' 
-        TextBox16.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point)
-        TextBox16.Location = New Point(38, 25)
-        TextBox16.Name = "TextBox16"
-        TextBox16.Size = New Size(631, 39)
-        TextBox16.TabIndex = 90
-        TextBox16.TextAlign = HorizontalAlignment.Center
-        ' 
-        ' TextBox19
-        ' 
-        TextBox19.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point)
-        TextBox19.Location = New Point(59, 25)
-        TextBox19.Name = "TextBox19"
-        TextBox19.Size = New Size(435, 39)
-        TextBox19.TabIndex = 91
-        TextBox19.TextAlign = HorizontalAlignment.Center
-        ' 
-        ' PictureBox9
-        ' 
-        PictureBox9.Cursor = Cursors.Hand
-        PictureBox9.Image = CType(resources.GetObject("PictureBox9.Image"), Image)
-        PictureBox9.Location = New Point(1771, 417)
-        PictureBox9.Name = "PictureBox9"
-        PictureBox9.Size = New Size(47, 43)
-        PictureBox9.SizeMode = PictureBoxSizeMode.StretchImage
-        PictureBox9.TabIndex = 95
-        PictureBox9.TabStop = False
-        ' 
         ' Form3_B
         ' 
         AutoScaleDimensions = New SizeF(13F, 32F)
@@ -1309,6 +1309,7 @@ Partial Class Form3_B
         CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
         Panel1.ResumeLayout(False)
         Panel1.PerformLayout()
+        CType(PictureBox9, ComponentModel.ISupportInitialize).EndInit()
         CType(PictureBox8, ComponentModel.ISupportInitialize).EndInit()
         Panel5.ResumeLayout(False)
         Panel5.PerformLayout()
@@ -1358,7 +1359,6 @@ Partial Class Form3_B
         Panel48.PerformLayout()
         Panel49.ResumeLayout(False)
         Panel49.PerformLayout()
-        CType(PictureBox9, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
     End Sub
 

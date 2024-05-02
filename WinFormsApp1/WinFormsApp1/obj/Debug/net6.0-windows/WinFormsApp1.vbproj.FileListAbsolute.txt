@@ -89,3 +89,4 @@ C:\Users\user\Documents\GitHub\NIA-IMO-Slip-Management-System\WinFormsApp1\WinFo
 C:\Users\user\Documents\GitHub\NIA-IMO-Slip-Management-System\WinFormsApp1\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.Form3_A.resources
 C:\Users\user\Documents\GitHub\NIA-IMO-Slip-Management-System\WinFormsApp1\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.Form3_B.resources
 C:\Users\user\Documents\GitHub\NIA-IMO-Slip-Management-System\WinFormsApp1\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.Form4_A.resources
+C:\Users\user\Documents\GitHub\NIA-IMO-Slip-Management-System\WinFormsApp1\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.Form3_C.resources
