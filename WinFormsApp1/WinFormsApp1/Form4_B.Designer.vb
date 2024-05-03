@@ -27,6 +27,7 @@ Partial Class Form4_B
         Panel1 = New Panel()
         Label1 = New Label()
         Panel2 = New Panel()
+        TextBox57 = New TextBox()
         TextBox12 = New TextBox()
         TextBox11 = New TextBox()
         TextBox10 = New TextBox()
@@ -51,7 +52,9 @@ Partial Class Form4_B
         Panel9 = New Panel()
         TextBox25 = New TextBox()
         Panel10 = New Panel()
+        TextBox13 = New TextBox()
         Panel11 = New Panel()
+        TextBox45 = New TextBox()
         Panel12 = New Panel()
         TextBox2 = New TextBox()
         Panel13 = New Panel()
@@ -88,69 +91,69 @@ Partial Class Form4_B
         Panel34 = New Panel()
         TextBox26 = New TextBox()
         Panel35 = New Panel()
-        Panel36 = New Panel()
-        Panel37 = New Panel()
-        Panel38 = New Panel()
-        Panel39 = New Panel()
-        Panel40 = New Panel()
-        Panel41 = New Panel()
-        Panel42 = New Panel()
-        Panel43 = New Panel()
-        Panel44 = New Panel()
         TextBox27 = New TextBox()
+        Panel36 = New Panel()
         TextBox28 = New TextBox()
+        Panel37 = New Panel()
         TextBox29 = New TextBox()
+        Panel38 = New Panel()
         TextBox30 = New TextBox()
+        Panel39 = New Panel()
         TextBox31 = New TextBox()
+        Panel40 = New Panel()
         TextBox32 = New TextBox()
+        Panel41 = New Panel()
         TextBox33 = New TextBox()
+        Panel42 = New Panel()
         TextBox34 = New TextBox()
+        Panel43 = New Panel()
         TextBox35 = New TextBox()
+        Panel44 = New Panel()
         Label6 = New Label()
         Panel45 = New Panel()
-        Panel46 = New Panel()
-        Panel47 = New Panel()
-        Panel48 = New Panel()
-        Panel49 = New Panel()
-        Panel50 = New Panel()
-        Panel51 = New Panel()
-        Panel52 = New Panel()
-        Panel53 = New Panel()
-        Panel54 = New Panel()
-        Panel55 = New Panel()
-        Panel56 = New Panel()
-        Panel57 = New Panel()
-        Panel58 = New Panel()
-        Panel59 = New Panel()
-        Panel60 = New Panel()
-        Panel61 = New Panel()
-        Panel62 = New Panel()
-        Panel63 = New Panel()
-        Panel64 = New Panel()
-        Panel65 = New Panel()
-        TextBox13 = New TextBox()
         TextBox24 = New TextBox()
-        TextBox36 = New TextBox()
-        TextBox37 = New TextBox()
-        TextBox38 = New TextBox()
-        TextBox39 = New TextBox()
-        TextBox40 = New TextBox()
-        TextBox41 = New TextBox()
-        TextBox42 = New TextBox()
-        TextBox43 = New TextBox()
-        TextBox44 = New TextBox()
-        TextBox45 = New TextBox()
+        Panel55 = New Panel()
         TextBox46 = New TextBox()
+        Panel46 = New Panel()
+        TextBox36 = New TextBox()
+        Panel56 = New Panel()
         TextBox47 = New TextBox()
+        Panel47 = New Panel()
+        TextBox37 = New TextBox()
+        Panel57 = New Panel()
         TextBox48 = New TextBox()
+        Panel48 = New Panel()
+        TextBox38 = New TextBox()
+        Panel58 = New Panel()
         TextBox49 = New TextBox()
+        Panel49 = New Panel()
+        TextBox39 = New TextBox()
+        Panel59 = New Panel()
         TextBox50 = New TextBox()
-        TextBox51 = New TextBox()
+        Panel50 = New Panel()
+        TextBox40 = New TextBox()
+        Panel60 = New Panel()
         TextBox52 = New TextBox()
+        TextBox51 = New TextBox()
+        Panel51 = New Panel()
+        TextBox41 = New TextBox()
+        Panel61 = New Panel()
         TextBox53 = New TextBox()
+        Panel52 = New Panel()
+        TextBox42 = New TextBox()
+        Panel62 = New Panel()
         TextBox54 = New TextBox()
+        Panel53 = New Panel()
+        TextBox43 = New TextBox()
+        Panel63 = New Panel()
         TextBox55 = New TextBox()
+        Panel54 = New Panel()
+        TextBox44 = New TextBox()
+        Panel64 = New Panel()
         TextBox56 = New TextBox()
+        Panel65 = New Panel()
+        TextBox58 = New TextBox()
+        PictureBox9 = New PictureBox()
         CType(PictureBox3, ComponentModel.ISupportInitialize).BeginInit()
         Panel1.SuspendLayout()
         Panel2.SuspendLayout()
@@ -186,25 +189,27 @@ Partial Class Form4_B
         Panel43.SuspendLayout()
         Panel44.SuspendLayout()
         Panel45.SuspendLayout()
-        Panel46.SuspendLayout()
-        Panel47.SuspendLayout()
-        Panel48.SuspendLayout()
-        Panel49.SuspendLayout()
-        Panel50.SuspendLayout()
-        Panel51.SuspendLayout()
-        Panel52.SuspendLayout()
-        Panel53.SuspendLayout()
-        Panel54.SuspendLayout()
         Panel55.SuspendLayout()
+        Panel46.SuspendLayout()
         Panel56.SuspendLayout()
+        Panel47.SuspendLayout()
         Panel57.SuspendLayout()
+        Panel48.SuspendLayout()
         Panel58.SuspendLayout()
+        Panel49.SuspendLayout()
         Panel59.SuspendLayout()
+        Panel50.SuspendLayout()
         Panel60.SuspendLayout()
+        Panel51.SuspendLayout()
         Panel61.SuspendLayout()
+        Panel52.SuspendLayout()
         Panel62.SuspendLayout()
+        Panel53.SuspendLayout()
         Panel63.SuspendLayout()
+        Panel54.SuspendLayout()
         Panel64.SuspendLayout()
+        Panel65.SuspendLayout()
+        CType(PictureBox9, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
         ' PictureBox3
@@ -241,6 +246,7 @@ Partial Class Form4_B
         ' Panel2
         ' 
         Panel2.BorderStyle = BorderStyle.FixedSingle
+        Panel2.Controls.Add(TextBox57)
         Panel2.Controls.Add(TextBox12)
         Panel2.Controls.Add(TextBox11)
         Panel2.Controls.Add(TextBox10)
@@ -306,6 +312,16 @@ Partial Class Form4_B
         Panel2.Name = "Panel2"
         Panel2.Size = New Size(1816, 752)
         Panel2.TabIndex = 41
+        ' 
+        ' TextBox57
+        ' 
+        TextBox57.BorderStyle = BorderStyle.None
+        TextBox57.Font = New Font("Segoe UI", 10.125F, FontStyle.Bold, GraphicsUnit.Point)
+        TextBox57.Location = New Point(1101, 705)
+        TextBox57.Name = "TextBox57"
+        TextBox57.Size = New Size(416, 36)
+        TextBox57.TabIndex = 50
+        TextBox57.TextAlign = HorizontalAlignment.Center
         ' 
         ' TextBox12
         ' 
@@ -544,6 +560,16 @@ Partial Class Form4_B
         Panel10.Size = New Size(798, 79)
         Panel10.TabIndex = 6
         ' 
+        ' TextBox13
+        ' 
+        TextBox13.BorderStyle = BorderStyle.None
+        TextBox13.Font = New Font("Segoe UI", 10.125F, FontStyle.Bold, GraphicsUnit.Point)
+        TextBox13.Location = New Point(65, 30)
+        TextBox13.Name = "TextBox13"
+        TextBox13.Size = New Size(416, 36)
+        TextBox13.TabIndex = 30
+        TextBox13.TextAlign = HorizontalAlignment.Center
+        ' 
         ' Panel11
         ' 
         Panel11.BorderStyle = BorderStyle.FixedSingle
@@ -552,6 +578,16 @@ Partial Class Form4_B
         Panel11.Name = "Panel11"
         Panel11.Size = New Size(305, 75)
         Panel11.TabIndex = 7
+        ' 
+        ' TextBox45
+        ' 
+        TextBox45.BorderStyle = BorderStyle.None
+        TextBox45.Font = New Font("Segoe UI", 10.125F, FontStyle.Bold, GraphicsUnit.Point)
+        TextBox45.Location = New Point(28, 25)
+        TextBox45.Name = "TextBox45"
+        TextBox45.Size = New Size(212, 36)
+        TextBox45.TabIndex = 50
+        TextBox45.TextAlign = HorizontalAlignment.Center
         ' 
         ' Panel12
         ' 
@@ -878,87 +914,6 @@ Partial Class Form4_B
         Panel35.Size = New Size(652, 71)
         Panel35.TabIndex = 28
         ' 
-        ' Panel36
-        ' 
-        Panel36.BorderStyle = BorderStyle.FixedSingle
-        Panel36.Controls.Add(TextBox28)
-        Panel36.Location = New Point(415, 254)
-        Panel36.Name = "Panel36"
-        Panel36.Size = New Size(656, 68)
-        Panel36.TabIndex = 29
-        ' 
-        ' Panel37
-        ' 
-        Panel37.BorderStyle = BorderStyle.FixedSingle
-        Panel37.Controls.Add(TextBox29)
-        Panel37.Location = New Point(419, 310)
-        Panel37.Name = "Panel37"
-        Panel37.Size = New Size(652, 67)
-        Panel37.TabIndex = 6
-        ' 
-        ' Panel38
-        ' 
-        Panel38.BorderStyle = BorderStyle.FixedSingle
-        Panel38.Controls.Add(TextBox30)
-        Panel38.Location = New Point(415, 361)
-        Panel38.Name = "Panel38"
-        Panel38.Size = New Size(656, 70)
-        Panel38.TabIndex = 30
-        ' 
-        ' Panel39
-        ' 
-        Panel39.BorderStyle = BorderStyle.FixedSingle
-        Panel39.Controls.Add(TextBox31)
-        Panel39.Location = New Point(419, 415)
-        Panel39.Name = "Panel39"
-        Panel39.Size = New Size(652, 68)
-        Panel39.TabIndex = 31
-        ' 
-        ' Panel40
-        ' 
-        Panel40.BorderStyle = BorderStyle.FixedSingle
-        Panel40.Controls.Add(TextBox32)
-        Panel40.Location = New Point(419, 464)
-        Panel40.Name = "Panel40"
-        Panel40.Size = New Size(652, 74)
-        Panel40.TabIndex = 6
-        ' 
-        ' Panel41
-        ' 
-        Panel41.BorderStyle = BorderStyle.FixedSingle
-        Panel41.Controls.Add(TextBox33)
-        Panel41.Location = New Point(419, 525)
-        Panel41.Name = "Panel41"
-        Panel41.Size = New Size(652, 68)
-        Panel41.TabIndex = 32
-        ' 
-        ' Panel42
-        ' 
-        Panel42.BorderStyle = BorderStyle.FixedSingle
-        Panel42.Controls.Add(TextBox34)
-        Panel42.Location = New Point(423, 579)
-        Panel42.Name = "Panel42"
-        Panel42.Size = New Size(648, 69)
-        Panel42.TabIndex = 6
-        ' 
-        ' Panel43
-        ' 
-        Panel43.BorderStyle = BorderStyle.FixedSingle
-        Panel43.Controls.Add(TextBox35)
-        Panel43.Location = New Point(415, 635)
-        Panel43.Name = "Panel43"
-        Panel43.Size = New Size(656, 65)
-        Panel43.TabIndex = 6
-        ' 
-        ' Panel44
-        ' 
-        Panel44.BorderStyle = BorderStyle.FixedSingle
-        Panel44.Controls.Add(Label6)
-        Panel44.Location = New Point(423, 678)
-        Panel44.Name = "Panel44"
-        Panel44.Size = New Size(648, 83)
-        Panel44.TabIndex = 6
-        ' 
         ' TextBox27
         ' 
         TextBox27.BorderStyle = BorderStyle.None
@@ -968,6 +923,15 @@ Partial Class Form4_B
         TextBox27.Size = New Size(590, 36)
         TextBox27.TabIndex = 31
         TextBox27.TextAlign = HorizontalAlignment.Center
+        ' 
+        ' Panel36
+        ' 
+        Panel36.BorderStyle = BorderStyle.FixedSingle
+        Panel36.Controls.Add(TextBox28)
+        Panel36.Location = New Point(415, 254)
+        Panel36.Name = "Panel36"
+        Panel36.Size = New Size(656, 68)
+        Panel36.TabIndex = 29
         ' 
         ' TextBox28
         ' 
@@ -979,6 +943,15 @@ Partial Class Form4_B
         TextBox28.TabIndex = 32
         TextBox28.TextAlign = HorizontalAlignment.Center
         ' 
+        ' Panel37
+        ' 
+        Panel37.BorderStyle = BorderStyle.FixedSingle
+        Panel37.Controls.Add(TextBox29)
+        Panel37.Location = New Point(419, 310)
+        Panel37.Name = "Panel37"
+        Panel37.Size = New Size(652, 67)
+        Panel37.TabIndex = 6
+        ' 
         ' TextBox29
         ' 
         TextBox29.BorderStyle = BorderStyle.None
@@ -988,6 +961,15 @@ Partial Class Form4_B
         TextBox29.Size = New Size(590, 36)
         TextBox29.TabIndex = 33
         TextBox29.TextAlign = HorizontalAlignment.Center
+        ' 
+        ' Panel38
+        ' 
+        Panel38.BorderStyle = BorderStyle.FixedSingle
+        Panel38.Controls.Add(TextBox30)
+        Panel38.Location = New Point(415, 361)
+        Panel38.Name = "Panel38"
+        Panel38.Size = New Size(656, 70)
+        Panel38.TabIndex = 30
         ' 
         ' TextBox30
         ' 
@@ -999,6 +981,15 @@ Partial Class Form4_B
         TextBox30.TabIndex = 33
         TextBox30.TextAlign = HorizontalAlignment.Center
         ' 
+        ' Panel39
+        ' 
+        Panel39.BorderStyle = BorderStyle.FixedSingle
+        Panel39.Controls.Add(TextBox31)
+        Panel39.Location = New Point(419, 415)
+        Panel39.Name = "Panel39"
+        Panel39.Size = New Size(652, 68)
+        Panel39.TabIndex = 31
+        ' 
         ' TextBox31
         ' 
         TextBox31.BorderStyle = BorderStyle.None
@@ -1008,6 +999,15 @@ Partial Class Form4_B
         TextBox31.Size = New Size(590, 36)
         TextBox31.TabIndex = 34
         TextBox31.TextAlign = HorizontalAlignment.Center
+        ' 
+        ' Panel40
+        ' 
+        Panel40.BorderStyle = BorderStyle.FixedSingle
+        Panel40.Controls.Add(TextBox32)
+        Panel40.Location = New Point(419, 464)
+        Panel40.Name = "Panel40"
+        Panel40.Size = New Size(652, 74)
+        Panel40.TabIndex = 6
         ' 
         ' TextBox32
         ' 
@@ -1019,6 +1019,15 @@ Partial Class Form4_B
         TextBox32.TabIndex = 35
         TextBox32.TextAlign = HorizontalAlignment.Center
         ' 
+        ' Panel41
+        ' 
+        Panel41.BorderStyle = BorderStyle.FixedSingle
+        Panel41.Controls.Add(TextBox33)
+        Panel41.Location = New Point(419, 525)
+        Panel41.Name = "Panel41"
+        Panel41.Size = New Size(652, 68)
+        Panel41.TabIndex = 32
+        ' 
         ' TextBox33
         ' 
         TextBox33.BorderStyle = BorderStyle.None
@@ -1028,6 +1037,15 @@ Partial Class Form4_B
         TextBox33.Size = New Size(590, 36)
         TextBox33.TabIndex = 33
         TextBox33.TextAlign = HorizontalAlignment.Center
+        ' 
+        ' Panel42
+        ' 
+        Panel42.BorderStyle = BorderStyle.FixedSingle
+        Panel42.Controls.Add(TextBox34)
+        Panel42.Location = New Point(423, 579)
+        Panel42.Name = "Panel42"
+        Panel42.Size = New Size(648, 69)
+        Panel42.TabIndex = 6
         ' 
         ' TextBox34
         ' 
@@ -1039,6 +1057,15 @@ Partial Class Form4_B
         TextBox34.TabIndex = 34
         TextBox34.TextAlign = HorizontalAlignment.Center
         ' 
+        ' Panel43
+        ' 
+        Panel43.BorderStyle = BorderStyle.FixedSingle
+        Panel43.Controls.Add(TextBox35)
+        Panel43.Location = New Point(415, 635)
+        Panel43.Name = "Panel43"
+        Panel43.Size = New Size(656, 65)
+        Panel43.TabIndex = 6
+        ' 
         ' TextBox35
         ' 
         TextBox35.BorderStyle = BorderStyle.None
@@ -1048,6 +1075,15 @@ Partial Class Form4_B
         TextBox35.Size = New Size(590, 36)
         TextBox35.TabIndex = 35
         TextBox35.TextAlign = HorizontalAlignment.Center
+        ' 
+        ' Panel44
+        ' 
+        Panel44.BorderStyle = BorderStyle.FixedSingle
+        Panel44.Controls.Add(Label6)
+        Panel44.Location = New Point(423, 678)
+        Panel44.Name = "Panel44"
+        Panel44.Size = New Size(648, 83)
+        Panel44.TabIndex = 6
         ' 
         ' Label6
         ' 
@@ -1070,205 +1106,6 @@ Partial Class Form4_B
         Panel45.Size = New Size(800, 71)
         Panel45.TabIndex = 8
         ' 
-        ' Panel46
-        ' 
-        Panel46.BorderStyle = BorderStyle.FixedSingle
-        Panel46.Controls.Add(TextBox36)
-        Panel46.Controls.Add(Panel56)
-        Panel46.Location = New Point(1051, 186)
-        Panel46.Name = "Panel46"
-        Panel46.Size = New Size(800, 82)
-        Panel46.TabIndex = 33
-        ' 
-        ' Panel47
-        ' 
-        Panel47.BorderStyle = BorderStyle.FixedSingle
-        Panel47.Controls.Add(TextBox37)
-        Panel47.Controls.Add(Panel57)
-        Panel47.Location = New Point(1035, 250)
-        Panel47.Name = "Panel47"
-        Panel47.Size = New Size(812, 72)
-        Panel47.TabIndex = 34
-        ' 
-        ' Panel48
-        ' 
-        Panel48.BorderStyle = BorderStyle.FixedSingle
-        Panel48.Controls.Add(TextBox38)
-        Panel48.Controls.Add(Panel58)
-        Panel48.Location = New Point(1051, 314)
-        Panel48.Name = "Panel48"
-        Panel48.Size = New Size(800, 63)
-        Panel48.TabIndex = 35
-        ' 
-        ' Panel49
-        ' 
-        Panel49.BorderStyle = BorderStyle.FixedSingle
-        Panel49.Controls.Add(TextBox39)
-        Panel49.Controls.Add(Panel59)
-        Panel49.Location = New Point(1051, 365)
-        Panel49.Name = "Panel49"
-        Panel49.Size = New Size(782, 66)
-        Panel49.TabIndex = 36
-        ' 
-        ' Panel50
-        ' 
-        Panel50.BorderStyle = BorderStyle.FixedSingle
-        Panel50.Controls.Add(TextBox40)
-        Panel50.Controls.Add(Panel60)
-        Panel50.Location = New Point(1051, 415)
-        Panel50.Name = "Panel50"
-        Panel50.Size = New Size(800, 68)
-        Panel50.TabIndex = 37
-        ' 
-        ' Panel51
-        ' 
-        Panel51.BorderStyle = BorderStyle.FixedSingle
-        Panel51.Controls.Add(TextBox41)
-        Panel51.Controls.Add(Panel61)
-        Panel51.Location = New Point(1051, 451)
-        Panel51.Name = "Panel51"
-        Panel51.Size = New Size(807, 87)
-        Panel51.TabIndex = 34
-        ' 
-        ' Panel52
-        ' 
-        Panel52.BorderStyle = BorderStyle.FixedSingle
-        Panel52.Controls.Add(TextBox42)
-        Panel52.Controls.Add(Panel62)
-        Panel52.Location = New Point(1055, 525)
-        Panel52.Name = "Panel52"
-        Panel52.Size = New Size(799, 68)
-        Panel52.TabIndex = 38
-        ' 
-        ' Panel53
-        ' 
-        Panel53.BorderStyle = BorderStyle.FixedSingle
-        Panel53.Controls.Add(TextBox43)
-        Panel53.Controls.Add(Panel63)
-        Panel53.Location = New Point(1059, 564)
-        Panel53.Name = "Panel53"
-        Panel53.Size = New Size(795, 84)
-        Panel53.TabIndex = 34
-        ' 
-        ' Panel54
-        ' 
-        Panel54.BorderStyle = BorderStyle.FixedSingle
-        Panel54.Controls.Add(TextBox44)
-        Panel54.Controls.Add(Panel64)
-        Panel54.Location = New Point(1063, 631)
-        Panel54.Name = "Panel54"
-        Panel54.Size = New Size(787, 69)
-        Panel54.TabIndex = 34
-        ' 
-        ' Panel55
-        ' 
-        Panel55.BorderStyle = BorderStyle.FixedSingle
-        Panel55.Controls.Add(TextBox46)
-        Panel55.Location = New Point(494, -5)
-        Panel55.Name = "Panel55"
-        Panel55.Size = New Size(304, 106)
-        Panel55.TabIndex = 8
-        ' 
-        ' Panel56
-        ' 
-        Panel56.BorderStyle = BorderStyle.FixedSingle
-        Panel56.Controls.Add(TextBox47)
-        Panel56.Location = New Point(494, 10)
-        Panel56.Name = "Panel56"
-        Panel56.Size = New Size(287, 90)
-        Panel56.TabIndex = 9
-        ' 
-        ' Panel57
-        ' 
-        Panel57.BorderStyle = BorderStyle.FixedSingle
-        Panel57.Controls.Add(TextBox48)
-        Panel57.Location = New Point(510, -1)
-        Panel57.Name = "Panel57"
-        Panel57.Size = New Size(301, 92)
-        Panel57.TabIndex = 42
-        ' 
-        ' Panel58
-        ' 
-        Panel58.BorderStyle = BorderStyle.FixedSingle
-        Panel58.Controls.Add(TextBox49)
-        Panel58.Location = New Point(494, -9)
-        Panel58.Name = "Panel58"
-        Panel58.Size = New Size(297, 85)
-        Panel58.TabIndex = 42
-        ' 
-        ' Panel59
-        ' 
-        Panel59.BorderStyle = BorderStyle.FixedSingle
-        Panel59.Controls.Add(TextBox50)
-        Panel59.Location = New Point(494, -5)
-        Panel59.Name = "Panel59"
-        Panel59.Size = New Size(304, 84)
-        Panel59.TabIndex = 42
-        ' 
-        ' Panel60
-        ' 
-        Panel60.BorderStyle = BorderStyle.FixedSingle
-        Panel60.Controls.Add(TextBox52)
-        Panel60.Controls.Add(TextBox51)
-        Panel60.Location = New Point(494, -5)
-        Panel60.Name = "Panel60"
-        Panel60.Size = New Size(305, 90)
-        Panel60.TabIndex = 42
-        ' 
-        ' Panel61
-        ' 
-        Panel61.BorderStyle = BorderStyle.FixedSingle
-        Panel61.Controls.Add(TextBox53)
-        Panel61.Location = New Point(494, 12)
-        Panel61.Name = "Panel61"
-        Panel61.Size = New Size(328, 94)
-        Panel61.TabIndex = 42
-        ' 
-        ' Panel62
-        ' 
-        Panel62.BorderStyle = BorderStyle.FixedSingle
-        Panel62.Controls.Add(TextBox54)
-        Panel62.Location = New Point(490, -1)
-        Panel62.Name = "Panel62"
-        Panel62.Size = New Size(297, 82)
-        Panel62.TabIndex = 43
-        ' 
-        ' Panel63
-        ' 
-        Panel63.BorderStyle = BorderStyle.FixedSingle
-        Panel63.Controls.Add(TextBox55)
-        Panel63.Location = New Point(486, 10)
-        Panel63.Name = "Panel63"
-        Panel63.Size = New Size(308, 93)
-        Panel63.TabIndex = 9
-        ' 
-        ' Panel64
-        ' 
-        Panel64.BorderStyle = BorderStyle.FixedSingle
-        Panel64.Controls.Add(TextBox56)
-        Panel64.Location = New Point(482, -1)
-        Panel64.Name = "Panel64"
-        Panel64.Size = New Size(312, 91)
-        Panel64.TabIndex = 42
-        ' 
-        ' Panel65
-        ' 
-        Panel65.BorderStyle = BorderStyle.FixedSingle
-        Panel65.Location = New Point(1546, 674)
-        Panel65.Name = "Panel65"
-        Panel65.Size = New Size(297, 87)
-        Panel65.TabIndex = 42
-        ' 
-        ' TextBox13
-        ' 
-        TextBox13.BorderStyle = BorderStyle.None
-        TextBox13.Font = New Font("Segoe UI", 10.125F, FontStyle.Bold, GraphicsUnit.Point)
-        TextBox13.Location = New Point(65, 30)
-        TextBox13.Name = "TextBox13"
-        TextBox13.Size = New Size(416, 36)
-        TextBox13.TabIndex = 30
-        TextBox13.TextAlign = HorizontalAlignment.Center
-        ' 
         ' TextBox24
         ' 
         TextBox24.BorderStyle = BorderStyle.None
@@ -1279,105 +1116,14 @@ Partial Class Form4_B
         TextBox24.TabIndex = 31
         TextBox24.TextAlign = HorizontalAlignment.Center
         ' 
-        ' TextBox36
+        ' Panel55
         ' 
-        TextBox36.BorderStyle = BorderStyle.None
-        TextBox36.Font = New Font("Segoe UI", 10.125F, FontStyle.Bold, GraphicsUnit.Point)
-        TextBox36.Location = New Point(49, 32)
-        TextBox36.Name = "TextBox36"
-        TextBox36.Size = New Size(416, 36)
-        TextBox36.TabIndex = 32
-        TextBox36.TextAlign = HorizontalAlignment.Center
-        ' 
-        ' TextBox37
-        ' 
-        TextBox37.BorderStyle = BorderStyle.None
-        TextBox37.Font = New Font("Segoe UI", 10.125F, FontStyle.Bold, GraphicsUnit.Point)
-        TextBox37.Location = New Point(65, 23)
-        TextBox37.Name = "TextBox37"
-        TextBox37.Size = New Size(416, 36)
-        TextBox37.TabIndex = 33
-        TextBox37.TextAlign = HorizontalAlignment.Center
-        ' 
-        ' TextBox38
-        ' 
-        TextBox38.BorderStyle = BorderStyle.None
-        TextBox38.Font = New Font("Segoe UI", 10.125F, FontStyle.Bold, GraphicsUnit.Point)
-        TextBox38.Location = New Point(49, 14)
-        TextBox38.Name = "TextBox38"
-        TextBox38.Size = New Size(416, 36)
-        TextBox38.TabIndex = 43
-        TextBox38.TextAlign = HorizontalAlignment.Center
-        ' 
-        ' TextBox39
-        ' 
-        TextBox39.BorderStyle = BorderStyle.None
-        TextBox39.Font = New Font("Segoe UI", 10.125F, FontStyle.Bold, GraphicsUnit.Point)
-        TextBox39.Location = New Point(49, 17)
-        TextBox39.Name = "TextBox39"
-        TextBox39.Size = New Size(416, 36)
-        TextBox39.TabIndex = 44
-        TextBox39.TextAlign = HorizontalAlignment.Center
-        ' 
-        ' TextBox40
-        ' 
-        TextBox40.BorderStyle = BorderStyle.None
-        TextBox40.Font = New Font("Segoe UI", 10.125F, FontStyle.Bold, GraphicsUnit.Point)
-        TextBox40.Location = New Point(49, 21)
-        TextBox40.Name = "TextBox40"
-        TextBox40.Size = New Size(416, 36)
-        TextBox40.TabIndex = 45
-        TextBox40.TextAlign = HorizontalAlignment.Center
-        ' 
-        ' TextBox41
-        ' 
-        TextBox41.BorderStyle = BorderStyle.None
-        TextBox41.Font = New Font("Segoe UI", 10.125F, FontStyle.Bold, GraphicsUnit.Point)
-        TextBox41.Location = New Point(49, 37)
-        TextBox41.Name = "TextBox41"
-        TextBox41.Size = New Size(416, 36)
-        TextBox41.TabIndex = 46
-        TextBox41.TextAlign = HorizontalAlignment.Center
-        ' 
-        ' TextBox42
-        ' 
-        TextBox42.BorderStyle = BorderStyle.None
-        TextBox42.Font = New Font("Segoe UI", 10.125F, FontStyle.Bold, GraphicsUnit.Point)
-        TextBox42.Location = New Point(45, 18)
-        TextBox42.Name = "TextBox42"
-        TextBox42.Size = New Size(416, 36)
-        TextBox42.TabIndex = 47
-        TextBox42.TextAlign = HorizontalAlignment.Center
-        ' 
-        ' TextBox43
-        ' 
-        TextBox43.BorderStyle = BorderStyle.None
-        TextBox43.Font = New Font("Segoe UI", 10.125F, FontStyle.Bold, GraphicsUnit.Point)
-        TextBox43.Location = New Point(41, 34)
-        TextBox43.Name = "TextBox43"
-        TextBox43.Size = New Size(416, 36)
-        TextBox43.TabIndex = 48
-        TextBox43.TextAlign = HorizontalAlignment.Center
-        ' 
-        ' TextBox44
-        ' 
-        TextBox44.BorderStyle = BorderStyle.None
-        TextBox44.Font = New Font("Segoe UI", 10.125F, FontStyle.Bold, GraphicsUnit.Point)
-        TextBox44.Location = New Point(37, 22)
-        TextBox44.Name = "TextBox44"
-        TextBox44.Size = New Size(416, 36)
-        TextBox44.TabIndex = 49
-        TextBox44.TextAlign = HorizontalAlignment.Center
-        ' 
-        ' TextBox45
-        ' 
-        TextBox45.BorderStyle = BorderStyle.None
-        TextBox45.Font = New Font("Segoe UI", 10.125F, FontStyle.Bold, GraphicsUnit.Point)
-        TextBox45.Location = New Point(28, 25)
-        TextBox45.Name = "TextBox45"
-        TextBox45.Size = New Size(212, 36)
-        TextBox45.TabIndex = 50
-        TextBox45.TextAlign = HorizontalAlignment.Center
+        Panel55.BorderStyle = BorderStyle.FixedSingle
+        Panel55.Controls.Add(TextBox46)
+        Panel55.Location = New Point(494, -5)
+        Panel55.Name = "Panel55"
+        Panel55.Size = New Size(304, 106)
+        Panel55.TabIndex = 8
         ' 
         ' TextBox46
         ' 
@@ -1389,6 +1135,35 @@ Partial Class Form4_B
         TextBox46.TabIndex = 51
         TextBox46.TextAlign = HorizontalAlignment.Center
         ' 
+        ' Panel46
+        ' 
+        Panel46.BorderStyle = BorderStyle.FixedSingle
+        Panel46.Controls.Add(TextBox36)
+        Panel46.Controls.Add(Panel56)
+        Panel46.Location = New Point(1051, 186)
+        Panel46.Name = "Panel46"
+        Panel46.Size = New Size(800, 82)
+        Panel46.TabIndex = 33
+        ' 
+        ' TextBox36
+        ' 
+        TextBox36.BorderStyle = BorderStyle.None
+        TextBox36.Font = New Font("Segoe UI", 10.125F, FontStyle.Bold, GraphicsUnit.Point)
+        TextBox36.Location = New Point(49, 32)
+        TextBox36.Name = "TextBox36"
+        TextBox36.Size = New Size(416, 36)
+        TextBox36.TabIndex = 32
+        TextBox36.TextAlign = HorizontalAlignment.Center
+        ' 
+        ' Panel56
+        ' 
+        Panel56.BorderStyle = BorderStyle.FixedSingle
+        Panel56.Controls.Add(TextBox47)
+        Panel56.Location = New Point(494, 10)
+        Panel56.Name = "Panel56"
+        Panel56.Size = New Size(287, 90)
+        Panel56.TabIndex = 9
+        ' 
         ' TextBox47
         ' 
         TextBox47.BorderStyle = BorderStyle.None
@@ -1398,6 +1173,35 @@ Partial Class Form4_B
         TextBox47.Size = New Size(212, 36)
         TextBox47.TabIndex = 52
         TextBox47.TextAlign = HorizontalAlignment.Center
+        ' 
+        ' Panel47
+        ' 
+        Panel47.BorderStyle = BorderStyle.FixedSingle
+        Panel47.Controls.Add(TextBox37)
+        Panel47.Controls.Add(Panel57)
+        Panel47.Location = New Point(1035, 250)
+        Panel47.Name = "Panel47"
+        Panel47.Size = New Size(812, 72)
+        Panel47.TabIndex = 34
+        ' 
+        ' TextBox37
+        ' 
+        TextBox37.BorderStyle = BorderStyle.None
+        TextBox37.Font = New Font("Segoe UI", 10.125F, FontStyle.Bold, GraphicsUnit.Point)
+        TextBox37.Location = New Point(65, 23)
+        TextBox37.Name = "TextBox37"
+        TextBox37.Size = New Size(416, 36)
+        TextBox37.TabIndex = 33
+        TextBox37.TextAlign = HorizontalAlignment.Center
+        ' 
+        ' Panel57
+        ' 
+        Panel57.BorderStyle = BorderStyle.FixedSingle
+        Panel57.Controls.Add(TextBox48)
+        Panel57.Location = New Point(510, -1)
+        Panel57.Name = "Panel57"
+        Panel57.Size = New Size(301, 92)
+        Panel57.TabIndex = 42
         ' 
         ' TextBox48
         ' 
@@ -1409,6 +1213,35 @@ Partial Class Form4_B
         TextBox48.TabIndex = 53
         TextBox48.TextAlign = HorizontalAlignment.Center
         ' 
+        ' Panel48
+        ' 
+        Panel48.BorderStyle = BorderStyle.FixedSingle
+        Panel48.Controls.Add(TextBox38)
+        Panel48.Controls.Add(Panel58)
+        Panel48.Location = New Point(1051, 314)
+        Panel48.Name = "Panel48"
+        Panel48.Size = New Size(800, 63)
+        Panel48.TabIndex = 35
+        ' 
+        ' TextBox38
+        ' 
+        TextBox38.BorderStyle = BorderStyle.None
+        TextBox38.Font = New Font("Segoe UI", 10.125F, FontStyle.Bold, GraphicsUnit.Point)
+        TextBox38.Location = New Point(49, 14)
+        TextBox38.Name = "TextBox38"
+        TextBox38.Size = New Size(416, 36)
+        TextBox38.TabIndex = 43
+        TextBox38.TextAlign = HorizontalAlignment.Center
+        ' 
+        ' Panel58
+        ' 
+        Panel58.BorderStyle = BorderStyle.FixedSingle
+        Panel58.Controls.Add(TextBox49)
+        Panel58.Location = New Point(494, -9)
+        Panel58.Name = "Panel58"
+        Panel58.Size = New Size(297, 85)
+        Panel58.TabIndex = 42
+        ' 
         ' TextBox49
         ' 
         TextBox49.BorderStyle = BorderStyle.None
@@ -1418,6 +1251,35 @@ Partial Class Form4_B
         TextBox49.Size = New Size(212, 36)
         TextBox49.TabIndex = 54
         TextBox49.TextAlign = HorizontalAlignment.Center
+        ' 
+        ' Panel49
+        ' 
+        Panel49.BorderStyle = BorderStyle.FixedSingle
+        Panel49.Controls.Add(TextBox39)
+        Panel49.Controls.Add(Panel59)
+        Panel49.Location = New Point(1051, 365)
+        Panel49.Name = "Panel49"
+        Panel49.Size = New Size(782, 66)
+        Panel49.TabIndex = 36
+        ' 
+        ' TextBox39
+        ' 
+        TextBox39.BorderStyle = BorderStyle.None
+        TextBox39.Font = New Font("Segoe UI", 10.125F, FontStyle.Bold, GraphicsUnit.Point)
+        TextBox39.Location = New Point(49, 17)
+        TextBox39.Name = "TextBox39"
+        TextBox39.Size = New Size(416, 36)
+        TextBox39.TabIndex = 44
+        TextBox39.TextAlign = HorizontalAlignment.Center
+        ' 
+        ' Panel59
+        ' 
+        Panel59.BorderStyle = BorderStyle.FixedSingle
+        Panel59.Controls.Add(TextBox50)
+        Panel59.Location = New Point(494, -5)
+        Panel59.Name = "Panel59"
+        Panel59.Size = New Size(304, 84)
+        Panel59.TabIndex = 42
         ' 
         ' TextBox50
         ' 
@@ -1429,6 +1291,46 @@ Partial Class Form4_B
         TextBox50.TabIndex = 55
         TextBox50.TextAlign = HorizontalAlignment.Center
         ' 
+        ' Panel50
+        ' 
+        Panel50.BorderStyle = BorderStyle.FixedSingle
+        Panel50.Controls.Add(TextBox40)
+        Panel50.Controls.Add(Panel60)
+        Panel50.Location = New Point(1051, 415)
+        Panel50.Name = "Panel50"
+        Panel50.Size = New Size(800, 68)
+        Panel50.TabIndex = 37
+        ' 
+        ' TextBox40
+        ' 
+        TextBox40.BorderStyle = BorderStyle.None
+        TextBox40.Font = New Font("Segoe UI", 10.125F, FontStyle.Bold, GraphicsUnit.Point)
+        TextBox40.Location = New Point(49, 21)
+        TextBox40.Name = "TextBox40"
+        TextBox40.Size = New Size(416, 36)
+        TextBox40.TabIndex = 45
+        TextBox40.TextAlign = HorizontalAlignment.Center
+        ' 
+        ' Panel60
+        ' 
+        Panel60.BorderStyle = BorderStyle.FixedSingle
+        Panel60.Controls.Add(TextBox52)
+        Panel60.Controls.Add(TextBox51)
+        Panel60.Location = New Point(494, -5)
+        Panel60.Name = "Panel60"
+        Panel60.Size = New Size(305, 90)
+        Panel60.TabIndex = 42
+        ' 
+        ' TextBox52
+        ' 
+        TextBox52.BorderStyle = BorderStyle.None
+        TextBox52.Font = New Font("Segoe UI", 10.125F, FontStyle.Bold, GraphicsUnit.Point)
+        TextBox52.Location = New Point(28, 25)
+        TextBox52.Name = "TextBox52"
+        TextBox52.Size = New Size(212, 36)
+        TextBox52.TabIndex = 57
+        TextBox52.TextAlign = HorizontalAlignment.Center
+        ' 
         ' TextBox51
         ' 
         TextBox51.BorderStyle = BorderStyle.None
@@ -1439,15 +1341,34 @@ Partial Class Form4_B
         TextBox51.TabIndex = 56
         TextBox51.TextAlign = HorizontalAlignment.Center
         ' 
-        ' TextBox52
+        ' Panel51
         ' 
-        TextBox52.BorderStyle = BorderStyle.None
-        TextBox52.Font = New Font("Segoe UI", 10.125F, FontStyle.Bold, GraphicsUnit.Point)
-        TextBox52.Location = New Point(45, 26)
-        TextBox52.Name = "TextBox52"
-        TextBox52.Size = New Size(212, 36)
-        TextBox52.TabIndex = 57
-        TextBox52.TextAlign = HorizontalAlignment.Center
+        Panel51.BorderStyle = BorderStyle.FixedSingle
+        Panel51.Controls.Add(TextBox41)
+        Panel51.Controls.Add(Panel61)
+        Panel51.Location = New Point(1051, 451)
+        Panel51.Name = "Panel51"
+        Panel51.Size = New Size(807, 87)
+        Panel51.TabIndex = 34
+        ' 
+        ' TextBox41
+        ' 
+        TextBox41.BorderStyle = BorderStyle.None
+        TextBox41.Font = New Font("Segoe UI", 10.125F, FontStyle.Bold, GraphicsUnit.Point)
+        TextBox41.Location = New Point(49, 37)
+        TextBox41.Name = "TextBox41"
+        TextBox41.Size = New Size(416, 36)
+        TextBox41.TabIndex = 46
+        TextBox41.TextAlign = HorizontalAlignment.Center
+        ' 
+        ' Panel61
+        ' 
+        Panel61.BorderStyle = BorderStyle.FixedSingle
+        Panel61.Controls.Add(TextBox53)
+        Panel61.Location = New Point(494, 12)
+        Panel61.Name = "Panel61"
+        Panel61.Size = New Size(328, 94)
+        Panel61.TabIndex = 42
         ' 
         ' TextBox53
         ' 
@@ -1459,6 +1380,35 @@ Partial Class Form4_B
         TextBox53.TabIndex = 57
         TextBox53.TextAlign = HorizontalAlignment.Center
         ' 
+        ' Panel52
+        ' 
+        Panel52.BorderStyle = BorderStyle.FixedSingle
+        Panel52.Controls.Add(TextBox42)
+        Panel52.Controls.Add(Panel62)
+        Panel52.Location = New Point(1055, 525)
+        Panel52.Name = "Panel52"
+        Panel52.Size = New Size(799, 68)
+        Panel52.TabIndex = 38
+        ' 
+        ' TextBox42
+        ' 
+        TextBox42.BorderStyle = BorderStyle.None
+        TextBox42.Font = New Font("Segoe UI", 10.125F, FontStyle.Bold, GraphicsUnit.Point)
+        TextBox42.Location = New Point(45, 18)
+        TextBox42.Name = "TextBox42"
+        TextBox42.Size = New Size(416, 36)
+        TextBox42.TabIndex = 47
+        TextBox42.TextAlign = HorizontalAlignment.Center
+        ' 
+        ' Panel62
+        ' 
+        Panel62.BorderStyle = BorderStyle.FixedSingle
+        Panel62.Controls.Add(TextBox54)
+        Panel62.Location = New Point(490, -1)
+        Panel62.Name = "Panel62"
+        Panel62.Size = New Size(297, 82)
+        Panel62.TabIndex = 43
+        ' 
         ' TextBox54
         ' 
         TextBox54.BorderStyle = BorderStyle.None
@@ -1468,6 +1418,35 @@ Partial Class Form4_B
         TextBox54.Size = New Size(212, 36)
         TextBox54.TabIndex = 58
         TextBox54.TextAlign = HorizontalAlignment.Center
+        ' 
+        ' Panel53
+        ' 
+        Panel53.BorderStyle = BorderStyle.FixedSingle
+        Panel53.Controls.Add(TextBox43)
+        Panel53.Controls.Add(Panel63)
+        Panel53.Location = New Point(1059, 564)
+        Panel53.Name = "Panel53"
+        Panel53.Size = New Size(795, 84)
+        Panel53.TabIndex = 34
+        ' 
+        ' TextBox43
+        ' 
+        TextBox43.BorderStyle = BorderStyle.None
+        TextBox43.Font = New Font("Segoe UI", 10.125F, FontStyle.Bold, GraphicsUnit.Point)
+        TextBox43.Location = New Point(41, 34)
+        TextBox43.Name = "TextBox43"
+        TextBox43.Size = New Size(416, 36)
+        TextBox43.TabIndex = 48
+        TextBox43.TextAlign = HorizontalAlignment.Center
+        ' 
+        ' Panel63
+        ' 
+        Panel63.BorderStyle = BorderStyle.FixedSingle
+        Panel63.Controls.Add(TextBox55)
+        Panel63.Location = New Point(486, 10)
+        Panel63.Name = "Panel63"
+        Panel63.Size = New Size(308, 93)
+        Panel63.TabIndex = 9
         ' 
         ' TextBox55
         ' 
@@ -1479,6 +1458,35 @@ Partial Class Form4_B
         TextBox55.TabIndex = 59
         TextBox55.TextAlign = HorizontalAlignment.Center
         ' 
+        ' Panel54
+        ' 
+        Panel54.BorderStyle = BorderStyle.FixedSingle
+        Panel54.Controls.Add(TextBox44)
+        Panel54.Controls.Add(Panel64)
+        Panel54.Location = New Point(1063, 631)
+        Panel54.Name = "Panel54"
+        Panel54.Size = New Size(787, 69)
+        Panel54.TabIndex = 34
+        ' 
+        ' TextBox44
+        ' 
+        TextBox44.BorderStyle = BorderStyle.None
+        TextBox44.Font = New Font("Segoe UI", 10.125F, FontStyle.Bold, GraphicsUnit.Point)
+        TextBox44.Location = New Point(37, 22)
+        TextBox44.Name = "TextBox44"
+        TextBox44.Size = New Size(416, 36)
+        TextBox44.TabIndex = 49
+        TextBox44.TextAlign = HorizontalAlignment.Center
+        ' 
+        ' Panel64
+        ' 
+        Panel64.BorderStyle = BorderStyle.FixedSingle
+        Panel64.Controls.Add(TextBox56)
+        Panel64.Location = New Point(482, -1)
+        Panel64.Name = "Panel64"
+        Panel64.Size = New Size(312, 91)
+        Panel64.TabIndex = 42
+        ' 
         ' TextBox56
         ' 
         TextBox56.BorderStyle = BorderStyle.None
@@ -1489,12 +1497,43 @@ Partial Class Form4_B
         TextBox56.TabIndex = 60
         TextBox56.TextAlign = HorizontalAlignment.Center
         ' 
+        ' Panel65
+        ' 
+        Panel65.BorderStyle = BorderStyle.FixedSingle
+        Panel65.Controls.Add(TextBox58)
+        Panel65.Location = New Point(1546, 674)
+        Panel65.Name = "Panel65"
+        Panel65.Size = New Size(297, 87)
+        Panel65.TabIndex = 42
+        ' 
+        ' TextBox58
+        ' 
+        TextBox58.BorderStyle = BorderStyle.None
+        TextBox58.Font = New Font("Segoe UI", 10.125F, FontStyle.Bold, GraphicsUnit.Point)
+        TextBox58.Location = New Point(28, 30)
+        TextBox58.Name = "TextBox58"
+        TextBox58.Size = New Size(212, 36)
+        TextBox58.TabIndex = 61
+        TextBox58.TextAlign = HorizontalAlignment.Center
+        ' 
+        ' PictureBox9
+        ' 
+        PictureBox9.Cursor = Cursors.Hand
+        PictureBox9.Image = CType(resources.GetObject("PictureBox9.Image"), Image)
+        PictureBox9.Location = New Point(1875, 745)
+        PictureBox9.Name = "PictureBox9"
+        PictureBox9.Size = New Size(47, 43)
+        PictureBox9.SizeMode = PictureBoxSizeMode.StretchImage
+        PictureBox9.TabIndex = 48
+        PictureBox9.TabStop = False
+        ' 
         ' Form4_B
         ' 
         AutoScaleDimensions = New SizeF(13F, 32F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.White
         ClientSize = New Size(1934, 827)
+        Controls.Add(PictureBox9)
         Controls.Add(Panel1)
         Controls.Add(PictureBox3)
         Controls.Add(Panel2)
@@ -1572,44 +1611,47 @@ Partial Class Form4_B
         Panel44.PerformLayout()
         Panel45.ResumeLayout(False)
         Panel45.PerformLayout()
-        Panel46.ResumeLayout(False)
-        Panel46.PerformLayout()
-        Panel47.ResumeLayout(False)
-        Panel47.PerformLayout()
-        Panel48.ResumeLayout(False)
-        Panel48.PerformLayout()
-        Panel49.ResumeLayout(False)
-        Panel49.PerformLayout()
-        Panel50.ResumeLayout(False)
-        Panel50.PerformLayout()
-        Panel51.ResumeLayout(False)
-        Panel51.PerformLayout()
-        Panel52.ResumeLayout(False)
-        Panel52.PerformLayout()
-        Panel53.ResumeLayout(False)
-        Panel53.PerformLayout()
-        Panel54.ResumeLayout(False)
-        Panel54.PerformLayout()
         Panel55.ResumeLayout(False)
         Panel55.PerformLayout()
+        Panel46.ResumeLayout(False)
+        Panel46.PerformLayout()
         Panel56.ResumeLayout(False)
         Panel56.PerformLayout()
+        Panel47.ResumeLayout(False)
+        Panel47.PerformLayout()
         Panel57.ResumeLayout(False)
         Panel57.PerformLayout()
+        Panel48.ResumeLayout(False)
+        Panel48.PerformLayout()
         Panel58.ResumeLayout(False)
         Panel58.PerformLayout()
+        Panel49.ResumeLayout(False)
+        Panel49.PerformLayout()
         Panel59.ResumeLayout(False)
         Panel59.PerformLayout()
+        Panel50.ResumeLayout(False)
+        Panel50.PerformLayout()
         Panel60.ResumeLayout(False)
         Panel60.PerformLayout()
+        Panel51.ResumeLayout(False)
+        Panel51.PerformLayout()
         Panel61.ResumeLayout(False)
         Panel61.PerformLayout()
+        Panel52.ResumeLayout(False)
+        Panel52.PerformLayout()
         Panel62.ResumeLayout(False)
         Panel62.PerformLayout()
+        Panel53.ResumeLayout(False)
+        Panel53.PerformLayout()
         Panel63.ResumeLayout(False)
         Panel63.PerformLayout()
+        Panel54.ResumeLayout(False)
+        Panel54.PerformLayout()
         Panel64.ResumeLayout(False)
         Panel64.PerformLayout()
+        Panel65.ResumeLayout(False)
+        Panel65.PerformLayout()
+        CType(PictureBox9, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
     End Sub
 
@@ -1741,4 +1783,7 @@ Partial Class Form4_B
     Friend WithEvents TextBox55 As TextBox
     Friend WithEvents TextBox44 As TextBox
     Friend WithEvents TextBox56 As TextBox
+    Friend WithEvents TextBox57 As TextBox
+    Friend WithEvents TextBox58 As TextBox
+    Friend WithEvents PictureBox9 As PictureBox
 End Class
