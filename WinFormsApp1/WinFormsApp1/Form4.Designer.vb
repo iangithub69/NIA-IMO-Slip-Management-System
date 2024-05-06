@@ -30,6 +30,7 @@ Partial Class Form4
         PictureBox6 = New PictureBox()
         PictureBox5 = New PictureBox()
         Panel1 = New Panel()
+        PictureBox10 = New PictureBox()
         PictureBox9 = New PictureBox()
         Label16 = New Label()
         Label15 = New Label()
@@ -84,7 +85,6 @@ Partial Class Form4
         TextBox8 = New TextBox()
         Label14 = New Label()
         MySqlCommand1 = New MySql.Data.MySqlClient.MySqlCommand()
-        PictureBox10 = New PictureBox()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox2, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox3, ComponentModel.ISupportInitialize).BeginInit()
@@ -92,6 +92,7 @@ Partial Class Form4
         CType(PictureBox6, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox5, ComponentModel.ISupportInitialize).BeginInit()
         Panel1.SuspendLayout()
+        CType(PictureBox10, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox9, ComponentModel.ISupportInitialize).BeginInit()
         Panel3.SuspendLayout()
         Panel4.SuspendLayout()
@@ -103,7 +104,6 @@ Partial Class Form4
         Panel8.SuspendLayout()
         Panel9.SuspendLayout()
         Panel10.SuspendLayout()
-        CType(PictureBox10, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
         ' PictureBox1
@@ -191,6 +191,17 @@ Partial Class Form4
         Panel1.Name = "Panel1"
         Panel1.Size = New Size(1769, 732)
         Panel1.TabIndex = 46
+        ' 
+        ' PictureBox10
+        ' 
+        PictureBox10.Cursor = Cursors.Hand
+        PictureBox10.Image = My.Resources.Resources.literature_no_bg
+        PictureBox10.Location = New Point(1717, 635)
+        PictureBox10.Name = "PictureBox10"
+        PictureBox10.Size = New Size(47, 43)
+        PictureBox10.SizeMode = PictureBoxSizeMode.StretchImage
+        PictureBox10.TabIndex = 48
+        PictureBox10.TabStop = False
         ' 
         ' PictureBox9
         ' 
@@ -731,17 +742,6 @@ Partial Class Form4
         MySqlCommand1.EnableCaching = False
         MySqlCommand1.Transaction = Nothing
         ' 
-        ' PictureBox10
-        ' 
-        PictureBox10.Cursor = Cursors.Hand
-        PictureBox10.Image = My.Resources.Resources.literature_no_bg
-        PictureBox10.Location = New Point(1717, 635)
-        PictureBox10.Name = "PictureBox10"
-        PictureBox10.Size = New Size(47, 43)
-        PictureBox10.SizeMode = PictureBoxSizeMode.StretchImage
-        PictureBox10.TabIndex = 48
-        PictureBox10.TabStop = False
-        ' 
         ' Form4
         ' 
         AutoScaleDimensions = New SizeF(13F, 32F)
@@ -768,6 +768,7 @@ Partial Class Form4
         CType(PictureBox5, ComponentModel.ISupportInitialize).EndInit()
         Panel1.ResumeLayout(False)
         Panel1.PerformLayout()
+        CType(PictureBox10, ComponentModel.ISupportInitialize).EndInit()
         CType(PictureBox9, ComponentModel.ISupportInitialize).EndInit()
         Panel3.ResumeLayout(False)
         Panel3.PerformLayout()
@@ -787,7 +788,6 @@ Partial Class Form4
         Panel9.PerformLayout()
         Panel10.ResumeLayout(False)
         Panel10.PerformLayout()
-        CType(PictureBox10, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
     End Sub
 

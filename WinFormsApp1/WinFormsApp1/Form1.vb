@@ -102,6 +102,6 @@ Public Class Form1
     End Sub
 
     Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
-
+        Form5.Show()
     End Sub
 End Class
