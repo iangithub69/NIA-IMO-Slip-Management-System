@@ -61,6 +61,7 @@ Partial Class Form5_A
         Label37 = New Label()
         Label38 = New Label()
         Label39 = New Label()
+        Button5 = New Button()
         CType(PictureBox3, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
@@ -444,11 +445,23 @@ Partial Class Form5_A
         Label39.TabIndex = 147
         Label39.Text = "_"
         ' 
+        ' Button5
+        ' 
+        Button5.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point)
+        Button5.ForeColor = Color.Maroon
+        Button5.Location = New Point(12, 761)
+        Button5.Name = "Button5"
+        Button5.Size = New Size(268, 54)
+        Button5.TabIndex = 153
+        Button5.Text = "Print Slip"
+        Button5.UseVisualStyleBackColor = True
+        ' 
         ' Form5_A
         ' 
         AutoScaleDimensions = New SizeF(13F, 32F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(1934, 827)
+        Controls.Add(Button5)
         Controls.Add(Label31)
         Controls.Add(Label37)
         Controls.Add(Label38)
@@ -535,4 +548,5 @@ Partial Class Form5_A
     Friend WithEvents Label37 As Label
     Friend WithEvents Label38 As Label
     Friend WithEvents Label39 As Label
+    Friend WithEvents Button5 As Button
 End Class
