@@ -279,6 +279,78 @@
         End Set
     End Property
 
+    'Public Property Label32Text As String
+    '    Get
+    '        Return Label32.Text
+    '    End Get
+    '    Set(value As String)
+    '        Label32.Text = value
+    '    End Set
+    'End Property
+
+    'Public Property Label33Text As String
+    '    Get
+    '        Return Label33.Text
+    '    End Get
+    '    Set(value As String)
+    '        Label33.Text = value
+    '    End Set
+    'End Property
+
+    Public Property Label34Text As String
+        Get
+            Return Label34.Text
+        End Get
+        Set(value As String)
+            Label34.Text = value
+        End Set
+    End Property
+
+    Public Property Label35Text As String
+        Get
+            Return Label35.Text
+        End Get
+        Set(value As String)
+            Label35.Text = value
+        End Set
+    End Property
+
+    Public Property Label36Text As String
+        Get
+            Return Label36.Text
+        End Get
+        Set(value As String)
+            Label36.Text = value
+        End Set
+    End Property
+
+    Public Property Label37Text As String
+        Get
+            Return Label37.Text
+        End Get
+        Set(value As String)
+            Label37.Text = value
+        End Set
+    End Property
+
+    Public Property Label38Text As String
+        Get
+            Return Label38.Text
+        End Get
+        Set(value As String)
+            Label38.Text = value
+        End Set
+    End Property
+
+    Public Property Label39Text As String
+        Get
+            Return Label39.Text
+        End Get
+        Set(value As String)
+            Label39.Text = value
+        End Set
+    End Property
+
     Private Sub PictureBox3_Click(sender As Object, e As EventArgs) Handles PictureBox3.Click
         Me.Close()
     End Sub

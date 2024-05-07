@@ -78,7 +78,7 @@ Partial Class Form5_A
         ' 
         Label22.AutoSize = True
         Label22.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
-        Label22.Location = New Point(304, 148)
+        Label22.Location = New Point(225, 148)
         Label22.Name = "Label22"
         Label22.Size = New Size(33, 45)
         Label22.TabIndex = 114
@@ -228,7 +228,7 @@ Partial Class Form5_A
         ' 
         Label15.AutoSize = True
         Label15.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
-        Label15.Location = New Point(792, 148)
+        Label15.Location = New Point(713, 148)
         Label15.Name = "Label15"
         Label15.Size = New Size(33, 45)
         Label15.TabIndex = 129
