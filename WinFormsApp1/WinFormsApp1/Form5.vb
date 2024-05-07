@@ -70,4 +70,276 @@ Public Class Form5
         ' Show Form2_B
         form5.Show()
     End Sub
+
+    Private Sub TextBox1_TextChanged(sender As Object, e As EventArgs) Handles TextBox1.TextChanged
+
+    End Sub
+
+    Private Sub TextBox1_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TextBox1.KeyPress
+        ' Check if the pressed key is a lowercase letter
+        If Char.IsLower(e.KeyChar) Then
+            ' Convert the lowercase letter to uppercase
+            e.KeyChar = Char.ToUpper(e.KeyChar)
+        End If
+    End Sub
+
+    Private Sub TextBox12_TextChanged(sender As Object, e As EventArgs) Handles TextBox12.TextChanged
+
+    End Sub
+
+    Private Sub TextBox12_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TextBox12.KeyPress
+        ' Check if the pressed key is a lowercase letter
+        If Char.IsLower(e.KeyChar) Then
+            ' Convert the lowercase letter to uppercase
+            e.KeyChar = Char.ToUpper(e.KeyChar)
+        End If
+    End Sub
+
+    Private Sub TextBox32_TextChanged(sender As Object, e As EventArgs) Handles TextBox32.TextChanged
+
+    End Sub
+
+    Private Sub TextBox32_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TextBox32.KeyPress
+        ' Check if the pressed key is a lowercase letter
+        If Char.IsLower(e.KeyChar) Then
+            ' Convert the lowercase letter to uppercase
+            e.KeyChar = Char.ToUpper(e.KeyChar)
+        End If
+    End Sub
+
+    Private Sub TextBox33_TextChanged(sender As Object, e As EventArgs) Handles TextBox33.TextChanged
+
+    End Sub
+
+    Private Sub TextBox33_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TextBox33.KeyPress
+        ' Check if the entered key is a digit or backspace
+        If Not Char.IsDigit(e.KeyChar) AndAlso Not e.KeyChar = ChrW(Keys.Back) Then
+            ' If not a digit or backspace, suppress the key press
+            e.Handled = True
+        End If
+    End Sub
+
+    Private Sub TextBox20_TextChanged(sender As Object, e As EventArgs) Handles TextBox20.TextChanged
+
+    End Sub
+
+    Private Sub Form5_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        TextBox13.Text = "****"
+    End Sub
+
+    Private Sub TextBox2_TextChanged(sender As Object, e As EventArgs) Handles TextBox2.TextChanged
+        ' Check if the length of the text is equal to 4
+        If TextBox2.TextLength = 1 Then
+            ' If so, set focus to TextBox2
+            TextBox3.Focus()
+        End If
+    End Sub
+
+    Private Sub TextBox3_TextChanged(sender As Object, e As EventArgs) Handles TextBox3.TextChanged
+        ' Check if the length of the text is equal to 4
+        If TextBox3.TextLength = 1 Then
+            ' If so, set focus to TextBox2
+            TextBox4.Focus()
+        End If
+    End Sub
+
+    Private Sub TextBox4_TextChanged(sender As Object, e As EventArgs) Handles TextBox4.TextChanged
+        ' Check if the length of the text is equal to 4
+        If TextBox4.TextLength = 1 Then
+            ' If so, set focus to TextBox2
+            TextBox5.Focus()
+        End If
+    End Sub
+
+    Private Sub TextBox5_TextChanged(sender As Object, e As EventArgs) Handles TextBox5.TextChanged
+        ' Check if the length of the text is equal to 4
+        If TextBox5.TextLength = 1 Then
+            ' If so, set focus to TextBox2
+            TextBox6.Focus()
+        End If
+    End Sub
+
+    Private Sub TextBox6_TextChanged(sender As Object, e As EventArgs) Handles TextBox6.TextChanged
+        ' Check if the length of the text is equal to 4
+        If TextBox6.TextLength = 1 Then
+            ' If so, set focus to TextBox2
+            TextBox7.Focus()
+        End If
+    End Sub
+
+    Private Sub TextBox7_TextChanged(sender As Object, e As EventArgs) Handles TextBox7.TextChanged
+        ' Check if the length of the text is equal to 4
+        If TextBox7.TextLength = 1 Then
+            ' If so, set focus to TextBox2
+            TextBox8.Focus()
+        End If
+    End Sub
+
+    Private Sub TextBox8_TextChanged(sender As Object, e As EventArgs) Handles TextBox8.TextChanged
+        ' Check if the length of the text is equal to 4
+        If TextBox8.TextLength = 1 Then
+            ' If so, set focus to TextBox2
+            TextBox9.Focus()
+        End If
+    End Sub
+
+    Private Sub TextBox9_TextChanged(sender As Object, e As EventArgs) Handles TextBox9.TextChanged
+        ' Check if the length of the text is equal to 4
+        If TextBox9.TextLength = 1 Then
+            ' If so, set focus to TextBox2
+            TextBox10.Focus()
+        End If
+    End Sub
+
+    Private Sub TextBox10_TextChanged(sender As Object, e As EventArgs) Handles TextBox10.TextChanged
+        ' Check if the length of the text is equal to 4
+        If TextBox10.TextLength = 1 Then
+            ' If so, set focus to TextBox2
+            TextBox11.Focus()
+        End If
+    End Sub
+
+    Private Sub TextBox11_TextChanged(sender As Object, e As EventArgs) Handles TextBox11.TextChanged
+
+    End Sub
+
+    Private Sub TextBox2_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TextBox2.KeyPress
+        ' Check if the entered key is a digit or backspace
+        If Not Char.IsDigit(e.KeyChar) AndAlso Not e.KeyChar = ChrW(Keys.Back) Then
+            ' If not a digit or backspace, suppress the key press
+            e.Handled = True
+        End If
+
+        ' Check if textbox length is already 4 and the pressed key is not backspace
+        If TextBox2.TextLength = 1 AndAlso Not e.KeyChar = ChrW(Keys.Back) Then
+            ' If so, suppress the key press
+            e.Handled = True
+        End If
+    End Sub
+
+    Private Sub TextBox3_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TextBox3.KeyPress
+        ' Check if the entered key is a digit or backspace
+        If Not Char.IsDigit(e.KeyChar) AndAlso Not e.KeyChar = ChrW(Keys.Back) Then
+            ' If not a digit or backspace, suppress the key press
+            e.Handled = True
+        End If
+
+        ' Check if textbox length is already 4 and the pressed key is not backspace
+        If TextBox3.TextLength = 1 AndAlso Not e.KeyChar = ChrW(Keys.Back) Then
+            ' If so, suppress the key press
+            e.Handled = True
+        End If
+    End Sub
+
+    Private Sub TextBox4_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TextBox4.KeyPress
+        ' Check if the entered key is a digit or backspace
+        If Not Char.IsDigit(e.KeyChar) AndAlso Not e.KeyChar = ChrW(Keys.Back) Then
+            ' If not a digit or backspace, suppress the key press
+            e.Handled = True
+        End If
+
+        ' Check if textbox length is already 4 and the pressed key is not backspace
+        If TextBox4.TextLength = 1 AndAlso Not e.KeyChar = ChrW(Keys.Back) Then
+            ' If so, suppress the key press
+            e.Handled = True
+        End If
+    End Sub
+
+    Private Sub TextBox5_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TextBox5.KeyPress
+        ' Check if the entered key is a digit or backspace
+        If Not Char.IsDigit(e.KeyChar) AndAlso Not e.KeyChar = ChrW(Keys.Back) Then
+            ' If not a digit or backspace, suppress the key press
+            e.Handled = True
+        End If
+
+        ' Check if textbox length is already 4 and the pressed key is not backspace
+        If TextBox5.TextLength = 1 AndAlso Not e.KeyChar = ChrW(Keys.Back) Then
+            ' If so, suppress the key press
+            e.Handled = True
+        End If
+    End Sub
+
+    Private Sub TextBox6_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TextBox6.KeyPress
+        ' Check if the entered key is a digit or backspace
+        If Not Char.IsDigit(e.KeyChar) AndAlso Not e.KeyChar = ChrW(Keys.Back) Then
+            ' If not a digit or backspace, suppress the key press
+            e.Handled = True
+        End If
+
+        ' Check if textbox length is already 4 and the pressed key is not backspace
+        If TextBox6.TextLength = 1 AndAlso Not e.KeyChar = ChrW(Keys.Back) Then
+            ' If so, suppress the key press
+            e.Handled = True
+        End If
+    End Sub
+
+    Private Sub TextBox7_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TextBox7.KeyPress
+        ' Check if the entered key is a digit or backspace
+        If Not Char.IsDigit(e.KeyChar) AndAlso Not e.KeyChar = ChrW(Keys.Back) Then
+            ' If not a digit or backspace, suppress the key press
+            e.Handled = True
+        End If
+
+        ' Check if textbox length is already 4 and the pressed key is not backspace
+        If TextBox7.TextLength = 1 AndAlso Not e.KeyChar = ChrW(Keys.Back) Then
+            ' If so, suppress the key press
+            e.Handled = True
+        End If
+    End Sub
+
+    Private Sub TextBox8_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TextBox8.KeyPress
+        ' Check if the entered key is a digit or backspace
+        If Not Char.IsDigit(e.KeyChar) AndAlso Not e.KeyChar = ChrW(Keys.Back) Then
+            ' If not a digit or backspace, suppress the key press
+            e.Handled = True
+        End If
+
+        ' Check if textbox length is already 4 and the pressed key is not backspace
+        If TextBox8.TextLength = 1 AndAlso Not e.KeyChar = ChrW(Keys.Back) Then
+            ' If so, suppress the key press
+            e.Handled = True
+        End If
+    End Sub
+
+    Private Sub TextBox9_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TextBox9.KeyPress
+        ' Check if the entered key is a digit or backspace
+        If Not Char.IsDigit(e.KeyChar) AndAlso Not e.KeyChar = ChrW(Keys.Back) Then
+            ' If not a digit or backspace, suppress the key press
+            e.Handled = True
+        End If
+
+        ' Check if textbox length is already 4 and the pressed key is not backspace
+        If TextBox9.TextLength = 1 AndAlso Not e.KeyChar = ChrW(Keys.Back) Then
+            ' If so, suppress the key press
+            e.Handled = True
+        End If
+    End Sub
+
+    Private Sub TextBox10_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TextBox10.KeyPress
+        ' Check if the entered key is a digit or backspace
+        If Not Char.IsDigit(e.KeyChar) AndAlso Not e.KeyChar = ChrW(Keys.Back) Then
+            ' If not a digit or backspace, suppress the key press
+            e.Handled = True
+        End If
+
+        ' Check if textbox length is already 4 and the pressed key is not backspace
+        If TextBox10.TextLength = 1 AndAlso Not e.KeyChar = ChrW(Keys.Back) Then
+            ' If so, suppress the key press
+            e.Handled = True
+        End If
+    End Sub
+
+    Private Sub TextBox11_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TextBox11.KeyPress
+        ' Check if the entered key is a digit or backspace
+        If Not Char.IsDigit(e.KeyChar) AndAlso Not e.KeyChar = ChrW(Keys.Back) Then
+            ' If not a digit or backspace, suppress the key press
+            e.Handled = True
+        End If
+
+        ' Check if textbox length is already 4 and the pressed key is not backspace
+        If TextBox11.TextLength = 1 AndAlso Not e.KeyChar = ChrW(Keys.Back) Then
+            ' If so, suppress the key press
+            e.Handled = True
+        End If
+    End Sub
 End Class

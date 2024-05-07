@@ -447,14 +447,16 @@ Partial Class Form5_A
         ' 
         ' Button5
         ' 
+        Button5.BackColor = Color.FromArgb(CByte(76), CByte(104), CByte(157))
+        Button5.FlatStyle = FlatStyle.Flat
         Button5.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point)
-        Button5.ForeColor = Color.Maroon
+        Button5.ForeColor = Color.White
         Button5.Location = New Point(12, 761)
         Button5.Name = "Button5"
         Button5.Size = New Size(268, 54)
         Button5.TabIndex = 153
         Button5.Text = "Print Slip"
-        Button5.UseVisualStyleBackColor = True
+        Button5.UseVisualStyleBackColor = False
         ' 
         ' Form5_A
         ' 

@@ -412,4 +412,24 @@ Public Class Form4
     Private Sub PictureBox10_Click(sender As Object, e As EventArgs) Handles PictureBox10.Click
         Form4_B.Show()
     End Sub
+
+    Private Sub TextBox7_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TextBox7.KeyPress
+        ' Check if the pressed key is a lowercase letter
+        If Char.IsLower(e.KeyChar) Then
+            ' Convert the lowercase letter to uppercase
+            e.KeyChar = Char.ToUpper(e.KeyChar)
+        End If
+    End Sub
+
+    Private Sub TextBox4_TextChanged(sender As Object, e As EventArgs) Handles TextBox4.TextChanged
+
+    End Sub
+
+    Private Sub TextBox4_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TextBox4.KeyPress
+        ' Check if the pressed key is a lowercase letter
+        If Char.IsLower(e.KeyChar) Then
+            ' Convert the lowercase letter to uppercase
+            e.KeyChar = Char.ToUpper(e.KeyChar)
+        End If
+    End Sub
 End Class
