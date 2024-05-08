@@ -1539,6 +1539,7 @@ Partial Class Form4_B
         Controls.Add(Panel2)
         DoubleBuffered = True
         FormBorderStyle = FormBorderStyle.None
+        Icon = CType(resources.GetObject("$this.Icon"), Icon)
         Name = "Form4_B"
         StartPosition = FormStartPosition.CenterScreen
         Text = "Form4_B"

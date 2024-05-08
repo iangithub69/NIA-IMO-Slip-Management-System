@@ -22,6 +22,7 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         PictureBox1 = New PictureBox()
         Button1 = New Button()
         Button2 = New Button()
@@ -130,6 +131,7 @@ Partial Class Form1
         Controls.Add(PictureBox1)
         DoubleBuffered = True
         FormBorderStyle = FormBorderStyle.FixedSingle
+        Icon = CType(resources.GetObject("$this.Icon"), Icon)
         MaximizeBox = False
         Name = "Form1"
         StartPosition = FormStartPosition.CenterScreen

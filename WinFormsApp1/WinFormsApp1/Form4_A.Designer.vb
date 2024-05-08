@@ -335,6 +335,7 @@ Partial Class Form4_A
         Controls.Add(Label22)
         Controls.Add(PictureBox3)
         FormBorderStyle = FormBorderStyle.None
+        Icon = CType(resources.GetObject("$this.Icon"), Icon)
         Name = "Form4_A"
         StartPosition = FormStartPosition.CenterScreen
         Text = "Form4_A"

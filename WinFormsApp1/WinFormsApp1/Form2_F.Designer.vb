@@ -346,6 +346,7 @@ Partial Class Form2_F
         Controls.Add(PictureBox3)
         DoubleBuffered = True
         FormBorderStyle = FormBorderStyle.None
+        Icon = CType(resources.GetObject("$this.Icon"), Icon)
         Name = "Form2_F"
         StartPosition = FormStartPosition.CenterScreen
         Text = "Form2_F"

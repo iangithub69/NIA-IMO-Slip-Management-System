@@ -524,6 +524,7 @@ Partial Class Form2
         Controls.Add(Label1)
         DoubleBuffered = True
         FormBorderStyle = FormBorderStyle.None
+        Icon = CType(resources.GetObject("$this.Icon"), Icon)
         MaximizeBox = False
         MinimizeBox = False
         Name = "Form2"

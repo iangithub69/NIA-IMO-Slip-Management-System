@@ -744,6 +744,7 @@ Partial Class Form4_C
         Controls.Add(PictureBox3)
         DoubleBuffered = True
         FormBorderStyle = FormBorderStyle.None
+        Icon = CType(resources.GetObject("$this.Icon"), Icon)
         Name = "Form4_C"
         StartPosition = FormStartPosition.CenterScreen
         Text = "Form4_C"

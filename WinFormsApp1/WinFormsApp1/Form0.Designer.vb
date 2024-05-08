@@ -63,6 +63,7 @@ Partial Class Form0
         Controls.Add(ProgressBar1)
         DoubleBuffered = True
         FormBorderStyle = FormBorderStyle.None
+        Icon = CType(resources.GetObject("$this.Icon"), Icon)
         Name = "Form0"
         StartPosition = FormStartPosition.CenterScreen
         Text = "National Irrigation Administration IMO - Bukidnon"
