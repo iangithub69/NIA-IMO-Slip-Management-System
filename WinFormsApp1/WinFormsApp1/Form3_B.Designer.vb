@@ -189,7 +189,6 @@ Partial Class Form3_B
         ' Panel1
         ' 
         Panel1.BorderStyle = BorderStyle.FixedSingle
-        Panel1.Controls.Add(PictureBox9)
         Panel1.Controls.Add(TextBox15)
         Panel1.Controls.Add(TextBox18)
         Panel1.Controls.Add(TextBox17)
@@ -264,7 +263,7 @@ Partial Class Form3_B
         ' 
         PictureBox9.Cursor = Cursors.Hand
         PictureBox9.Image = CType(resources.GetObject("PictureBox9.Image"), Image)
-        PictureBox9.Location = New Point(1771, 424)
+        PictureBox9.Location = New Point(1884, 772)
         PictureBox9.Name = "PictureBox9"
         PictureBox9.Size = New Size(47, 43)
         PictureBox9.SizeMode = PictureBoxSizeMode.StretchImage
@@ -1297,6 +1296,7 @@ Partial Class Form3_B
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.White
         ClientSize = New Size(1934, 827)
+        Controls.Add(PictureBox9)
         Controls.Add(Panel38)
         Controls.Add(PictureBox3)
         Controls.Add(Panel1)
