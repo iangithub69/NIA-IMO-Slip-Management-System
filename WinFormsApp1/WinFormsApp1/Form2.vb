@@ -282,40 +282,29 @@ Public Class Form2
 
 
     Private Sub Form2_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        ' Retrieve the last saved data from the database
-        Dim query As String = "SELECT * FROM details WHERE detail_id = (SELECT MAX(detail_id) FROM details)
-"
+        connecttodb() ' Assuming this is your database connection function
 
-        Using connection As New MySqlConnection(connectionString)
-            Using command As New MySqlCommand(query, connection)
-                connection.Open()
-                Dim reader As MySqlDataReader = command.ExecuteReader()
+        Dim query As String = "SELECT * FROM details WHERE detail_id = (SELECT MAX(detail_id) FROM details)"
+        Dim cmd As New MySqlCommand(query, cn)
 
-                If reader.Read() Then
-                    ' Populate textboxes with data from the database
-                    TextBox1.Text = reader("detail_id").ToString()
-                    TextBox2.Text = reader("account_no").ToString()
-                    TextBox3.Text = reader("account_name").ToString()
-                    TextBox4.Text = reader("check_no").ToString()
-                    TextBox5.Text = reader("date").ToString()
-                    TextBox8.Text = reader("amount").ToString()
-                    TextBox9.Text = reader("pay_to").ToString()
-                    TextBox10.Text = reader("pesos").ToString()
-                    ' Populate comboboxes
-                    ComboBox2.SelectedItem = reader("teller_name").ToString()
-                    ComboBox3.SelectedItem = reader("teller_designation").ToString()
-                    ComboBox4.SelectedItem = reader("officer_name").ToString()
-                    ComboBox5.SelectedItem = reader("officer_designation").ToString()
-                    ComboBox6.SelectedItem = reader("branch").ToString()
-                End If
+        Dim reader As MySqlDataReader = cmd.ExecuteReader()
 
-                reader.Close()
-            End Using
-        End Using
+        If reader.Read() Then
+            ' Populate textboxes with data from the database
+            TextBox1.Text = reader("detail_id").ToString()
+            TextBox2.Text = reader("account_no").ToString()
+            TextBox3.Text = reader("account_name").ToString()
+            TextBox4.Text = reader("check_no").ToString()
+            TextBox5.Text = reader("date").ToString()
+            TextBox8.Text = reader("amount").ToString()
+            TextBox9.Text = reader("pay_to").ToString()
+            TextBox10.Text = reader("pesos").ToString()
+        End If
 
-        'TextBox8.Text = "****"
-        'TextBox9.Text = "****"
-        'ComboBox2.Items.Add("Add more")
+        ' Close the connection 
+        reader.Close()
+        cmd.Dispose()
+        cn.Close()
     End Sub
 
     Private Sub Form2_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing

@@ -149,6 +149,7 @@ Partial Class Form2_B
         ' Button5
         ' 
         Button5.BackColor = Color.FromArgb(CByte(84), CByte(154), CByte(21))
+        Button5.FlatStyle = FlatStyle.Flat
         Button5.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point)
         Button5.ForeColor = Color.White
         Button5.Location = New Point(12, 761)
