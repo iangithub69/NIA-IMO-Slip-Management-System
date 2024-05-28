@@ -336,7 +336,7 @@ Partial Class Form2
         Button1.ForeColor = Color.White
         Button1.Location = New Point(210, 618)
         Button1.Name = "Button1"
-        Button1.Size = New Size(219, 54)
+        Button1.Size = New Size(449, 54)
         Button1.TabIndex = 26
         Button1.Text = "Refresh"
         Button1.UseVisualStyleBackColor = False
@@ -347,12 +347,13 @@ Partial Class Form2
         Button2.FlatStyle = FlatStyle.Flat
         Button2.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point)
         Button2.ForeColor = Color.White
-        Button2.Location = New Point(441, 618)
+        Button2.Location = New Point(12, 642)
         Button2.Name = "Button2"
-        Button2.Size = New Size(219, 54)
+        Button2.Size = New Size(135, 54)
         Button2.TabIndex = 27
         Button2.Text = "Add Record"
         Button2.UseVisualStyleBackColor = False
+        Button2.Visible = False
         ' 
         ' Button3
         ' 

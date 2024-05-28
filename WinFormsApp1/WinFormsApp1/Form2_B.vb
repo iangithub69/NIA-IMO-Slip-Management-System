@@ -109,6 +109,7 @@ Public Class Form2_B
 
         ' start printing
         pd.Print()
+        Form2.ValidateAndInsert()
     End Sub
 
 

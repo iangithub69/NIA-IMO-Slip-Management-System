@@ -11,6 +11,91 @@ Public Class Form2
 
     Private connectionString As String = "server=localhost; user id =root; password=2020301243; database=slipsdb; port=3306"
 
+    Public Sub ValidateAndInsert()
+        Dim errorMessage As String = "Please fill in the following fields: "
+        Dim missingFields As New List(Of String)
+
+        ' Check for missing fields
+        If String.IsNullOrEmpty(TextBox4.Text) Then
+            missingFields.Add("Check Number")
+        End If
+        If String.IsNullOrEmpty(TextBox2.Text) Then
+            missingFields.Add("Account Number")
+        End If
+        If String.IsNullOrEmpty(TextBox3.Text) Then
+            missingFields.Add("Account Name")
+        End If
+        If String.IsNullOrEmpty(TextBox5.Text) Then
+            missingFields.Add("Date")
+        End If
+        If String.IsNullOrEmpty(TextBox8.Text) Then
+            missingFields.Add("Amount")
+        End If
+        If String.IsNullOrEmpty(TextBox9.Text) Then
+            missingFields.Add("Pay To")
+        End If
+        If String.IsNullOrEmpty(TextBox10.Text) Then
+            missingFields.Add("Pesos")
+        End If
+        If String.IsNullOrEmpty(ComboBox2.Text) Then
+            missingFields.Add("Teller Name")
+        End If
+        If String.IsNullOrEmpty(ComboBox3.Text) Then
+            missingFields.Add("Teller Designation")
+        End If
+        If String.IsNullOrEmpty(ComboBox4.Text) Then
+            missingFields.Add("Officer Name")
+        End If
+        If String.IsNullOrEmpty(ComboBox5.Text) Then
+            missingFields.Add("Officer Designation")
+        End If
+        If String.IsNullOrEmpty(ComboBox6.Text) Then
+            missingFields.Add("Branch")
+        End If
+
+        ' If any fields are missing, display error message
+        If missingFields.Count > 0 Then
+            errorMessage &= String.Join(", ", missingFields)
+            MessageBox.Show(errorMessage, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            Return
+        End If
+
+        ' If all fields are filled, proceed with insertion
+        Dim successMessage As String = "Check Information Successfully Saved to Database."
+
+        Try
+            connecttodb()
+            Dim sql As String = "INSERT INTO details (check_no, account_no, account_name, date, amount, pay_to, pesos, teller_name, teller_designation, officer_name, officer_designation, branch) VALUES (@check_no, @account_no, @account_name, @date, @amount, @pay_to, @pesos, @teller_name, @teller_designation, @officer_name, @officer_designation, @branch)"
+            Dim cmd As New MySqlCommand(sql, cn)
+
+            With cmd
+                .Parameters.AddWithValue("@check_no", TextBox4.Text)
+                .Parameters.AddWithValue("@account_no", TextBox2.Text)
+                .Parameters.AddWithValue("@account_name", TextBox3.Text)
+                .Parameters.AddWithValue("@date", TextBox5.Text)
+                .Parameters.AddWithValue("@amount", TextBox8.Text)
+                .Parameters.AddWithValue("@pay_to", TextBox9.Text)
+                .Parameters.AddWithValue("@pesos", TextBox10.Text)
+                .Parameters.AddWithValue("@teller_name", ComboBox2.Text)
+                .Parameters.AddWithValue("@teller_designation", ComboBox3.Text)
+                .Parameters.AddWithValue("@officer_name", ComboBox4.Text)
+                .Parameters.AddWithValue("@officer_designation", ComboBox5.Text)
+                .Parameters.AddWithValue("@branch", ComboBox6.Text)
+
+                .ExecuteNonQuery()
+            End With
+
+            ' Display success message
+            MessageBox.Show(successMessage, "Success", MessageBoxButtons.OK, MessageBoxIcon.Information)
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        Finally
+            If cmd IsNot Nothing Then cmd.Dispose()
+            If cn IsNot Nothing AndAlso cn.State <> ConnectionState.Closed Then cn.Close()
+        End Try
+    End Sub
+
+
     Private Function ConvertToWords(ByVal value As Decimal) As String
         ' Split the value into whole number and fractional part
         Dim wholeNumber As Decimal = Math.Truncate(value)
@@ -198,87 +283,7 @@ Public Class Form2
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
-        Dim errorMessage As String = "Please fill in the following fields: "
-        Dim missingFields As New List(Of String)
 
-        ' Check for missing fields
-        If String.IsNullOrEmpty(TextBox4.Text) Then
-            missingFields.Add("Check Number")
-        End If
-        If String.IsNullOrEmpty(TextBox2.Text) Then
-            missingFields.Add("Account Number")
-        End If
-        If String.IsNullOrEmpty(TextBox3.Text) Then
-            missingFields.Add("Account Name")
-        End If
-        If String.IsNullOrEmpty(TextBox5.Text) Then
-            missingFields.Add("Date")
-        End If
-        If String.IsNullOrEmpty(TextBox8.Text) Then
-            missingFields.Add("Amount")
-        End If
-        If String.IsNullOrEmpty(TextBox9.Text) Then
-            missingFields.Add("Pay To")
-        End If
-        If String.IsNullOrEmpty(TextBox10.Text) Then
-            missingFields.Add("Pesos")
-        End If
-        If String.IsNullOrEmpty(ComboBox2.Text) Then
-            missingFields.Add("Teller Name")
-        End If
-        If String.IsNullOrEmpty(ComboBox3.Text) Then
-            missingFields.Add("Teller Designation")
-        End If
-        If String.IsNullOrEmpty(ComboBox4.Text) Then
-            missingFields.Add("Officer Name")
-        End If
-        If String.IsNullOrEmpty(ComboBox5.Text) Then
-            missingFields.Add("Officer Designation")
-        End If
-        If String.IsNullOrEmpty(ComboBox6.Text) Then
-            missingFields.Add("Branch")
-        End If
-
-        ' If any fields are missing, display error message
-        If missingFields.Count > 0 Then
-            errorMessage &= String.Join(", ", missingFields)
-            MessageBox.Show(errorMessage, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
-            Return
-        End If
-
-        ' If all fields are filled, proceed with insertion
-        Dim successMessage As String = "Check Information Successfully Saved to Database."
-
-        Try
-            connecttodb()
-            Dim sql As String = "INSERT INTO details (check_no, account_no, account_name, date, amount, pay_to, pesos, teller_name, teller_designation, officer_name, officer_designation, branch) VALUES (@check_no, @account_no, @account_name, @date, @amount, @pay_to, @pesos, @teller_name, @teller_designation, @officer_name, @officer_designation, @branch)"
-            Dim cmd As New MySqlCommand(sql, cn)
-
-            With cmd
-                .Parameters.AddWithValue("@check_no", TextBox4.Text)
-                .Parameters.AddWithValue("@account_no", TextBox2.Text)
-                .Parameters.AddWithValue("@account_name", TextBox3.Text)
-                .Parameters.AddWithValue("@date", TextBox5.Text)
-                .Parameters.AddWithValue("@amount", TextBox8.Text)
-                .Parameters.AddWithValue("@pay_to", TextBox9.Text)
-                .Parameters.AddWithValue("@pesos", TextBox10.Text)
-                .Parameters.AddWithValue("@teller_name", ComboBox2.Text)
-                .Parameters.AddWithValue("@teller_designation", ComboBox3.Text)
-                .Parameters.AddWithValue("@officer_name", ComboBox4.Text)
-                .Parameters.AddWithValue("@officer_designation", ComboBox5.Text)
-                .Parameters.AddWithValue("@branch", ComboBox6.Text)
-
-                .ExecuteNonQuery()
-            End With
-
-            ' Display success message
-            MessageBox.Show(successMessage, "Success", MessageBoxButtons.OK, MessageBoxIcon.Information)
-        Catch ex As Exception
-            MsgBox(ex.Message)
-        Finally
-            If cmd IsNot Nothing Then cmd.Dispose()
-            If cn IsNot Nothing AndAlso cn.State <> ConnectionState.Closed Then cn.Close()
-        End Try
     End Sub
 
 
