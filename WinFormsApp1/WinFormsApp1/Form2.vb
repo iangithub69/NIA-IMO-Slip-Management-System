@@ -19,10 +19,11 @@ Public Class Form2
         ' Convert the whole number part to words
         Dim wholeNumberWords As String = ConvertToWordsHelper(wholeNumber)
 
-        ' Convert the fractional part to words (cents)
+        ' Convert the fractional part to fraction of 100
         Dim fractionalPartWords As String = ""
         If fractionalPart > 0 Then
-            fractionalPartWords = "AND " & ConvertToWordsHelper(fractionalPart * 100) & " CENTAVOS"
+            Dim fractionalValue As Integer = Math.Round(fractionalPart * 100)
+            fractionalPartWords = "& " & fractionalValue & "/100"
         End If
 
         ' Combine the whole number and fractional part words
@@ -131,7 +132,7 @@ Public Class Form2
         If e.KeyCode = Keys.Enter Then
             ' Get the numeric value from TextBox8 (excluding asterisks)
             Dim numericValue As Decimal
-            Dim inputValue As String = TextBox8.Text.Replace("*", "") ' Remove asterisks
+            Dim inputValue As String = TextBox8.Text.Replace("*", "").Replace(",", "") ' Remove asterisks and commas
             If Decimal.TryParse(inputValue, numericValue) Then
                 ' Convert the numeric value to words in Philippine Peso format
                 Dim words As String = ConvertToWords(numericValue)
