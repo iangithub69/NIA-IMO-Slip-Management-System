@@ -23,12 +23,11 @@ Partial Class Form2_E
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form2_E))
-        Dim DataGridViewCellStyle1 As DataGridViewCellStyle = New DataGridViewCellStyle()
-        Dim DataGridViewCellStyle2 As DataGridViewCellStyle = New DataGridViewCellStyle()
-        Dim DataGridViewCellStyle3 As DataGridViewCellStyle = New DataGridViewCellStyle()
+        Dim DataGridViewCellStyle4 As DataGridViewCellStyle = New DataGridViewCellStyle()
+        Dim DataGridViewCellStyle5 As DataGridViewCellStyle = New DataGridViewCellStyle()
+        Dim DataGridViewCellStyle6 As DataGridViewCellStyle = New DataGridViewCellStyle()
         PictureBox3 = New PictureBox()
         Panel2 = New Panel()
-        Panel4 = New Panel()
         TextBox5 = New TextBox()
         Label7 = New Label()
         Label5 = New Label()
@@ -37,6 +36,7 @@ Partial Class Form2_E
         TextBox4 = New TextBox()
         Label9 = New Label()
         Label10 = New Label()
+        Panel4 = New Panel()
         Panel1 = New Panel()
         Panel3 = New Panel()
         Label6 = New Label()
@@ -72,7 +72,6 @@ Partial Class Form2_E
         ' Panel2
         ' 
         Panel2.BorderStyle = BorderStyle.FixedSingle
-        Panel2.Controls.Add(Panel4)
         Panel2.Controls.Add(TextBox5)
         Panel2.Controls.Add(Label7)
         Panel2.Controls.Add(Label5)
@@ -85,13 +84,6 @@ Partial Class Form2_E
         Panel2.Name = "Panel2"
         Panel2.Size = New Size(875, 385)
         Panel2.TabIndex = 70
-        ' 
-        ' Panel4
-        ' 
-        Panel4.Location = New Point(-1, -1)
-        Panel4.Name = "Panel4"
-        Panel4.Size = New Size(875, 385)
-        Panel4.TabIndex = 69
         ' 
         ' TextBox5
         ' 
@@ -134,7 +126,10 @@ Partial Class Form2_E
         ' 
         ' Button2
         ' 
-        Button2.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point)
+        Button2.BackColor = Color.FromArgb(CByte(84), CByte(154), CByte(21))
+        Button2.FlatStyle = FlatStyle.Flat
+        Button2.Font = New Font("Segoe UI", 10.125F, FontStyle.Regular, GraphicsUnit.Point)
+        Button2.ForeColor = Color.White
         Button2.Image = My.Resources.Resources.icons8_check_48
         Button2.Location = New Point(627, 306)
         Button2.Name = "Button2"
@@ -142,7 +137,7 @@ Partial Class Form2_E
         Button2.TabIndex = 65
         Button2.Text = "Add"
         Button2.TextImageRelation = TextImageRelation.ImageBeforeText
-        Button2.UseVisualStyleBackColor = True
+        Button2.UseVisualStyleBackColor = False
         ' 
         ' TextBox4
         ' 
@@ -173,10 +168,16 @@ Partial Class Form2_E
         Label10.TabIndex = 55
         Label10.Text = "Description:"
         ' 
+        ' Panel4
+        ' 
+        Panel4.Location = New Point(56, 393)
+        Panel4.Name = "Panel4"
+        Panel4.Size = New Size(875, 385)
+        Panel4.TabIndex = 69
+        ' 
         ' Panel1
         ' 
         Panel1.BorderStyle = BorderStyle.FixedSingle
-        Panel1.Controls.Add(Panel3)
         Panel1.Controls.Add(Label6)
         Panel1.Controls.Add(TextBox2)
         Panel1.Controls.Add(Button3)
@@ -193,7 +194,7 @@ Partial Class Form2_E
         ' 
         ' Panel3
         ' 
-        Panel3.Location = New Point(-1, -1)
+        Panel3.Location = New Point(56, 44)
         Panel3.Name = "Panel3"
         Panel3.Size = New Size(875, 306)
         Panel3.TabIndex = 68
@@ -220,7 +221,10 @@ Partial Class Form2_E
         ' 
         ' Button3
         ' 
-        Button3.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point)
+        Button3.BackColor = Color.FromArgb(CByte(84), CByte(154), CByte(21))
+        Button3.FlatStyle = FlatStyle.Flat
+        Button3.Font = New Font("Segoe UI", 10.125F, FontStyle.Regular, GraphicsUnit.Point)
+        Button3.ForeColor = Color.White
         Button3.Image = My.Resources.Resources.icons8_check_48
         Button3.Location = New Point(412, 230)
         Button3.Name = "Button3"
@@ -228,7 +232,8 @@ Partial Class Form2_E
         Button3.TabIndex = 65
         Button3.Text = "Update"
         Button3.TextImageRelation = TextImageRelation.ImageBeforeText
-        Button3.UseVisualStyleBackColor = True
+        Button3.UseVisualStyleBackColor = False
+        Button3.Visible = False
         ' 
         ' Label2
         ' 
@@ -252,7 +257,10 @@ Partial Class Form2_E
         ' 
         ' Button1
         ' 
-        Button1.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point)
+        Button1.BackColor = Color.FromArgb(CByte(84), CByte(154), CByte(21))
+        Button1.FlatStyle = FlatStyle.Flat
+        Button1.Font = New Font("Segoe UI", 10.125F, FontStyle.Regular, GraphicsUnit.Point)
+        Button1.ForeColor = Color.White
         Button1.Image = My.Resources.Resources.icons8_delete_45
         Button1.Location = New Point(627, 230)
         Button1.Name = "Button1"
@@ -260,7 +268,7 @@ Partial Class Form2_E
         Button1.TabIndex = 63
         Button1.Text = "Delete"
         Button1.TextImageRelation = TextImageRelation.ImageBeforeText
-        Button1.UseVisualStyleBackColor = True
+        Button1.UseVisualStyleBackColor = False
         ' 
         ' TextBox1
         ' 
@@ -299,34 +307,34 @@ Partial Class Form2_E
         DataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.DisplayedCells
         DataGridView1.BackgroundColor = Color.FromArgb(CByte(220), CByte(239), CByte(197))
         DataGridView1.BorderStyle = BorderStyle.None
-        DataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle1.BackColor = SystemColors.Control
-        DataGridViewCellStyle1.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
-        DataGridViewCellStyle1.ForeColor = SystemColors.WindowText
-        DataGridViewCellStyle1.SelectionBackColor = Color.FromArgb(CByte(0), CByte(192), CByte(0))
-        DataGridViewCellStyle1.SelectionForeColor = SystemColors.HighlightText
-        DataGridViewCellStyle1.WrapMode = DataGridViewTriState.True
-        DataGridView1.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
+        DataGridViewCellStyle4.Alignment = DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle4.BackColor = SystemColors.Control
+        DataGridViewCellStyle4.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
+        DataGridViewCellStyle4.ForeColor = SystemColors.WindowText
+        DataGridViewCellStyle4.SelectionBackColor = Color.FromArgb(CByte(0), CByte(192), CByte(0))
+        DataGridViewCellStyle4.SelectionForeColor = SystemColors.HighlightText
+        DataGridViewCellStyle4.WrapMode = DataGridViewTriState.True
+        DataGridView1.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle4
         DataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        DataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle2.BackColor = SystemColors.Window
-        DataGridViewCellStyle2.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point)
-        DataGridViewCellStyle2.ForeColor = SystemColors.ControlText
-        DataGridViewCellStyle2.SelectionBackColor = Color.FromArgb(CByte(0), CByte(192), CByte(0))
-        DataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText
-        DataGridViewCellStyle2.WrapMode = DataGridViewTriState.False
-        DataGridView1.DefaultCellStyle = DataGridViewCellStyle2
+        DataGridViewCellStyle5.Alignment = DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle5.BackColor = SystemColors.Window
+        DataGridViewCellStyle5.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point)
+        DataGridViewCellStyle5.ForeColor = SystemColors.ControlText
+        DataGridViewCellStyle5.SelectionBackColor = Color.FromArgb(CByte(0), CByte(192), CByte(0))
+        DataGridViewCellStyle5.SelectionForeColor = SystemColors.HighlightText
+        DataGridViewCellStyle5.WrapMode = DataGridViewTriState.False
+        DataGridView1.DefaultCellStyle = DataGridViewCellStyle5
         DataGridView1.Location = New Point(1020, 44)
         DataGridView1.Name = "DataGridView1"
         DataGridView1.ReadOnly = True
-        DataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle3.BackColor = Color.FromArgb(CByte(0), CByte(192), CByte(0))
-        DataGridViewCellStyle3.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point)
-        DataGridViewCellStyle3.ForeColor = SystemColors.WindowText
-        DataGridViewCellStyle3.SelectionBackColor = SystemColors.Highlight
-        DataGridViewCellStyle3.SelectionForeColor = SystemColors.HighlightText
-        DataGridViewCellStyle3.WrapMode = DataGridViewTriState.True
-        DataGridView1.RowHeadersDefaultCellStyle = DataGridViewCellStyle3
+        DataGridViewCellStyle6.Alignment = DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle6.BackColor = Color.FromArgb(CByte(0), CByte(192), CByte(0))
+        DataGridViewCellStyle6.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point)
+        DataGridViewCellStyle6.ForeColor = SystemColors.WindowText
+        DataGridViewCellStyle6.SelectionBackColor = SystemColors.Highlight
+        DataGridViewCellStyle6.SelectionForeColor = SystemColors.HighlightText
+        DataGridViewCellStyle6.WrapMode = DataGridViewTriState.True
+        DataGridView1.RowHeadersDefaultCellStyle = DataGridViewCellStyle6
         DataGridView1.RowHeadersWidth = 82
         DataGridView1.RowTemplate.Height = 41
         DataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect
@@ -361,6 +369,8 @@ Partial Class Form2_E
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.FromArgb(CByte(238), CByte(250), CByte(236))
         ClientSize = New Size(1934, 827)
+        Controls.Add(Panel3)
+        Controls.Add(Panel4)
         Controls.Add(PictureBox1)
         Controls.Add(PictureBox2)
         Controls.Add(DataGridView1)

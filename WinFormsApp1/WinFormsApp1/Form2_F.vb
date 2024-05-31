@@ -60,6 +60,9 @@ Public Class Form2_F
             TextBox1.Text = selectedRow.Cells(1).Value.ToString()
             TextBox2.Text = selectedRow.Cells(2).Value.ToString()
         End If
+
+        ' Make the button visible when a row is selected
+        Button3.Visible = True
     End Sub
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click

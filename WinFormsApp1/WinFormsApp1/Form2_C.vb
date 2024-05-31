@@ -8,7 +8,7 @@ Public Class Form2_C
     Private Sub details()
         connecttodb() ' Assuming this is your database connection function
 
-        Dim sql As String = "SELECT detail_id AS 'Detail ID', check_no AS 'Check Number', account_no AS 'Account Number', account_name AS 'Account Name', date AS 'Date Issued', amount AS 'Amount', pay_to AS 'Pay To The Order Of', pesos AS 'Pesos', teller_name AS 'Teller Name', teller_designation AS 'Teller Designation', officer_name AS 'Officer Name', officer_designation AS 'Officer Designation', branch AS 'Branch' FROM details"
+        Dim sql As String = "SELECT detail_id AS 'Detail ID', check_no AS 'Check Number', account_no AS 'Account Number', account_name AS 'Account Name', date AS 'Date Issued', amount AS 'Amount', pay_to AS 'Pay To The Order Of', pesos AS 'Pesos', teller_name AS 'Teller Name', teller_designation AS 'Teller Designation', officer_name AS 'Officer Name', officer_designation AS 'Officer Designation', branch AS 'Branch' FROM details ORDER BY detail_id DESC"
         Dim cmd As New MySqlCommand(sql, cn)
 
         Dim adapter As New MySqlDataAdapter(cmd)
@@ -148,24 +148,24 @@ Public Class Form2_C
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
         ' Check if any cell is selected
         If DataGridView1.SelectedCells.Count > 0 Then
-            Dim clipboardContent As New System.Text.StringBuilder()
+            Dim clipboardContent As New Text.StringBuilder
 
             ' Iterate through selected cells
             For Each cell As DataGridViewCell In DataGridView1.SelectedCells
                 ' Append cell value to the clipboard content
-                clipboardContent.Append(cell.Value.ToString())
+                clipboardContent.Append(cell.Value.ToString)
 
                 ' Separate cells with tab
                 clipboardContent.Append(vbTab)
 
                 ' If it's the last cell in the row, add newline character
                 If cell.ColumnIndex = DataGridView1.Columns.Count - 1 Then
-                    clipboardContent.AppendLine()
+                    clipboardContent.AppendLine
                 End If
             Next
 
             ' Copy the content to the clipboard
-            Clipboard.SetText(clipboardContent.ToString())
+            Clipboard.SetText(clipboardContent.ToString)
 
             MessageBox.Show("Selected data copied to clipboard.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information)
         Else
@@ -174,6 +174,20 @@ Public Class Form2_C
     End Sub
 
     Private Sub TextBox4_TextChanged(sender As Object, e As EventArgs) Handles TextBox4.TextChanged
+
+    End Sub
+
+    Private Sub PictureBox3_Click(sender As Object, e As EventArgs) Handles PictureBox3.Click
+        Me.Close()
+
+    End Sub
+
+    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
+        Me.Close()
+
+    End Sub
+
+    Private Sub Label5_Click(sender As Object, e As EventArgs) Handles Label5.Click
 
     End Sub
 End Class

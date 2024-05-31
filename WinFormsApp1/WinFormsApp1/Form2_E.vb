@@ -55,6 +55,9 @@ Public Class Form2_E
             TextBox1.Text = selectedRow.Cells(1).Value.ToString()
             TextBox2.Text = selectedRow.Cells(2).Value.ToString()
         End If
+
+        ' Make the button visible when a row is selected
+        Button3.Visible = True
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
@@ -216,6 +219,46 @@ Public Class Form2_E
             Panel4.BackColor = Color.FromArgb(100, Panel4.BackColor)
         Else
             Panel4.Visible = False
+        End If
+    End Sub
+
+    Private Sub TextBox1_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TextBox1.KeyPress
+        ' Check if the pressed key is a lowercase letter
+        If Char.IsLower(e.KeyChar) Then
+            ' Convert the lowercase letter to uppercase
+            e.KeyChar = Char.ToUpper(e.KeyChar)
+        End If
+    End Sub
+
+    Private Sub TextBox2_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TextBox2.KeyPress
+        ' Check if the pressed key is a lowercase letter
+        If Char.IsLower(e.KeyChar) Then
+            ' Convert the lowercase letter to uppercase
+            e.KeyChar = Char.ToUpper(e.KeyChar)
+        End If
+    End Sub
+
+    Private Sub TextBox3_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TextBox3.KeyPress
+        ' Check if the pressed key is a lowercase letter
+        If Char.IsLower(e.KeyChar) Then
+            ' Convert the lowercase letter to uppercase
+            e.KeyChar = Char.ToUpper(e.KeyChar)
+        End If
+    End Sub
+
+    Private Sub TextBox4_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TextBox4.KeyPress
+        ' Check if the pressed key is a lowercase letter
+        If Char.IsLower(e.KeyChar) Then
+            ' Convert the lowercase letter to uppercase
+            e.KeyChar = Char.ToUpper(e.KeyChar)
+        End If
+    End Sub
+
+    Private Sub TextBox5_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TextBox5.KeyPress
+        ' Check if the pressed key is a lowercase letter
+        If Char.IsLower(e.KeyChar) Then
+            ' Convert the lowercase letter to uppercase
+            e.KeyChar = Char.ToUpper(e.KeyChar)
         End If
     End Sub
 End Class

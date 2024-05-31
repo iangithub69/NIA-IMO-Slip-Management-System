@@ -58,7 +58,7 @@ Public Class Form4
     Private Sub PictureBox8_Click(sender As Object, e As EventArgs) Handles PictureBox8.Click
         ' Get the current date and format it
         Dim currentDate As Date = Date.Now
-        Dim formattedDate As String = currentDate.ToString("MMMM dd yyyy")
+        Dim formattedDate As String = currentDate.ToString("MM / dd / yyyy")
 
         ' Set the formatted date to TextBox4
         TextBox9.Text = formattedDate
@@ -338,10 +338,11 @@ Public Class Form4
         ' Convert the whole number part to words
         Dim wholeNumberWords As String = ConvertToWordsHelper(wholeNumber)
 
-        ' Convert the fractional part to words (cents)
+        ' Convert the fractional part to fraction of 100
         Dim fractionalPartWords As String = ""
         If fractionalPart > 0 Then
-            fractionalPartWords = "AND " & ConvertToWordsHelper(fractionalPart * 100) & " CENTAVOS"
+            Dim fractionalValue As Integer = Math.Round(fractionalPart * 100)
+            fractionalPartWords = "& " & fractionalValue & "/100"
         End If
 
         ' Combine the whole number and fractional part words

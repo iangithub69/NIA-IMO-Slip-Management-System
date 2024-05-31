@@ -51,10 +51,13 @@ Public Class Form2_D
         If e.RowIndex >= 0 Then
             Dim index As Integer = e.RowIndex
             Dim selectedRow As DataGridViewRow = DataGridView1.Rows(index)
-            Label1.Text = selectedRow.Cells(0).Value.ToString()
 
+            Label1.Text = selectedRow.Cells(0).Value.ToString()
             TextBox1.Text = selectedRow.Cells(1).Value.ToString()
             TextBox2.Text = selectedRow.Cells(2).Value.ToString()
+
+            ' Make the button visible when a row is selected
+            Button3.Visible = True
         End If
     End Sub
 

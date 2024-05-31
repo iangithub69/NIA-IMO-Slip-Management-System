@@ -31,7 +31,6 @@ Partial Class Form2_F
         PictureBox1 = New PictureBox()
         PictureBox2 = New PictureBox()
         Panel1 = New Panel()
-        Panel3 = New Panel()
         Label6 = New Label()
         TextBox2 = New TextBox()
         Button3 = New Button()
@@ -41,14 +40,15 @@ Partial Class Form2_F
         TextBox1 = New TextBox()
         Label3 = New Label()
         Label4 = New Label()
+        Panel3 = New Panel()
         Panel2 = New Panel()
-        Panel4 = New Panel()
         Label5 = New Label()
         TextBox3 = New TextBox()
         Button2 = New Button()
         TextBox4 = New TextBox()
         Label9 = New Label()
         Label10 = New Label()
+        Panel4 = New Panel()
         CType(PictureBox3, ComponentModel.ISupportInitialize).BeginInit()
         CType(DataGridView1, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
@@ -134,7 +134,6 @@ Partial Class Form2_F
         ' Panel1
         ' 
         Panel1.BorderStyle = BorderStyle.FixedSingle
-        Panel1.Controls.Add(Panel3)
         Panel1.Controls.Add(Label6)
         Panel1.Controls.Add(TextBox2)
         Panel1.Controls.Add(Button3)
@@ -148,13 +147,6 @@ Partial Class Form2_F
         Panel1.Name = "Panel1"
         Panel1.Size = New Size(875, 306)
         Panel1.TabIndex = 75
-        ' 
-        ' Panel3
-        ' 
-        Panel3.Location = New Point(-1, -1)
-        Panel3.Name = "Panel3"
-        Panel3.Size = New Size(875, 306)
-        Panel3.TabIndex = 72
         ' 
         ' Label6
         ' 
@@ -178,7 +170,10 @@ Partial Class Form2_F
         ' 
         ' Button3
         ' 
-        Button3.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point)
+        Button3.BackColor = Color.FromArgb(CByte(84), CByte(154), CByte(21))
+        Button3.FlatStyle = FlatStyle.Flat
+        Button3.Font = New Font("Segoe UI", 10.125F, FontStyle.Regular, GraphicsUnit.Point)
+        Button3.ForeColor = Color.White
         Button3.Image = My.Resources.Resources.icons8_check_48
         Button3.Location = New Point(412, 230)
         Button3.Name = "Button3"
@@ -186,7 +181,8 @@ Partial Class Form2_F
         Button3.TabIndex = 65
         Button3.Text = "Update"
         Button3.TextImageRelation = TextImageRelation.ImageBeforeText
-        Button3.UseVisualStyleBackColor = True
+        Button3.UseVisualStyleBackColor = False
+        Button3.Visible = False
         ' 
         ' Label2
         ' 
@@ -210,7 +206,10 @@ Partial Class Form2_F
         ' 
         ' Button1
         ' 
-        Button1.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point)
+        Button1.BackColor = Color.FromArgb(CByte(84), CByte(154), CByte(21))
+        Button1.FlatStyle = FlatStyle.Flat
+        Button1.Font = New Font("Segoe UI", 10.125F, FontStyle.Regular, GraphicsUnit.Point)
+        Button1.ForeColor = Color.White
         Button1.Image = My.Resources.Resources.icons8_delete_45
         Button1.Location = New Point(627, 230)
         Button1.Name = "Button1"
@@ -218,7 +217,7 @@ Partial Class Form2_F
         Button1.TabIndex = 63
         Button1.Text = "Delete"
         Button1.TextImageRelation = TextImageRelation.ImageBeforeText
-        Button1.UseVisualStyleBackColor = True
+        Button1.UseVisualStyleBackColor = False
         ' 
         ' TextBox1
         ' 
@@ -249,10 +248,16 @@ Partial Class Form2_F
         Label4.TabIndex = 55
         Label4.Text = "Acc Name:"
         ' 
+        ' Panel3
+        ' 
+        Panel3.Location = New Point(999, 49)
+        Panel3.Name = "Panel3"
+        Panel3.Size = New Size(885, 306)
+        Panel3.TabIndex = 72
+        ' 
         ' Panel2
         ' 
         Panel2.BorderStyle = BorderStyle.FixedSingle
-        Panel2.Controls.Add(Panel4)
         Panel2.Controls.Add(Label5)
         Panel2.Controls.Add(TextBox3)
         Panel2.Controls.Add(Button2)
@@ -263,13 +268,6 @@ Partial Class Form2_F
         Panel2.Name = "Panel2"
         Panel2.Size = New Size(875, 306)
         Panel2.TabIndex = 76
-        ' 
-        ' Panel4
-        ' 
-        Panel4.Location = New Point(-1, -1)
-        Panel4.Name = "Panel4"
-        Panel4.Size = New Size(875, 306)
-        Panel4.TabIndex = 71
         ' 
         ' Label5
         ' 
@@ -293,7 +291,10 @@ Partial Class Form2_F
         ' 
         ' Button2
         ' 
-        Button2.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point)
+        Button2.BackColor = Color.FromArgb(CByte(84), CByte(154), CByte(21))
+        Button2.FlatStyle = FlatStyle.Flat
+        Button2.Font = New Font("Segoe UI", 10.125F, FontStyle.Regular, GraphicsUnit.Point)
+        Button2.ForeColor = Color.White
         Button2.Image = My.Resources.Resources.icons8_check_48
         Button2.Location = New Point(627, 228)
         Button2.Name = "Button2"
@@ -301,7 +302,7 @@ Partial Class Form2_F
         Button2.TabIndex = 65
         Button2.Text = "Add"
         Button2.TextImageRelation = TextImageRelation.ImageBeforeText
-        Button2.UseVisualStyleBackColor = True
+        Button2.UseVisualStyleBackColor = False
         ' 
         ' TextBox4
         ' 
@@ -332,12 +333,21 @@ Partial Class Form2_F
         Label10.TabIndex = 55
         Label10.Text = "Acc Name:"
         ' 
+        ' Panel4
+        ' 
+        Panel4.Location = New Point(1003, 477)
+        Panel4.Name = "Panel4"
+        Panel4.Size = New Size(875, 306)
+        Panel4.TabIndex = 71
+        ' 
         ' Form2_F
         ' 
         AutoScaleDimensions = New SizeF(13F, 32F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.FromArgb(CByte(238), CByte(250), CByte(236))
         ClientSize = New Size(1934, 827)
+        Controls.Add(Panel3)
+        Controls.Add(Panel4)
         Controls.Add(Panel2)
         Controls.Add(Panel1)
         Controls.Add(PictureBox2)
