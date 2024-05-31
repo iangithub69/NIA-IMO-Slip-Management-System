@@ -96,20 +96,26 @@ Public Class Form2_B
     End Sub
 
     Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
-        ' create printdocument instance
-        Dim pd As New PrintDocument
+        Try
+            ' create printdocument instance
+            Dim pd As New PrintDocument
 
-        ' set printer settings
-        pd.DefaultPageSettings.PrinterSettings.PrinterName = "epson tm-h6000iv slipe4"
-        'pd.DefaultPageSettings.PrinterSettings.PrinterName = "epson tm-h6000iv slip"
-        pd.DefaultPageSettings.PaperSize = New PaperSize("custom", Convert.ToInt32(6.25 * 100), Convert.ToInt32(2.75 * 100)) ' size in hundredths of an inch (600 x 275)
+            ' set printer settings
+            pd.DefaultPageSettings.PrinterSettings.PrinterName = "epson tm-h6000iv slipe4"
+            'pd.DefaultPageSettings.PrinterSettings.PrinterName = "epson tm-h6000iv slip"
+            pd.DefaultPageSettings.PaperSize = New PaperSize("custom", Convert.ToInt32(6.25 * 100), Convert.ToInt32(2.75 * 100)) ' size in hundredths of an inch (600 x 275)
 
-        ' add printpage event handler
-        AddHandler pd.PrintPage, AddressOf PrintContent
+            ' add printpage event handler
+            AddHandler pd.PrintPage, AddressOf PrintContent
 
-        ' start printing
-        pd.Print()
-        Form2.ValidateAndInsert()
+            ' start printing
+            pd.Print()
+            Form2.ValidateAndInsert()
+
+        Catch ex As Exception
+            ' handle the error (e.g., display a message to the user)
+            MessageBox.Show("An error occurred: " & ex.Message)
+        End Try
     End Sub
 
 

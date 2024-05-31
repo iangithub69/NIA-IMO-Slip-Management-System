@@ -35,10 +35,9 @@ Partial Class Form1
         ' PictureBox1
         ' 
         PictureBox1.Image = My.Resources.Resources.nialogo_removebg_preview
-        PictureBox1.Location = New Point(161, 31)
-        PictureBox1.Margin = New Padding(2, 2, 2, 2)
+        PictureBox1.Location = New Point(209, 40)
         PictureBox1.Name = "PictureBox1"
-        PictureBox1.Size = New Size(295, 297)
+        PictureBox1.Size = New Size(384, 380)
         PictureBox1.SizeMode = PictureBoxSizeMode.StretchImage
         PictureBox1.TabIndex = 0
         PictureBox1.TabStop = False
@@ -50,10 +49,9 @@ Partial Class Form1
         Button1.FlatStyle = FlatStyle.Flat
         Button1.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point)
         Button1.ForeColor = Color.White
-        Button1.Location = New Point(161, 377)
-        Button1.Margin = New Padding(2, 2, 2, 2)
+        Button1.Location = New Point(209, 483)
         Button1.Name = "Button1"
-        Button1.Size = New Size(295, 51)
+        Button1.Size = New Size(384, 65)
         Button1.TabIndex = 1
         Button1.TabStop = False
         Button1.Text = "Check Program Slip"
@@ -66,10 +64,9 @@ Partial Class Form1
         Button2.FlatStyle = FlatStyle.Flat
         Button2.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point)
         Button2.ForeColor = Color.White
-        Button2.Location = New Point(161, 456)
-        Button2.Margin = New Padding(2, 2, 2, 2)
+        Button2.Location = New Point(209, 584)
         Button2.Name = "Button2"
-        Button2.Size = New Size(295, 51)
+        Button2.Size = New Size(384, 65)
         Button2.TabIndex = 2
         Button2.TabStop = False
         Button2.Text = "Oncoll Payment Slip"
@@ -82,10 +79,9 @@ Partial Class Form1
         Button3.FlatStyle = FlatStyle.Flat
         Button3.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point)
         Button3.ForeColor = Color.White
-        Button3.Location = New Point(161, 532)
-        Button3.Margin = New Padding(2, 2, 2, 2)
+        Button3.Location = New Point(209, 681)
         Button3.Name = "Button3"
-        Button3.Size = New Size(295, 51)
+        Button3.Size = New Size(384, 65)
         Button3.TabIndex = 3
         Button3.TabStop = False
         Button3.Text = "Cash Deposit Slip"
@@ -98,10 +94,9 @@ Partial Class Form1
         Button4.FlatStyle = FlatStyle.Flat
         Button4.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point)
         Button4.ForeColor = Color.White
-        Button4.Location = New Point(161, 689)
-        Button4.Margin = New Padding(2, 2, 2, 2)
+        Button4.Location = New Point(209, 882)
         Button4.Name = "Button4"
-        Button4.Size = New Size(295, 51)
+        Button4.Size = New Size(384, 65)
         Button4.TabIndex = 4
         Button4.TabStop = False
         Button4.Text = "Reciept Program Slip"
@@ -114,10 +109,9 @@ Partial Class Form1
         Button5.FlatStyle = FlatStyle.Flat
         Button5.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point)
         Button5.ForeColor = Color.White
-        Button5.Location = New Point(161, 611)
-        Button5.Margin = New Padding(2, 2, 2, 2)
+        Button5.Location = New Point(209, 782)
         Button5.Name = "Button5"
-        Button5.Size = New Size(295, 51)
+        Button5.Size = New Size(384, 65)
         Button5.TabIndex = 5
         Button5.TabStop = False
         Button5.Text = "Check Deposit Slip"
@@ -125,10 +119,10 @@ Partial Class Form1
         ' 
         ' Form1
         ' 
-        AutoScaleDimensions = New SizeF(10F, 25F)
+        AutoScaleDimensions = New SizeF(13F, 32F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.FromArgb(CByte(238), CByte(251), CByte(236))
-        ClientSize = New Size(621, 793)
+        ClientSize = New Size(807, 1015)
         Controls.Add(Button5)
         Controls.Add(Button4)
         Controls.Add(Button3)
@@ -138,7 +132,6 @@ Partial Class Form1
         DoubleBuffered = True
         FormBorderStyle = FormBorderStyle.FixedSingle
         Icon = CType(resources.GetObject("$this.Icon"), Icon)
-        Margin = New Padding(2, 2, 2, 2)
         MaximizeBox = False
         Name = "Form1"
         StartPosition = FormStartPosition.CenterScreen
