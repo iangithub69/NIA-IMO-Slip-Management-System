@@ -19,7 +19,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Content Include="nia_nobackground.ico" />
+    <Content Include="Resources\nia_nobackground.ico" />
   </ItemGroup>
 
   <ItemGroup>
