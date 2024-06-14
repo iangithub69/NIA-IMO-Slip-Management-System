@@ -12,3 +12,8 @@ Installation Process (x64)
 
 Database
 *slipsdb.sql
+
+
+
+#Database Reminder
+- I have not yet modified the database structure for most table. there might be some error regarding "row 1 tuncated" or something else, just edit its structure to "varchar" to mitigate errors. Incase I manage to finilize the database strucute, i might as well delete this reminder.
