@@ -108,7 +108,7 @@ Public Class Form2
         Dim fractionalPartWords As String = ""
         If fractionalPart > 0 Then
             Dim fractionalValue As Integer = Math.Round(fractionalPart * 100)
-            fractionalPartWords = "& " & fractionalValue & "/100"
+            fractionalPartWords = "AND " & fractionalValue & "/100"
         End If
 
         ' Combine the whole number and fractional part words

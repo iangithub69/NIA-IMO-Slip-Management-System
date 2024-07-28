@@ -530,8 +530,8 @@ Public Class Form4_C
             Dim pd As New PrintDocument
 
             ' set printer settings
-            pd.DefaultPageSettings.PrinterSettings.PrinterName = "epson tm-h6000iv slipe4"
-            ' pd.DefaultPageSettings.PrinterSettings.PrinterName = "epson tm-h6000iv slip"
+            'pd.DefaultPageSettings.PrinterSettings.PrinterName = "epson tm-h6000iv slipe4"
+            pd.DefaultPageSettings.PrinterSettings.PrinterName = "epson tm-h6000iv slip"
             pd.DefaultPageSettings.PaperSize = New PaperSize("custom", Convert.ToInt32(6.25 * 100), Convert.ToInt32(2.75 * 100)) ' size in hundredths of an inch (600 x 275)
 
             ' add printpage event handler
