@@ -302,6 +302,27 @@ Public Class Form2
             TextBox8.Text = reader("amount").ToString()
             TextBox9.Text = reader("pay_to").ToString()
             TextBox10.Text = reader("pesos").ToString()
+
+            ComboBox2.Items.Clear()
+            ComboBox2.Items.Add(reader("teller_name").ToString())
+            ComboBox2.SelectedIndex = 0
+
+            ComboBox3.Items.Clear()
+            ComboBox3.Items.Add(reader("teller_designation").ToString())
+            ComboBox3.SelectedIndex = 0
+
+            ComboBox4.Items.Clear()
+            ComboBox4.Items.Add(reader("officer_name").ToString())
+            ComboBox4.SelectedIndex = 0
+
+            ComboBox5.Items.Clear()
+            ComboBox5.Items.Add(reader("officer_designation").ToString())
+            ComboBox5.SelectedIndex = 0
+
+            ComboBox6.Items.Clear()
+            ComboBox6.Items.Add(reader("branch").ToString())
+            ComboBox6.SelectedIndex = 0
+
         End If
 
         ' Close the connection 
@@ -661,6 +682,10 @@ Public Class Form2
     End Sub
 
     Private Sub TextBox9_TextChanged(sender As Object, e As EventArgs) Handles TextBox9.TextChanged
+
+    End Sub
+
+    Private Sub TextBox3_TextChanged(sender As Object, e As EventArgs) Handles TextBox3.TextChanged
 
     End Sub
 End Class

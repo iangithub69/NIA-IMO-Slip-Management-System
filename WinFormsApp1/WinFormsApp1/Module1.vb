@@ -18,10 +18,10 @@ Module Module1
             'cn.ConnectionString = "server=localhost; user id =ianbayarcal; password=2020301243; database=lmsdb; port=3306"
 
             'local standalone connnection db
-            cn.ConnectionString = "server=localhost; user id =root; password=2020301243; database=slipsdb; port=3306"
+            'cn.ConnectionString = "server=localhost; user id =root; password=2020301243; database=slipsdb; port=3306"
 
             'local standalone connnection db NIA-BIMO
-            'cn.ConnectionString = "server=localhost; user id =root; password=accounting; database=slipsdb; port=3306"
+            cn.ConnectionString = "server=localhost; user id =root; password=accounting; database=slipsdb; port=3306"
 
 
             cn.Open()
